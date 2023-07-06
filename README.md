@@ -26,7 +26,6 @@
 
 ## Состав проекта
 
-- [Kefir](https://codeberg.org/rashevskyv/kefir/releases)
 - [OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
