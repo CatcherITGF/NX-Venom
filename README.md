@@ -26,7 +26,7 @@
 
 ## Состав проекта
 
-- [OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
+- [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [InfoNX](https://github.com/renA21/InfoNX)
