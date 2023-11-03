@@ -4,7 +4,7 @@
 
 ## Technical support
 Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
-Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
+Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking)
 
 ## Warning
 
