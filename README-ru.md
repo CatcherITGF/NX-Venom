@@ -1,4 +1,4 @@
-# Overclocking Bundle
+# Nintendo Switch Overclocking Bundle
 
 Английский: [English](https://github.com/snupt/NS-Overclocking/blob/main/README.md)
 
