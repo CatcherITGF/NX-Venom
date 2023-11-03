@@ -11,7 +11,7 @@
 ## Установка
 
 1. Сделайте резервную копию данных и оставьте на SD карте только папки `emuMMC` и `Nintendo`.
-2. Распакуйте архив с [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) в корень SD карты. Используйте картр-ридер, либо `Hekate` > `Tools` > `USB Tools`.
+2. Распакуйте архив с [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) в корень SD карты. Используйте картр-ридер, либо `Hekate` → `Tools` → `USB Tools`.
 3. Обновление бандла осуществляется через хоумбрю приложение `All-in-One Switch Updater`.
 4. Установка дополнительного ПО, а так же патчей для игр осуществляется через `Tesla` меню (нажмите `вправо`), `Software Installer`.
 
@@ -48,7 +48,7 @@
 
 ## FAQ
 
-- Если после установки возникли проблемы, попробуйте сделать фикс атрибутов: зайдите в `Hekate` > `Tools` > `Arch Bit`
+- Если после установки возникли проблемы, попробуйте сделать фикс атрибутов: зайдите в `Hekate` → `Tools` → `Arch Bit`
 - При установке обновления в `All-in-One Switch Updater` на предложение перезаписать конфиги ответ `ДА`, на предложение устаровить `Hekate` ответ `НЕТ`
 - С вопросами, помощью, пожеланиями и предложениями обращаться в [официальную Telegram группу](https://t.me/NintendoBusters) или дискорд сервер [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking).
 
