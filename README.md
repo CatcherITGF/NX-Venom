@@ -58,6 +58,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 - [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
+- [FTSLocker](https://github.com/masagrator/FPSLocker)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [InfoNX](https://github.com/renA21/InfoNX)
 - [Ultrahand](https://github.com/ppkantorski/Ultrahand-Overlay)
