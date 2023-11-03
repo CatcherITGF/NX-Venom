@@ -1,6 +1,6 @@
 # Overlocking Bundle
 
-## Поддержка
+## Техническая поддержка
 Телеграм: [NintendoBusters](https://t.me/NintendoBusters)  
 Дискорд: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
 
