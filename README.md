@@ -1,58 +1,60 @@
 # Overlocking Bundle
 
-## Техническая поддержка
-Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)  
-Дискорд: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
+Русский: [Russian](https://github.com/snupt/NS-Overlocking/blob/main/README-ru.md)
 
-## Предупреждение
+## Technical support
+Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
+Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
 
-**ВНИМАНИЕ! Разгон консоли не приводит к необратимым последствиям, однако, он представляет риск для данных в виду особенностей Horizon OS. Поэтому настоятельно рекомендуется использовать оверлокинг исключительно в emuMMC и своевременно делать резервные копии**
+## Warning
 
-## Установка
+**ATTENTION! Overclocking the console does not lead to irreversible consequences, however, it poses a risk to data due to the features of Horizon OS. Therefore, it is strongly recommended to use overclocking exclusively in emuMMC and make backups. USE AT YOUR OWN RISK!**
 
-1. Сделайте резервную копию данных и оставьте на SD карте только папки `emuMMC` и `Nintendo`.
-2. Распакуйте архив с [OC Bundle](https://github.com/snupt/Switch-OC-Suite-Bundle/raw/main/OCBundle.zip) в корень SD карты. Используйте картр-ридер, либо `Hekate` > `Tools` > `USB Tools`.
-3. Обновление бандла осуществляется через хоумбрю приложение `All-in-One Switch Updater`.
-4. Установка дополнительного ПО, а так же патчей для игр осуществляется через `Tesla` меню (нажмите `вправо`), `Software Installer`.
+## Installation
 
-## Использование
+1. Make data backup copy and leave only `emuMMC` and `Nintendo` folders on the SD card.
+2. Unpack [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) to the root of the SD card. Use a card reader, or `Hekate` > `Tools` > `USB Tools`.
+3. Use `All-in-One Switch Updater` homebrew application for updates.
+4. Installation of additional software, as well as patches for games, makes through the `Tesla` menu (click `right`) > `Software Installer`.
 
-1. Вход в `Tesla` меню (а так же выход из `Status Monitor`) осуществляется комбинацией `ZR + ZL + Вниз`.
-2. Разгон осуществляется путем выставления параметров в оверлей меню `Switch-OC-Suite`.
-3. Для управления разгоном используйте оверлей `UltraHand` (зайти в `Tesla` меню, нажать внопку `вправо`), пакет `OC Toolkit`.
-4. Чем ниже параметры разгона, тем безопасней и тем меньше побочных эффектов. Используйте с умом!
-5. Рекомендованные параметры разгона для портативного режима и игре от батареи: CPU `918 - 1428`, GPU `768 - 921`, MEM `2131 - 2400`. Чем ниже параметры CPU и GPU, тем дольше вы сохраните заряд батареи и тем холоднее будет ваша консоль.
+## How to use
+
+1. Opening the `Tesla` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
+2. Use `sys-clk` overlay for manage overclocking.
+3. Use `OC Toolkit` (go to the `Tesla` menu, press the `right` button) for change the parameters of the loading kip.
+4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
+5. Recommended overclocking parameters for portable mode and battery life: CPU `918 - 1428`, GPU `768 - 921`, MEM `2131 - 2400`.
 
 ## OC Toolkit
 
 * CPU
-  * Undervolt Mode: управление энергоэффективностью процессора, снижение потребления по нарастающей компоненте
-  * Voltage Limit: управление максимальным напряжением
-  * Boost Clock: частота процессора которая влияет на ускорение загрузок в играх
+  * Undervolt Mode: CPU energy efficiency management
+  * Voltage Limit: maximum CPU voltage
+  * Boost Clock: processor frequency that affects the acceleration of loading screens in games
 * GPU
-  * Undervolt Mode: управление энергоэффективностью графического процессора
-    * UV0: андрервольт первого типа (HiOPT)
-    * UV1: овервольт с минимальным напряжением 635mV, для режима памяти 2500GHz и выше
-    * UV2: андервольт второго типа
-  * UV3 Table: пользовательская кастомизированная таблица напряжений
+  * Undervolt Mode: GPU energy efficiency management
+    * UV0: first type of undervolt (HiOPT)
+    * UV1: overvolt with a minimum voltage 635mV, for memory freqs 2500 GHz and above
+    * UV2: second type of undervolt
+  * UV3 Table: custom voltage table
 * RAM
-  * Max Clock: частота памяти, рекомендуемые параметры в диапазоне `2131` - `2400`
-  * Vddq: напряжение выходных буфферов микросхемы памяти
-  * Vdd2: напряжение входных буфферов микросхемы памяти
-  * EMC DVB Table: таблица напряжений EMC, параметр работает на частоте `2400` и выше, рекомендуется использовать для повышения стабильности разгона памяти на высоких частотах
-  * Timings: тайминги, повышают производительность, но вызывают вероятость побочных эффектов
+  * Max Clock: memory frequency, recommended parameters range `2131` - `2400`
+  * Vddq: supply voltage to the output buffers of a memory chip
+  * Vdd2: supply voltage for the input buffers and core logic of a memory chip
+  * EMC DVB Table: turns on at the frequency `2400` and higher, recommended for stability at high frequencies
+  * Timings: timings increase performance, but may affect stability
 
-## Философия
+## Philosophy
 
-Правило по которому нужно руководствоваться используя разгон консоли — отсутствие побочных эффектов. Консоль должна работать без крашей атмосферы, без внезапных вылетов из игр, без отключения по перегреву. Добившись этого результата мы получием стабильную консоль, высокую производительность в играх и сбалансированное энергопотребление.
+The rule by which you need to be guided using console overclocking is the absence of side effects. The console should work without atmosphere errors game crashes, shutdown due to overheating. Having achieved this result, you get a stable console, high performance in games and balanced power consumption.
 
 ## FAQ
 
-- Если после установки возникли проблемы, попробуйте сделать фикс атрибутов: зайдите в Hekate > USB Tool > Arch Bit
-- При установке пакетов в `All-in-One Switch Updater` на предложение перезаписать конфиги ответ "ДА", на предложение устаровить Hekate ответ "НЕТ"
-- С вопросами, просьбами о помощи, пожеланиями и предложениями обращаться в [официальную Telegram группу](https://t.me/NintendoBusters) или дискорд сервер [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking).
+- If there are problems after installation, try to fix the attributes: `Hekate` > `Tools` > `Arch Bit`
+- When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`, the answer to "Do you want also download hekate" is `NO`
+- With questions, help, wishes and suggestions, contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking).
 
-## Состав проекта
+## Content
 
 - [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
@@ -63,4 +65,7 @@
 - [Sys ftpd light](https://github.com/cathery/sys-ftpd)
 - [DBI](https://github.com/rashevskyv/dbi/releases)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
-- Отдельное спасибо b7311, lineon и Руслану за реализацию отдельных компонентов этого бандла
+
+## Credits
+
+Special thanks to b7311, lineon, Ruslan, CtC, as well as the discord community `NSwitch 60FPS Cheats & Mods` and `RetroNX` for implementing individual components of this bundle
