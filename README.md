@@ -12,16 +12,16 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 ## Installation
 
-1. Make data backup copy and leave only `emuMMC` and `Nintendo` folders on the SD card.
-2. Unpack [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
-3. Use `All-in-One Switch Updater` homebrew application for updates.
+1. Make backup and delete everything except `Nintendo` and `emuMMC` folders on the SD card.
+2. Unpack the [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
+3. Use the `All-in-One Switch Updater` homebrew application for updates.
 4. Installation of additional software, as well as patches for games, makes through the `Tesla` menu (click `right`) → `Software Installer`.
 
 ## How to use
 
 1. Opening the `Tesla` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
-2. Use `sys-clk` overlay for manage overclocking.
-3. Use `OC Toolkit` (go to the `Tesla` menu, press the `right` button) for change the parameters of the loading kip.
+2. Use the `sys-clk` overlay for manage overclocking.
+3. Use the `OC Toolkit` (go to the `Tesla` menu, press the `right` button) for change the parameters of the loading kip.
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 5. Recommended overclocking parameters for portable mode and battery life: CPU `918 - 1428`, GPU `768 - 921`, MEM `2131 - 2400`.
 
@@ -52,7 +52,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 - If there are problems after installation, try to fix the attributes: `Hekate` → `Tools` → `Arch Bit`
 - When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`, the answer to "Do you want also download hekate" is `NO`
-- With questions, help, wishes and suggestions, contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking).
+- For questions, help, wishes and suggestions, contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking).
 
 ## Content
 
