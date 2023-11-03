@@ -1,6 +1,6 @@
-# Overlocking Bundle
+# Overclocking Bundle
 
-Английский: [English](https://github.com/snupt/NS-Overlocking/blob/main/README.md)
+Английский: [English](https://github.com/snupt/NS-Overclocking/blob/main/README.md)
 
 ## Техническая поддержка
 Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)  
@@ -13,7 +13,7 @@
 ## Установка
 
 1. Сделайте резервную копию данных и оставьте на SD карте только папки `emuMMC` и `Nintendo`.
-2. Распакуйте архив с [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) в корень SD карты. Используйте карт-ридер, либо `Hekate` → `Tools` → `USB Tools`.
+2. Распакуйте архив с [OC Bundle](https://github.com/snupt/NS-Overclocking/blob/main/OCBundle.zip) в корень SD карты. Используйте карт-ридер, либо `Hekate` → `Tools` → `USB Tools`.
 3. Обновление бандла осуществляется через хоумбрю приложение `All-in-One Switch Updater`.
 4. Установка дополнительного ПО, а так же патчей для игр осуществляется через `Tesla` меню (нажмите `вправо`), `Software Installer`.
 
