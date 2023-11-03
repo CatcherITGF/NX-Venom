@@ -13,9 +13,9 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал 
 ## Installation
 
 1. Make data backup copy and leave only `emuMMC` and `Nintendo` folders on the SD card.
-2. Unpack [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) to the root of the SD card. Use a card reader, or `Hekate` > `Tools` > `USB Tools`.
+2. Unpack [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
 3. Use `All-in-One Switch Updater` homebrew application for updates.
-4. Installation of additional software, as well as patches for games, makes through the `Tesla` menu (click `right`) > `Software Installer`.
+4. Installation of additional software, as well as patches for games, makes through the `Tesla` menu (click `right`) → `Software Installer`.
 
 ## How to use
 
@@ -50,7 +50,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 ## FAQ
 
-- If there are problems after installation, try to fix the attributes: `Hekate` > `Tools` > `Arch Bit`
+- If there are problems after installation, try to fix the attributes: `Hekate` → `Tools` → `Arch Bit`
 - When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`, the answer to "Do you want also download hekate" is `NO`
 - With questions, help, wishes and suggestions, contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking).
 
