@@ -1,6 +1,6 @@
 # Overlocking Bundle
 
-Английский: [English](https://github.com/snupt/NS-Overlocking/blob/main/README-ru.md)
+Английский: [English](https://github.com/snupt/NS-Overlocking/blob/main/README.md)
 
 ## Техническая поддержка
 Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)  
