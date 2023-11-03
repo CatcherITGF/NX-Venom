@@ -1,8 +1,8 @@
 {
     "ams": {
-        "OC Bundle": "https://github.com/snupt/NS-Overclocking/blob/main/OCBundle.zip"
+        "OC Bundle": "https://github.com/snupt/NS-Overclocking/raw/main/OCBundle.zip"
     },
     "misc": {
-        "Refresh": "https://github.com/snupt/NS-Overclocking/blob/main/AIO.zip"
+        "Refresh": "https://github.com/snupt/NS-Overclocking/raw/main/AIO.zip"
     }
 }
