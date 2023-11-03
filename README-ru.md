@@ -53,7 +53,9 @@
 - С вопросами, помощью, пожеланиями и предложениями обращаться в [официальную Telegram группу](https://t.me/NintendoBusters) или дискорд сервер [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking).
 
 ## Состав проекта
-
+- [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere/tree/1.6.1-prerelease)
+- [Hekate](https://github.com/CTCaer/hekate/releases)
+- [Sigpatches](https://sigmapatches.coomer.party)
 - [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
 - [FTSLocker](https://github.com/masagrator/FPSLocker)
@@ -64,6 +66,9 @@
 - [Sys ftpd light](https://github.com/cathery/sys-ftpd)
 - [DBI](https://github.com/rashevskyv/dbi/releases)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
+- [Lockpick RCM](https://github.com/s1204IT/Lockpick_RCM)
+- [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer)
+- [Picofly Toolbox](https://github.com/Ansem-SoD/Picofly)
 
 ## Благодарности
 
