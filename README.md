@@ -1,7 +1,7 @@
 # Overlocking Bundle
 
-Поддержка: 
-Телеграм [https://t.me/NintendoBusters](https://t.me/NintendoBusters)
+Поддержка:  
+Телеграм [https://t.me/NintendoBusters](https://t.me/NintendoBusters)  
 Дискорд [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
 
 **ВНИМАНИЕ! Разгон консоли не приводит к необратимым последствиям. Однако, он представляет риск для данных в виду особенностей Horizon OS. Поэтому настоятельно рекомендуется использовать оверлокинг исключительно в emuMMC и своевременно делать резервные копии**
@@ -60,4 +60,4 @@
 - [Sys ftpd light](https://github.com/cathery/sys-ftpd)
 - [DBI](https://github.com/rashevskyv/dbi/releases)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
-- Отдельное спасибо b7311 и lineon
+- Отдельное спасибо b7311, lineon и Руслану за реализацию отдельных компонентов этого бандла
