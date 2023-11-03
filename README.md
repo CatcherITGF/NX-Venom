@@ -32,11 +32,19 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал 
   * Voltage Limit: maximum CPU voltage
   * Boost Clock: processor frequency that affects the acceleration of loading screens in games
 * GPU
+<<<<<<< HEAD
   * Undervolt Mode: GPU energy efficiency management
     * UV0: first type of undervolt (HiOPT)
     * UV1: overvolt with a minimum voltage 635mV, for memory freqs 2500 GHz and above
     * UV2: second type of undervolt
   * UV3 Table: custom voltage table
+=======
+  * Undervolt Mode: управление энергоэффективностью графического процессора
+    * UV0: андрервольт первого типа (`HiOPT`)
+    * UV1: овервольт с минимальным напряжением `635mV`, для режима памяти `2500GHz` и выше
+    * UV2: андервольт второго типа
+  * UV3 Table: пользовательская кастомизированная таблица напряжений
+>>>>>>> 4e007a82c6b80be8568728c75b641a79f0af8703
 * RAM
   * Max Clock: memory frequency, recommended parameters range `2131` - `2400`
   * Vddq: supply voltage to the output buffers of a memory chip
@@ -50,9 +58,15 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 ## FAQ
 
+<<<<<<< HEAD
 - If there are problems after installation, try to fix the attributes: `Hekate` > `Tools` > `Arch Bit`
 - When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`, the answer to "Do you want also download hekate" is `NO`
 - With questions, help, wishes and suggestions, contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking).
+=======
+- Если после установки возникли проблемы, попробуйте сделать фикс атрибутов: зайдите в `Hekate` > `USB Tool` > `Arch Bit`
+- При установке пакетов в `All-in-One Switch Updater` на предложение перезаписать конфиги ответ `ДА`, на предложение устаровить Hekate ответ `НЕТ`
+- С вопросами, просьбами о помощи, пожеланиями и предложениями обращаться в Telegram группу [Nintendo Busters](https://t.me/NintendoBusters) или дискорд сервер [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking).
+>>>>>>> 4e007a82c6b80be8568728c75b641a79f0af8703
 
 ## Content
 
