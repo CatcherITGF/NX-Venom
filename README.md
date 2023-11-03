@@ -1,10 +1,10 @@
-# Overlocking Bundle
+# Overclocking Bundle
 
-Русский: [Russian](https://github.com/snupt/NS-Overlocking/blob/main/README-ru.md)
+Русский: [Russian](https://github.com/snupt/NS-Overclocking/blob/main/README-ru.md)
 
 ## Technical support
 Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
-Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking)
+Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overclocking)
 
 ## Warning
 
@@ -13,7 +13,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 ## Installation
 
 1. Make backup and delete everything except `Nintendo` and `emuMMC` folders on the SD card.
-2. Unpack the [OC Bundle](https://github.com/snupt/NS-Overlocking/blob/main/OCBundle.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
+2. Unpack the [OC Bundle](https://github.com/snupt/NS-Overclocking/blob/main/OCBundle.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
 3. Use the `All-in-One Switch Updater` homebrew application for updates.
 4. Installation of additional software, as well as patches for games, makes through the `Tesla` menu (click `right`) → `Software Installer`.
 
