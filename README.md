@@ -46,7 +46,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 ## Philosophy
 
-The rule by which you need to be guided using console overclocking is the absence of side effects. The console should work without atmosphere errors game crashes, shutdown due to overheating. Having achieved this result, you get a stable console, high performance in games and balanced power consumption.
+The rule by which you need to be guided using console overclocking is the absence of side effects. The console should work without atmosphere errors, game crashes, shutdown due to overheating. Having achieved this result, you get a stable console, high performance in games and balanced power consumption.
 
 ## FAQ
 
