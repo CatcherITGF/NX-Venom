@@ -45,7 +45,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
     * UV1: overvolt with a minimum voltage 635mV, for memory freqs 2500 GHz and above
     * UV2: second type of undervolt
   * UV3 Table: custom voltage table
-  * Voltage offset: negative Voltage offset value for gpu dynamic voltage calculation, compatible with UV0 only
+  * Voltage offset: negative Voltage offset value for gpu dynamic voltage calculation
 * RAM
   * Max Clock: memory frequency, recommended parameters range `2131` - `2400`
   * Vddq: supply voltage to the output buffers of a memory chip
