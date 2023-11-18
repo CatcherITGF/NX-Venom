@@ -5,58 +5,58 @@
         "hex": "000000"
     },
     {
-        "name": "1100 mV",
-        "label": "1100 mV - default",
+        "name": "1100 uV",
+        "label": "1100 uV - default",
         "hex": "E0C810"
     },
     {
-        "name": "1125 mV",
-        "label": "1125 mV",
+        "name": "1125 uV",
+        "label": "1125 uV",
         "hex": "882A11"
     },
     {
-        "name": "1150 mV",
-        "label": "1150 mV",
+        "name": "1150 uV",
+        "label": "1150 uV",
         "hex": "308C11"
     },
     {
-        "name": "1175 mV",
-        "label": "1175 mV",
+        "name": "1175 uV",
+        "label": "1175 uV",
         "hex": "D8ED11"
     },
     {
-        "name": "1200 mV",
-        "label": "1200 mV",
+        "name": "1200 uV",
+        "label": "1200 uV",
         "hex": "804F12"
     },
     {
-        "name": "1225 mV",
-        "label": "1225 mV - unsafe",
+        "name": "1225 uV",
+        "label": "1225 uV - unsafe",
         "hex": "28B112"
     },
     {
-        "name": "1250 mV",
-        "label": "1250 mV - unsafe",
+        "name": "1250 uV",
+        "label": "1250 uV - unsafe",
         "hex": "D01213"
     },
     {
-        "name": "1275 mV",
-        "label": "1275 mV - dangerous",
+        "name": "1275 uV",
+        "label": "1275 uV - dangerous",
         "hex": "787413"
     },
     {
-        "name": "1300 mV",
-        "label": "1300 mV - dangerous",
+        "name": "1300 uV",
+        "label": "1300 uV - dangerous",
         "hex": "20D613"
     },
     {
-        "name": "1325 mV",
-        "label": "1325 mV - dangerous",
+        "name": "1325 uV",
+        "label": "1325 uV - dangerous",
         "hex": "C83714"
     },
     {
-        "name": "1350 mV",
-        "label": "1350 mV - dangerous",
+        "name": "1350 uV",
+        "label": "1350 uV - dangerous",
         "hex": "709914"
     }
 ]
