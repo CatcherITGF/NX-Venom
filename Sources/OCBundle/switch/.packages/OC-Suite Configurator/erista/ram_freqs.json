@@ -1,0 +1,92 @@
+[
+    {
+        "name": "1733 MHz",
+        "label": "1733 MHz",
+        "hex": "88711A"
+    },
+    {
+        "name": "1800 MHz",
+        "label": "1800 MHz",
+        "hex": "40771B"
+    },
+    {
+        "name": "1866 MHz",
+        "label": "1866 MHz - JEDEC",
+        "hex": "10791C"
+    },
+    {
+        "name": "1900 MHz",
+        "label": "1900 MHz",
+        "hex": "E0FD1C"
+    },
+    {
+        "name": "1933 MHz",
+        "label": "1933 MHz",
+        "hex": "C87E1D"
+    },
+    {
+        "name": "1966 MHz",
+        "label": "1966 MHz",
+        "hex": "B0FF1D"
+    },
+    {
+        "name": "2000 MHz",
+        "label": "2000 MHz",
+        "hex": "80841E"
+    },
+    {
+        "name": "2033 MHz",
+        "label": "2033 MHz",
+        "hex": "68051F"
+    },
+    {
+        "name": "2066 MHz",
+        "label": "2066 MHz",
+        "hex": "50861F"
+    },
+    {
+        "name": "2100 MHz",
+        "label": "2100 MHz",
+        "hex": "200B20"
+    },
+    {
+        "name": "2133 MHz",
+        "label": "2133 MHz - JEDEC",
+        "hex": "088C2C"
+    },
+    {
+        "name": "2166 MHz",
+        "label": "2166 MHz - unsafe",
+        "hex": "F00C21"
+    },
+    {
+        "name": "2200 MHz",
+        "label": "2200 MHz - unsafe",
+        "hex": "C09121"
+    },
+    {
+        "name": "2233 MHz",
+        "label": "2233 MHz - unsafe",
+        "hex": "A81222"
+    },
+    {
+        "name": "2266 MHz",
+        "label": "2266 MHz - unsafe",
+        "hex": "909322"
+    },
+    {
+        "name": "2300 MHz",
+        "label": "2300 MHz - unsafe",
+        "hex": "601823"
+    },
+    {
+        "name": "2333 MHz",
+        "label": "2333 MHz - unsafe",
+        "hex": "489923"
+    },
+    {
+        "name": "2366 MHz",
+        "label": "2366 MHz - unsafe",
+        "hex": "301A24"
+    }
+]
