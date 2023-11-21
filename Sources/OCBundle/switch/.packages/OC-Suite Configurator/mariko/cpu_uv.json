@@ -1,0 +1,22 @@
+[
+    {
+        "name":"0",
+        "label": "0 - Default Table"
+    },
+    {
+        "name":"1",
+        "label": "1 - SLT1"
+    },
+    {
+        "name":"2",
+        "label": "2 - SLT2"
+    },
+    {
+        "name":"3",
+        "label": "3 - OCT"
+    },
+    {
+        "name":"4",
+        "label": "4 - HiOCT"
+    }
+]
