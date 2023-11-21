@@ -5,18 +5,18 @@
     },
     {
         "name":"1",
-        "label": "1 - -25mV"
+        "label": "1 - +25mV"
     },
     {
         "name":"2",
-        "label": "2 - -50mV"
+        "label": "2 - +50mV"
     },
     {
         "name":"3",
-        "label": "3 - -75mV"
+        "label": "3 - +75mV"
     },
     {
         "name":"4",
-        "label": "4 - -100mV"
+        "label": "4 - +100mV"
     }
 ]
