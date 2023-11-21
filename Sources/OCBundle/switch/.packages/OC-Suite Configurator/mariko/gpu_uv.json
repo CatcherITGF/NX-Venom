@@ -1,0 +1,14 @@
+[
+    {
+        "name":"0",
+        "label": "0 - Default Table"
+    },
+    {
+        "name":"1",
+        "label": "1 - SLT"
+    },
+    {
+        "name":"2",
+        "label": "2 - HiOPT"
+    }
+]

@@ -55,8 +55,13 @@
         "hex": "5802"
     },
     {
+        "name": "605 mV",
+        "label": "605 mV",
+        "hex": "5D02"
+    },
+    {
         "name": "610 mV",
-        "label": "610 mV - default",
+        "label": "610 mV - Default",
         "hex": "6202"
     },
     {

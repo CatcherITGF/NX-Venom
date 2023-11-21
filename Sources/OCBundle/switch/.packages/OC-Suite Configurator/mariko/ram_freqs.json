@@ -66,77 +66,77 @@
     },
     {
         "name": "2533 MHz",
-        "label": "2533 MHz - unsafe",
+        "label": "2533 MHz - Unsafe",
         "hex": "88A626"
     },
     {
         "name": "2566 MHz",
-        "label": "2566 MHz - unsafe",
+        "label": "2566 MHz - Unsafe",
         "hex": "702727"
     },
     {
         "name": "2600 MHz",
-        "label": "2600 MHz - unsafe",
+        "label": "2600 MHz - Unsafe",
         "hex": "40AC27"
     },
     {
         "name": "2633 MHz",
-        "label": "2633 MHz - unsafe",
+        "label": "2633 MHz - Unsafe",
         "hex": "282D28"
     },
     {
         "name": "2666 MHz",
-        "label": "2666 MHz  - unsafe",
+        "label": "2666 MHz  - Unsafe",
         "hex": "10AE28"
     },
     {
         "name": "2700 MHz",
-        "label": "2700 MHz - unsafe",
+        "label": "2700 MHz - Unsafe",
         "hex": "E03229"
     },
     {
         "name": "2733 MHz",
-        "label": "2733 MHz - unsafe",
+        "label": "2733 MHz - Unsafe",
         "hex": "C8B329"
     },
     {
         "name": "2766 MHz",
-        "label": "2766 MHz - unsafe",
+        "label": "2766 MHz - Unsafe",
         "hex": "B0342A"
     },
     {
         "name": "2800 MHz",
-        "label": "2800 MHz - unsafe",
+        "label": "2800 MHz - Unsafe",
         "hex": "80B92A"
     },
     {
         "name": "2833 MHz",
-        "label": "2833 MHz - unsafe",
+        "label": "2833 MHz - Unsafe",
         "hex": "683A2B"
     },
     {
         "name": "2866 MHz",
-        "label": "2866 MHz - unsafe",
+        "label": "2866 MHz - Unsafe",
         "hex": "50BBB2"
     },
     {
         "name": "2900 MHz",
-        "label": "2900 MHz - unsafe",
+        "label": "2900 MHz - Unsafe",
         "hex": "20402C"
     },
     {
         "name": "2933 MHz",
-        "label": "2933 MHz - unsafe",
+        "label": "2933 MHz - Unsafe",
         "hex": "08C12C"
     },
     {
         "name": "2966 MHz",
-        "label": "2966 MHz - unsafe",
+        "label": "2966 MHz - Unsafe",
         "hex": "F0412D"
     },
     {
         "name": "3000 MHz",
-        "label": "3000 MHz - unsafe",
+        "label": "3000 MHz - Unsafe",
         "hex": "C0C62D"
     }
 ]

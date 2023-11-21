@@ -1,7 +1,7 @@
 [
     {
         "name": "1785 MHz",
-        "label": "1785 MHz - default",
+        "label": "1785 MHz - Default",
         "hex": "A83C1B"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
         "name": "2703 MHz",
-        "label": "2703 MHz - unsafe",
+        "label": "2703 MHz - Unsafe",
         "hex": "983E29"
     }
 ]
