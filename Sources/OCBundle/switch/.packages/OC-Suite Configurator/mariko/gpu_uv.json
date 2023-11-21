@@ -10,5 +10,9 @@
     {
         "name":"2",
         "label": "2 - HiOPT"
+    },
+    {
+        "name":"3",
+        "label": "3 - Custom Table"
     }
 ]
