@@ -21,34 +21,41 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 1. Opening the `Tesla` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
 2. Use the `sys-clk` overlay to manage overclocking.
-3. Use the `OC Toolkit` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
+3. Use the `OC-Suite Configurator` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
-5. Recommended overclocking parameters for portable mode and battery life: CPU `918 - 1428`, GPU `768 - 921`, MEM `2131 - 2400`.
+5. Recommended overclocking parameters for portable mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
-## OC Toolkit
+## OC-Suite Configurator
 
 ### Requirements
 
-- Nintendo Switch V2
-- Nintendo Switch Lite
-- Nintendo Switch OLED
+- Nintendo Switch V1 (Erista)
+- Nintendo Switch V2 (Mariko)
+- Nintendo Switch Lite (Mariko)
+- Nintendo Switch OLED (Mariko)
 
 ### Settings
 
 * CPU
-  * Undervolt Mode: CPU energy efficiency management
-  * Voltage Limit: maximum CPU voltage
+  * Undervolt Mode: CPU energy efficiency management (Marico only)
+  * Voltage Max: maximum CPU voltage, recommended 1235mV or below
   * Boost Clock: CPU frequency that affects the acceleration of loading screens in games
 * GPU
-  * Undervolt Mode: GPU energy efficiency management
-  * UV3 Table: custom voltage table
-  * Voltage offset: negative Voltage offset value for gpu dynamic voltage calculation
+  * Undervolt Mode: GPU energy efficiency management (Marico only)
+  * UV3 Table: custom voltage table (Marico only)
+  * Voltage Offset: negative voltage offset value for gpu dynamic voltage calculation
+  * Voltage Min: high RAM clocks will require gpu minimum voltage to be raised
 * RAM
-  * Max Clock: memory frequency, recommended parameters range `2131` - `2400`
-  * Vddq: supply voltage to the output buffers of a memory chip
+  * Max Clock: memory frequency, recommended parameters range `2133` - `2400` for Mariko and `1862 - 2131` for Erista
   * Vdd2: supply voltage for the input buffers and core logic of a memory chip
-  * EMC DVB Table: turns on at the frequency `2400` and higher, recommended for stability at high frequencies
+  * Vddq: supply voltage to the output buffers of a memory chip (Marico only)
+  * EMC DVB Table: SoC voltage automatically gets raised with higher dram clock, shift number raises helps with stability at higher memory clock
   * Timings: timings increase performance, but may affect stability
+* Sys-Clk-OC
+  * Allow Unsafe Freqs: allow unsafe frequencies (CPU > 1963.5 MHz, GPU > 921.6 MHz)
+  * Remove Clocks Capping: remove CPU/GPU clock cappings
+  * Override Boost Mode: override boost mode frequency with user set values (CPU/GPU)
+  * Auto CPU boost: for games without official boost mode, activates when CPU core utilize >= 95%
 
 ## Philosophy
 
