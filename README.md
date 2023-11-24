@@ -20,7 +20,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 ## How to use
 
 1. Opening the `Tesla` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
-2. Use the `sys-clk` overlay to manage overclocking.
+2. Use the `sys-clk-oc` overlay to manage overclocking.
 3. Use the `OC-Suite Configurator` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 5. Recommended overclocking parameters for portable mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
