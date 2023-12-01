@@ -34,7 +34,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 - Nintendo Switch Lite (Mariko)
 - Nintendo Switch OLED (Mariko)
 
-### Settings
+### Kip Settings
 
 * CPU
   * Undervolt Mode: CPU energy efficiency management (Marico only)
@@ -51,11 +51,13 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
   * Vddq: supply voltage to the output buffers of a memory chip (Marico only)
   * EMC DVB Table: SoC voltage automatically gets raised with higher dram clock, shift number raises helps with stability at higher memory clock
   * Timings: timings increase performance, but may affect stability
-* Sys-Clk-OC
-  * Allow Unsafe Freqs: allow unsafe frequencies (CPU > 1963.5 MHz, GPU > 921.6 MHz)
-  * Remove Clocks Capping: remove CPU/GPU clock cappings
-  * Override Boost Mode: override boost mode frequency with user set values (CPU/GPU)
-  * Auto CPU boost: for games without official boost mode, activates when CPU core utilize >= 95%
+
+### Sys-Clk-OC Settings
+
+* Allow Unsafe Freqs: allow unsafe frequencies (CPU > 1963.5 MHz, GPU > 921.6 MHz)
+* Remove Clocks Capping: remove CPU/GPU clock cappings
+* Override Boost Mode: override boost mode frequency with user set values (CPU/GPU)
+* Auto CPU boost: for games without official boost mode, activates when CPU core utilize >= 95%
 
 ## Philosophy
 
