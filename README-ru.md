@@ -82,7 +82,7 @@
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [InfoNX](https://github.com/renA21/InfoNX)
 - [Ultrahand](https://github.com/ppkantorski/Ultrahand-Overlay)
-- [Status Monitor](https://github.com/ppkantorski/Status-Monitor-Overlay)
+- [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay)
 - [Sys ftpd light](https://github.com/cathery/sys-ftpd)
 - [DBI](https://github.com/rashevskyv/dbi/releases)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
