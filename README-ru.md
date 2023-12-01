@@ -27,12 +27,16 @@
 
 ## OC-Suite Configurator
 
-### Требования
+### Требования к железу
 
 - Nintendo Switch V1 (Erista)
 - Nintendo Switch V2 (Mariko)
 - Nintendo Switch Lite (Mariko)
 - Nintendo Switch OLED (Mariko)
+
+### Требования к софту
+
+- UltraHand Overlay (входит в комплект бандла)
 
 ### Настройки разгона
 
