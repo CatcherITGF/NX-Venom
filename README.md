@@ -27,12 +27,16 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 ## OC-Suite Configurator
 
-### Requirements
+### Hardware Requirements
 
 - Nintendo Switch V1 (Erista)
 - Nintendo Switch V2 (Mariko)
 - Nintendo Switch Lite (Mariko)
 - Nintendo Switch OLED (Mariko)
+
+### Software Requirements
+
+- UltraHand Overlay (included in the OC Bundle)
 
 ### Kip Settings
 
