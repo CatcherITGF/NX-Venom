@@ -3,7 +3,7 @@
 Английский: [English](https://github.com/snupt/NS-Overclocking/blob/main/README.md)
 
 ## Техническая поддержка
-Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)  
+Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)
 Дискорд: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
 
 ## Предупреждение
@@ -59,7 +59,7 @@
 ### Настройки Sys-Clk-OC
 * Allow Unsafe Freqs: разрешить небезопасные частоты (CPU > 1963, GPU > 921)
 * Remove Clocks Capping: отключение ограничителей частот GPU/CPU
-* Override Boost Mode: переопределение частот (CPU/GPU) буст мода с помощью заданных пользователем через `sys-clk-oc` значений 
+* Override Boost Mode: переопределение частот (CPU/GPU) буст мода с помощью заданных пользователем через `sys-clk-oc` значений
 * Auto CPU boost: для игр без официальной поддержки буст мода, активируется при загрузке ядра CPU >= 95%
 
 ## Философия
@@ -78,7 +78,7 @@
 - [Sigpatches](https://sigmapatches.coomer.party)
 - [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
-- [FTSLocker](https://github.com/masagrator/FPSLocker)
+- [FPSLocker](https://github.com/masagrator/FPSLocker)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [InfoNX](https://github.com/renA21/InfoNX)
 - [Ultrahand](https://github.com/ppkantorski/Ultrahand-Overlay)
