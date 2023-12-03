@@ -87,9 +87,9 @@ Stream switch games to your PC via USB or network
 
 ## Bootloader
 
-- 4GB
+- 4GB  
 Default Hekate and AMS
-- 8GB
+- 8GB  
 Patched Hekate and AMS with support 8GB RAM modules MGCL/MGCR
 
 ## Philosophy
