@@ -3,7 +3,7 @@
 Русский: [Russian](https://github.com/snupt/NS-Overclocking/blob/main/README-ru.md)
 
 ## Technical support
-Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
+Telegram: [Nintendo Busters](https://t.me/NintendoBusters)
 Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overclocking)
 
 ## Warning
@@ -80,7 +80,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 - [Sigpatches](https://sigmapatches.coomer.party)
 - [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
-- [FTSLocker](https://github.com/masagrator/FPSLocker)
+- [FPSLocker](https://github.com/masagrator/FPSLocker)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [InfoNX](https://github.com/renA21/InfoNX)
 - [Ultrahand](https://github.com/ppkantorski/Ultrahand-Overlay)
