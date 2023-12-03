@@ -94,4 +94,4 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 ## Credits
 
-Special thanks to meha, b0rd2dEAth, b3711, lineon, Ruslan, MasaGratoR, CtC, discord community `NSwitch 60FPS Cheats & Mods` and `RetroNX` for implementing individual components of this bundle
+Special thanks to meha, b0rd2dEAth, redraz, b3711, lineon, Ruslan, MasaGratoR, CtC, discord community `NSwitch 60FPS Cheats & Mods` and `RetroNX` for implementing individual components of this bundle

@@ -92,4 +92,4 @@
 
 ## Благодарности
 
-Отдельное спасибо meha, b0rd2dEAth, b3711, lineon, Руслану, MasaGratoR, CtC, дискорд комьюнити `NSwitch 60FPS Cheats & Mods` и `RetroNX` за реализацию отдельных компонентов этого бандла
+Отдельное спасибо meha, b0rd2dEAth, redraz, b3711, lineon, Руслану, MasaGratoR, CtC, дискорд комьюнити `NSwitch 60FPS Cheats & Mods` и `RetroNX` за реализацию отдельных компонентов этого бандла
