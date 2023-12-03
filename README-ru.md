@@ -3,8 +3,12 @@
 Английский: [English](https://github.com/snupt/NS-Overclocking/blob/main/README.md)
 
 ## Техническая поддержка
+<<<<<<< HEAD
 
 Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)  
+=======
+Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)
+>>>>>>> 7a9aa6a1d807fadab39a2b149af1d7a4928b6005
 Дискорд: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
 
 ## Предупреждение
@@ -60,7 +64,7 @@
 ### Настройки Sys-Clk-OC
 * Allow Unsafe Freqs: разрешить небезопасные частоты (CPU > 1963, GPU > 921)
 * Remove Clocks Capping: отключение ограничителей частот GPU/CPU
-* Override Boost Mode: переопределение частот (CPU/GPU) буст мода с помощью заданных пользователем через `sys-clk-oc` значений 
+* Override Boost Mode: переопределение частот (CPU/GPU) буст мода с помощью заданных пользователем через `sys-clk-oc` значений
 * Auto CPU boost: для игр без официальной поддержки буст мода, активируется при загрузке ядра CPU >= 95%
 
 ## Философия
