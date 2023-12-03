@@ -3,6 +3,7 @@
 Английский: [English](https://github.com/snupt/NS-Overclocking/blob/main/README.md)
 
 ## Техническая поддержка
+
 Телеграм: [Nintendo Busters](https://t.me/NintendoBusters)  
 Дискорд: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking)
 
@@ -73,18 +74,19 @@
 - С вопросами, помощью, пожеланиями и предложениями обращаться в [официальную Telegram группу](https://t.me/NintendoBusters) или дискорд сервер [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (канал #overlocking).
 
 ## Состав проекта
+
 - [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
 - [Hekate](https://github.com/CTCaer/hekate)
 - [Sigpatches](https://sigmapatches.coomer.party)
 - [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
-- [FTSLocker](https://github.com/masagrator/FPSLocker)
+- [FPSLocker](https://github.com/masagrator/FPSLocker)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [InfoNX](https://github.com/renA21/InfoNX)
 - [Ultrahand](https://github.com/ppkantorski/Ultrahand-Overlay)
 - [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay)
 - [Sys ftpd light](https://github.com/cathery/sys-ftpd)
-- [DBI](https://github.com/rashevskyv/dbi/releases)
+- [DBI](https://github.com/rashevskyv/dbi)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
 - [Lockpick RCM](https://github.com/s1204IT/Lockpick_RCM)
 - [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer)
