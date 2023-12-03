@@ -3,12 +3,8 @@
 Русский: [Russian](https://github.com/snupt/NS-Overclocking/blob/main/README-ru.md)
 
 ## Technical support
-<<<<<<< HEAD
 
 Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
-=======
-Telegram: [Nintendo Busters](https://t.me/NintendoBusters)
->>>>>>> 7a9aa6a1d807fadab39a2b149af1d7a4928b6005
 Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overclocking)
 
 ## Warning
