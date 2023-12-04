@@ -84,6 +84,10 @@ Use text to generate cheats or `.ips` patches to use with Atmosphere
 Linkalho is an homebrew app that will link NNID accounts offline
 - [SysDVR](https://github.com/exelix11/SysDVR/releases)  
 Stream switch games to your PC via USB or network
+- [emuiibo](https://github.com/XorTroll/emuiibo/releases)  
+Virtual amiibo (amiibo emulation) system for Nintendo Switch
+- [Amiigo](https://github.com/CompSciOrBust/Amiigo/releases)  
+Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuiibo system module
 
 ## Bootloader
 
