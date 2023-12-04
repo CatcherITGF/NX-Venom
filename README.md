@@ -78,7 +78,7 @@ Use controllers from other consoles natively on your Nintendo Switch via Bluetoo
 Firmware related to the rp2040-zero based chip
 - [nxmp](https://github.com/proconsule/nxmp/releases)  
 NXMP is a video player for Nintendo Switch based on MPV. NXMP support most popular video format, it support HTTP,FTP,SFTP,Samba,NFS streaming and it also support Enigma2 decoders
-- [ipswitch](https://github.com/3096/ipswitch/releases)
+- [ipswitch](https://github.com/3096/ipswitch/releases)  
 Use text to generate cheats or `.ips` patches to use with Atmosphere
 - [Linkalho](https://github.com/rdmrocha/linkalho/releases)  
 Linkalho is an homebrew app that will link NNID accounts offline
