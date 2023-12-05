@@ -66,6 +66,37 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 * Override Boost Mode: override boost mode frequency with user set values (CPU/GPU)
 * Auto CPU boost: for games without official boost mode, activates when CPU core utilize >= 95%
 
+Main config: `/config/sys-clk/config.ini`  
+Offical documentation: [README for sys-clk-OC](https://github.com/hanai3Bi/Switch-OC-Suite/blob/master/Source/sys-clk-OC/README.md)
+
+### Status Monitor
+
+- Key Combo
+- Show Real Freqs
+- Show Real Volts
+- Replace RAM Total with RAM Load
+
+Main config: `/config/status-monitor/config.ini`  
+Offical documentation: [Configuration file](https://github.com/hanai3Bi/Status-Monitor-Overlay/blob/master/docs/config.md)
+
+### Fan Curve
+
+The package is a part of the Ultrahand Overlay project which configure and set temperature-related settings for different temperature ranges
+
+Main config: `/atmosphere/config/system_settings.ini`  
+Offical documentation: [Cool Curves](https://github.com/ppkantorski/Ultrahand-Overlay/tree/main/examples/Cool%20Curves)
+
+### System Video Recorder
+
+A tool that allows you to change the quality settings of the video recording system function
+
+- Framerate
+- Bitrate
+
+### Clear AMS Report Logs
+
+A tool that allows you to clear the logs of the Atmosphere, which tend to accumulate in large quantities
+
 ## Software Installer
 
 Be patient. The installation process may take some time.
