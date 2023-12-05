@@ -95,7 +95,7 @@ A tool that allows you to change the quality settings of the video recording sys
 
 ### Clear AMS Report Logs
 
-A tool that allows you to clear the logs of the Atmosphere, which tend to accumulate in large quantities
+A tool that allows you to clear the logs of the Atmosphere CFW, which tend to accumulate in large quantities
 
 ## Software Installer
 
