@@ -93,7 +93,7 @@ A tool that allows you to change the quality settings of the video recording sys
 - Framerate
 - Bitrate
 
-Main config: `/config/status-monitor/config.ini`  
+Main config: `/atmosphere/config/system_settings.ini`  
 
 ### Clear AMS Report Logs
 
