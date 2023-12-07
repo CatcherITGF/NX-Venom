@@ -2,10 +2,6 @@
 
 Русский: [Russian](https://github.com/snupt/NS-Overclocking/blob/main/README-ru.md)
 
-## Description
-
-The ultimate bundle for overclocking Nintendo Switch devices running Atmosphere CFW
-
 ## Technical support
 
 Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
