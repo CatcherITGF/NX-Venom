@@ -1,7 +1,5 @@
 # Nintendo Switch Overclocking Bundle
 
-Русский: [Russian](https://github.com/snupt/NS-Overclocking/blob/main/README-ru.md)
-
 ## Technical support
 
 Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
