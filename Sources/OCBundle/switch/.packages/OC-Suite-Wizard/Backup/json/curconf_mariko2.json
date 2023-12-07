@@ -1,0 +1,70 @@
+[
+    {
+        "name": "==== GPU Custom Volt Table ====",
+        "state": "filler"
+    },
+    {
+        "name": "",
+        "state": "filler"
+    },
+    {
+        "name": "76.8 - 614.4 MHz",
+        "offset": "92",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "691.2 MHz",
+        "offset": "124",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "768.0 MHz",
+        "offset": "128",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "844.8 MHz",
+        "offset": "132",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "921.6 MHz",
+        "offset": "136",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "998.4 MHz",
+        "offset": "140",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "1075.2 MHz",
+        "offset": "144",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "1152.0 MHz",
+        "offset": "148",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "1228.8 MHz",
+        "offset": "152",
+        "length": "4",
+        "extent": "mV"
+    },
+    {
+        "name": "1267.2 MHz",
+        "offset": "156",
+        "length": "4",
+        "extent": "mV"
+    }
+]
