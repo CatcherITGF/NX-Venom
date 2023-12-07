@@ -4,7 +4,7 @@
 
 ## Technical support
 
-Telegram: [Nintendo Busters](https://t.me/NintendoBusters)
+Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
 Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overclocking)
 
 ## Warning
@@ -66,7 +66,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 * Override Boost Mode: override boost mode frequency with user set values (CPU/GPU)
 * Auto CPU boost: for games without official boost mode, activates when CPU core utilize >= 95%
 
-Main config: `/config/sys-clk/config.ini`
+Main config: `/config/sys-clk/config.ini`  
 Offical documentation: [README for sys-clk-OC](https://github.com/hanai3Bi/Switch-OC-Suite/blob/master/Source/sys-clk-OC/README.md)
 
 ### Status Monitor
@@ -76,14 +76,14 @@ Offical documentation: [README for sys-clk-OC](https://github.com/hanai3Bi/Switc
 - Show Real Volts
 - Replace RAM Total with RAM Load
 
-Main config: `/config/status-monitor/config.ini`
+Main config: `/config/status-monitor/config.ini`  
 Offical documentation: [Configuration file](https://github.com/hanai3Bi/Status-Monitor-Overlay/blob/master/docs/config.md)
 
 ### Fan Curve
 
 The package is a part of the Ultrahand Overlay project which configure and set temperature-related settings for different temperature ranges
 
-Main config: `/atmosphere/config/system_settings.ini`
+Main config: `/atmosphere/config/system_settings.ini`  
 Offical documentation: [Cool Curves](https://github.com/ppkantorski/Ultrahand-Overlay/tree/main/examples/Cool%20Curves)
 
 ### System Video Recorder
@@ -93,7 +93,7 @@ A tool that allows you to change the quality settings of the video recording sys
 - Framerate
 - Bitrate
 
-Main config: `/atmosphere/config/system_settings.ini`
+Main config: `/atmosphere/config/system_settings.ini`  
 
 ### Clear AMS Report Logs
 
@@ -103,32 +103,32 @@ A tool that allows you to clear the logs of the Atmosphere CFW, which tend to ac
 
 Be patient. The installation process may take some time.
 
-- [FPSLocker Patches](https://github.com/masagrator/FPSLocker-Warehouse)
+- [FPSLocker Patches](https://github.com/masagrator/FPSLocker-Warehouse)  
 Configs that allow going above 30 FPS, tweak dynamic resolution frame timing for better performance, etc
-- [MissionControl](https://github.com/ndeadly/MissionControl/releases)
+- [MissionControl](https://github.com/ndeadly/MissionControl/releases)  
 Use controllers from other consoles natively on your Nintendo Switch via Bluetooth. No dongles or other external hardware neccessary
-- [Picofly Firmware](https://github.com/Ansem-SoD/Picofly)
+- [Picofly Firmware](https://github.com/Ansem-SoD/Picofly)  
 Firmware related to the rp2040-zero based chip
-- [nxmp](https://github.com/proconsule/nxmp/releases)
+- [nxmp](https://github.com/proconsule/nxmp/releases)  
 NXMP is a video player for Nintendo Switch based on MPV. NXMP support most popular video format, it support HTTP,FTP,SFTP,Samba,NFS streaming and it also support Enigma2 decoders
-- [ipswitch](https://github.com/3096/ipswitch/releases)
+- [ipswitch](https://github.com/3096/ipswitch/releases)  
 Use text to generate cheats or `.ips` patches to use with Atmosphere
-- [Linkalho](https://github.com/rdmrocha/linkalho/releases)
+- [Linkalho](https://github.com/rdmrocha/linkalho/releases)  
 Linkalho is an homebrew app that will link NNID accounts offline
-- [SysDVR](https://github.com/exelix11/SysDVR/releases)
+- [SysDVR](https://github.com/exelix11/SysDVR/releases)  
 Stream switch games to your PC via USB or network
-- [emuiibo](https://github.com/XorTroll/emuiibo/releases)
+- [emuiibo](https://github.com/XorTroll/emuiibo/releases)  
 Virtual amiibo (amiibo emulation) system for Nintendo Switch
-- [Amiigo](https://github.com/CompSciOrBust/Amiigo/releases)
+- [Amiigo](https://github.com/CompSciOrBust/Amiigo/releases)  
 Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuiibo system module
-- [Studious Pancake](https://github.com/HookedBehemoth/studious-pancake)
-Reboot to hekate configs from `Tesla` menu.
+- [Studious Pancake](https://github.com/HookedBehemoth/studious-pancake/releases)  
+ Reboot to Hekate configs from `Tesla` menu
 
 ## Bootloader
 
-- 4GB
+- 4GB  
 Default Hekate and AMS
-- 8GB
+- 8GB  
 Patched Hekate and AMS with support 8GB RAM modules MGCL/MGCR
 
 ## Philosophy
