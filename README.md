@@ -153,6 +153,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 - [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay)
 - [Sys ftpd light](https://github.com/cathery/sys-ftpd)
 - [DBI](https://github.com/rashevskyv/dbi)
+- [Tinfoil](https://tinfoil.io)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
 - [Lockpick RCM](https://github.com/s1204IT/Lockpick_RCM)
 - [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer)
