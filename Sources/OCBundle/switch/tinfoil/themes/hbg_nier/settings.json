@@ -1,0 +1,56 @@
+{
+	"color": "827E6FFF",
+	"logo": "sdmc:/switch/tinfoil/themes/hbg_nier/logo.png",
+	"background": {
+		"color": "00000000",
+		"image": "sdmc:/switch/tinfoil/themes/hbg_nier/bg.jpg"
+	},
+
+	"selection": {
+		"color": "464236FF",
+		"background": {
+			"color": "B1AC997F"
+		},
+		"border": {
+			"color": "464236FF",
+			"width": 3
+		}
+	},
+	"menu": {
+		"selection": {
+			"color": "464236FF",
+			"background": {
+				"color": "B1AC99FF"
+			},
+			"border": {
+				"color": "FFFFFFFF",
+				"width": 3
+			}
+		},
+		"background": {
+			"color":  "00000000"
+		}
+	},
+	"border": {
+		"color": "00000000",
+		"width": 0
+	},
+	"progressBar": {
+		"color": "AEA995FF",
+		"background": {
+			"color": "464236FF"
+		},
+		"width": 1
+	},
+	"scrollBar": {
+		"color": "464236FF",
+		"background": {
+			"color": "00000000"
+		},
+		"width": 1
+	},
+	"music": {
+		"url": "sdmc:/switch/tinfoil/themes/hbg_nier/nier.mp3",
+		"volume": 50
+	}
+}

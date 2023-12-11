@@ -1,0 +1,51 @@
+{
+	"color": "FFFFFFFF",
+	"logo": "romfs:/images/tinfoil_dark.png",
+	"background": {
+		"color": "0000007F",
+		"image": "sdmc:/switch/tinfoil/themes/LGBTQ1/bg.jpg"
+	},
+	"selection": {
+		"color": "C076F5FF",
+		"background": {
+			"color": "1C2023FF"
+		},
+		"border": {
+			"color": "C076F5FF",
+			"width": 3
+		}
+	},
+	"menu": {
+		"selection": {
+			"color": "FFFFFFFF",
+			"background": {
+				"color": "C076F5FF"
+			},
+			"border": {
+				"color": "C076F5FF",
+				"width": 3
+			}
+		},
+		"background": {
+			"color":  "00808018"
+		}
+	},
+	"border": {
+		"color": "FFFFFFFF",
+		"width": 1
+	},
+	"progressBar": {
+		"color": "a00c4cFF",
+		"background": {
+			"color": "DDDDDDFF"
+		},
+		"width": 1
+	},
+	"scrollBar": {
+		"color": "7d1becFF",
+		"background": {
+			"color": "5C5C5C3F"
+		},
+		"width": 1
+	}
+}
