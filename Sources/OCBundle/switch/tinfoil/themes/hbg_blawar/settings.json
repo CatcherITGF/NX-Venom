@@ -1,0 +1,55 @@
+{
+	"color": "ffcc00FF",
+	"logo": "sdmc:/switch/tinfoil/themes/hbg_blawar/logo.png",
+	"background": {
+		"color": "4b4c4cFF",
+		"image": "sdmc:/switch/tinfoil/themes/hbg_blawar/bg.jpg"
+	},
+	"selection": {
+		"color": "FFFFFFFF",
+		"background": {
+			"color": "4b4c4cFF"
+		},
+		"border": {
+			"color": "FF4040FF",
+			"width": 3
+		}
+	},
+	"menu": {
+		"selection": {
+			"color": "FF4040FF",
+			"background": {
+				"color": "4b4c4cFF"
+			},
+			"border": {
+				"color": "FF4040FF",
+				"width": 3
+			}
+		},
+		"background": {
+			"color":  "7878787F"
+		}
+	},
+	"border": {
+		"color": "FF4040FF",
+		"width": 1
+	},
+	"progressBar": {
+		"color": "d81414FF",
+		"background": {
+			"color": "4b4c4cFF"
+		},
+		"width": 1
+	},
+	"scrollBar": {
+		"color": "d81414FF",
+		"background": {
+			"color": "4b4c4cFF"
+		},
+		"width": 1
+	},
+	"music": {
+		"url": "sdmc:/switch/tinfoil/themes/hbg_blawar/blawar.mp3",
+		"volume": 5
+	}
+}
