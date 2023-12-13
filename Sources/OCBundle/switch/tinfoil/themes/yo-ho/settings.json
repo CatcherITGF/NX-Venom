@@ -1,0 +1,53 @@
+
+{
+	"color": "FFFFFF00",
+	"logo": "sdmc:/switch/tinfoil/themes/yo-ho/logo.png",
+	"background": {
+		"color": "00000000",
+		"image": "sdmc:/switch/tinfoil/themes/yo-ho/bg.png"
+	},
+
+	"selection": {
+		"color": "E0D3E64F",
+		"background": {
+			"color": "0000009F"
+		},
+		"border": {
+			"color": "9893C49F",
+			"width": 3
+		}
+	},
+	"menu": {
+		"selection": {
+			"color": "9893C49F",
+			"background": {
+				"color": "000000FF"
+			},
+			"border": {
+				"color": "FFFFFFFF",
+				"width": 3
+			}
+		},
+		"background": {
+			"color":  "0000002F"
+		}
+	},
+	"border": {
+		"color": "9893C49F",
+		"width": 1
+	},
+	"progressBar": {
+		"color": "9893C49F",
+		"background": {
+			"color": "FFFFFF9F"
+		},
+		"width": 1
+	},
+	"scrollBar": {
+		"color": "9893C49F",
+		"background": {
+			"color": "0000001F"
+		},
+		"width": 1
+	}
+}

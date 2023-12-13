@@ -1,0 +1,56 @@
+{
+	"color": "FFFFFFFF",
+	"logo": "sdmc:/switch/tinfoil/themes/jits.cc.dark/logo.png",
+	"background": {
+		"color": "0000007F",
+		"image": "sdmc:/switch/tinfoil/themes/jits.cc.dark/bg.jpg"
+	},
+
+	"selection": {
+		"color": "FF2333FF",
+		"background": {
+			"color": "000000FF"
+		},
+		"border": {
+			"color": "FF2333FF",
+			"width": 3
+		}
+	},
+	"menu": {
+		"selection": {
+			"color": "FF2333FF",
+			"background": {
+				"color": "000000CF"
+			},
+			"border": {
+				"color": "D14633FF",
+				"width": 3
+			}
+		},
+		"background": {
+			"color":  "00000000"
+		}
+	},
+	"border": {
+		"color": "D14633FF",
+		"width": 1
+	},
+	"progressBar": {
+		"color": "FF2333FF",
+		"background": {
+			"color": "808080FF"
+		},
+		"width": 1
+	},
+	"scrollBar": {
+		"color": "FF2333FF",
+		"background": {
+			"color": "0000003F"
+		},
+		"width": 1
+	},
+	"music": {
+		"url": "sdmc:/switch/tinfoil/themes/jits.cc.dark/music.mp3",
+		"volume": 50
+	}
+}

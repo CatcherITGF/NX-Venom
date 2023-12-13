@@ -1,0 +1,56 @@
+{
+	"color": "000000FF",
+	"logo": "sdmc:/switch/tinfoil/themes/mariaa/logo.png",
+	"background": {
+		"color": "FFFFFF7F",
+		"image": "sdmc:/switch/tinfoil/themes/mariaa/bg.png"
+	},
+
+	"selection": {
+		"color": "A513E4FF",
+		"background": {
+			"color": "FFFFFFFF"
+		},
+		"border": {
+			"color": "A513E4FF",
+			"width": 1
+		}
+	},
+	"menu": {
+		"selection": {
+			"color": "A513E4FF",
+			"background": {
+				"color": "FFFFFFCF"
+			},
+			"border": {
+				"color": "A513E4FF",
+				"width": 3
+			}
+		},
+		"background": {
+			"color":  "FFFAFA7F"
+		}
+	},
+	"border": {
+		"color": "FFEBE6FF",
+		"width": 1
+	},
+	"progressBar": {
+		"color": "A513E4FF",
+		"background": {
+			"color": "FFF0E6FF"
+		},
+		"width": 1
+	},
+	"scrollBar": {
+		"color": "A513E4FF",
+		"background": {
+			"color": "FFFFFF3F"
+		},
+		"width": 1
+	},
+	"music": {
+        "url": "sdmc:/switch/tinfoil/themes/mariaa/awoo.mp3",
+        "volume": 50
+	}	
+}
