@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Don't adjust",
+        "hex": "00000000"
+    },
+    {
+        "name": "550 uV",
+        "hex": "70640800",
+        "color": "Red"
+    },
+    {
+        "name": "555 uV",
+        "hex": "F8770800",
+        "color": "Red"
+    },
+    {
+        "name": "560 uV",
+        "hex": "808B0800",
+        "color": "Red"
+    },
+    {
+        "name": "565 uV",
+        "hex": "089F0800",
+        "color": "Red"
+    },
+    {
+        "name": "570 uV",
+        "hex": "90B20800",
+        "color": "Orange"
+    },
+    {
+        "name": "575 uV",
+        "hex": "18C60800",
+        "color": "Orange"
+    },
+    {
+        "name": "580 uV",
+        "hex": "A0D90800",
+        "color": "Orange"
+    },
+    {
+        "name": "585 uV",
+        "hex": "28ED0800",
+        "color": "Orange"
+    },
+    {
+        "name": "590 uV",
+        "hex": "B0000900",
+        "color": "Orange"
+    },
+    {
+        "name": "595 uV",
+        "hex": "38140900",
+        "color": "Orange"
+    },
+    {
+        "name": "600 uV - Default",
+        "hex": "C0270900"
+    },
+    {
+        "name": "605 uV",
+        "hex": "483B0900"
+    },
+    {
+        "name": "610 uV",
+        "hex": "D04E0900"
+    },
+    {
+        "name": "615 uV",
+        "hex": "58620900"
+    },
+    {
+        "name": "620 uV",
+        "hex": "E0750900"
+    },
+    {
+        "name": "625 uV",
+        "hex": "68890900"
+    },
+    {
+        "name": "630 uV",
+        "hex": "F09C0900"
+    },
+    {
+        "name": "635 uV",
+        "hex": "78B00900"
+    },
+    {
+        "name": "640 uV",
+        "hex": "00C40900"
+    },
+    {
+        "name": "645 uV",
+        "hex": "88D70900"
+    },
+    {
+        "name": "650 uV",
+        "hex": "10EB0900"
+    }
+]

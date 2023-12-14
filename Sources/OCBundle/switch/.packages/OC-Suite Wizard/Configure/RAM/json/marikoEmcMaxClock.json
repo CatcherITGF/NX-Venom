@@ -1,0 +1,67 @@
+[
+    {
+        "name": "1866 MHz - JEDEC",
+        "hex": "10791C00"
+    },
+    {
+        "name": "2133 MHz - JEDEC",
+        "hex": "088C2000"
+    },
+    {
+        "name": "2166 MHz",
+        "hex": "F00C2100"
+    },
+    {
+        "name": "2200 MHz",
+        "hex": "C0912100"
+    },
+    {
+        "name": "2233 MHz",
+        "hex": "A8122200"
+    },
+    {
+        "name": "2266 MHz",
+        "hex": "90932200"
+    },
+    {
+        "name": "2300 MHz",
+        "hex": "60182300"
+    },
+    {
+        "name": "2333 MHz",
+        "hex": "48992300"
+    },
+    {
+        "name": "2366 MHz",
+        "hex": "301A2400"
+    },
+    {
+        "name": "2400 MHz - JEDEC",
+        "hex": "009F2400"
+    },
+    {
+        "name": "2433 MHz",
+        "hex": "E81F2500",
+        "color": "Red"
+    },
+    {
+        "name": "2466 MHz",
+        "hex": "D0A02500",
+        "color": "Red"
+    },
+    {
+        "name": "2500 MHz",
+        "hex": "A0252600",
+        "color": "Red"
+    },
+    {
+        "name": "2533 MHz",
+        "hex": "88A62600",
+        "color": "Red"
+    },
+    {
+        "name": "2566 MHz",
+        "hex": "70272700",
+        "color": "Red"
+    }
+]
