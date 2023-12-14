@@ -4,15 +4,15 @@
         "hex": "00000000"
     },
     {
-        "name": "Level 1 - SLT",
+        "name": "1 - SLT",
         "hex": "01000000"
     },
     {
-        "name": "Level 2 - HiOPT",
+        "name": "2 - HiOPT",
         "hex": "02000000"
     },
     {
-        "name": "Custom Table",
+        "name": "3 - Custom Table",
         "hex": "03000000"
     }
 ]
