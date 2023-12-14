@@ -44,12 +44,14 @@
     {
         "name": "Volt Offset",
         "offset": "28",
-        "length": "1"
+        "length": "1",
+        "extent": "mV"
     },
     {
         "name": "Volt Min",
         "offset": "36",
-        "length": "4"
+        "length": "4",
+        "extent": "mV"
     },
     {
         "name": "",
@@ -84,7 +86,8 @@
     {
         "name": "EMC DVB Shift",
         "offset": "60",
-        "length": "1"
+        "length": "1",
+        "extent": "mV"
     },
     {
         "name": "DRAM Timing",
