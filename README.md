@@ -20,11 +20,11 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 1. Opening the `Tesla` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
 2. Use the `sys-clk-oc` overlay to manage overclocking.
-3. Use the `OC-Suite Configurator` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
+3. Use the `OC-Suite Wizard` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 5. Recommended overclocking parameters for portable mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
-## OC-Suite Configurator
+## OC-Suite Wizard
 
 ### Hardware Requirements
 
@@ -35,7 +35,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 ### Software Requirements
 
-- UltraHand Overlay (included in the OC Bundle)
+- Uberhand Overlay (included in the OC Bundle)
 
 ### Settings
 
@@ -55,7 +55,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
   * EMC DVB Table: SoC voltage automatically gets raised with higher dram clock, shift number raises helps with stability at higher memory clock
   * Timings: timings increase performance, but may affect stability
 
-## System Settings
+## System Tweaks
 
 ### Sys-Clk-OC
 
@@ -77,21 +77,25 @@ Offical documentation: [README for sys-clk-OC](https://github.com/hanai3Bi/Switc
 Main config: `/config/status-monitor/config.ini`  
 Offical documentation: [Configuration file](https://github.com/hanai3Bi/Status-Monitor-Overlay/blob/master/docs/config.md)
 
-### Fan Curve
+### Fan Tuning
 
-The package is a part of the Ultrahand Overlay project which configure and set temperature-related settings for different temperature ranges
+The package is a part of the Uberhand Overlay project which configure and set temperature-related settings for different temperature ranges
 
 Main config: `/atmosphere/config/system_settings.ini`  
-Offical documentation: [Cool Curves](https://github.com/ppkantorski/Ultrahand-Overlay/tree/main/examples/Cool%20Curves)
 
-### System Video Recorder
+### Vedio Capture
 
 A tool that allows you to change the quality settings of the video recording system function
 
-- Framerate
+- FPS
 - Bitrate
+- Framerate
 
 Main config: `/atmosphere/config/system_settings.ini`  
+
+### Background Services
+
+A tool that allows you to disable system background processes
 
 ### Clear AMS Report Logs
 
@@ -149,7 +153,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 - [FPSLocker](https://github.com/masagrator/FPSLocker)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [InfoNX](https://github.com/renA21/InfoNX)
-- [Ultrahand](https://github.com/ppkantorski/Ultrahand-Overlay)
+- [Uberhand-Overlay](https://github.com/efosamark/Uberhand-Overlay)
 - [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay)
 - [Sys ftpd light](https://github.com/cathery/sys-ftpd)
 - [DBI](https://github.com/rashevskyv/dbi)
@@ -161,4 +165,6 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 ## Credits
 
-Special thanks to meha, b0rd2dEAth, redraz, b3711, lineon, Ruslan, MasaGratoR, CtC, discord community `NSwitch 60FPS Cheats & Mods` and `RetroNX` for implementing individual components and help with this bundle
+Special thanks to meha, b0rd2dEAth, redraz, b3711, lineon, Ruslan, MasaGratoR, CtC, Efosamark, i3sey, Irene, khmm12, discord community `NSwitch 60FPS Cheats & Mods` and `RetroNX` for implementing individual components and help with this bundle
+
+Made with ❤️ by Catcher in the grain field
