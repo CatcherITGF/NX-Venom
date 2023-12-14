@@ -36,6 +36,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 ### Software Requirements
 
 - Uberhand Overlay (included in the OC Bundle)
+- OC-Suite official loader.kip (included in the OC Bundle)
 
 ### Settings
 
