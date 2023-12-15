@@ -4,8 +4,20 @@
         "hex": "10791C00"
     },
     {
+        "name": "1933 MHz",
+        "hex": "C87E1D00"
+    },
+    {
         "name": "1966 MHz",
         "hex": "B0FF1D00"
+    },
+    {
+        "name": "2033 MHz",
+        "hex": "68051F00"
+    },
+    {
+        "name": "2066 MHz",
+        "hex": "50861F00"
     },
     {
         "name": "2133 MHz - JEDEC",
