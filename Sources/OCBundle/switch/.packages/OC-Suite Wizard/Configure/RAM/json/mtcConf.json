@@ -1,14 +1,14 @@
 [
-    {
-        "name": "AUTO_ADJ_ALL",
-        "hex": "00000000"
-    },
-    {
-        "name": "CUSTOM_ADJ_ALL",
-        "hex": "01000000"
-    },
-    {
-        "name": "NO_ADJ_ALL",
-        "hex": "02000000"
-    }
+  {
+    "name": "AUTO_ADJ_ALL",
+    "dec": "0"
+  },
+  {
+    "name": "CUSTOM_ADJ_ALL",
+    "dec": "1"
+  },
+  {
+    "name": "NO_ADJ_ALL",
+    "dec": "2"
+  }
 ]

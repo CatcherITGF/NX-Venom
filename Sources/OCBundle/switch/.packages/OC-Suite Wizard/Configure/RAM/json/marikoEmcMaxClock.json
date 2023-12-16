@@ -1,83 +1,83 @@
 [
-    {
-        "name": "1866 MHz - JEDEC",
-        "hex": "10791C00"
-    },
-    {
-        "name": "1933 MHz",
-        "hex": "C87E1D00"
-    },
-    {
-        "name": "1966 MHz",
-        "hex": "B0FF1D00"
-    },
-    {
-        "name": "2033 MHz",
-        "hex": "68051F00"
-    },
-    {
-        "name": "2066 MHz",
-        "hex": "50861F00"
-    },
-    {
-        "name": "2133 MHz - JEDEC",
-        "hex": "088C2000"
-    },
-    {
-        "name": "2166 MHz",
-        "hex": "F00C2100"
-    },
-    {
-        "name": "2200 MHz",
-        "hex": "C0912100"
-    },
-    {
-        "name": "2233 MHz",
-        "hex": "A8122200"
-    },
-    {
-        "name": "2266 MHz",
-        "hex": "90932200"
-    },
-    {
-        "name": "2300 MHz",
-        "hex": "60182300"
-    },
-    {
-        "name": "2333 MHz",
-        "hex": "48992300"
-    },
-    {
-        "name": "2366 MHz",
-        "hex": "301A2400"
-    },
-    {
-        "name": "2400 MHz - JEDEC",
-        "hex": "009F2400"
-    },
-    {
-        "name": "2433 MHz",
-        "hex": "E81F2500",
-        "color": "Red"
-    },
-    {
-        "name": "2466 MHz",
-        "hex": "D0A02500",
-        "color": "Red"
-    },
-    {
-        "name": "2500 MHz",
-        "hex": "A0252600",
-        "color": "Red"
-    },
-    {
-        "name": "2533 MHz",
-        "hex": "88A62600",
-        "color": "Red"
-    },
-    {
-        "name": "2566 MHz",
-        "hex": "70272700",
-        "color": "Red"
-    }
+  {
+    "name": "1866 MHz - JEDEC",
+    "dec": "1866000"
+  },
+  {
+    "name": "1933 MHz",
+    "dec": "1933000"
+  },
+  {
+    "name": "1966 MHz",
+    "dec": "1966000"
+  },
+  {
+    "name": "2033 MHz",
+    "dec": "2033000"
+  },
+  {
+    "name": "2066 MHz",
+    "dec": "2066000"
+  },
+  {
+    "name": "2133 MHz - JEDEC",
+    "dec": "2133000"
+  },
+  {
+    "name": "2166 MHz",
+    "dec": "2166000"
+  },
+  {
+    "name": "2200 MHz",
+    "dec": "2200000"
+  },
+  {
+    "name": "2233 MHz",
+    "dec": "2233000"
+  },
+  {
+    "name": "2266 MHz",
+    "dec": "2266000"
+  },
+  {
+    "name": "2300 MHz",
+    "dec": "2300000"
+  },
+  {
+    "name": "2333 MHz",
+    "dec": "2333000"
+  },
+  {
+    "name": "2366 MHz",
+    "dec": "2366000"
+  },
+  {
+    "name": "2400 MHz - JEDEC",
+    "dec": "2400000"
+  },
+  {
+    "name": "2433 MHz",
+    "dec": "2433000",
+    "color": "Orange"
+  },
+  {
+    "name": "2466 MHz",
+    "dec": "2466000",
+    "color": "Orange"
+  },
+  {
+    "name": "2500 MHz",
+    "dec": "2500000",
+    "color": "Red"
+  },
+  {
+    "name": "2533 MHz",
+    "dec": "2533000",
+    "color": "Red"
+  },
+  {
+    "name": "2566 MHz",
+    "dec": "2566000",
+    "color": "Red"
+  }
 ]
