@@ -1,102 +1,101 @@
 [
-    {
-        "name": "========= CPU =========",
-        "state": "filler"
-    },
-    {
-        "name": "",
-        "state": "filler"
-    },
-    {
-        "name": "Undervolt Level",
-        "offset": "12",
-        "length": "1"
-    },
-    {
-        "name": "Volt Max",
-        "offset": "20",
-        "length": "4",
-        "extent": "mV"
-    },
-    {
-        "name": "Boost Clock",
-        "offset": "8",
-        "length": "4",
-        "extent": "MHz"
-    },
-    {
-        "name": "",
-        "state": "filler"
-    },
-    {
-        "name": "========= GPU =========",
-        "state": "filler"
-    },
-    {
-        "name": "",
-        "state": "filler"
-    },
-    {
-        "name": "Undervolt Level",
-        "offset": "24",
-        "length": "1"
-    },
-    {
-        "name": "Volt Offset",
-        "offset": "28",
-        "length": "1",
-        "extent": "mV"
-    },
-    {
-        "name": "Volt Min",
-        "offset": "36",
-        "length": "4",
-        "extent": "mV"
-    },
-    {
-        "name": "",
-        "state": "filler"
-    },
-    {
-        "name": "========= RAM =========",
-        "state": "filler"
-    },
-    {
-        "name": "",
-        "state": "filler"
-    },
-    {
-        "name": "Clock Max MHz",
-        "offset": "56",
-        "length": "4",
-        "extent": "MHz"
-    },
-    {
-        "name": "EMC Vdd2",
-        "offset": "44",
-        "length": "4",
-        "extent": "uV"
-    },
-    {
-        "name": "EMC Vddq",
-        "offset": "48",
-        "length": "3",
-        "extent": "uV"
-    },
-    {
-        "name": "EMC DVB Shift",
-        "offset": "60",
-        "length": "1",
-        "extent": "mV"
-    },
-    {
-        "name": "DRAM Timing",
-        "offset": "40",
-        "length": "1"
-    },
-    {
-        "name": "Timings",
-        "offset": "64,68,72,76,80,84,88",
-        "length": "1"
-    }
+  {
+    "name": "========= CPU =========",
+    "state": "filler"
+  },
+  {
+    "name": "",
+    "state": "filler"
+  },
+  {
+    "name": "Undervolt Level",
+    "offset": "12",
+    "length": "1"
+  },
+  {
+    "name": "Volt Max",
+    "offset": "20",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "Boost Clock",
+    "offset": "8",
+    "length": "4",
+    "extent": " MHz"
+  },
+  {
+    "name": "",
+    "state": "filler"
+  },
+  {
+    "name": "========= GPU =========",
+    "state": "filler"
+  },
+  {
+    "name": "",
+    "state": "filler"
+  },
+  {
+    "name": "Undervolt Level",
+    "offset": "24",
+    "length": "1"
+  },
+  {
+    "name": "Volt Offset",
+    "offset": "28",
+    "length": "1",
+    "extent": " mV"
+  },
+  {
+    "name": "Volt Min",
+    "offset": "36",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "",
+    "state": "filler"
+  },
+  {
+    "name": "========= RAM =========",
+    "state": "filler"
+  },
+  {
+    "name": "",
+    "state": "filler"
+  },
+  {
+    "name": "Clock Max MHz",
+    "offset": "56",
+    "length": "4",
+    "extent": " MHz"
+  },
+  {
+    "name": "EMC Vdd2",
+    "offset": "44",
+    "length": "4",
+    "extent": " uV"
+  },
+  {
+    "name": "EMC Vddq",
+    "offset": "48",
+    "length": "3",
+    "extent": " uV"
+  },
+  {
+    "name": "EMC DVB Shift",
+    "offset": "60",
+    "length": "1"
+  },
+  {
+    "name": "DRAM Timing",
+    "offset": "40",
+    "length": "1"
+  },
+  {
+    "name": "Timings",
+    "offset": "64,68,72,76,80,84,88",
+    "length": "1"
+  }
 ]
