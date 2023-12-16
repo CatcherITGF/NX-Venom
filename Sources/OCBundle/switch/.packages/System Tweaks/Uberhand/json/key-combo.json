@@ -1,14 +1,26 @@
 [
   {
-    "name": "L+Down+RStick",
-    "hex": "L+DDOWN+RSTICK"
+    "name": "ZL+ZR+Down",
+    "value": "ZL+ZR+DDOWN"
+  },
+  {
+    "name": "ZL+ZR+Up",
+    "value": "ZL+ZR+DUP"
+  },
+  {
+    "name": "L+R+Down",
+    "value": "ZL+ZR+DDOWN"
+  },
+  {
+    "name": "L+R+Up",
+    "value": "ZL+ZR+DUP"
   },
   {
     "name": "Plus+Minus",
-    "hex": "PLUS+MINUS"
+    "value": "PLUS+MINUS"
   },
   {
-    "name": "ZL+ZR+Down",
-    "hex": "ZL+ZR+DDOWN"
+    "name": "L+Down+RStick",
+    "value": "L+DDOWN+RSTICK"
   }
 ]

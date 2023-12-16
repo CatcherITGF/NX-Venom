@@ -1,10 +1,10 @@
 [
   {
     "name": "Off",
-    "hex": "0"
+    "value": "0"
   },
   {
     "name": "On",
-    "hex": "1"
+    "value": "1"
   }
 ]

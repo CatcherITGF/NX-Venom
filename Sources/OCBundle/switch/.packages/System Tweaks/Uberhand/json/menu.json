@@ -1,10 +1,10 @@
 [
   {
     "name": "Overlays",
-    "hex": "overlays"
+    "value": "overlays"
   },
   {
     "name": "Packages",
-    "hex": "packages"
+    "value": "packages"
   }
 ]
