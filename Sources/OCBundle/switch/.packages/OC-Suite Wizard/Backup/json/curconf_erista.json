@@ -56,7 +56,7 @@
     "state": "filler"
   },
   {
-    "name": "Clock Max MHz",
+    "name": "Clock Max",
     "offset": "52",
     "length": "4",
     "extent": " MHz"
