@@ -1,10 +1,10 @@
 [
-    {
-        "name":"Off",
-        "hex": "false"
-    },
-    {
-        "name":"On",
-        "hex":"true"
-    }
+  {
+    "name": "Off",
+    "hex": "false"
+  },
+  {
+    "name": "On",
+    "hex": "true"
+  }
 ]

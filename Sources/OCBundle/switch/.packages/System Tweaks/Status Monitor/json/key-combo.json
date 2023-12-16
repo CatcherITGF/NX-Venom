@@ -1,14 +1,14 @@
 [
-    {
-        "name":"L+Down+RStick",
-        "hex": "L+DDOWN+RSTICK"
-    },
-    {
-        "name":"Plus+Minus",
-        "hex":"PLUS+MINUS"
-    },
-    {
-        "name":"ZL+ZR+Down",
-        "hex":"ZL+ZR+DDOWN"
-    }
+  {
+    "name": "L+Down+RStick",
+    "hex": "L+DDOWN+RSTICK"
+  },
+  {
+    "name": "Plus+Minus",
+    "hex": "PLUS+MINUS"
+  },
+  {
+    "name": "ZL+ZR+Down",
+    "hex": "ZL+ZR+DDOWN"
+  }
 ]
