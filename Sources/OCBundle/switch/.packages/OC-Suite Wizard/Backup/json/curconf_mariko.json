@@ -45,6 +45,7 @@
     "name": "Volt Offset",
     "offset": "28",
     "length": "1",
+    "prefix": "-",
     "extent": " mV"
   },
   {
