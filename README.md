@@ -127,13 +127,6 @@ Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuii
 - [Studious Pancake](https://github.com/HookedBehemoth/studious-pancake/releases)  
  Reboot to Hekate configs from `Tesla` menu
 
-## Bootloader
-
-- 4GB  
-Default Hekate and AMS
-- 8GB  
-Patched Hekate and AMS with support 8GB RAM modules MGCL/MGCR
-
 ## Philosophy
 
 The rule by which you need to be guided using console overclocking is the absence of side effects. The console should work without atmosphere errors, game crashes, shutdown due to overheating. Having achieved this result, you get a stable console, high performance in games and balanced power consumption.
