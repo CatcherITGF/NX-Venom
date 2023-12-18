@@ -96,7 +96,7 @@ Offical documentation: [Configuration file](https://github.com/hanai3Bi/Status-M
 
 ### MemToolkitNX
 
-Threads switcher for MemToolkitNX. Don't forget switch to the default after use 4 thread setting
+Threads switcher for MemToolkitNX. Don't forget switch to the default after use 4 threads setting
 
 * 3 Threads - Default
 * 4 Threads
