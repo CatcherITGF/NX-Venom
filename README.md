@@ -148,7 +148,9 @@ Virtual amiibo (amiibo emulation) system for Nintendo Switch
 - [Amiigo](https://github.com/CompSciOrBust/Amiigo/releases)  
 Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuiibo system module
 - [Studious Pancake](https://github.com/HookedBehemoth/studious-pancake/releases)  
- Reboot to Hekate configs from `Tesla` menu
+Reboot to Hekate configs from `Tesla` menu
+- [JKSV](https://github.com/J-D-K/JKSV/releases)  
+JK's save manager
 
 ## Philosophy
 
