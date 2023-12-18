@@ -113,7 +113,7 @@ A tool that allows you to change the quality settings of the video recording sys
 
 - FPS
 - Bitrate
-- Framerate
+- Key Frame Count
 
 Main config: `/atmosphere/config/system_settings.ini`  
 
