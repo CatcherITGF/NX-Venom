@@ -82,6 +82,8 @@ Offical documentation: [README for sys-clk-OC](https://github.com/hanai3Bi/Switc
 
 ### Status Monitor
 
+Preferences for the [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (hanai3Bi fork) overlay
+
 - Key Combo
 - Show Real Freqs
 - Show Real Volts
