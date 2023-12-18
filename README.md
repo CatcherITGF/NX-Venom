@@ -60,8 +60,6 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 ### Uberhand
 
-Preferences for the [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (hanai3Bi fork) overlay
-
 Preferences for the [Uberhand overlay](https://github.com/efosamark/Uberhand-Overlay)
 
 * Key Combo
