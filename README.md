@@ -58,7 +58,21 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 ## System Tweaks
 
+### Uberhand
+
+Preferences for the [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (hanai3Bi fork) overlay
+
+Preferences for the [Uberhand overlay](https://github.com/efosamark/Uberhand-Overlay)
+
+* Key Combo
+* Default Menu
+* Show Overlays Versions
+* Show Packages Versions
+* Show Items Separator
+
 ### Sys-Clk-OC
+
+Preferences for the switch sysmodule [Sys-Clk-OC](https://github.com/hanai3Bi/Switch-OC-Suite)
 
 * Allow Unsafe Freqs: allow unsafe frequencies (CPU > 1963.5 MHz, GPU > 921.6 MHz)
 * Remove Clocks Capping: remove CPU/GPU clock cappings
@@ -77,6 +91,13 @@ Offical documentation: [README for sys-clk-OC](https://github.com/hanai3Bi/Switc
 
 Main config: `/config/status-monitor/config.ini`  
 Offical documentation: [Configuration file](https://github.com/hanai3Bi/Status-Monitor-Overlay/blob/master/docs/config.md)
+
+### MemToolkitNX
+
+Threads switcher for MemToolkitNX. Don't forget switch to the default after use 4 thread setting
+
+* 3 Threads - Default
+* 4 Threads
 
 ### Fan Tuning
 
