@@ -68,6 +68,8 @@ Preferences for the [Uberhand overlay](https://github.com/efosamark/Uberhand-Ove
 * Show Packages Versions
 * Show Items Separator
 
+Main config: `/config/config/uberhand/config.ini`  
+
 ### Sys-Clk-OC
 
 Preferences for the switch sysmodule [Sys-Clk-OC](https://github.com/hanai3Bi/Switch-OC-Suite)
