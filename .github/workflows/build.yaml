@@ -19,11 +19,11 @@ jobs:
         uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
       - name: Fix attributes
         working-directory: ./Sources
-        uses: chflags -R arch .
+        run: chflags -R arch .
       - name: "Compile OCBundle"
         working-directory: ./Sources/OCBundle
         run: zip -qqrX ../../OCBundle.zip ./
-      - name: "Bundle AIO"
+      - name: "Compile AIO"
         working-directory: ./Sources/AIO
         run: zip -qqrX ../../AIO.zip ./
       - name: "Compile OC-Suite Wizard"
@@ -31,5 +31,5 @@ jobs:
         run: zip -qqrX "../../OC-Suite Wizard.zip" "./switch/.packages/OC-Suite Wizard" ./switch/.overlays/ovlmenu.ovl
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "build: the recent bundle"
+          commit_message: "Build: Compile Bundle"
           file_pattern: "*.zip"
