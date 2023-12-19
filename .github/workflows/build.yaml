@@ -1,0 +1,32 @@
+name: build
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # It's needed for git-restore-mtime
+      - name: Reset directories timestamp # Workaround for https://github.com/MestreLion/git-tools/issues/47
+        run: find . -not -path '*/.*' -type d -exec touch -t 197001010000 {} \;
+      - name: Restore files timestamp
+        uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
+      - name: "Bundle OCBundle"
+        working-directory: ./Sources/OCBundle
+        run: zip -qqrX ../../OCBundle.zip ./
+      - name: "Bundle AIO"
+        working-directory: ./Sources/AIO
+        run: zip -qqrX ../../AIO.zip ./
+      - name: "Bundle OC-Suite Configurator"
+        working-directory: ./Sources/OCBundle
+        run: zip -qqrX "../../OC-Suite Configurator.zip" "./switch/.packages/OC-Suite Configurator" ./switch/.overlays/ovlmenu.ovl
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "build: the recent bundle"
+          file_pattern: "*.zip"
