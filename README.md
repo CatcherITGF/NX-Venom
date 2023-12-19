@@ -107,7 +107,7 @@ The package is a part of the Uberhand Overlay project which configure and set te
 
 Main config: `/atmosphere/config/system_settings.ini`  
 
-### Vedeo Capture
+### Video Capture
 
 A tool that allows you to change the quality settings of the video recording system function
 
