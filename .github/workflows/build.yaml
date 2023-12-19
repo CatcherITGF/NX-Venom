@@ -14,11 +14,11 @@ jobs:
         with:
           fetch-depth: 0 # It's needed for git-restore-mtime
       - name: Reset directories timestamp # Workaround for https://github.com/MestreLion/git-tools/issues/47
-        run: find . -not -path '*/.*' -type d -exec touch -t 197001010000 {} \;
+        run: find . -mindepth 1 -type d -not -iwholename '*.git*' -exec touch -t 197001010000 {} \;
       - name: Restore files timestamp
         uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
-      - name: Setup upterm session
-        uses: lhotari/action-upterm@v1
+      # - name: Setup upterm session
+      #   uses: lhotari/action-upterm@v1
       - name: "Compile OCBundle"
         working-directory: ./Sources/OCBundle
         run: zip -qqrX ../../OCBundle.zip ./
