@@ -17,15 +17,18 @@ jobs:
         run: find . -not -path '*/.*' -type d -exec touch -t 197001010000 {} \;
       - name: Restore files timestamp
         uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
-      - name: "Bundle OCBundle"
+      - name: Fix attributes
+        working-directory: ./Sources
+        uses: chflags -R arch .
+      - name: "Compile OCBundle"
         working-directory: ./Sources/OCBundle
         run: zip -qqrX ../../OCBundle.zip ./
       - name: "Bundle AIO"
         working-directory: ./Sources/AIO
         run: zip -qqrX ../../AIO.zip ./
-      - name: "Bundle OC-Suite Configurator"
+      - name: "Compile OC-Suite Wizard"
         working-directory: ./Sources/OCBundle
-        run: zip -qqrX "../../OC-Suite Configurator.zip" "./switch/.packages/OC-Suite Configurator" ./switch/.overlays/ovlmenu.ovl
+        run: zip -qqrX "../../OC-Suite Wizard.zip" "./switch/.packages/OC-Suite Wizard" ./switch/.overlays/ovlmenu.ovl
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "build: the recent bundle"
