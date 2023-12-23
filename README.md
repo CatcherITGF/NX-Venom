@@ -7,7 +7,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
 
 ## Warning
 
-**ATTENTION! Overclocking the console does not lead to irreversible consequences, however, it poses a risk to data due to the features of Horizon OS. Therefore, it is strongly recommended to use overclocking exclusively in emuMMC and make backups. USE AT YOUR OWN RISK!**
+**ATTENTION! Overclocking the console does not lead to irreversible consequences, however it poses a risk to data due to the features of Horizon OS. Therefore, it is strongly recommended to use overclocking exclusively in emuMMC and make backups. USE AT YOUR OWN RISK!**
 
 ## Installation
 
@@ -143,6 +143,8 @@ Use text to generate cheats or `.ips` patches to use with Atmosphere
 Linkalho is an homebrew app that will link NNID accounts offline
 - [SysDVR](https://github.com/exelix11/SysDVR/releases)  
 Stream switch games to your PC via USB or network
+- [dvr-patches](https://github.com/exelix11/dvr-patches/releases)  
+System patches to stream most switch games with SysDVR
 - [emuiibo](https://github.com/XorTroll/emuiibo/releases)  
 Virtual amiibo (amiibo emulation) system for Nintendo Switch
 - [Amiigo](https://github.com/CompSciOrBust/Amiigo/releases)  
@@ -151,6 +153,10 @@ Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuii
 Reboot to Hekate configs from `Tesla` menu
 - [JKSV](https://github.com/J-D-K/JKSV/releases)  
 JK's save manager
+- [sys-ftpd](https://github.com/cathery/sys-ftpd/releases)  
+Nintendo Switch FTP server as a background service
+- [QuickNTP](https://github.com/nedex/QuickNTP/releases)  
+A Tesla plugin for Nintendo Switch to sync time with NTP servers
 
 ## Philosophy
 
