@@ -1,3 +1,1 @@
-System default: 1785 MHz
-
 Boost clock will be applied when applications request Boost Mode via performance configuration
