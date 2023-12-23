@@ -53,7 +53,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #ov
   * Max Clock: memory frequency, recommended parameters range `2133` - `2400` for Mariko and `1862 - 2131` for Erista
   * Vdd2: supply voltage for the input buffers and core logic of a memory chip
   * Vddq: supply voltage to the output buffers of a memory chip (Marico only)
-  * EMC DVB Table: SoC voltage automatically gets raised with higher dram clock, shift number raises helps with stability at higher memory clock
+  * EMC DVB Shift: SoC voltage automatically gets raised with higher dram clock, shift number helps with stability at higher memory clock
   * Timings: timings increase performance, but may affect stability
 
 ## System Tweaks
