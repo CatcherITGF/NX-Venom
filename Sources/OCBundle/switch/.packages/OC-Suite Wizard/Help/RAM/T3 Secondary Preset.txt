@@ -1,0 +1,12 @@
+WARNING: Unstable timings can corrupt your nand
+
+Secondary Timing Preset for both AUTO_ADJ and CUSTOM_ADJ
+Values are: tWR - tRTP
+
+0: Do Not Adjust (with CUST_ADJ at 2400Mhz, timing becomes: ?? - 5) (CUST_ADJ only)
+1: 18 - 7.5 (Default timing)
+2: 15 - 7.5
+3: 15 - 6
+4: 12 - 6
+5: 12 - 4
+6: 8 - 4

@@ -1,0 +1,7 @@
+The EMC DVB Shift is responsible for managing memory voltage offsets, with a significant impact on power consumption, especially on the memory controller
+
+SoC voltage automatically gets raised with higher dram clock
+
+Each shift number raises 25mV more, up to max SoC voltage
+
+Helps with stability at higher memory clock

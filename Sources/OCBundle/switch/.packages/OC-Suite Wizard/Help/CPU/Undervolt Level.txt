@@ -1,0 +1,7 @@
+Reduce CPU power draw
+
+0 : Default Table
+1 : Undervolt Level 1 (SLT - CPU speedo < 1650)
+2 : Undervolt Level 1 (SLT - CPU speedo >= 1650)
+3 : Undervolt Level 2 (OCT - OCS custom undervolt)
+4 : Undervolt Level 3 (HiOCT - OCS custom undervolt)
