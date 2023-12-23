@@ -1,0 +1,1 @@
+Firmware related to the rp2040-zero based chip

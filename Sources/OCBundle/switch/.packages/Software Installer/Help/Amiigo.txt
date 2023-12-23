@@ -1,0 +1,1 @@
+Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuiibo system module
