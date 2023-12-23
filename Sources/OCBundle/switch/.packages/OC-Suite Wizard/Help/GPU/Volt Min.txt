@@ -1,0 +1,6 @@
+GPU Vmin
+
+High EMC Clocks will require gpu minimum voltage to be raised
+
+Default gpu vmin: 610mV
+SLT and HiOPT tabels uses 590mV as minimum voltage

@@ -1,0 +1,5 @@
+0: AUTO_ADJ_ALL: auto adjust mtc table with LPDDR4 3733 Mbps specs, 8Gb density
+
+1: CUSTOM_ADJ_ALL: adjust only non-zero preset timings
+
+2: NO_ADJ_ALL: use 1600 mtc table wihout adjusting (timing becomes tighter if you raise dram clock)

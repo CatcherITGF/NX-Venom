@@ -1,0 +1,10 @@
+RAM MHz measures your console's memory speed
+
+Actual dram clock is exactly same as this value
+
+Spread Spectrum is enabled for frequencies in range of (2366, 2500) to mitigate EMI with wifi
+
+Recommended Clocks for Mariko: 1866, 2133, 2400
+Recommended Clocks for Erista: 1862, 1996, 2131
+
+WARNING: RAM overclock could be UNSTABLE if timing parameters are not suitable for your DRAM

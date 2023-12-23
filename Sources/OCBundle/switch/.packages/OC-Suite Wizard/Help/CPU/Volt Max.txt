@@ -1,0 +1,5 @@
+System default: 1120
+
+Acceptable range: 1120 ≤ x ≤ 1300
+
+Changing this value affects cpu voltage calculation
