@@ -1,0 +1,3 @@
+A tool that allows you to disable system background processes
+
+Do not forget to turn on if you want use the online mode in semi-stock (CFW (SysNAND))
