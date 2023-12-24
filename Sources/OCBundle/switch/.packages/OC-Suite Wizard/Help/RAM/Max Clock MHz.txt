@@ -1,6 +1,7 @@
 RAM MHz measures your console's memory speed
 
-Actual dram clock is exactly same as this value
+Actual dram clock is exactly same as this value for Mariko
+Actual dram clock might be different from this value for Erista
 
 Spread Spectrum is enabled for frequencies in range of (2366, 2500) to mitigate EMI with wifi
 
