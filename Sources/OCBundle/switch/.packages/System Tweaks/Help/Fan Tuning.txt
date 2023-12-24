@@ -1,0 +1,1 @@
+The package is a part of the Uberhand Overlay project which configure and set temperature-related settings for different temperature ranges
