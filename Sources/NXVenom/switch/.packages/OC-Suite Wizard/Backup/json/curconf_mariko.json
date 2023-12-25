@@ -76,13 +76,13 @@
     "name": "EMC Vdd2",
     "offset": "44",
     "length": "4",
-    "extent": " uV"
+    "extent": " mV"
   },
   {
     "name": "EMC Vddq",
     "offset": "48",
     "length": "3",
-    "extent": " uV"
+    "extent": " mV"
   },
   {
     "name": "EMC DVB Shift",
