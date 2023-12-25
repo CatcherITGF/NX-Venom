@@ -1,8 +1,8 @@
 {
-    "ams": {
-        "OC Bundle": "https://github.com/snupt/NS-Overclocking/raw/main/OCBundle.zip"
-    },
-    "misc": {
-        "Refresh": "https://github.com/snupt/NS-Overclocking/raw/main/AIO.zip"
-    }
+  "ams": {
+    "NX Venom": "https://github.com/CatcherITGF/NX-Venom/raw/main/NXVenom.zip"
+  },
+  "misc": {
+    "Refresh": "https://github.com/CatcherITGF/NS-Overclocking/raw/main/AIO.zip"
+  }
 }
