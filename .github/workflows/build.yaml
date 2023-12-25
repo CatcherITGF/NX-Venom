@@ -19,6 +19,9 @@ jobs:
         uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
       # - name: Setup upterm session
       #   uses: lhotari/action-upterm@v1
+      - name: "Compile OCBundle (legacy)"
+        working-directory: ./Sources/NXVenom
+        run: zip -qqrX ../../OCBundle.zip ./
       - name: "Compile NXVenom"
         working-directory: ./Sources/NXVenom
         run: zip -qqrX ../../NXVenom.zip ./
