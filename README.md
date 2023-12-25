@@ -1,5 +1,7 @@
 # NX Venom
 
+![Banner](banner.jpg)
+
 ## Community & support
 
 Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
