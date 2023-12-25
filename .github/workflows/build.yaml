@@ -19,14 +19,14 @@ jobs:
         uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
       # - name: Setup upterm session
       #   uses: lhotari/action-upterm@v1
-      - name: "Compile OCBundle"
-        working-directory: ./Sources/OCBundle
-        run: zip -qqrX ../../OCBundle.zip ./
+      - name: "Compile NXVenom"
+        working-directory: ./Sources/NXVenom
+        run: zip -qqrX ../../NXVenom.zip ./
       - name: "Compile AIO"
         working-directory: ./Sources/AIO
         run: zip -qqrX ../../AIO.zip ./
       - name: "Compile OC-Suite Wizard"
-        working-directory: ./Sources/OCBundle
+        working-directory: ./Sources/NXVenom
         run: zip -qqrX "../../OC-Suite Wizard.zip" "./switch/.packages/OC-Suite Wizard" ./switch/.overlays/ovlmenu.ovl
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
