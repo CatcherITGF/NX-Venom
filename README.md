@@ -5,7 +5,7 @@
 ## Community & support
 
 Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
-Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overclocking)
+Discord: [NSwitch 60FPS Cheats & Mods](https://discord.gg/v9FDZ87w) (channel #overclocking)
 
 ## Warning
 
@@ -168,7 +168,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 - If there are problems after installation, try to fix the attributes: `Hekate` → `Tools` → `Arch Bit`
 - When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`, the answer to "Do you want also download hekate" is `NO`
-- For questions, help, wishes and suggestions, feel free to contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.gg/UZZbScp2) (channel #overlocking).
+- For questions, help, wishes and suggestions, feel free to contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.gg/v9FDZ87w) (channel #overlocking).
 
 ## Content
 
