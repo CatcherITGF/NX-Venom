@@ -75,16 +75,29 @@ gpu_dvfs_table_2 = [
 
 gpu_freq_table = [76800, 153600, 230400, 307200, 384000, 460800, 537600, 614400, 691200, 768000, 844800, 921600, 998400, 1075200, 1152000, 1228800, 1267200]
 
-temp_list = [20, 30, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90]
+temp_list = [-25, 20, 30, 50, 70, 90]
 
-def round_closest(value, scale):
+def div_round_closest(value, scale):
     if (value > 0):
         return (((value) + ((scale) / 2)) / (scale))
     else:
         return (((value) - ((scale) / 2)) / (scale))
 
 def round5(number):
-    return int(math.ceil(number / 5.0)) * 5
+    return math.ceil(number / 5000) * 5000
+    
+def tegra_get_cvb_voltage(speedo: int, s_scale: int, cvb: list[int]):
+    mv = div_round_closest(cvb[2] * speedo, s_scale)
+    mv = div_round_closest((mv + cvb[1]) * speedo, s_scale) + cvb[0]
+    return mv
+    
+def tegra_get_cvb_t_voltage(speedo: int, s_scale: int, t_scale: int, t: int, cvb: list[int]):
+    mv = div_round_closest(cvb[3] * speedo, s_scale) + cvb[4] + div_round_closest(cvb[5] * t, t_scale)
+    mv = div_round_closest(mv * t, t_scale)
+    return mv
+    
+def tegra_round_cvb_voltage(mv: int, v_scale: int):
+    return 0
 
 speedo = int(input("Enter gpu speedo: ")) 
 
@@ -102,28 +115,46 @@ for i in range(17):
     
 print("\t\t", end="")
 
-for temp in temp_list:
-    print(temp, "°C\t", end="")
-print()
-
 for entry in range(17):
-    print(float(gpu_freq_table[entry]/1000),end="")
-    print("\t\t", end="")
-
-    mv = round_closest(gpu_dvfs_table[entry][2] * speedo , 100)
-    mv = round_closest( (mv + gpu_dvfs_table[entry][1]) * speedo , 100) + gpu_dvfs_table[entry][0]
-    #mv = round5(mv/1000)
+    print(int(gpu_freq_table[entry]/1000), "\t", end="")
+print()
     
-    for temp in temp_list:
-        mvt = round_closest(gpu_dvfs_table[entry][3] * speedo , 100) + gpu_dvfs_table[entry][4] + round_closest(gpu_dvfs_table[entry][5] * temp , 10)
-        mvt = round_closest(mvt * temp , 10)
-        #mvt = round5(mvt/1000)
-        final_volt = math.ceil ((mv + mvt) / 1000)
-        vmin = 610 if table == 0 else 590
-        final_volt = max(final_volt, vmin)
+
+thermal_floor = [ [ 0 for i in range(17) ] for j in range(7) ]
+
+#build thermal floor
+for entry in range(17):
+    mv = div_round_closest(gpu_dvfs_table[entry][2] * speedo , 100)
+    mv = div_round_closest( (mv + gpu_dvfs_table[entry][1]) * speedo , 100) + gpu_dvfs_table[entry][0]
+    
+    for temp in range(6):
+        mvt = div_round_closest(gpu_dvfs_table[entry][3] * speedo , 100) + gpu_dvfs_table[entry][4] + div_round_closest(gpu_dvfs_table[entry][5] * temp_list[temp] , 10)
+        mvt = div_round_closest(mvt * temp_list[temp] , 10)
+        
+        final_volt = mv + mvt
         final_volt = round5(final_volt)
+        final_volt /= 1000
+        
+        thermal_floor[temp][entry] = int(final_volt)
+
+for i in range(17):
+    thermal_floor[0][i] = 800     
+     
+ 
+for temp in range(6):
+    if temp == 0:
+        print(">", temp_list[temp], "°C\t", end="")
+    else:
+        print(">", temp_list[temp], "°C\t\t", end="")
+    
+    for entry in range(17):
+        mv = max(thermal_floor[temp][entry], thermal_floor[temp+1][entry])
+        vmin = 610 if table == 0 else 590
+        final_volt = max(mv, vmin)
         print(final_volt, "\t", end="")
     print()
-
-#input("Press enter to exit")
+        
+       
+       
+input("Press enter to exit")
 
