@@ -1,5 +1,9 @@
 [
   {
+    "name": "Don't adjust",
+    "dec": "0"
+  },
+  {
     "name": "720 mV",
     "dec": "720"
   },

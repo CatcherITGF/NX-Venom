@@ -8,8 +8,14 @@
     "state": "filler"
   },
   {
-    "name": "Volt Limit",
+    "name": "Volt Min",
     "offset": "16",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "Volt Max",
+    "offset": "20",
     "length": "4",
     "extent": " mV"
   },
@@ -33,14 +39,14 @@
   },
   {
     "name": "Volt Offset",
-    "offset": "28",
+    "offset": "40",
     "length": "1",
     "prefix": "-",
     "extent": " mV"
   },
   {
     "name": "Volt Min",
-    "offset": "32",
+    "offset": "44",
     "length": "4"
   },
   {
@@ -57,29 +63,29 @@
   },
   {
     "name": "Clock Max",
-    "offset": "52",
+    "offset": "68",
     "length": "4",
     "extent": " MHz"
   },
   {
     "name": "EMC Vdd2",
-    "offset": "44",
+    "offset": "60",
     "length": "4",
     "extent": " mV"
   },
   {
     "name": "EMC DVB Shift",
-    "offset": "60",
+    "offset": "76",
     "length": "1"
   },
   {
     "name": "DRAM Timing",
-    "offset": "40",
+    "offset": "56",
     "length": "1"
   },
   {
     "name": "Timings",
-    "offset": "64,68,72,76,80,84,88",
+    "offset": "80,84,88,92,96,100,104",
     "length": "1"
   }
 ]
