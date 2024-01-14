@@ -1,7 +1,9 @@
 [
   {
     "name": "Don't adjust",
-    "dec": "0"
+    "dec": "0",
+    "comm": "hex-by-cust-offset",
+    "hex": "000000"
   },
   {
     "name": "550 mV",
