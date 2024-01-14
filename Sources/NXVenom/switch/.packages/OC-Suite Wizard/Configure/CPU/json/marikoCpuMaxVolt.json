@@ -1,6 +1,6 @@
 [
   {
-    "name": "1120 mV - Default",
+    "name": "1120 mV - System Default",
     "dec": "1120"
   },
   {
@@ -92,7 +92,7 @@
     "dec": "1230"
   },
   {
-    "name": "1235 mV",
+    "name": "1235 mV - Default",
     "dec": "1235"
   },
   {
