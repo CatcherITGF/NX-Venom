@@ -8,13 +8,13 @@
     "state": "filler"
   },
   {
-    "name": "Volt Min",
+    "name": "Min Volt",
     "offset": "16",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "Volt Max",
+    "name": "Max Volt",
     "offset": "20",
     "length": "4",
     "extent": " mV"
@@ -45,7 +45,7 @@
     "extent": " mV"
   },
   {
-    "name": "Volt Min",
+    "name": "Min Volt",
     "offset": "44",
     "length": "4"
   },
