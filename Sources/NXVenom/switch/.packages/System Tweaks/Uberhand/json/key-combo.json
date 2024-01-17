@@ -9,11 +9,11 @@
   },
   {
     "name": "L+R+Down",
-    "value": "ZL+ZR+DDOWN"
+    "value": "L+R+DDOWN"
   },
   {
     "name": "L+R+Up",
-    "value": "ZL+ZR+DUP"
+    "value": "L+R+DUP"
   },
   {
     "name": "Plus+Minus",
