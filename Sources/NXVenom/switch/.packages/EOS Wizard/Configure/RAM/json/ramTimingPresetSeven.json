@@ -1,10 +1,10 @@
 [
   {
-    "name": "0 - CUST_ADJ Only",
+    "name": "0 - Default",
     "dec": "0"
   },
   {
-    "name": "1 - Default",
+    "name": "1",
     "dec": "1"
   },
   {

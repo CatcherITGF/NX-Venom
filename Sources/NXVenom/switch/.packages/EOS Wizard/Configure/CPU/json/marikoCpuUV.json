@@ -8,15 +8,11 @@
     "dec": "1"
   },
   {
-    "name": "2 - SLT",
+    "name": "2 - OCT",
     "dec": "2"
   },
   {
-    "name": "3 - OCT",
+    "name": "3 - HiOCT",
     "dec": "3"
-  },
-  {
-    "name": "4 - HiOCT",
-    "dec": "4"
   }
 ]

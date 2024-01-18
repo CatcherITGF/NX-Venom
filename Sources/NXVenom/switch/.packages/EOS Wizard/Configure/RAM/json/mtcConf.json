@@ -4,10 +4,6 @@
     "dec": "0"
   },
   {
-    "name": "CUSTOM_ADJ_ALL",
-    "dec": "1"
-  },
-  {
     "name": "NO_ADJ_ALL",
     "dec": "2"
   }
