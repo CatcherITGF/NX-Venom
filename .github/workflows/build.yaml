@@ -19,6 +19,11 @@ jobs:
         uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
       # - name: Setup upterm session
       #   uses: lhotari/action-upterm@v1
+      - name: "Install FPSLocker patches"
+        working-directory: ./Sources/NXVenom
+        run: curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/main.zip > main.zip
+        run: unzip main.zip
+        run: cp -r FPSLocker-Warehouse-main/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-main
       - name: "Compile OCBundle (legacy)"
         working-directory: ./Sources/NXVenom
         run: zip -qqrX ../../OCBundle.zip ./
