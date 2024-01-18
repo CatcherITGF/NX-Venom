@@ -30,7 +30,7 @@ jobs:
         run: zip -qqrX ../../AIO.zip ./
       - name: "Compile OC-Suite Wizard"
         working-directory: ./Sources/NXVenom
-        run: zip -qqrX "../../OC-Suite Wizard.zip" "./switch/.packages/OC-Suite Wizard" ./switch/.overlays/ovlmenu.ovl
+        run: zip -qqrX "../../OC-Suite Wizard.zip" "./switch/.packages/EOS Wizard" ./switch/.overlays/ovlmenu.ovl
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Build: Compile Bundle"
