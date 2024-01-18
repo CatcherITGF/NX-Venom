@@ -1,0 +1,9 @@
+Reduce CPU power draw
+
+0 : Default Table
+
+1 : Undervolt Level 1 (SLT)
+
+2 : Undervolt Level 2 (OCT - OCS Custom Tuning)
+
+3 : Undervolt Level 3 (HiOCT - OCS Custom Tuning High)

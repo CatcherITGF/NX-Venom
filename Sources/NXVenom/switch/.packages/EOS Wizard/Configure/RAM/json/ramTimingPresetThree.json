@@ -1,0 +1,31 @@
+[
+  {
+    "name": "0 - Default",
+    "dec": "0"
+  },
+  {
+    "name": "1",
+    "dec": "1",
+    "color": "Red"
+  },
+  {
+    "name": "2",
+    "dec": "2",
+    "color": "Red"
+  },
+  {
+    "name": "3",
+    "dec": "3",
+    "color": "Red"
+  },
+  {
+    "name": "4",
+    "dec": "4",
+    "color": "Red"
+  },
+  {
+    "name": "5",
+    "dec": "5",
+    "color": "Red"
+  }
+]

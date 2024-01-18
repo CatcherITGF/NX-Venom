@@ -1,0 +1,8 @@
+Values are : tWTR
+
+0 : 10 (Default timing)
+1 : 8
+2 : 6
+3 : 4
+4 : 2
+5 : 1
