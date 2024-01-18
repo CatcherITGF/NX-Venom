@@ -1,14 +1,10 @@
-WARNING: Unstable timings can corrupt your nand
+Values are : tREFI
 
-Tertiary Timing Preset for both AUTO_ADJ and CUSTOM_ADJ
-Values are: tREFI
+NOT Recommended for erista
 
-NOT RECOMMENDED FOR ERISTA
-
-0: Do Not Adjust
-1: 1x REFI (Default timing)
-2: 1.5x REFI
-3: 2x REFI
-4: 3x REFI
-5: 4x REFI
-6: MAX REFI
+0 : 1x REFI (3900us) (Default timing)
+1 : 1.5x REFI
+2 : 2x REFI
+3 : 3x REFI
+4 : 4x REFI
+5 : MAX REFRESH

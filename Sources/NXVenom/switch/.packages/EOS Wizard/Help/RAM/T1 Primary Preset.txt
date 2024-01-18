@@ -1,12 +1,9 @@
-WARNING: Unstable timings can corrupt your nand
+Values are : tRCD - tRP - tRAS (tRC = tRP + tRAS)
 
-Select Timing Preset for both AUTO_ADJ and CUSTOM_ADJ
-Values are: tRCD - tRP - tRAS (tRC = tRP + tRAS)
-
-0: Do Not Adjust (with CUST_ADJ at 2400Mhz, timing becomes: 12 - 12 - 28)
-1: 18 - 18 - 42 (Default timing)
-2: 17 - 17 - 39
-3: 16 - 16 - 36
-4: 15 - 15 - 34
-5: 14 - 14 - 32
-6: 13 - 13 - 30
+0 : 18 - 18 - 42 (Default timing)
+1 : 17 - 17 - 39
+2 : 16 - 16 - 36
+3 : 15 - 15 - 34
+4 : 14 - 14 - 32
+5 : 13 - 13 - 30
+6 : 12 - 12 - 28
