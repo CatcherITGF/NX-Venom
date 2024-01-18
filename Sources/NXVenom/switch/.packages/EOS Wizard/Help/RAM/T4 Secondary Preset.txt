@@ -1,0 +1,8 @@
+Values are : tRFC
+
+0 : 140 (Default timing)
+1 : 120
+2 : 100
+3 : 80
+4 : 70
+5 : 60

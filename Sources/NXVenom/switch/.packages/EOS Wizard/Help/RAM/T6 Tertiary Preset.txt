@@ -1,0 +1,10 @@
+Values are : tREFI
+
+NOT Recommended for erista
+
+0 : 1x REFI (3900us) (Default timing)
+1 : 1.5x REFI
+2 : 2x REFI
+3 : 3x REFI
+4 : 4x REFI
+5 : MAX REFRESH

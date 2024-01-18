@@ -1,0 +1,5 @@
+Not recommended to adjust value, to protect from going over gpu pmic limits
+
+Any GPU Frequency that needs higher than vmax will be automatically removed and not available in Sys-Clk-OC
+
+This means max GPU freq will be adjusted depending on your speedo
