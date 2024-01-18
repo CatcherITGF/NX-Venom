@@ -21,7 +21,7 @@ jobs:
       #   uses: lhotari/action-upterm@v1
       - name: "Install FPSLocker patches"
         working-directory: ./Sources/NXVenom
-        run: curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/main.zip > main.zip && unzip main.zip && cp -r FPSLocker-Warehouse-main/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-main
+        run: curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/main.zip > main.zip && unzip main.zip && cp -r FPSLocker-Warehouse-main/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-main && rm -rf main.zip
       - name: "Compile OCBundle (legacy)"
         working-directory: ./Sources/NXVenom
         run: zip -qqrX ../../OCBundle.zip ./
