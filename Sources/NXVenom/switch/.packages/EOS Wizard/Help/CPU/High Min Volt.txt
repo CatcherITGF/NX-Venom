@@ -1,0 +1,7 @@
+Changing this value affects cpu voltage calculation
+
+CPU tune High Min Volt is used to fine tune voltage step in between lower and higher frequency bracket
+
+Between 1500-1900 you see flat voltage
+
+Tune High Min Volt is used by hardware to tune that
