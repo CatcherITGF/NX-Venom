@@ -13,10 +13,12 @@
   },
   {
     "name": "3",
-    "dec": "3"
+    "dec": "3",
+    "color": "Orange"
   },
   {
     "name": "4",
-    "dec": "4"
+    "dec": "4",
+    "color": "Red"
   }
 ]
