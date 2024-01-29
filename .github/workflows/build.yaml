@@ -17,8 +17,8 @@ jobs:
         run: find . -mindepth 1 -type d -not -iwholename '*.git*' -exec touch -t 197001010000 {} \;
       - name: Restore files timestamp
         uses: chetan/git-restore-mtime-action@v2 # Restore files original modification time to have deterministic zip bundles
-       - name: Setup upterm session
-         uses: lhotari/action-upterm@v1
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
       - name: "Install FPSLocker patches"
         working-directory: ./Sources/NXVenom
         run: curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/main.zip > main.zip && unzip main.zip && rm -rf SaltySD/plugins/FPSLocker/patches && cp -r FPSLocker-Warehouse-main/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-main && rm -rf ./main.zip
