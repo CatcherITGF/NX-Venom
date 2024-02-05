@@ -2,7 +2,7 @@ Reduce CPU power draw
 
 0 : Default Table
 
-1 : Undervolt Level 1 (SLT)
+1 : Undervolt Level 1 (SLT - Nvidia Dev Board)
 
 2 : Undervolt Level 2 (OCT - OCS Custom Tuning)
 
