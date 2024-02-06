@@ -167,7 +167,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 ## FAQ
 
 - If there are problems after installation, try to fix the attributes: `Hekate` → `Tools` → `Arch Bit`
-- When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`, the answer to "Do you want also download hekate" is `NO`
+- When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`
 - For questions, help, wishes and suggestions, feel free to contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (channel #overlocking).
 
 ## Content
