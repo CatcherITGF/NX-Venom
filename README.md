@@ -22,11 +22,11 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 
 1. Opening the `Tesla` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
 2. Use the `sys-clk-oc` overlay to manage overclocking.
-3. Use the `OC-Suite Wizard` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
+3. Use the `EOS Wizard` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 5. Recommended overclocking parameters for portable mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
-## OC-Suite Wizard
+## EOS Wizard
 
 ### Hardware Requirements
 
@@ -38,7 +38,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 ### Software Requirements
 
 - Uberhand Overlay (included in the NX Venom)
-- OC-Suite official loader.kip (included in the NX Venom)
+- EOS official loader.kip (included in the NX Venom)
 
 ### Settings
 
