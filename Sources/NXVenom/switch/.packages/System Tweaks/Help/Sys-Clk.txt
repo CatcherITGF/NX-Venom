@@ -1,3 +1,3 @@
-Preserve Sys-Clk configuration file from the NX-Venom updates via AIO
+Allows you not to overwrite Sys-Clk configuration file when updating NX-Venom via AIO
 
 Use this to save overclocking settings for your games
