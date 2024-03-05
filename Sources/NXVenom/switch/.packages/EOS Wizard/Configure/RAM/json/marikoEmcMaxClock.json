@@ -79,5 +79,40 @@
     "name": "2566 MHz",
     "dec": "2566000",
     "color": "Red"
+  },
+  {
+    "name": "2600 MHz",
+    "dec": "2600000",
+    "color": "Red"
+  },
+  {
+    "name": "2633 MHz",
+    "dec": "2633000",
+    "color": "Red"
+  },
+  {
+    "name": "2666 MHz",
+    "dec": "2666000",
+    "color": "Red"
+  },
+  {
+    "name": "2700 MHz",
+    "dec": "2700000",
+    "color": "Red"
+  },
+  {
+    "name": "2733 MHz",
+    "dec": "2733000",
+    "color": "Red"
+  },
+  {
+    "name": "2766 MHz",
+    "dec": "2766000",
+    "color": "Red"
+  },
+  {
+    "name": "2800 MHz",
+    "dec": "2800000",
+    "color": "Red"
   }
 ]
