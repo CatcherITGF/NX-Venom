@@ -1,10 +1,14 @@
 [
   {
-    "name": "AUTO_ADJ_ALL",
+    "name": "AUTO_ADJ",
     "dec": "0"
   },
   {
-    "name": "NO_ADJ_ALL",
+    "name": "AUTO_ADJ_HP",
     "dec": "1"
+  },
+  {
+    "name": "NO_ADJ_ALL",
+    "dec": "2"
   }
 ]
