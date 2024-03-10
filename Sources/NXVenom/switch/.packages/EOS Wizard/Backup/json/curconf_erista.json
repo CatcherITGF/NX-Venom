@@ -63,29 +63,29 @@
   },
   {
     "name": "Clock Max",
-    "offset": "68",
+    "offset": "72",
     "length": "4",
     "extent": " MHz"
   },
   {
     "name": "EMC Vdd2",
-    "offset": "60",
+    "offset": "64",
     "length": "4",
     "extent": " mV"
   },
   {
     "name": "EMC DVB Shift",
-    "offset": "76",
+    "offset": "80",
     "length": "1"
   },
   {
     "name": "DRAM Timing",
-    "offset": "56",
+    "offset": "60",
     "length": "1"
   },
   {
     "name": "Timings",
-    "offset": "80,84,88,92,96,100",
+    "offset": "84,88,92,96,100,104",
     "length": "1"
   }
 ]

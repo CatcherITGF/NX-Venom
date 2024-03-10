@@ -1,0 +1,5 @@
+GPU Speedo for Mariko
+
+Allows you to set the automatic GPU Min Volt for your console
+
+To find out the value go to Hekate -> Console Info -> HW & Fuses -> CPU Speedo 2 (GPU Val)
