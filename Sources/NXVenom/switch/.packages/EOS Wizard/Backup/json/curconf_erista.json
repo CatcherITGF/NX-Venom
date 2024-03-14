@@ -21,7 +21,7 @@
   },
   {
     "name": "Boost Clock",
-    "offset": "12",
+    "offset": "8",
     "length": "4",
     "extent": " MHz"
   },
