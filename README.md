@@ -16,13 +16,13 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 1. Make backup and delete everything except `Nintendo` and `emuMMC` folders on the SD card.
 2. Unpack the [NX Venom](https://github.com/CatcherITGF/NS-Overclocking/raw/main/NXVenom.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
 3. Use the `All-in-One Switch Updater` homebrew application for updates.
-4. Installation of additional software, as well as patches for games, is done through the `Tesla` menu (click `right`) → `Software Installer`.
+4. Installation of additional software, as well as patches for games, is done through the `UberHand` menu (click `right`) → `Software Installer`.
 
 ## How to use
 
-1. Opening the `Tesla` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
+1. Opening the `UberHand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
 2. Use the `sys-clk-oc` overlay to manage overclocking.
-3. Use the `EOS Wizard` (go to the `Tesla` menu, press the `right` button) to change the parameters of the loading kip.
+3. Use the `EOS Wizard` (go to the `UberHand` menu, press the `right` button) to change the parameters of the loading kip.
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 5. Recommended overclocking parameters for portable mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
@@ -152,13 +152,15 @@ Virtual amiibo (amiibo emulation) system for Nintendo Switch
 - [Amiigo](https://github.com/CompSciOrBust/Amiigo/releases)  
 Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuiibo system module
 - [Studious Pancake](https://github.com/HookedBehemoth/studious-pancake/releases)  
-Reboot to Hekate configs from `Tesla` menu
+Reboot to Hekate configs from `UberHand` menu
 - [JKSV](https://github.com/J-D-K/JKSV/releases)  
 JK's save manager
 - [sys-ftpd](https://github.com/cathery/sys-ftpd/releases)  
 Nintendo Switch FTP server as a background service
 - [QuickNTP](https://github.com/nedex/QuickNTP/releases)  
-A Tesla plugin for Nintendo Switch to sync time with NTP servers
+A UberHand plugin for Nintendo Switch to sync time with NTP servers
+- [NXGallery](https://github.com/iUltimateLP/NXGallery/releases)  
+A Nintendo Switch Homebrew Application to transfer your screenshots to your phone or PC in no-time
 
 ## Philosophy
 
