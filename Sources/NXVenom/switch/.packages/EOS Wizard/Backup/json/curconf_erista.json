@@ -38,15 +38,20 @@
     "state": "filler"
   },
   {
+    "name": "Undervolt Level",
+    "offset": "36",
+    "length": "1"
+  },
+  {
     "name": "Volt Offset",
-    "offset": "40",
+    "offset": "44",
     "length": "1",
     "prefix": "-",
     "extent": " mV"
   },
   {
     "name": "Min Volt",
-    "offset": "44",
+    "offset": "48",
     "length": "4"
   },
   {
@@ -63,29 +68,29 @@
   },
   {
     "name": "Clock Max",
-    "offset": "72",
+    "offset": "76",
     "length": "4",
     "extent": " MHz"
   },
   {
     "name": "EMC Vdd2",
-    "offset": "64",
+    "offset": "68",
     "length": "4",
     "extent": " mV"
   },
   {
     "name": "EMC DVB Shift",
-    "offset": "80",
+    "offset": "84",
     "length": "1"
   },
   {
     "name": "DRAM Timing",
-    "offset": "60",
+    "offset": "64",
     "length": "1"
   },
   {
     "name": "Timings",
-    "offset": "84,88,92,96,100,104",
+    "offset": "88,92,96,100,104,108",
     "length": "1"
   }
 ]

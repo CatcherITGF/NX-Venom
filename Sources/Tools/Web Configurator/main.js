@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 /* Config: Cust */
-const CUST_REV_ADV = 14;
+const CUST_REV_ADV = 16;
 var CustPlatform;
 (function (CustPlatform) {
     CustPlatform[CustPlatform["Undefined"] = 0] = "Undefined";
@@ -188,7 +188,8 @@ var CustTable = [
     new CustEntry("marikoCpuUV", "Mariko CPU Undervolt", CustPlatform.Mariko, 4, ["<b>0</b> : Default Table",
         "<b>1</b> : Undervolt Level 1 (SLT - Nvidia Dev Board)",
         "<b>2</b> : Undervolt Level 2 (OCT - OCS Custom)",
-        "<b>3</b> : Undervolt Level 3 (HiOCT - OCS Custom High)",], 0, [0, 3], 1),
+        "<b>3</b> : Undervolt Level 3 (HiOCT - OCS Custom High)",
+        "<b>4</b> : Undervolt Level 4 (EXT - EOS Custom)",], 0, [0, 4], 1),
     new CustEntry("eristaCpuMinVolt", "Erista CPU Min Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 750 ≤ x ≤ 1227",
         "System Default: 825"], 825, [750, 1227], 1),
     new CustEntry("eristaCpuMaxVolt", "Erista CPU Max Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 1227 ≤ x ≤ 1300",
@@ -197,10 +198,13 @@ var CustTable = [
     new CustEntry("marikoCpuMinVolt", "Mariko CPU Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 550 < x ≤ 1120",
         "System Default: 620"], 620, [550, 1120], 5),
     new CustEntry("marikoCpuHighMinVolt", "Mariko CPU Tune High Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 750 ≤ x ≤ 1120",
-        "System Default: 850"], 850, [750, 1120], 5),
+        "System Default: 850"], 850, [610, 1120], 5),
     new CustEntry("marikoCpuMaxVolt", "Mariko CPU Max Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 1120 ≤ x ≤ 1300",
         "System default: 1120, L4T OC: 1235",
         "Changing this value affects cpu voltage calculation"], 1235, [1120, 1300], 5),
+    new CustEntry("eristaGpuUV", "Erista GPU Undervolt", CustPlatform.Mariko, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo",
+        "<b>0</b> : Default Table",
+        "<b>1</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 1], 1),
     new CustEntry("marikoGpuUV", "Mariko GPU Undervolt", CustPlatform.Mariko, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo",
         "<b>0</b> : Default Table",
         "<b>1</b> : Undervolt Level 1 (SLT - Nvidia Dev Board)",
@@ -215,6 +219,7 @@ var CustTable = [
         "Regulator step: 6.25mV",
         "With 810mV vmin, 812.mV will be lowest voltage because of 6.25mV regulator step",
         "Acceptable range: 0 ~ 1132"], 810, [0, 1132], 1),
+    new CustEntry("marikoGpuSpeedo", "Mariko GPU Speedo", CustPlatform.Mariko, 4, ["GPU Speedo for Mariko"], 1625, [1400, 1800], 1),
     new CustEntry("marikoGpuMinVolt", "Mariko GPU Vmin", CustPlatform.Mariko, 4, ["GPU Vmin for Mariko",
         "High EMC Clocks will require gpu minimum voltage to be raised",
         "Default gpu vmin: 610mV",
@@ -228,8 +233,9 @@ var CustTable = [
         "Any GPU Frequency that needs higher than vmax will be automatically removed and not available",
         "This means max available GPU freq will be adjusted depending on your speedo",
         "Acceptable range: 800 ~ 1050"], 800, [800, 1050], 5),
-    new CustEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ_ALL: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)",
-        "<b>1</b>: NO_ADJ_ALL: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 1], 1),
+    new CustEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)",
+        "<b>1</b>: AUTO_ADJ_HP: Auto adjust only core timings. (Previously CUST_ADJ).",
+        "<b>2</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 2], 1),
     new CustEntry("commonEmcMemVolt", "EMC Vdd2 Voltage in uV", CustPlatform.All, 4, ["Acceptable range: 1050000 ≤ x ≤ 1212500, and it should be divided evenly by 12500.",
         "Erista Default: 1125000",
         "Mariko Default: 1100000",
