@@ -7,3 +7,5 @@ Reduce CPU power draw
 2 : Undervolt Level 2 (OCT - OCS Custom Tuning)
 
 3 : Undervolt Level 3 (HiOCT - OCS Custom Tuning High)
+
+4 : Undervolt Level 4 (EXT - EOS Custom)
