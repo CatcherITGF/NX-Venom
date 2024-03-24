@@ -1,28 +1,26 @@
 [
   {
-    "name": "0 - Default",
+    "name": "0 - 10",
     "dec": "0"
   },
   {
-    "name": "1",
+    "name": "1 - 7.5",
     "dec": "1"
   },
   {
-    "name": "2",
+    "name": "2 - 6",
     "dec": "2"
   },
   {
-    "name": "3",
+    "name": "3 - 4",
     "dec": "3"
   },
   {
-    "name": "4",
-    "dec": "4",
-    "color": "Orange"
+    "name": "4 - 3",
+    "dec": "4"
   },
   {
-    "name": "5",
-    "dec": "5",
-    "color": "Red"
+    "name": "5 - 2",
+    "dec": "5"
   }
 ]

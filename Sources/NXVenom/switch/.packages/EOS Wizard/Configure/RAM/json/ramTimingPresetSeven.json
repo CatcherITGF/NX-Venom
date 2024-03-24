@@ -1,34 +1,26 @@
 [
   {
-    "name": "0 - Default",
+    "name": "0 - 1x",
     "dec": "0"
   },
   {
-    "name": "1",
+    "name": "1 - 1.5x",
     "dec": "1"
   },
   {
-    "name": "2",
+    "name": "2 - 2x",
     "dec": "2"
   },
   {
-    "name": "3",
-    "dec": "3",
-    "color": "Orange"
+    "name": "3 - 3x",
+    "dec": "3"
   },
   {
-    "name": "4",
-    "dec": "4",
-    "color": "Orange"
+    "name": "4 - 4x",
+    "dec": "4"
   },
   {
-    "name": "5",
-    "dec": "5",
-    "color": "Red"
-  },
-  {
-    "name": "6",
-    "dec": "6",
-    "color": "Red"
+    "name": "5 - Max",
+    "dec": "5"
   }
 ]

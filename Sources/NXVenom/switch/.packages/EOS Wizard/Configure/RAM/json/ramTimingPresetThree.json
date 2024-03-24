@@ -1,31 +1,34 @@
 [
   {
-    "name": "0 - Default",
+    "name": "0 - 42",
     "dec": "0"
   },
   {
-    "name": "1",
-    "dec": "1",
-    "color": "Red"
+    "name": "1 - 39",
+    "dec": "1"
   },
   {
-    "name": "2",
-    "dec": "2",
-    "color": "Red"
+    "name": "2 - 36",
+    "dec": "2"
   },
   {
-    "name": "3",
-    "dec": "3",
-    "color": "Red"
+    "name": "3 - 33",
+    "dec": "3"
   },
   {
-    "name": "4",
-    "dec": "4",
-    "color": "Red"
+    "name": "4 - 30",
+    "dec": "4"
   },
   {
-    "name": "5",
-    "dec": "5",
-    "color": "Red"
+    "name": "5 - 27",
+    "dec": "5"
+  },
+  {
+    "name": "6 - 24",
+    "dec": "6"
+  },
+  {
+    "name": "7 - 21",
+    "dec": "7"
   }
 ]
