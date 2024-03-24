@@ -1,4 +1,6 @@
-# Copyright  2023 hanai3Bi
+# Copyright (C) 2012-2014 NVIDIA Corporation.  All rights reserved.
+#
+# Copyright (C) 2023 hanai3Bi
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms and conditions of the GNU General Public License,
