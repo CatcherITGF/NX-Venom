@@ -1,7 +1,0 @@
-Values are : tRRD - tFAW
-
-0 : 10 - 40 (Default timing) (3733 specs)
-1 : 7.5 - 30 (4266 specs)
-2 : 6 - 24
-3 : 4 - 16
-4 : 3 - 12
