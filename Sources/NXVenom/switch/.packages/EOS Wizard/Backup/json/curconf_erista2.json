@@ -42,29 +42,5 @@
     "offset": "172",
     "length": "4",
     "extent": " mV"
-  },
-  {
-    "name": "1075.2 MHz",
-    "offset": "176",
-    "length": "4",
-    "extent": " mV"
-  },
-  {
-    "name": "1152.0 MHz",
-    "offset": "180",
-    "length": "4",
-    "extent": " mV"
-  },
-  {
-    "name": "1228.8 MHz",
-    "offset": "184",
-    "length": "4",
-    "extent": " mV"
-  },
-  {
-    "name": "1267.2 MHz",
-    "offset": "188",
-    "length": "4",
-    "extent": " mV"
   }
 ]
