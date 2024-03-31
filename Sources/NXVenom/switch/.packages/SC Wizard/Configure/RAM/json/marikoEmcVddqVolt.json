@@ -4,6 +4,56 @@
     "dec": "0"
   },
   {
+    "name": "500 mV",
+    "dec": "500000",
+    "color": "Red"
+  },
+  {
+    "name": "505 mV",
+    "dec": "505000",
+    "color": "Red"
+  },
+  {
+    "name": "510 mV",
+    "dec": "510000",
+    "color": "Red"
+  },
+  {
+    "name": "515 mV",
+    "dec": "515000",
+    "color": "Red"
+  },
+  {
+    "name": "520 mV",
+    "dec": "520000",
+    "color": "Red"
+  },
+  {
+    "name": "525 mV",
+    "dec": "525000",
+    "color": "Red"
+  },
+  {
+    "name": "530 mV",
+    "dec": "530000",
+    "color": "Red"
+  },
+  {
+    "name": "535 mV",
+    "dec": "535000",
+    "color": "Red"
+  },
+  {
+    "name": "540 mV",
+    "dec": "540000",
+    "color": "Red"
+  },
+  {
+    "name": "545 mV",
+    "dec": "545000",
+    "color": "Red"
+  },
+  {
     "name": "550 mV",
     "dec": "550000",
     "color": "Red"
