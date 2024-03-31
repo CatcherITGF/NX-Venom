@@ -4,6 +4,56 @@
     "dec": "0"
   },
   {
+    "name": "925 uV",
+    "dec": "925000",
+    "color": "red"
+  },
+  {
+    "name": "937.5 uV",
+    "dec": "937500",
+    "color": "red"
+  },
+  {
+    "name": "950 uV",
+    "dec": "950000",
+    "color": "red"
+  },
+  {
+    "name": "962.5 uV",
+    "dec": "962500",
+    "color": "red"
+  },
+  {
+    "name": "975 uV",
+    "dec": "975000",
+    "color": "red"
+  },
+  {
+    "name": "987.5 uV",
+    "dec": "987500",
+    "color": "red"
+  },
+  {
+    "name": "1000 uV",
+    "dec": "1000000",
+    "color": "red"
+  },
+  {
+    "name": "1012.5 uV",
+    "dec": "1012500",
+    "color": "red"
+  },
+  {
+    "name": "1025 uV",
+    "dec": "1025000",
+    "color": "red"
+  },
+  {
+    "name": "1037.5 uV",
+    "dec": "1037500",
+    "color": "red"
+  },
+  {
     "name": "1050 uV",
     "dec": "1050000"
   },
@@ -24,39 +74,102 @@
     "dec": "1100000"
   },
   {
-    "name": "1112 uV",
+    "name": "1112.5 uV",
     "dec": "1112500"
   },
   {
     "name": "1125 uV",
-    "dec": "1125000"
+    "dec": "1125000",
+    "color": "orange"
   },
   {
-    "name": "1137 uV",
-    "dec": "1137500"
+    "name": "1137.5 uV",
+    "dec": "1137500",
+    "color": "orange"
   },
   {
     "name": "1150 uV",
-    "dec": "1150000"
+    "dec": "1150000",
+    "color": "orange"
   },
   {
-    "name": "1162 uV",
-    "dec": "1162500"
+    "name": "1162.5 uV",
+    "dec": "1162500",
+    "color": "orange"
   },
   {
     "name": "1175 uV",
-    "dec": "1175000"
+    "dec": "1175000",
+    "color": "orange"
   },
   {
-    "name": "1187 uV",
-    "dec": "1187500"
+    "name": "1187.5 uV",
+    "dec": "1187500",
+    "color": "orange"
   },
   {
     "name": "1200 uV",
-    "dec": "1200000"
+    "dec": "1200000",
+    "color": "orange"
   },
   {
-    "name": "1212 uV",
-    "dec": "1212500"
+    "name": "1212.5 uV",
+    "dec": "1212500",
+    "color": "orange"
+  },
+  {
+    "name": "1225 uV",
+    "dec": "1225000",
+    "color": "orange"
+  },
+  {
+    "name": "1237.5 uV",
+    "dec": "1237500",
+    "color": "orange"
+  },
+  {
+    "name": "1250 uV",
+    "dec": "1250000",
+    "color": "orange"
+  },
+  {
+    "name": "1262.5 uV",
+    "dec": "1262500",
+    "color": "red"
+  },
+  {
+    "name": "1275 uV",
+    "dec": "1275000",
+    "color": "red"
+  },
+  {
+    "name": "1287.5 uV",
+    "dec": "1287500",
+    "color": "red"
+  },
+  {
+    "name": "1300 uV",
+    "dec": "1300000",
+    "color": "red"
+  },
+  {
+    "name": "1312.5 uV",
+    "dec": "1312500",
+    "color": "red"
+  },
+  {
+    "name": "1325 uV",
+    "dec": "1325000",
+    "color": "red"
+  },
+  {
+    "name": "1337.5 uV",
+    "dec": "1337500",
+    "color": "red"
+  },
+  {
+    "name": "1350 uV",
+    "dec": "1350000",
+    "color": "red"
   }
 ]

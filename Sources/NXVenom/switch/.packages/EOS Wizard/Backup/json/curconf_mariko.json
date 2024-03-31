@@ -54,6 +54,11 @@
     "length": "1"
   },
   {
+    "name": "High Freq UV",
+    "offset": "252",
+    "length": "1"
+  },
+  {
     "name": "Volt Offset",
     "offset": "44",
     "length": "1",

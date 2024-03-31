@@ -8,62 +8,68 @@
     "state": "filler"
   },
   {
-    "name": "76.8 - 614.4 MHz",
+    "name": "76 - 614 MHz",
     "offset": "124",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "691.2 MHz",
+    "name": "691 MHz",
     "offset": "156",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "768.0 MHz",
+    "name": "768 MHz",
     "offset": "160",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "844.8 MHz",
+    "name": "844 MHz",
     "offset": "164",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "921.6 MHz",
+    "name": "921 MHz",
     "offset": "168",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "998.4 MHz",
+    "name": "998 MHz",
     "offset": "172",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "1075.2 MHz",
+    "name": "1075 MHz",
     "offset": "176",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "1152.0 MHz",
+    "name": "1152 MHz",
     "offset": "180",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "1228.8 MHz",
+    "name": "1228 MHz",
     "offset": "184",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "1267.2 MHz",
+    "name": "1267 MHz",
     "offset": "188",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "1305 MHz",
+    "offset": "192",
     "length": "4",
     "extent": " mV"
   }
