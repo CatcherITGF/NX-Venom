@@ -8,24 +8,29 @@
     "state": "filler"
   },
   {
-    "name": "Undervolt Level",
+    "name": "UV Level",
     "offset": "12",
     "length": "1"
   },
   {
-    "name": "Min Volt",
+    "name": "High Freq UV Level",
+    "offset": "252",
+    "length": "1"
+  },
+  {
+    "name": "Low Freq Vmin",
     "offset": "24",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "High Min Volt",
+    "name": "High Freq Vmin",
     "offset": "28",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "Max Volt",
+    "name": "Volt Limit",
     "offset": "32",
     "length": "4",
     "extent": " mV"
@@ -49,13 +54,8 @@
     "state": "filler"
   },
   {
-    "name": "Undervolt Level",
+    "name": "UV Level",
     "offset": "40",
-    "length": "1"
-  },
-  {
-    "name": "High Freq UV",
-    "offset": "252",
     "length": "1"
   },
   {
@@ -66,13 +66,13 @@
     "extent": " mV"
   },
   {
-    "name": "Min Volt",
+    "name": "Vmin",
     "offset": "56",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "Max Volt",
+    "name": "Volt Limit",
     "offset": "60",
     "length": "4",
     "extent": " mV"
