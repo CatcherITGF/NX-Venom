@@ -8,13 +8,13 @@
     "state": "filler"
   },
   {
-    "name": "Min Volt",
+    "name": "Vmin",
     "offset": "16",
     "length": "4",
     "extent": " mV"
   },
   {
-    "name": "Max Volt",
+    "name": "Volt Limit",
     "offset": "20",
     "length": "4",
     "extent": " mV"
@@ -38,7 +38,7 @@
     "state": "filler"
   },
   {
-    "name": "Undervolt Level",
+    "name": "UV Level",
     "offset": "36",
     "length": "1"
   },
@@ -50,7 +50,7 @@
     "extent": " mV"
   },
   {
-    "name": "Min Volt",
+    "name": "Vmin",
     "offset": "48",
     "length": "4"
   },
