@@ -66,6 +66,11 @@
     "extent": " mV"
   },
   {
+    "name": "Speedo",
+    "offset": "52",
+    "length": "4"
+  },
+  {
     "name": "Vmin",
     "offset": "56",
     "length": "4",
