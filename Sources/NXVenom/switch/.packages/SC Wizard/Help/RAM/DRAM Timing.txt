@@ -1,5 +1,0 @@
-0: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)
-
-1: AUTO_ADJ_HP (Previously CUST_ADJ): Auto adjust only core timings
-
-2: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)

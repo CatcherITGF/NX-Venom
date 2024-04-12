@@ -1,8 +1,0 @@
-Vddq is the supply voltage to the output buffers of a memory chip
-
-Proper voltage is essential for RAM stability
-
-Default: 600mV
-Official lpddr4(x) range: 570mV~650mV (600mV nominal)
-
-Higher values might improve stabilty on higher memory freqs

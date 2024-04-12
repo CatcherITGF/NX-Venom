@@ -1,0 +1,5 @@
+WARNING: Unstable timings can corrupt your nand
+
+Select Timing Preset for both AUTO_ADJ and CUSTOM_ADJ
+
+Values are : tRCD - tRP - tRAS (tRC = tRP + tRAS)
