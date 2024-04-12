@@ -1,1 +1,1 @@
-Ability do not overwrite configuration files when updating NX-Venom via AIO
+Ability to not overwrite config files while updating the NX-Venom via AIO
