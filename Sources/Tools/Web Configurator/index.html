@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Switch OC Suite | Overclocking suite for Horizon OS (HOS) running on Atmosphere CFW. Licensed under GPL v2.
+  <title>OC Switchcraft | Overclocking for Horizon OS (HOS) running on Atmosphere CFW.
   </title>
   <meta name="description"
-    content="Overclocking suite for Horizon OS (HOS) running on Atmosphere CFW. Licensed under GPL v2.">
+    content="Overclocking for Horizon OS (HOS) running on Atmosphere CFW.">
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
   <style>
     #nav-list {
@@ -41,7 +41,7 @@
     }
 
     div.hero > header {
-      padding-top: 6rem;
+      padding-top: 1rem;
     }
 
     button[role="tab"] {
@@ -87,32 +87,23 @@
   <div class="hero">
     <nav class="container-fluid">
       <ul>
-        <li><a href="#head" class="contrast"><b>Switch OC Suite</b></a></li>
       </ul>
       <ul id="nav-popup">
         <li>
           <details role="list" dir="rtl">
             <summary aria-haspopup="group" role="link" class="contrast">Jump to</summary>
             <ul role="group">
-              <li><a href="#readme">README</a></li>
-              <li><a href="#download">Download</a></li>
-              <li><a href="#config">Configurator</a></li>
-              <li><a href="https://github.com/hanai3Bi/Switch-OC-Suite" target="_blank">GitHub repository</a></li>
             </ul>
           </details>
         </li>
       </ul>
       <ul id="nav-list">
-        <li><a href="#readme">README</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="#config">Config</a></li>
-        <li><a href="https://github.com/hanai3Bi/Switch-OC-Suite" target="_blank">GitHub</a></li>
       </ul>
     </nav>
     <header class="container">
       <hgroup>
-        <h1>Switch OC Suite</h1>
-        <h2>Overclocking suite for Horizon OS (HOS) running on Atmosphere CFW. Licensed under GPL v2.</h2>
+        <h1>OC Switchcraft</h1>
+        <h2>Overclocking for Horizon OS (HOS) running on Atmosphere CFW.</h2>
       </hgroup>
     </header>
   </div>
@@ -126,35 +117,34 @@
           </hgroup>
           <ul>
             <li>
-              Overclocking in general will shorten the lifespan of some
-              hardware components. <strong>YOU ARE RESPONSIBLE for any problem or
-                potential damage</strong> if unsafe frequencies are ENABLED in
-              sys-clk-OC. Issues like asking for bypassing limit will BE IGNORED OR
-              CLOSED WITHOUT REPLY.
+              This project is very dangerous and can possibly damage your console.<br>
+			If you decide to use it, USE AT YOUR OWN RISK. THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
             </li>
             <li>
-              Due to HorizonOS design, instabilities from unsafe RAM clocks may
-              cause filesystem corruption. <strong>Always make backup before enabling
-                DRAM OC.</strong>
+              Use it only with a NAND backup.<br>
+			Unstable settings can lead to NAND corruption.</strong>
             </li>
           </ul>
         </header>
-
         <body>
-          <h3>Features</h3>
-          <details open>
-            <summary>For Erista variant (HAC-001)</summary>
-            <ul>
-              <li>CPU Overclock (Safe: 1785 MHz)
-                <ul>
-                  <li>Unsafe
-                    <ul>
-                      <li>Due to the limit of board power draw or power IC</li>
-                      <li>Unlockable frequencies up to 2091 MHz</li>
-                      <li>See <a
-                          href="https://github.com/hanai3Bi/Switch-OC-Suite/blob/master/Source/sys-clk-OC/README.md"
-                          target="_blank">README
-                          for sys-clk-OC</a></li>
+		   <details role="list">
+            <summary aria-haspopup="group" role="button" class="secondary">
+              Information
+            </summary>
+			<h3>Features</h3>
+				<details open>
+				<summary>For Erista variant (HAC-001)</summary>
+					<ul>
+						<li>CPU Overclock (Safe: 1785 MHz)
+							<ul>
+							<li>Unsafe
+							<ul>
+							<li>Due to the limit of board power draw or power IC</li>
+							<li>Unlockable frequencies up to 2091 MHz</li>
+							<li>See <a
+								href="https://github.com/hanai3Bi/Switch-OC-Suite/blob/master/Source/sys-clk-OC/README.md"
+								target="_blank">README
+								for sys-clk-OC</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -185,27 +175,11 @@
           <details open>
             <summary>Modded sys-clk and ReverseNX-RT</summary>
             <ul>
-              <li STYLE="text-decoration:line-through">Auto CPU Boost
+              <li STYLE="text-decoration">Auto CPU Boost
                 <ul>
                   <li>For faster game loading</li>
                   <li>Enable CPU Boost (1785 MHz) when CPU Core#3 (System Core) is
                     stressed (mainly I/O operations).</li>
-                  <li>Effective only when charger is connected or governor is enabled.</li>
-                  <li>This feature is considered unsafe on Erista, especially when combined with high GPU frequency or with governor enabled.</li>
-                </ul>
-              </li>
-              <li STYLE="text-decoration:line-through">CPU &amp; GPU frequency governor (Experimental)
-                <ul>
-                  <li>Adjust frequency based on load. Might decrease power draw but can
-                    introduce stutters. Can be turned off for specific titles.</li>
-                </ul>
-              </li>
-              <li STYLE="text-decoration:line-through">Set charging current (100 mA - 2000 mA) and charging limit (20% -
-                100%)
-                <ul>
-                  <li>Long-term use of charge limit may render the battery gauge
-                    inaccurate. Performing full cycles could help recalibration, or try <a
-                      href="https://github.com/CTCaer/battery_desync_fix_nx">battery_desync_fix_nx</a>.</li>
                 </ul>
               </li>
               <li>Global Profile
@@ -215,7 +189,7 @@
                     profile" &gt; "System default".</li>
                 </ul>
               </li>
-              <li STYLE="text-decoration:line-through">Sync ReverseNX Mode
+              <li STYLE="text-decoration">Sync ReverseNX Mode
                 <ul>
                   <li>No need to change clocks manually after toggling modes in ReverseNX
                     (-RT and -Tool)</li>
@@ -230,10 +204,10 @@
           </details>
           <h3 id="installation" open>Installation</h3>
           <ol type="1">
-            <li>Download latest <a href="#download">release</a>.</li>
-            <li>Grab <code>x.x.x_loader.kip</code> for your Atmosphere version, rename it to <code>loader.kip</code> and
+            <li>Download latest release</a>.</li>
+            <li>Grab <code>loader.kip</code> for your Atmosphere version and
               place it in <code>/atmosphere/kips/</code>.</li>
-            <li>(optional) You can customize via <a href="#config">online loader configurator</a>
+            <li>(optional) You can customize via this configurator</a>
               <table role="grid">
                 <thead>
                   <tr>
@@ -291,7 +265,7 @@
                 </tbody>
               </table>
             </li>
-            <li>Hekate-ipl bootloader Only (fss0) (Not required for AMS fusee)
+            <li>Hekate-ipl bootloader Only (fss0)
               <ul>
                 <li>At boot entry section in <code>bootloader/hekate_ipl.ini</code>,
                   Add <code>kip1=atmosphere/kips/loader.kip</code> to any line that works.</li>
@@ -299,46 +273,8 @@
             </li>
             <li>Install [sys-clk-oc] <br>official [sys-clk] (2.0.0+) is compatible but not recommended (no bugfixes or additional features).
             </li>
-            <li>(optional) Copy SdOut.zip for useful utilities.
-            </li>
           </ol>
-          <details>
-            <summary>How to build this project</summary>
-            <ol type="1">
-              <li>Grab necessary patches from the repo, then compile sys-clk, ReverseNX-RT and Atmosphere loader with
-                devkitpro.</li>
-              <li>Before compiling Atmosphere loader, run <code>patch.py</code> in
-                <code>Atmosphere/stratosphere/loader/source/</code> to insert oc module into loader sysmodule.
-              </li>
-              <li>When compilation is done, uncompress the kip to make it work with configurator:
-                <code>hactool -t kip1 Atmosphere/stratosphere/loader/out/nintendo_nx_arm64_armv8a/release/loader.kip --uncompress=./loader.kip</code>
-              </li>
-            </ol>
-          </details>
-          <h3 id="faq">Frequently Asked Questions</h3>
-          <details open>
-            <summary>How to enable unsafe frequencies in sys-clk-OC?</summary>
-            <ul>
-              <li>Above all else, you should know <a href="#readme">what "unsafe" means and issues might arise</a>.</li>
-              <li>See the end of <a href="https://github.com/hanai3Bi/Switch-OC-Suite/blob/master/Source/sys-clk-OC/README.md"
-                  target="_blank">README in sys-clk-OC</a>. Place this line <code>allow_unsafe_freq=1</code> under
-                <code>[values]</code> section in
-                <code>/config/sys-clk/config.ini</code>
-              </li>
-            </ul>
-          </details>
-          <details open>
-            <summary>I would like to bypass limit enforced in sys-clk to improve handheld performance without charger
-              connected.</summary>
-            <ul>
-              <li>Bypassing clock cappings will be bad for battery</a>.</li>
-              <li>See the end of <a href="https://github.com/hanai3Bi/Switch-OC-Suite/blob/master/Source/sys-clk-OC/README.md"
-                target="_blank">README in sys-clk-OC</a>. Place this line <code>uncapped_clocks=1</code> under
-              <code>[values]</code> section in
-              <code>/config/sys-clk/config.ini</code>
-            </li>
-            </ul>
-          </details>
+		 </details>
         </body>
         <footer>
           <details role="list">
@@ -346,6 +282,7 @@
               Acknowledgement
             </summary>
             <ul role="group">
+			  <li><a href="https://github.com/hanai3Bi/Switch-OC-Suite" target="_blank">hanai3Bi for OC-Suite and EOS</a></li>
               <li><a href="https://github.com/CTCaer/hekate" target="_blank">CTCaer for Hekate-ipl bootloader, RE and
                   hardware research</a></li>
               <li><a href="https://devkitpro.org/" target="_blank">devkitPro for All-In-One homebrew toolchains</a>
@@ -369,29 +306,6 @@
                 <li>lineon for research and help</li>
             </ul>
           </details>
-        </footer>
-      </article>
-    </div>
-  </section>
-  <section aria-label="Download" id="download">
-    <div class="container">
-      <article>
-        <header>
-          <hgroup>
-            <h2>Download</h2>
-            <h3>Get latest version of Switch OC Suite and its corresponding Atmosphere package here.</h3>
-          </hgroup>
-        </header>
-
-        <body>
-          <div class="grid" id="download_btn_grid">
-            <a role="button" aria-busy="true" id="loader_kip_btn">Generating link, please wait...</a>
-            <a role="button" aria-busy="true" id="sdout_zip_btn">Generating link, please wait...</a>
-            <a target="_blank" role="button" aria-busy="true" id="ams_btn">Generating link, please wait...</a>
-          </div>
-        </body>
-        <footer>
-          See <a href="#installation">Installation section</a> for how to use Switch OC Suite.
         </footer>
       </article>
     </div>
