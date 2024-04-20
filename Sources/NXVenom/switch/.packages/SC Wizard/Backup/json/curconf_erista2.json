@@ -8,8 +8,32 @@
     "state": "filler"
   },
   {
-    "name": "76 - 614 MHz",
+    "name": "76 - 307 MHz",
     "offset": "124",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "384 MHz",
+    "offset": "140",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "460 MHz",
+    "offset": "144",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "537 MHz",
+    "offset": "148",
+    "length": "4",
+    "extent": " mV"
+  },
+  {
+    "name": "614 MHz",
+    "offset": "152",
     "length": "4",
     "extent": " mV"
   },
