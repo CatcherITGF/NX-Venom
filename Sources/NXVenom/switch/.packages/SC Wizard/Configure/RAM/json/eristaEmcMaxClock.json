@@ -61,58 +61,72 @@
   },
   {
     "name": "2150 MHz",
-    "dec": "2150400"
+    "dec": "2150400",
+    "color": "Red"
   },
   {
     "name": "2169 MHz",
-    "dec": "2169600"
+    "dec": "2169600",
+    "color": "Red"
   },
   {
     "name": "2188 MHz",
-    "dec": "2188800"
+    "dec": "2188800",
+    "color": "Red"
   },
   {
     "name": "2208 MHz",
-    "dec": "2208000"
+    "dec": "2208000",
+    "color": "Red"
   },
   {
     "name": "2227 MHz",
-    "dec": "2227200"
+    "dec": "2227200",
+    "color": "Red"
   },
   {
     "name": "2246 MHz",
-    "dec": "2246400"
+    "dec": "2246400",
+    "color": "Red"
   },
   {
     "name": "2265 MHz",
-    "dec": "2265600"
+    "dec": "2265600",
+    "color": "Red"
   },
   {
     "name": "2284 MHz",
-    "dec": "2284800"
+    "dec": "2284800",
+    "color": "Red"
   },
   {
     "name": "2304 MHz",
-    "dec": "2304000"
+    "dec": "2304000",
+    "color": "Red"
   },
   {
     "name": "2323 MHz",
-    "dec": "2323200"
+    "dec": "2323200",
+    "color": "Red"
   },
   {
     "name": "2342 MHz",
-    "dec": "2342400"
+    "dec": "2342400",
+    "color": "Red"
   },
   {
     "name": "2361 MHz",
-    "dec": "2361600"
+    "dec": "2361600",
+    "color": "Red"
   },
   {
     "name": "2380 MHz",
-    "dec": "2380800"
+    "dec": "2380800",
+    "color": "Red"
   },
   {
     "name": "2400 MHz",
-    "dec": "2400000"
+    "dec": "2400000",
+    "color": "Red"
   }
 ]
