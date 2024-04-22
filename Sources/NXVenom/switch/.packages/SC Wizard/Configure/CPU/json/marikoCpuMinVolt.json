@@ -4,59 +4,59 @@
     "dec": "0"
   },
   {
-    "name": "550 mV",
+    "name": "550 mV - -70 mV",
     "dec": "550"
   },
   {
-    "name": "555 mV",
+    "name": "555 mV - -65 mV",
     "dec": "555"
   },
   {
-    "name": "560 mV",
+    "name": "560 mV - -60 mV",
     "dec": "560"
   },
   {
-    "name": "565 mV",
+    "name": "565 mV - -55 mV",
     "dec": "565"
   },
   {
-    "name": "570 mV",
+    "name": "570 mV - -50 mV",
     "dec": "570"
   },
   {
-    "name": "575 mV",
+    "name": "575 mV - -45 mV",
     "dec": "575"
   },
   {
-    "name": "580 mV",
+    "name": "580 mV - -40 mV",
     "dec": "580"
   },
   {
-    "name": "585 mV",
+    "name": "585 mV - -35 mV",
     "dec": "585"
   },
   {
-    "name": "590 mV",
+    "name": "590 mV - -30 mV",
     "dec": "590"
   },
   {
-    "name": "595 mV",
+    "name": "595 mV - -25 mV",
     "dec": "595"
   },
   {
-    "name": "600 mV",
+    "name": "600 mV - -20 mV",
     "dec": "600"
   },
   {
-    "name": "605 mV",
+    "name": "605 mV - -15 mV",
     "dec": "605"
   },
   {
-    "name": "610 mV",
+    "name": "610 mV - -10 mV",
     "dec": "610"
   },
   {
-    "name": "615 mV",
+    "name": "615 mV - -5 mV",
     "dec": "615"
   },
   {
@@ -64,27 +64,27 @@
     "dec": "620"
   },
   {
-    "name": "625 mV",
+    "name": "625 mV - +5 mV",
     "dec": "625"
   },
   {
-    "name": "630 mV",
+    "name": "630 mV - +10 mV",
     "dec": "630"
   },
   {
-    "name": "635 mV",
+    "name": "635 mV - +15 mV",
     "dec": "635"
   },
   {
-    "name": "640 mV",
+    "name": "640 mV - +20 mV",
     "dec": "640"
   },
   {
-    "name": "645 mV",
+    "name": "645 mV - +25 mV",
     "dec": "645"
   },
   {
-    "name": "650 mV",
+    "name": "650 mV - +30 mV",
     "dec": "650"
   }
 ]

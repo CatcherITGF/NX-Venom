@@ -1,14 +1,14 @@
 [
   {
-    "name": "0 - Default Table",
+    "name": "0 - HiOPT",
     "dec": "0"
   },
   {
-    "name": "1 - SLT",
+    "name": "1 - HiOPT -20mV",
     "dec": "1"
   },
   {
-    "name": "2 - HiOPT",
+    "name": "2 - High",
     "dec": "2"
   },
   {
