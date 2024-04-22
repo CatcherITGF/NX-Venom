@@ -8,7 +8,12 @@
     "state": "filler"
   },
   {
-    "name": "Vmin",
+    "name": "UV Level",
+    "offset": "12",
+    "length": "1"
+  },
+  {
+    "name": "Low Freq Vmin",
     "offset": "16",
     "length": "4",
     "extent": " mV"
