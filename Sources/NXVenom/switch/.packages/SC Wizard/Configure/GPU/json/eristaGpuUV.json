@@ -4,7 +4,15 @@
     "dec": "0"
   },
   {
-    "name": "1 - Custom Table",
+    "name": "1 - Static +30mV",
     "dec": "1"
+  },
+  {
+    "name": "2 - High Dynamic",
+    "dec": "2"
+  },
+  {
+    "name": "3 - Custom Table",
+    "dec": "3"
   }
 ]
