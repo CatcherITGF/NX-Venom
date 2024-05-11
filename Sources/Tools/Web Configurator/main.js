@@ -219,7 +219,7 @@ var CustTable = [
         "Regulator step: 6.25mV",
         "With 810mV vmin, 812.mV will be lowest voltage because of 6.25mV regulator step",
         "Acceptable range: 0 ~ 1132"], 810, [0, 1132], 1),
-    new CustEntry("marikoGpuSpeedo", "Mariko GPU Speedo", CustPlatform.Mariko, 4, ["GPU Speedo for Mariko"], 1625, [1400, 1800], 1),
+    new CustEntry("marikoGpuSpeedo", "Mariko GPU Speedo", CustPlatform.Mariko, 4, ["GPU Speedo for Mariko"], 1660, [1480, 1800], 5),
     new CustEntry("marikoGpuMinVolt", "Mariko GPU Vmin", CustPlatform.Mariko, 4, ["GPU Vmin for Mariko",
         "High EMC Clocks will require gpu minimum voltage to be raised",
         "Default gpu vmin: 610mV",
