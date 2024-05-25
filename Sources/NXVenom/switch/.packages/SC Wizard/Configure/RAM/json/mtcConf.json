@@ -8,7 +8,11 @@
     "dec": "1"
   },
   {
-    "name": "NO_ADJ_ALL",
+    "name": "AUTO_ADJ_2400",
     "dec": "2"
+  },
+  {
+    "name": "NO_ADJ_ALL",
+    "dec": "3"
   }
 ]
