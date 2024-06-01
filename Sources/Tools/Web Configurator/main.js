@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 /* Config: Cust */
-const CUST_REV_ADV = 17;
+const CUST_REV_ADV = 40;
 var CustPlatform;
 (function (CustPlatform) {
     CustPlatform[CustPlatform["Undefined"] = 0] = "Undefined";
@@ -235,7 +235,7 @@ var CustTable = [
         "Acceptable range: 800 ~ 850"], 800, [800, 850], 5),
     new CustEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)",
         "<b>1</b>: AUTO_ADJ_HP: Auto adjust only core timings. (Previously CUST_ADJ).",
-		"<b>2</b>: AUTO_ADJ_2400: It can help to reach 2400 MHz",
+		"<b>2</b>: AUTO_ADJ_LV: A mode with less tight timings. It can help to achieve higher frequencies or lower voltages.",
         "<b>3</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 3], 1),
     new CustEntry("commonEmcMemVolt", "EMC Vdd2 Voltage in uV", CustPlatform.All, 4, ["Acceptable range: 1050000 ≤ x ≤ 1212500, and it should be divided evenly by 12500.",
         "Erista Default: 1125000",
