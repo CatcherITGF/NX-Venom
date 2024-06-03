@@ -12,7 +12,11 @@
     "dec": "2"
   },
   {
-    "name": "NO_ADJ_ALL",
+    "name": "AUTO_ADJ_LV_HP",
     "dec": "3"
+  },
+  {
+    "name": "NO_ADJ_ALL",
+    "dec": "4"
   }
 ]
