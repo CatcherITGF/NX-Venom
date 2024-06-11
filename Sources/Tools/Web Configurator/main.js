@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 /* Config: Cust */
-const CUST_REV_ADV = 41;
+const CUST_REV_ADV = 42;
 var CustPlatform;
 (function (CustPlatform) {
     CustPlatform[CustPlatform["Undefined"] = 0] = "Undefined";
