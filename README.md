@@ -14,7 +14,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 ## Installation
 
 1. Make backup and delete everything except `Nintendo` and `emuMMC` folders on the SD card.
-2. Unpack the [NX Venom](https://github.com/CatcherITGF/NS-Overclocking/raw/main/NXVenom.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
+2. Unpack the [NX Venom](https://github.com/CatcherITGF/NX-Venom/raw/main/NXVenom.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
 3. Use the `All-in-One Switch Updater` homebrew application for updates.
 4. Installation of additional software, as well as patches for games, is done through the `UberHand` menu (click `right`) → `Software Installer`.
 
@@ -22,11 +22,11 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 
 1. Opening the `UberHand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
 2. Use the `sys-clk-oc` overlay to manage overclocking.
-3. Use the `EOS Wizard` (go to the `UberHand` menu, press the `right` button) to change the parameters of the loading kip.
+3. Use the `SC Wizard` (go to the `UberHand` menu, press the `right` button) to change the parameters of the loading kip.
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 5. Recommended overclocking parameters for portable mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
-## EOS Wizard
+## SC Wizard
 
 ### Hardware Requirements
 
@@ -34,11 +34,6 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 - Nintendo Switch V2 (Mariko)
 - Nintendo Switch Lite (Mariko)
 - Nintendo Switch OLED (Mariko)
-
-### Software Requirements
-
-- Uberhand Overlay (included in the NX Venom)
-- EOS official loader.kip (included in the NX Venom)
 
 ### Settings
 
