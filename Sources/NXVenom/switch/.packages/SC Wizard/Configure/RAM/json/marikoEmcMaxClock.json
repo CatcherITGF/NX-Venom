@@ -1,5 +1,37 @@
 [
   {
+    "name": "1600 MHz",
+    "dec": "1600000"
+  },
+  {
+    "name": "1633 MHz",
+    "dec": "1633000"
+  },
+  {
+    "name": "1666 MHz",
+    "dec": "1666000"
+  },
+  {
+    "name": "1700 MHz",
+    "label": "1700 MHz"
+  },
+  {
+    "name": "1733 MHz",
+    "label": "1733 MHz"
+  },
+  {
+    "name": "1766 MHz",
+    "label": "1766 MHz"
+  },
+  {
+    "name": "1800 MHz",
+    "label": "1800 MHz"
+  },
+  {
+    "name": "1833 MHz",
+    "label": "1833 MHz"
+  },
+  {
     "name": "1866 MHz - JEDEC",
     "dec": "1866000"
   },
