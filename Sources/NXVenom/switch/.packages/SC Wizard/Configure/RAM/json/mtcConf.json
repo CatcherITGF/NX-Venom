@@ -4,19 +4,15 @@
     "dec": "0"
   },
   {
-    "name": "AUTO_ADJ_HP",
+    "name": "AUTO_ADJ_LV",
     "dec": "1"
   },
   {
-    "name": "AUTO_ADJ_LV",
+    "name": "AUTO_ADJ_LV_HP",
     "dec": "2"
   },
   {
-    "name": "AUTO_ADJ_LV_HP",
-    "dec": "3"
-  },
-  {
     "name": "NO_ADJ_ALL",
-    "dec": "4"
+    "dec": "3"
   }
 ]

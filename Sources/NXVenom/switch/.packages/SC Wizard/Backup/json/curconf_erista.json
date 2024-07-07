@@ -89,6 +89,11 @@
     "length": "1"
   },
   {
+    "name": "HP Mode",
+    "offset": "268",
+    "length": "1"
+  },
+  {
     "name": "DRAM Timing",
     "offset": "64",
     "length": "1"

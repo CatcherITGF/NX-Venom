@@ -101,92 +101,117 @@
   },
   {
     "name": "2433 MHz",
-    "dec": "2433000",
-    "color": "Orange"
+    "dec": "2433000"
   },
   {
     "name": "2466 MHz",
-    "dec": "2466000",
-    "color": "Orange"
+    "dec": "2466000"
   },
   {
     "name": "2500 MHz",
-    "dec": "2500000",
-    "color": "Red"
+    "dec": "2500000"
   },
   {
     "name": "2533 MHz",
-    "dec": "2533000",
-    "color": "Red"
+    "dec": "2533000"
   },
   {
     "name": "2566 MHz",
-    "dec": "2566000",
-    "color": "Red"
+    "dec": "2566000"
   },
   {
-    "name": "2600 MHz",
+    "name": "2600 MHz - Unsafe",
     "dec": "2600000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2633 MHz",
+    "name": "2633 MHz - Unsafe",
     "dec": "2633000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2666 MHz",
+    "name": "2666 MHz - Unsafe",
     "dec": "2666000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2700 MHz",
+    "name": "2700 MHz - Unsafe",
     "dec": "2700000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2733 MHz",
+    "name": "2733 MHz - Unsafe",
     "dec": "2733000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2766 MHz",
+    "name": "2766 MHz - Unsafe",
     "dec": "2766000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2800 MHz",
+    "name": "2800 MHz - Unsafe",
     "dec": "2800000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2833 MHz",
+    "name": "2833 MHz - Unsafe",
     "dec": "2833000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2866 MHz",
+    "name": "2866 MHz - Unsafe",
     "dec": "2866000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2900 MHz",
+    "name": "2900 MHz - Unsafe",
     "dec": "2900000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2933 MHz",
+    "name": "2933 MHz - Unsafe",
     "dec": "2933000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "2966 MHz",
+    "name": "2966 MHz - Unsafe",
     "dec": "2966000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "3000 MHz",
+    "name": "3000 MHz - Unsafe",
     "dec": "3000000",
-    "color": "Red"
+    "color": "Orange"
+  },
+  {
+    "name": "3033 MHz - Unsafe",
+    "dec": "3033000",
+    "color": "Orange"
+  },
+  {
+    "name": "3066 MHz - Unsafe",
+    "dec": "3066000",
+    "color": "Orange"
+  },
+  {
+    "name": "3100 MHz - Unsafe",
+    "dec": "3100000",
+    "color": "Orange"
+  },
+  {
+    "name": "3133 MHz - Unsafe",
+    "dec": "3133000",
+    "color": "Orange"
+  },
+  {
+    "name": "3166 MHz - Unsafe",
+    "dec": "3166000",
+    "color": "Orange"
+  },
+  {
+    "name": "3200 MHz - Unsafe",
+    "dec": "3200000",
+    "color": "Orange"
   }
 ]
