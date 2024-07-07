@@ -1,5 +1,9 @@
 [
   {
+    "name": "Unset",
+    "dec": "0"
+  },
+  {
     "name": "800 mV - Default",
     "dec": "800"
   },

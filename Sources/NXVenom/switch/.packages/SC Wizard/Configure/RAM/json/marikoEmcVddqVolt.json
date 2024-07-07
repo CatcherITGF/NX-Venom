@@ -4,104 +4,224 @@
     "dec": "0"
   },
   {
-    "name": "500 mV",
+    "name": "370 mV - Unsafe",
+    "dec": "370000",
+    "color": "Orange"
+  },
+  {
+    "name": "375 mV - Unsafe",
+    "dec": "375000",
+    "color": "Orange"
+  },
+  {
+    "name": "380 mV - Unsafe",
+    "dec": "380000",
+    "color": "Orange"
+  },
+  {
+    "name": "385 mV - Unsafe",
+    "dec": "385000",
+    "color": "Orange"
+  },
+  {
+    "name": "390 mV - Unsafe",
+    "dec": "390000",
+    "color": "Orange"
+  },
+  {
+    "name": "395 mV - Unsafe",
+    "dec": "395000",
+    "color": "Orange"
+  },
+  {
+    "name": "400 mV - Unsafe",
+    "dec": "400000",
+    "color": "Orange"
+  },
+  {
+    "name": "405 mV - Unsafe",
+    "dec": "405000",
+    "color": "Orange"
+  },
+  {
+    "name": "410 mV - Unsafe",
+    "dec": "410000",
+    "color": "Orange"
+  },
+  {
+    "name": "415 mV - Unsafe",
+    "dec": "415000",
+    "color": "Orange"
+  },
+  {
+    "name": "420 mV - Unsafe",
+    "dec": "420000",
+    "color": "Orange"
+  },
+  {
+    "name": "425 mV - Unsafe",
+    "dec": "425000",
+    "color": "Orange"
+  },
+  {
+    "name": "430 mV - Unsafe",
+    "dec": "430000",
+    "color": "Orange"
+  },
+  {
+    "name": "435 mV - Unsafe",
+    "dec": "435000",
+    "color": "Orange"
+  },
+  {
+    "name": "440 mV - Unsafe",
+    "dec": "440000",
+    "color": "Orange"
+  },
+  {
+    "name": "445 mV - Unsafe",
+    "dec": "445000",
+    "color": "Orange"
+  },
+  {
+    "name": "450 mV - Unsafe",
+    "dec": "450000",
+    "color": "Orange"
+  },
+  {
+    "name": "455 mV - Unsafe",
+    "dec": "455000",
+    "color": "Orange"
+  },
+  {
+    "name": "460 mV - Unsafe",
+    "dec": "460000",
+    "color": "Orange"
+  },
+  {
+    "name": "465 mV - Unsafe",
+    "dec": "465000",
+    "color": "Orange"
+  },
+  {
+    "name": "470 mV - Unsafe",
+    "dec": "470000",
+    "color": "Orange"
+  },
+  {
+    "name": "475 mV - Unsafe",
+    "dec": "475000",
+    "color": "Orange"
+  },
+  {
+    "name": "480 mV - Unsafe",
+    "dec": "480000",
+    "color": "Orange"
+  },
+  {
+    "name": "485 mV - Unsafe",
+    "dec": "485000",
+    "color": "Orange"
+  },
+  {
+    "name": "490 mV - Unsafe",
+    "dec": "490000",
+    "color": "Orange"
+  },
+  {
+    "name": "495 mV - Unsafe",
+    "dec": "495000",
+    "color": "Orange"
+  },
+  {
+    "name": "500 mV - Unsafe",
     "dec": "500000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "505 mV",
+    "name": "505 mV - Unsafe",
     "dec": "505000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "510 mV",
+    "name": "510 mV - Unsafe",
     "dec": "510000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "515 mV",
+    "name": "515 mV - Unsafe",
     "dec": "515000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "520 mV",
+    "name": "520 mV - Unsafe",
     "dec": "520000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "525 mV",
+    "name": "525 mV - Unsafe",
     "dec": "525000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "530 mV",
+    "name": "530 mV - Unsafe",
     "dec": "530000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "535 mV",
+    "name": "535 mV - Unsafe",
     "dec": "535000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "540 mV",
+    "name": "540 mV - Unsafe",
     "dec": "540000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "545 mV",
+    "name": "545 mV - Unsafe",
     "dec": "545000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
     "name": "550 mV",
-    "dec": "550000",
-    "color": "Red"
+    "dec": "550000"
   },
   {
     "name": "555 mV",
-    "dec": "555000",
-    "color": "Red"
+    "dec": "555000"
   },
   {
     "name": "560 mV",
-    "dec": "560000",
-    "color": "Red"
+    "dec": "560000"
   },
   {
     "name": "565 mV",
-    "dec": "565000",
-    "color": "Red"
+    "dec": "565000"
   },
   {
     "name": "570 mV",
-    "dec": "570000",
-    "color": "Orange"
+    "dec": "570000"
   },
   {
     "name": "575 mV",
-    "dec": "575000",
-    "color": "Orange"
+    "dec": "575000"
   },
   {
     "name": "580 mV",
-    "dec": "580000",
-    "color": "Orange"
+    "dec": "580000"
   },
   {
     "name": "585 mV",
-    "dec": "585000",
-    "color": "Orange"
+    "dec": "585000"
   },
   {
     "name": "590 mV",
-    "dec": "590000",
-    "color": "Orange"
+    "dec": "590000"
   },
   {
     "name": "595 mV",
-    "dec": "595000",
-    "color": "Orange"
+    "dec": "595000"
   },
   {
     "name": "600 mV - Default",

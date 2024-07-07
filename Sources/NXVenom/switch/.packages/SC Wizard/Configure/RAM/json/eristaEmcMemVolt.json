@@ -4,54 +4,59 @@
     "dec": "0"
   },
   {
-    "name": "925 mV",
+    "name": "912.5 mV - Unsafe",
+    "dec": "912500",
+    "color": "Orange"
+  },
+  {
+    "name": "925 mV - Unsafe",
     "dec": "925000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "937.5 mV",
+    "name": "937.5 mV - Unsafe",
     "dec": "937500",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "950 mV",
+    "name": "950 mV - Unsafe",
     "dec": "950000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "962.5 mV",
+    "name": "962.5 mV - Unsafe",
     "dec": "962500",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "975 mV",
+    "name": "975 mV - Unsafe",
     "dec": "975000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "987.5 mV",
+    "name": "987.5 mV - Unsafe",
     "dec": "987500",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "1000 mV",
+    "name": "1000 mV - Unsafe",
     "dec": "1000000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "1012.5 mV",
+    "name": "1012.5 mV - Unsafe",
     "dec": "1012500",
     "color": "Red"
   },
   {
-    "name": "1025 mV",
+    "name": "1025 mV - Unsafe",
     "dec": "1025000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "1037.5 mV",
+    "name": "1037.5 mV - Unsafe",
     "dec": "1037500",
-    "color": "Red"
+    "color": "Orange"
   },
   {
     "name": "1050 mV",
@@ -135,32 +140,32 @@
     "color": "Red"
   },
   {
-    "name": "1287.5 mV",
+    "name": "1287.5 mV - Dangerous",
     "dec": "1287500",
     "color": "Red"
   },
   {
-    "name": "1300 mV",
+    "name": "1300 mV - Dangerous",
     "dec": "1300000",
     "color": "Red"
   },
   {
-    "name": "1312.5 mV",
+    "name": "1312.5 mV - Dangerous",
     "dec": "1312500",
     "color": "Red"
   },
   {
-    "name": "1325 mV",
+    "name": "1325 mV - Dangerous",
     "dec": "1325000",
     "color": "Red"
   },
   {
-    "name": "1337.5 mV",
+    "name": "1337.5 mV - Dangerous",
     "dec": "1337500",
     "color": "Red"
   },
   {
-    "name": "1350 mV",
+    "name": "1350 mV - Dangerous",
     "dec": "1350000",
     "color": "Red"
   }
