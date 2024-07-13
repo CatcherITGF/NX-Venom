@@ -266,5 +266,53 @@
   {
     "name": "650 mV",
     "dec": "650000"
+  },
+  {
+    "name": "655 mV - Unsafe",
+    "dec": "655000"
+  },
+  {
+    "name": "660 mV - Unsafe",
+    "dec": "660000",
+    "color": "Orange"
+  },
+  {
+    "name": "665 mV - Unsafe",
+    "dec": "665000",
+    "color": "Orange"
+  },
+  {
+    "name": "670 mV - Unsafe",
+    "dec": "670000",
+    "color": "Orange"
+  },
+  {
+    "name": "675 mV - Unsafe",
+    "dec": "675000",
+    "color": "Orange"
+  },
+  {
+    "name": "680 mV - Unsafe",
+    "dec": "680000",
+    "color": "Orange"
+  },
+  {
+    "name": "685 mV - Unsafe",
+    "dec": "685000"
+  },
+  {
+    "name": "690 mV - Unsafe",
+    "dec": "690000",
+    "color": "Orange"
+  },
+  {
+    "name": "695 mV - Unsafe",
+    "dec": "695000",
+    "color": "Orange"
+  },
+  {
+    "name": "700 mV - Unsafe",
+    "dec": "700000",
+    "color": "Orange"
   }
 ]
