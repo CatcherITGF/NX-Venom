@@ -2,169 +2,57 @@
 
 ![Banner](banner.jpg)
 
-## Community & support
-
-Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
-Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (channel #overclocking)
+The project is being developed for informational purposes showing the capabilities of the Switch hardware and is not aimed at extracting commercial benefits.
 
 ## Warning
 
 **ATTENTION! Overclocking the console does not lead to irreversible consequences, however it poses a risk to data due to the features of Horizon OS. Therefore, it is strongly recommended to use overclocking exclusively in emuMMC and make backups. USE AT YOUR OWN RISK!**
 
+## Community & support
+
+Telegram: [Nintendo Busters](https://t.me/NintendoBusters)  
+Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (channel #overclocking)
+
 ## Installation
 
 1. Make backup and delete everything except `Nintendo` and `emuMMC` folders on the SD card.
 2. Unpack the [NX Venom](https://github.com/CatcherITGF/NX-Venom/raw/main/NXVenom.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
-3. Use the `All-in-One Switch Updater` homebrew application for updates.
+3. Use the `All-in-One Switch Updater` homebrew application for updates. The answer to "Do you want to overwrite existing .ini config" is `YES`.
 4. Installation of additional software, as well as patches for games, is done through the `UberHand` menu (click `right`) → `Software Installer`.
 
 ## How to use
 
 1. Opening the `UberHand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
-2. Use the `sys-clk-oc` overlay to manage overclocking.
-3. Use the `SC Wizard` (go to the `UberHand` menu, press the `right` button) to change the parameters of the loading kip.
+2. Use the `sys-clk-oc` overlay to manage overclocking clocks.
+3. Use the `SC Wizard` (go to the `UberHand` menu, press the `right` button) to change the parameters of the loading kip (only for advanced users).
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
-5. Recommended overclocking parameters for portable mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
+5. Recommended overclocking parameters for handheld mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
-## SC Wizard
-
-### Hardware Requirements
+## Hardware Requirements
 
 - Nintendo Switch V1 (Erista)
 - Nintendo Switch V2 (Mariko)
 - Nintendo Switch Lite (Mariko)
 - Nintendo Switch OLED (Mariko)
 
-### Settings
+## UberHand Packages
 
-* CPU
-  * Undervolt Mode: CPU energy efficiency management (Marico only)
-  * Voltage Max: maximum CPU voltage, recommended 1235mV or below
-  * Boost Clock: CPU frequency that affects the acceleration of loading screens in games
-* GPU
-  * Undervolt Mode: GPU energy efficiency management (Marico only)
-  * UV3 Table: custom voltage table (Marico only)
-  * Voltage Offset: negative voltage offset value for gpu dynamic voltage calculation
-  * Voltage Min: high RAM clocks will require gpu minimum voltage to be raised
-* RAM
-  * Max Clock: memory frequency, recommended parameters range `2133` - `2400` for Mariko and `1862 - 2131` for Erista
-  * Vdd2: supply voltage for the input buffers and core logic of a memory chip
-  * Vddq: supply voltage to the output buffers of a memory chip (Marico only)
-  * EMC DVB Shift: SoC voltage automatically gets raised with higher dram clock, shift number helps with stability at higher memory clock
-  * Timings: timings increase performance, but may affect stability
-
-## System Tweaks
-
-### Uberhand
-
-Preferences for the [Uberhand overlay](https://github.com/efosamark/Uberhand-Overlay)
-
-* Key Combo
-* Default Menu
-* Show Overlays Versions
-* Show Packages Versions
-* Show Items Separator
-
-Main config: `/config/uberhand/config.ini`  
-
-### Sys-Clk-OC
-
-Preferences for the switch sysmodule [Sys-Clk-OC](https://github.com/hanai3Bi/Switch-OC-Suite)
-
-* Allow Unsafe Freqs: allow unsafe frequencies (CPU > 1963.5 MHz, GPU > 921.6 MHz)
-* Remove Clocks Capping: remove CPU/GPU clock cappings
-* Override Boost Mode: override boost mode frequency with user set values (CPU/GPU)
-* Auto CPU boost: for games without official boost mode, activates when CPU core utilize >= 95%
-
-Main config: `/config/sys-clk/config.ini`  
-Offical documentation: [README for sys-clk-OC](https://github.com/hanai3Bi/Switch-OC-Suite/blob/master/Source/sys-clk-OC/README.md)
-
-### Status Monitor
-
-Preferences for the [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (hanai3Bi fork) overlay
-
-- Key Combo
-- Show Real Freqs
-- Show Real Volts
-- Replace RAM Total with RAM Load
-
-Main config: `/config/status-monitor/config.ini`  
-Offical documentation: [Configuration file](https://github.com/hanai3Bi/Status-Monitor-Overlay/blob/master/docs/config.md)
-
-### MemToolkitNX
-
-Threads switcher for MemToolkitNX. Don't forget switch to the default after use 4 threads setting
-
-* 3 Threads - Default
-* 4 Threads
-
-### Fan Tuning
-
-The package is a part of the Uberhand Overlay project which configure and set temperature-related settings for different temperature ranges
-
-Main config: `/atmosphere/config/system_settings.ini`  
-
-### Video Capture
-
-A tool that allows you to change the quality settings of the video recording system function
-
-- FPS
-- Bitrate
-- Key Frame Count
-
-Main config: `/atmosphere/config/system_settings.ini`  
-
-### Background Services
-
-A tool that allows you to disable system background processes
-
-### Clear AMS Report Logs
-
-A tool that allows you to clear the logs of the Atmosphere CFW, which tend to accumulate in large quantities
-
-## Software Installer
-
-Be patient. The installation process may take some time.
-
-- [FPSLocker Patches](https://github.com/masagrator/FPSLocker-Warehouse)  
-Configs that allow going above 30 FPS, tweak dynamic resolution frame timing for better performance, etc
-- [MissionControl](https://github.com/ndeadly/MissionControl/releases)  
-Use controllers from other consoles natively on your Nintendo Switch via Bluetooth. No dongles or other external hardware neccessary
-- [Picofly Firmware](https://github.com/Ansem-SoD/Picofly)  
-Firmware related to the rp2040-zero based chip
-- [nxmp](https://github.com/proconsule/nxmp/releases)  
-NXMP is a video player for Nintendo Switch based on MPV. NXMP support most popular video format, it support HTTP,FTP,SFTP,Samba,NFS streaming and it also support Enigma2 decoders
-- [ipswitch](https://github.com/3096/ipswitch/releases)  
-Use text to generate cheats or `.ips` patches to use with Atmosphere
-- [Linkalho](https://github.com/rdmrocha/linkalho/releases)  
-Linkalho is an homebrew app that will link NNID accounts offline
-- [SysDVR](https://github.com/exelix11/SysDVR/releases)  
-Stream switch games to your PC via USB or network
-- [dvr-patches](https://github.com/exelix11/dvr-patches/releases)  
-System patches to stream most switch games with SysDVR
-- [emuiibo](https://github.com/XorTroll/emuiibo/releases)  
-Virtual amiibo (amiibo emulation) system for Nintendo Switch
-- [Amiigo](https://github.com/CompSciOrBust/Amiigo/releases)  
-Amiigo is a GUI for creating and switching virtual Amiibo for use with the Emuiibo system module
-- [Studious Pancake](https://github.com/HookedBehemoth/studious-pancake/releases)  
-Reboot to Hekate configs from `UberHand` menu
-- [JKSV](https://github.com/J-D-K/JKSV/releases)  
-JK's save manager
-- [sys-ftpd](https://github.com/cathery/sys-ftpd/releases)  
-Nintendo Switch FTP server as a background service
-- [QuickNTP](https://github.com/nedex/QuickNTP/releases)  
-A UberHand plugin for Nintendo Switch to sync time with NTP servers
-- [NXGallery](https://github.com/iUltimateLP/NXGallery/releases)  
-A Nintendo Switch Homebrew Application to transfer your screenshots to your phone or PC in no-time
+- SC Wizard (only for advanced users)
+- Software Installer
+- System Tweaks  
 
 ## Philosophy
 
 The rule by which you need to be guided using console overclocking is the absence of side effects. The console should work without atmosphere errors, game crashes, shutdown due to overheating. Having achieved this result, you get a stable console, high performance in games and balanced power consumption.
 
+## Guides
+
+- [Really Simple Overclocking Guide](https://rentry.co/ocsc)
+- [RAM Overclocking Stats](https://docs.google.com/spreadsheets/d/154TU8NRI3G8wY0ndf8HYJG20wsajW_CeSvkJLHw7o1g/edit?gid=0#gid=0)
+
 ## FAQ
 
 - If there are problems after installation, try to fix the attributes: `Hekate` → `Tools` → `Arch Bit`
-- When use `All-in-One Switch Updater`, the answer to "Do you want to overwrite existing .ini config" is `YES`
 - For questions, help, wishes and suggestions, feel free to contact the Telegram group [Nintendo Busters](https://t.me/NintendoBusters) or Discord server [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (channel #overlocking).
 
 ## Content
@@ -172,13 +60,12 @@ The rule by which you need to be guided using console overclocking is the absenc
 - [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
 - [Hekate](https://github.com/CTCaer/hekate)
 - [Sigpatches](https://sigmapatches.coomer.party)
-- [Switch OC Suite](https://github.com/hanai3Bi/Switch-OC-Suite)
-- [SaltyNX](https://github.com/masagrator/SaltyNX)
-- [FPSLocker](https://github.com/masagrator/FPSLocker)
+- [SaltyNX](https://github.com/masagrator/SaltyNX) (fork)
+- [FPSLocker](https://github.com/masagrator/FPSLocker) (fork)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
-- [InfoNX](https://github.com/renA21/InfoNX)
+- [InfoNX](https://github.com/renA21/InfoNX) (fork)
 - [Uberhand-Overlay](https://github.com/efosamark/Uberhand-Overlay)
-- [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay)
+- [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (fork)
 - [DBI](https://github.com/rashevskyv/dbi)
 - [Tinfoil](https://tinfoil.io)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
@@ -188,6 +75,6 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 ## Credits
 
-Special thanks to meha, b0rd2dEAth, Cooler3D, redraz, b3711, lineon, Ruslan, MasaGratoR, CtC, Efosamark, i3sey, Irene, khmm12, discord community `NSwitch 60FPS Cheats & Mods` and `RetroNX` for implementing individual components and help with this bundle
+Special thanks to meha, b0rd2dEAth, Cooler3D, redraz, b3711, lineon, Ruslan, MasaGratoR, CtC, Efosamark, i3sey, Irene, khmm12, ChanseyIsTheBest & discord communities `NSwitch 60FPS Cheats & Mods`, `RetroNX` for implementing individual components and help with this bundle
 
 Made with ❤️ by NX community, composed by Catcher in the grain field
