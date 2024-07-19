@@ -269,7 +269,8 @@
   },
   {
     "name": "655 mV - Unsafe",
-    "dec": "655000"
+    "dec": "655000",
+    "color": "Orange"
   },
   {
     "name": "660 mV - Unsafe",
@@ -298,7 +299,8 @@
   },
   {
     "name": "685 mV - Unsafe",
-    "dec": "685000"
+    "dec": "685000",
+    "color": "Orange"
   },
   {
     "name": "690 mV - Unsafe",
