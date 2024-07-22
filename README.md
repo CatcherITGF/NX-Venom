@@ -28,6 +28,10 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 5. Recommended overclocking parameters for handheld mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
+## Launching Packages
+
+To launch packages like Tinfoil and DBI, open the Album whilst holding the R button, this should launch the hbmenu from where you can launch your packages.
+
 ## Hardware Requirements
 
 - Nintendo Switch V1 (Erista)
