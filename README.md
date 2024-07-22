@@ -30,7 +30,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 
 ## HomeBrew Menu
 
-To launch HomeBrew apps open the Album or any game icon whilst holding the R button. You can also install a separate application (use only in EmuMMC) via BDI: [download](https://github.com/CatcherITGF/NX-Venom/raw/main/Sources/Tools/Apps/hbmenu_%5B0104444444440000%5D.nsp)
+To launch HomeBrew apps open the Album or any game icon whilst holding the R button. You can also install a separate application (use only in EmuMMC) via DBI: [download](https://github.com/CatcherITGF/NX-Venom/raw/main/Sources/Tools/Apps/hbmenu_%5B0104444444440000%5D.nsp)
 
 ## Hardware Requirements
 
