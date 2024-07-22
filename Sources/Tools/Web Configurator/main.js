@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 /* Config: Cust */
-const CUST_REV_ADV = 42;
+const CUST_REV_ADV = 44;
 var CustPlatform;
 (function (CustPlatform) {
     CustPlatform[CustPlatform["Undefined"] = 0] = "Undefined";
@@ -142,7 +142,7 @@ class AdvEntry extends CustEntry {
     }
 }
 class GpuEntry extends CustEntry {
-    constructor(id, name, platform = CustPlatform.Mariko, size = 4, desc = ["range: 550 ≤ x ≤ 1050"], defval = 610, minmax = [550, 1050], step = 5, zeroable = false) {
+    constructor(id, name, platform = CustPlatform.Mariko, size = 4, desc = ["range: 500 ≤ x ≤ 1050"], defval = 610, minmax = [500, 1050], step = 5, zeroable = false) {
         super(id, name, platform, size, desc, defval, minmax, step, zeroable);
         this.id = id;
         this.name = name;
@@ -213,7 +213,7 @@ var CustTable = [
     new CustEntry("commonGpuVoltOffset", "GPU Volt Offset", CustPlatform.All, 4, ["Negative Offset value for gpu dynamic voltage calculation",
         "For example, value of 10 will decrease 10mV gpu volt from all frequencies",
         "Default gpu vmin: Erista - 810mV / Mariko - 610mV",
-        "Acceptable range: 0 ~ 200"], 0, [0, 200], 1),
+        "Acceptable range: 0 ~ 50"], 0, [0, 50], 1),
     new CustEntry("eristaGpuMinVolt", "Erista GPU Vmin", CustPlatform.Erista, 4, ["GPU Vmin for Erista",
         "Default gpu vmin: 810mV",
         "Regulator step: 6.25mV",
@@ -234,10 +234,9 @@ var CustTable = [
         "This means max available GPU freq will be adjusted depending on your speedo",
         "Acceptable range: 800 ~ 850"], 800, [800, 850], 5),
     new CustEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)",
-        "<b>1</b>: AUTO_ADJ_HP: Auto adjust only core timings. (Previously CUST_ADJ).",
-		"<b>2</b>: AUTO_ADJ_LV: Less tight timings. It can help to achieve higher frequencies or lower voltages.",
-		"<b>3</b>: AUTO_ADJ_LV_HP: LV mode with slightly tighter timings",
-        "<b>4</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 4], 1),
+		"<b>1</b>: AUTO_ADJ_LV: Less tight timings. It can help to achieve higher frequencies or lower voltages.",
+		"<b>2</b>: AUTO_ADJ_LV_HP: LV mode with slightly tighter timings",
+        "<b>3</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 3], 1),
     new CustEntry("commonEmcMemVolt", "EMC Vdd2 Voltage in uV", CustPlatform.All, 4, ["Acceptable range: 1050000 ≤ x ≤ 1212500, and it should be divided evenly by 12500.",
         "Erista Default: 1125000",
         "Mariko Default: 1100000",
@@ -258,7 +257,7 @@ var CustTable = [
     new CustEntry("commonEmcDvbShift", "EMC DVB Voltage Shift", CustPlatform.All, 4, ["EMC DVB table is EMC clock to SOC voltage mapping",
         "SOC voltage automatically gets raised on higher emc clock with this table",
         "Each shift number raises 25mV more, up to max SoC voltage. Leave at 0 and only raise if unstable",
-        "Acceptable range : 0~4"], 0, [0, 4], 1),
+        "Acceptable range : 0~5"], 0, [0, 5], 1),
 ];
 var AdvTable = [
     new AdvEntry("ramTimingTRCD", "T1 tRCD", CustPlatform.All, 4, ["<b>WARNING</b>: Unstable timings can corrupt your nand",	
