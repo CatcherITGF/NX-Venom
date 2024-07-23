@@ -1,0 +1,13 @@
+Adjust the color of your Nintendo Switch screen
+
+Features:
+
+- Modify the color temperature of the display
+
+- Filter colors to one single component
+
+- Apply color corrections: gamma, luminance, and color range
+
+- Schedule settings to be applied to dusk/dawn time, with smooth transitions
+
+- Configurable screen dimming

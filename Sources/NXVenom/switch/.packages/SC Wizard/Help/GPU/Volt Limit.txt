@@ -1,6 +1,6 @@
 Not recommended to increase value in order to protect from going over gpu pmic limits
 
-Recommended limit: 800mV@1228Mhz with HiOPT
+Recommended limit: 800mV@1228Mhz
 
 Any GPU Frequency that needs higher than vmax will be automatically removed and not available
 

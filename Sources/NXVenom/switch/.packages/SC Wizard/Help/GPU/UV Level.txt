@@ -1,0 +1,17 @@
+Reduce GPU power draw
+
+Mariko
+---
+
+0 : HiOPT table
+1 : Modified HiOPT (-20 mV on the last 3 freq)
+2 : High UV table
+3 : Custom static GPU Voltage Table (Use Gpu Configuator)
+
+Erista
+---
+
+0 : Default Table
+1 : Medel's GPU UV table with an offset of +30mV
+2 : Experimental dynamic high UV table
+3 : Custom static GPU Voltage Table (Use Gpu Configuator)

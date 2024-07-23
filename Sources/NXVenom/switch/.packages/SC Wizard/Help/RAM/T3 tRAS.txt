@@ -1,0 +1,1 @@
+Reducing tRAS works well on Samsung RAM (MGCL, MGCJ)

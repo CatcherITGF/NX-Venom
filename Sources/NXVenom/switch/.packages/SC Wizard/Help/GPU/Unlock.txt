@@ -1,0 +1,5 @@
+Ulock 1305 GPU freq
+
+It gives small boost, but drains more power and rise temperature
+
+Recommended using only for GPU heavy games
