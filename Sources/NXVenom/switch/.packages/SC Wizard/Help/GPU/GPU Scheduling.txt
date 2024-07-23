@@ -1,0 +1,1 @@
+GPU scheduling off gives performance boost up to 3.3% but also power drain and higher temperatures
