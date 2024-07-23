@@ -25,8 +25,9 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 1. Opening the `UberHand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
 2. Use the `sys-clk-oc` overlay to manage overclocking clocks.
 3. Use the `SC Wizard` (go to the `UberHand` menu, press the `right` button) to change the parameters of the loading kip (only for advanced users).
-4. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
-5. Recommended overclocking parameters for handheld mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
+4. There is a built-in help inside each parameter, to access it press `Y`.
+5. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
+6. Recommended overclocking parameters for handheld mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
 ## HomeBrew Menu
 
