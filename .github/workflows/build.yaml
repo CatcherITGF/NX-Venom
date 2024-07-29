@@ -32,7 +32,7 @@ jobs:
         working-directory: ./Sources/NXVenom
         run: rm -rf ../../SC Wizard.zip && zip -qqrX "../../SC Wizard.zip" "./switch/.packages/SC Wizard" ./switch/.overlays/ovlmenu.ovl
       - name: "Compile packages"
-        working-directory: ./Sources/Tools/Uberhand\ Packages
+        working-directory: ./Sources/Tools/Uberhand Packages
         run: rm -rf "RAM Patch.zip" && zip -qqrX "RAM Patch.zip" "RAM Patch" && rm -rf "TOTK UltraCam.zip" && zip -qqrX "TOTK UltraCam.zip" "TOTK UltraCam"
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
