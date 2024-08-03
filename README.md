@@ -54,6 +54,7 @@ The rule by which you need to be guided using console overclocking is the absenc
 ## Guides
 
 - [Really Simple Overclocking Guide](https://rentry.co/ocsc)
+- [Erista OC Guide](https://rentry.co/erista)
 - [RAM Overclocking Stats](https://docs.google.com/spreadsheets/d/154TU8NRI3G8wY0ndf8HYJG20wsajW_CeSvkJLHw7o1g/edit?gid=0#gid=0)
 
 ## FAQ
