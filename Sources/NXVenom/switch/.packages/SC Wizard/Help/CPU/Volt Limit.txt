@@ -1,1 +1,3 @@
-Max CPU volt is capped to 1160 mV, the switch will not boot at higher voltages
+Changing this value affects cpu voltage calculation
+
+System default: 1120, L4T OC: 1235
