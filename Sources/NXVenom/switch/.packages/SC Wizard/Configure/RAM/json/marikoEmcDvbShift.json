@@ -1,26 +1,34 @@
 [
   {
-    "name": "Unset",
-    "dec": "0"
+    "name": "-2 - -50 mV",
+    "hex": "FEFFFFFF"
+  },
+  {
+    "name": "-1 - -25 mV",
+    "hex": "FFFFFFFF"
+  },
+  {
+    "name": "Auto - Default",
+    "hex": "00000000"
   },
   {
     "name": "1 - +25 mV",
-    "dec": "1"
+    "hex": "01000000"
   },
   {
     "name": "2 - +50 mV",
-    "dec": "2"
+    "hex": "02000000"
   },
   {
     "name": "3 - +75 mV",
-    "dec": "3"
+    "hex": "03000000"
   },
   {
     "name": "4 - +100 mV",
-    "dec": "4"
+    "hex": "04000000"
   },
   {
     "name": "5 - +125 mV",
-    "dec": "5"
+    "hex": "05000000"
   }
 ]
