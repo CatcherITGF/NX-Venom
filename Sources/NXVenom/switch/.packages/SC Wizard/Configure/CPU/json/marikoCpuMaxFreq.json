@@ -1,0 +1,15 @@
+[
+  {
+    "name": "1963 MHz",
+    "dec": "2"
+  },
+  {
+    "name": "2379 MHz",
+    "dec": "0"
+  },
+  {
+    "name": "2601 MHz - Unsafe",
+    "dec": "1",
+    "color": "Orange"
+  }
+]
