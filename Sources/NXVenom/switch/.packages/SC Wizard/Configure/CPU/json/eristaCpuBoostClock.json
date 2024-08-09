@@ -14,5 +14,15 @@
   {
     "name": "2091 MHz",
     "dec": "2091000"
+  },
+  {
+    "name": "2193 MHz - Unsafe",
+    "dec": "2193000",
+    "color": "Orange"
+  },
+  {
+    "name": "2295 MHz - Unsafe",
+    "dec": "2295000",
+    "color": "Orange"
   }
 ]
