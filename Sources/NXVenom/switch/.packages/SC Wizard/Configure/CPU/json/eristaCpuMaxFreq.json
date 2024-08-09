@@ -1,0 +1,11 @@
+[
+  {
+    "name": "2091 MHz",
+    "dec": "0"
+  },
+  {
+    "name": "2295 MHz - Unsafe",
+    "dec": "1",
+    "color": "Orange"
+  }
+]
