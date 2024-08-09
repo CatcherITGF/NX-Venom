@@ -3,7 +3,7 @@ High frequencies are not recommended for use with high voltages
 Mariko
 ---
 
-2379 MHz
+2397 MHz
 Volt Limit up to 1235
 
 2601 MHz
