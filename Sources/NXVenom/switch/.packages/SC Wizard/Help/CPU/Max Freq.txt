@@ -1,0 +1,15 @@
+High frequencies are not recommended for use with high voltages
+
+Mariko
+---
+
+2379 MHz
+Volt Limit up to 1235
+
+2601 MHz
+Volt Limit up to 1160
+
+Erista
+---
+
+No restrictions

@@ -1,5 +1,0 @@
-Ulock 2295-2601 freqs
-
-It gives small boost, but drains more power and rise temperature
-
-Recommended using only for Boost Clock & CPU heavy games
