@@ -3,11 +3,15 @@ High frequencies are not recommended for use with high voltages
 Mariko
 ---
 
+1963 MHz
+Default freq when no UV is selected
+Recommended Volt Limit up to 1235
+
 2397 MHz
-Volt Limit up to 1235
+Recommended Volt Limit up to 1235
 
 2601 MHz
-Volt Limit up to 1160
+Recommended Volt Limit up to 1160
 
 Erista
 ---

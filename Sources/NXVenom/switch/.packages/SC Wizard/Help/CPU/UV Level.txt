@@ -1,1 +1,6 @@
 Low Freq UV: 0-1581 MHz (UV7: 0-1428 MHz)
+
+Mariko
+---
+
+1963 MHz default freq when no UV is selected
