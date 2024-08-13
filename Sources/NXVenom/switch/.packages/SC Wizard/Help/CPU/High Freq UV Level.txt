@@ -1,1 +1,6 @@
 High Freq UV Level: 1683-2601 MHz (UV7: 1581-2601 MHz)
+
+Mariko
+---
+
+1963 MHz default freq when no UV is selected
