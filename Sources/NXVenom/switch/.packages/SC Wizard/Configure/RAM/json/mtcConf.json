@@ -4,10 +4,6 @@
     "dec": "0"
   },
   {
-    "name": "AUTO_ADJ_LV",
-    "dec": "1"
-  },
-  {
     "name": "NO_ADJ_ALL",
     "dec": "3"
   }
