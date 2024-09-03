@@ -1,29 +1,53 @@
 Samsung AA-MGCL
-(14-14-26) 4-4-4-5-(4-4)
+(4-4-5) 5-5-6-7-6
+
+Samsung AA-MGCL - Strong Timings
+(4-4-8) 6-5-7-8-6
 
 Samsung AM-MGCJ
-(14-14-30) 3-3-2-5-(3-3)
+(2-2-4) 3-4-4-4-6
+
+Samsung AM-MGCJ - Strong Timings
+(4-3-7) 3-5-4-4-6
 
 Samsung AB-MGCL
-(14-14-30) 3-3-3-5-(3-3)
+(4-4-4) 4-4-5-6-6
 
 Samsung MGCH (Erista)
-(14-14-30) 1-3-2-5-(3-3)
+(4-4-4) 1-4-5-0-6
 
 Micron WT:F
-(13-13-30) 5-4-3-5-(6-5)
+(4-4-2) 5-4-6-3-6
+
+Micron WT:F - Strong Timings
+(5-5-4) 6-5-6-3-6
 
 Micron WT:E
-(15-15-33) 4-3-2-5-(4-4)
+(2-2-2) 5-4-5-2-6
+
+Micron WT:E - Strong Timings
+(3-3-2) 5-4-6-2-6
 
 Micron WT:B
-(12-12-24) 5-2-3-5-(6-5)
+(4-4-5) 5-2-6-5-6
+
+Micron WT:B - Strong Timings
+(6-6-7) 7-2-6-5-6
 
 Hynix NEE
-(14-14-32) 2-5-3-5-(6-3)
+(3-3-2) 2-5-5-4-6
+
+Hynix NEE - Strong Timings
+(4-4-4) 3-7-6-5-6
 
 Hynix NME
-(15-15-36) 0-1-1-5-(1-1)
+(2-2-1) 0-1-4-3-6
+
+Hynix NME - Strong Timings
+(3-3-4) 0-1-4-4-6
 
 Venom Default
-(15-15-33) 0-3-2-5-(2-2)
+(3-3-2) 0-4-4-3-6
+
+Stock Default
+(0-0-0) 0-0-0-0-0
