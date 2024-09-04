@@ -10,61 +10,51 @@
   {
     "name": "76 - 307 MHz",
     "offset": "124",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "384 MHz",
     "offset": "140",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "460 MHz",
     "offset": "144",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "537 MHz",
     "offset": "148",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "614 MHz",
     "offset": "152",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "691 MHz",
     "offset": "156",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "768 MHz",
     "offset": "160",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "844 MHz",
     "offset": "164",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "921 MHz",
     "offset": "168",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "998 MHz",
     "offset": "172",
-    "length": "4",
     "extent": " mV"
   }
 ]
