@@ -3,3 +3,7 @@ Auto: Changes the table config depending on the selected Vmin and UV level (reco
 Default Table: Uses the default table without modifications
 
 1581 MHz Tbreak: The High Freq UV range changes from 1683-2601 to 1581-2601 MHz (former UV7)
+
+Shift Fix 1: Prevents a table shift
+
+Shift Fix 2: Prevents a table shift and slightly lowers mid-freq voltages

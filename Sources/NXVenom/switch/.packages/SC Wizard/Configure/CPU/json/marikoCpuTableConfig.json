@@ -10,5 +10,13 @@
   {
     "name": "1581 MHz Tbreak",
     "dec": "2"
+  },
+  {
+    "name": "Shift Fix 1",
+    "dec": "3"
+  },
+  {
+    "name": "Shift Fix 2",
+    "dec": "4"
   }
 ]
