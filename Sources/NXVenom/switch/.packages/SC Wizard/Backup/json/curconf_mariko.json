@@ -9,36 +9,34 @@
   },
   {
     "name": "UV Level",
-    "offset": "12",
-    "length": "1"
+    "offset": "12"
   },
   {
     "name": "High Freq UV Level",
-    "offset": "252",
-    "length": "1"
+    "offset": "252"
+  },
+  {
+    "name": "Table Config",
+    "offset": "272"
   },
   {
     "name": "Low Freq Vmin",
     "offset": "24",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "High Freq Vmin",
     "offset": "28",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "Volt Limit",
     "offset": "32",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "Boost Clock",
     "offset": "8",
-    "length": "4",
     "extent": " MHz"
   },
   {
@@ -55,31 +53,26 @@
   },
   {
     "name": "UV Level",
-    "offset": "40",
-    "length": "1"
+    "offset": "40"
   },
   {
     "name": "Volt Offset",
     "offset": "44",
-    "length": "1",
     "prefix": "-",
     "extent": " mV"
   },
   {
     "name": "Speedo",
-    "offset": "52",
-    "length": "4"
+    "offset": "52"
   },
   {
     "name": "Vmin",
     "offset": "56",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "Volt Limit",
     "offset": "60",
-    "length": "4",
     "extent": " mV"
   },
   {
@@ -97,39 +90,32 @@
   {
     "name": "Clock Max",
     "offset": "80",
-    "length": "4",
     "extent": " MHz"
   },
   {
     "name": "EMC Vdd2",
     "offset": "68",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "EMC Vddq",
     "offset": "72",
-    "length": "3",
     "extent": " mV"
   },
   {
     "name": "EMC DVB Shift",
-    "offset": "84",
-    "length": "1"
+    "offset": "84"
   },
   {
     "name": "HP Mode",
-    "offset": "268",
-    "length": "1"
+    "offset": "268"
   },
   {
     "name": "DRAM Timing",
-    "offset": "64",
-    "length": "1"
+    "offset": "64"
   },
   {
     "name": "Timings",
-    "offset": "88,92,96,100,104,108,112,116",
-    "length": "1"
+    "offset": "88,92,96,100,104,108,112,116"
   }
 ]

@@ -9,25 +9,21 @@
   },
   {
     "name": "UV Level",
-    "offset": "12",
-    "length": "1"
+    "offset": "12"
   },
   {
     "name": "Low Freq Vmin",
     "offset": "16",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "Volt Limit",
     "offset": "20",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "Boost Clock",
     "offset": "8",
-    "length": "4",
     "extent": " MHz"
   },
   {
@@ -44,20 +40,17 @@
   },
   {
     "name": "UV Level",
-    "offset": "36",
-    "length": "1"
+    "offset": "36"
   },
   {
     "name": "Volt Offset",
     "offset": "44",
-    "length": "1",
     "prefix": "-",
     "extent": " mV"
   },
   {
     "name": "Vmin",
-    "offset": "48",
-    "length": "4"
+    "offset": "48"
   },
   {
     "name": "",
@@ -74,33 +67,27 @@
   {
     "name": "Clock Max",
     "offset": "76",
-    "length": "4",
     "extent": " MHz"
   },
   {
     "name": "EMC Vdd2",
     "offset": "68",
-    "length": "4",
     "extent": " mV"
   },
   {
     "name": "EMC DVB Shift",
-    "offset": "84",
-    "length": "1"
+    "offset": "84"
   },
   {
     "name": "HP Mode",
-    "offset": "268",
-    "length": "1"
+    "offset": "268"
   },
   {
     "name": "DRAM Timing",
-    "offset": "64",
-    "length": "1"
+    "offset": "64"
   },
   {
     "name": "Timings",
-    "offset": "88,92,96,100,104,108,112,116",
-    "length": "1"
+    "offset": "88,92,96,100,104,108,112,116"
   }
 ]
