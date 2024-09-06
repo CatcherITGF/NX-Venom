@@ -74,7 +74,6 @@ Included in the SC Wizard
 - [SaltyNX](https://github.com/masagrator/SaltyNX) (fork)
 - [FPSLocker](https://github.com/masagrator/FPSLocker) (fork)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
-- [InfoNX](https://github.com/renA21/InfoNX) (fork)
 - [Uberhand-Overlay](https://github.com/efosamark/Uberhand-Overlay)
 - [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (fork)
 - [DBI](https://github.com/rashevskyv/dbi)
