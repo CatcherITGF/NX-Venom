@@ -17,17 +17,18 @@
   },
   {
     "name": "Table Config",
-    "offset": "272"
+    "offset": "272",
+    "ref": "/switch/.packages/SC Wizard/Configure/CPU/json/marikoCpuTableConfig.json"
   },
   {
     "name": "Low Freq Vmin",
     "offset": "24",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/CPU/json/marikoCpuMinVolt.json"
   },
   {
     "name": "High Freq Vmin",
     "offset": "28",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/CPU/json/marikoCpuHighMinVolt.json"
   },
   {
     "name": "Volt Limit",
@@ -38,6 +39,11 @@
     "name": "Boost Clock",
     "offset": "8",
     "extent": " MHz"
+  },
+  {
+    "name": "Max Freq",
+    "offset": "264",
+    "ref": "/switch/.packages/SC Wizard/Configure/CPU/json/marikoCpuMaxFreq.json"
   },
   {
     "name": "",
@@ -58,8 +64,7 @@
   {
     "name": "Volt Offset",
     "offset": "44",
-    "prefix": "-",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/GPU/json/commonGpuVoltOffset.json"
   },
   {
     "name": "Speedo",
@@ -68,12 +73,17 @@
   {
     "name": "Vmin",
     "offset": "56",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/GPU/json/marikoGpuVmin.json"
   },
   {
     "name": "Volt Limit",
     "offset": "60",
     "extent": " mV"
+  },
+  {
+    "name": "Max Freq",
+    "offset": "256",
+    "ref": "/switch/.packages/SC Wizard/Configure/GPU/json/marikoGpuMaxFreq.json"
   },
   {
     "name": "",
@@ -95,24 +105,27 @@
   {
     "name": "EMC Vdd2",
     "offset": "68",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/marikoEmcMemVolt.json"
   },
   {
     "name": "EMC Vddq",
     "offset": "72",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/marikoEmcVddqVolt.json"
   },
   {
     "name": "EMC DVB Shift",
-    "offset": "84"
+    "offset": "84",
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/marikoEmcDvbShift.json"
   },
   {
     "name": "HP Mode",
-    "offset": "268"
+    "offset": "268",
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/toggle.json"
   },
   {
     "name": "DRAM Timing",
-    "offset": "64"
+    "offset": "64",
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/mtcConf.json"
   },
   {
     "name": "Timings",
