@@ -18,13 +18,13 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 1. Make backup and delete everything except `Nintendo` and `emuMMC` folders on the SD card.
 2. Unpack the [NX Venom](https://github.com/CatcherITGF/NX-Venom/raw/main/NXVenom.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
 3. Use the `All-in-One Switch Updater` homebrew application for updates. The answer to "Do you want to overwrite existing .ini config" is `YES`.
-4. Installation of additional software, as well as patches for games, is done through the `UberHand` menu (click `right`) → `Software Installer`.
+4. Installation of additional software, as well as patches for games, is done through the `Uberhand` menu (click `right`) → `Software Installer`.
 
 ## How to use
 
-1. Opening the `UberHand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
+1. Opening the `Uberhand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
 2. Use the `sys-clk-oc` overlay to manage overclocking clocks.
-3. Use the `SC Wizard` (go to the `UberHand` menu, press the `right` button) to change the parameters of the loading kip (only for advanced users).
+3. Use the `SC Wizard` (go to the `Uberhand` menu, press the `right` button) to change the parameters of the loading kip (only for advanced users).
 4. There is a built-in help inside each parameter, to access it press `Y`.
 5. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
 6. Recommended overclocking parameters for handheld mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
@@ -40,7 +40,7 @@ To launch HomeBrew apps open the Album or any game icon whilst holding the `R` b
 - Nintendo Switch Lite (Mariko)
 - Nintendo Switch OLED (Mariko)
 
-## UberHand Packages
+## Uberhand Packages
 
 - SC Wizard (only for advanced users)
 - Software Installer
