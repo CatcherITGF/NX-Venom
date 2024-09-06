@@ -53,9 +53,12 @@ The rule by which you need to be guided using console overclocking is the absenc
 
 ## Guides
 
+Included in the SC Wizard
+
 - [Mariko OC Guide](https://rentry.co/mariko)
 - [Erista OC Guide](https://rentry.co/erista)
 - [How to Test Stability](https://rentry.co/howtoteststability)
+
 - [RAM Overclocking Stats](https://docs.google.com/spreadsheets/d/154TU8NRI3G8wY0ndf8HYJG20wsajW_CeSvkJLHw7o1g/edit?gid=0#gid=0)
 
 ## FAQ
