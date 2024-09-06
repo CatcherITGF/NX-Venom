@@ -1,0 +1,21 @@
+Erista Max Plugged [HAC-001(-01), HEG-001]
+
+- CPU: 2295MHz (Use only with UV5 on good speedo), 2091MHz (Use only with UV3-5), 1785MHz (UV is recommended)
+- GPU: 998MHz (Use it only with UV2, try to avoid going over 1000mv), 921MHz (safe, use it with undervolt)
+- RAM: 1862MHz-2133MHz+ (whatever is stable and within 1175mv VDD2) (HEAVILY DEPENDENT ON RAM TYPE)
+
+---------------------------------------------------------------
+
+Erista Max Safe Clocks on Battery [HDH-001]
+
+- CPU: 1785MHz
+- GPU: 460MHz
+- RAM: 1862MHz-2133MHz+ (whatever is stable and within 1175mv VDD2) (HEAVILY DEPENDENT ON RAM TYPE)
+
+Note: Drawing over 8W on battery will cause battery issues. Please avoid doing that for extended periods!
+
+---------------------------------------------------------------
+
+# Troubleshooting
+
+If Switch won't boot into EMUNAND CPU UV level is too high, lower it or set it to 0.

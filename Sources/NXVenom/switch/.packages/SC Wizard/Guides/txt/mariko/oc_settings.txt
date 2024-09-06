@@ -1,0 +1,41 @@
+CPU Settings:
+
+- Boost Clock:
+2400 MHz (Low Speedo or High Freq UV 1-5)
+2600 MHz (Speedo > 1650 or High Freq UV 6+)
+
+- Undervolt Mode: 1-4 (Increase if stable, find your highest stable value)
+
+- High Freq UV: 6-10 (Find your highest stable value). Just a few units can do 11-12, test carefully.
+
+- Low Freq Vmin: 590mv
+
+- High Freq Vmin: 720-750mv (Test for lower values if your CPU bin is good)
+
+- Voltage Limit: 1120mv (safe), 1160mv (use with caution), 1235 (unsafe for high clocks)
+
+---------------------------------------------------------------
+
+GPU Settings:
+
+- Undervolt Mode: 2
+
+- Vmin: AUTO
+
+- Vmax: 800mv
+
+- Speedo: (Input your value from HW & Fuses in Hekate)
+
+- Voltage Offset: 0 (Test 5, 10, or 15 with UV2, but check stability first)
+
+---------------------------------------------------------------
+
+RAM Settings:
+
+- DRAM Timing:
+AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)
+NO_ADJ: Use 1600 mtc table without adjusting (Timing becomes tighter if you raise dram clock)
+
+- DVB Shift: 1-4 (Boosting the SoC voltage helps stabilize RAM, especially at high frequencies like 2400MHz+).
+
+- HP mode: 1

@@ -1,0 +1,25 @@
+CPU Settings
+
+- Boost Clock: 2091MHz if you use UV3, otherwise use 1785MHz
+- Undervolt Mode: 1-5 (use the max that is stable)
+- Vmin: 800
+- Voltage Limit: 1225mv
+
+---------------------------------------------------------------
+
+GPU Settings
+
+- Undervolt Mode: 2
+- Vmin: 740-780mv
+- Voltage Offset: 0-30
+
+If you want to safely use 998Mhz gpu, you need to keep gpu volt under 950 (slightly differs depending on iddq and temperature)
+
+---------------------------------------------------------------
+
+RAM Settings
+
+- DRAM Timing:
+AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)
+NO_ADJ: Use 1600 mtc table without adjusting (Timing becomes tighter if you raise dram clock)
+- DVB Shift: 1-4 (Boosting the SoC voltage helps stabilize RAM, especially at high frequencies like 1996MHz+)
