@@ -14,7 +14,8 @@
   {
     "name": "Low Freq Vmin",
     "offset": "16",
-    "extent": " mV"
+    "extent": " mV",
+    "ref": "/switch/.packages/SC Wizard/Configure/CPU/json/eristaCpuMinVolt.json"
   },
   {
     "name": "Volt Limit",
@@ -25,6 +26,11 @@
     "name": "Boost Clock",
     "offset": "8",
     "extent": " MHz"
+  },
+  {
+    "name": "Max Freq",
+    "offset": "264",
+    "ref": "/switch/.packages/SC Wizard/Configure/CPU/json/eristaCpuMaxFreq.json"
   },
   {
     "name": "",
@@ -45,12 +51,12 @@
   {
     "name": "Volt Offset",
     "offset": "44",
-    "prefix": "-",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/GPU/json/commonGpuVoltOffset.json"
   },
   {
     "name": "Vmin",
-    "offset": "48"
+    "offset": "48",
+    "ref": "/switch/.packages/SC Wizard/Configure/GPU/json/eristaGpuVmin.json"
   },
   {
     "name": "",
@@ -72,19 +78,22 @@
   {
     "name": "EMC Vdd2",
     "offset": "68",
-    "extent": " mV"
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/eristaEmcMemVolt.json"
   },
   {
     "name": "EMC DVB Shift",
-    "offset": "84"
+    "offset": "84",
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/eristaEmcDvbShift.json"
   },
   {
     "name": "HP Mode",
-    "offset": "268"
+    "offset": "268",
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/toggle.json"
   },
   {
     "name": "DRAM Timing",
-    "offset": "64"
+    "offset": "64",
+    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/mtcConf.json"
   },
   {
     "name": "Timings",
