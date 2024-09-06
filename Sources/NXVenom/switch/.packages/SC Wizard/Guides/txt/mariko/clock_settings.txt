@@ -1,0 +1,43 @@
+Mariko Max Safe on Battery [HAC-001(-01), HEG-001]
+
+- CPU: 1963MHz
+- GPU: 998MHz
+- RAM: 2133MHz-2500MHz+ (whatever is stable and within 1175mv VDD2)
+
+Note: Drawing over 8W on battery will cause battery issues. Please avoid doing that for extended periods!
+
+---------------------------------------------------------------
+
+Switch Lite Max Safe Clocks on Battery [HDH-001]
+
+- CPU: 1785MHz
+- GPU: 921MHz
+- RAM: 2133MHz-2500MHz+ (whatever is stable and within 1175mv VDD2)
+
+Note: Drawing over 6.5W on battery will cause battery issues. Please avoid doing that for extended periods!
+
+Switch Lite limits are lower due to the 12W board power limit, but counts as Mariko for all other purposes.
+
+---------------------------------------------------------------
+
+Mariko Max Clocks Docked and Plugged [HAC-001(-01), HEG-001]
+
+- CPU: 2295MHz on CPU speedo < 1650, 2601MHz on CPU speedo ≥ 1650 with undervolt
+- GPU: 1152MHz (1228MHz and above on GPU speedo ≥ 1650 with undervolt, otherwise lower)
+- RAM: 2133MHz-2500MHz+ (whatever is stable and within 1175mv VDD2)
+
+---------------------------------------------------------------
+
+Switch Lite Max Clocks Plugged [HDH-001]
+
+- CPU: 1963MHz (2295MHz on CPU speedo < 1650, 2397 on CPU speedo ≥ 1650 with undervolt)
+- GPU: 998MHz (1228MHz on GPU speedo ≥ 1650 with undervolt, otherwise lower)
+- RAM: 2133MHz-2500MHz+ (whatever is stable and within 1175mv VDD2)
+
+Switch Lite limits are lower due to the 12W board power limit, but counts as Mariko for all other purposes.
+
+---------------------------------------------------------------
+
+Troubleshooting
+
+If Switch won't boot into EMUNAND CPU UV level is too high, lower it or set it to 0.

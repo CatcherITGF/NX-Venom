@@ -1,0 +1,51 @@
+Erista CPU Limits:
+
+- The Erista CPU limit of 15A is reached at 1785MHz without any UV or 2091MHz with CPU UV1.
+
+---------------------------------------------------------------
+
+Erista GPU Limits:
+
+- The Erista GPU limit of 15A is reached at 921MHz without GPU UV with moderate speedos.
+
+Be extremely careful if you disable GPU scheduling. This will hit the PMIC limit very hard!
+
+---------------------------------------------------------------
+
+GPU Scheduling:
+
+- On: ~96.7%
+- Off: ~99.7%
+
+---------------------------------------------------------------
+
+Charger IC Limit:
+
+- 18W limit restricts overclocking for Erista units. This is the main limiting factor, but the PMIC current limits for CPU and GPU will be reached first.
+
+---------------------------------------------------------------
+
+# Monitoring Your Switch
+
+- Use status monitor overlay to indicate if you've bypassed the charger IC limit (e.g., -1W displayed while charging).
+- To get the best results, be sure your battery is 10-90% to display the real charging
+
+---------------------------------------------------------------
+
+# Checking Speedo and RAM Type
+
+1. Boot Hekate.
+2. Go to Console Info > HW & Fuses.
+3. Note your DRAM ID, CPU Speedo 0, CPU Speedo 2, and SoC Speedo.
+
+Speedos range from approximately 1980 to 2200, with SoC speedos ranging from approximately 1899 to 2050. An Erista with a higher speedo requires less voltage to meet the same clock speed compared to another Switch with a lower speedo. A speedo of 2100 is generally considered good.
+
+---------------------------------------------------------------
+
+# RAM Types
+
+There are various RAM types for Erista, and better types can reach higher clocks, require lower voltages, and support tighter timings at the same clocks compared to worse types. Not only do RAM types matter, but RAM bin matters, meaning that worse RAM types can outperform higher RAM types. Here are some RAM types:
+
+- Samsung MGCH
+- Hynix NLE
+- Micron WT:C

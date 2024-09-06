@@ -1,0 +1,44 @@
+A good application to test the ram is MemToolkitNX.
+
+Set the cpu and the ram to max to gather the highest bandwidth possible.
+Set the test type using DPAD right to 2x Memtester + BW Burn-in.
+Press A to start the test.
+Run the test 200-500 loops.
+
+This is good to find some errors, test the stability in game!
+
+---------------------------------------------------------------
+
+# Recommended Games for Testing RAM Stability
+
+Do those tests in docked mode for higher resource usage.
+
+- Game: Monster Hunter Stories 2: Wings of Ruin
+- Scenario: To test for unstable RAM, start the game and let the first 2 cutscenes to run. Look for artifacts.
+- Signs of Instability: Freezing, crashes, or unexpected restarts.
+
+- Game: The Legend of Zelda: Tears of the Kingdom (TOTK)
+- Scenario: To test for unstable RAM, leave your Switch running for approximately one hour on this game, it will crash, hang, or freeze when using unstable RAM. These games typically use a large amount of system resources.
+- Signs of Instability: Crashes, freezes, or hangs.
+
+- Game: Red Dead Redemption
+- Scenario: To test for unstable RAM, leave your Switch running for approximately one hour on this game, it will crash, hang, or freeze when using unstable RAM. These games typically use a large amount of system resources.
+- Signs of Instability: Crashes, hangs, or graphical corruption.
+
+- Game: Borderlands 3
+- Scenario: To test for unstable RAM, leave your Switch running for approximately one hour on this game, it will crash, hang, or freeze when using unstable RAM. These games typically use a large amount of system resources.
+- Signs of Instability: Pixel corruption, crashes, or system hangs.
+
+- Game: Borderlands: The Pre-Sequel
+- Scenario: Similar to Borderlands 3, it uses substantial resources, which can trigger instability in RAM.
+- Signs of Instability: Crashes, graphical corruption, or system hangs.
+
+- Game: Nier Automata
+- Scenario: Especially effective with 60 FPS cheats or graphical modifications that increase load.
+- Signs of Instability: Crashes, hangs, or visual glitches during high-stress scenes.
+
+- Game: Kirby and the Forgotten Land
+- Scenario: To test for unstable RAM, leave your Switch running for approximately one hour on this game, it will crash, hang, or freeze when using unstable RAM. These games typically use a large amount of system resources.
+- Signs of Instability: Crashes, hangs, or graphical corruption.
+
+Unstable RAM can cause graphical glitches, but more often leads to crashes or hangs.

@@ -1,0 +1,15 @@
+Recommended Games for Testing CPU Undervolting (UV):
+
+Need for Speed: Hot Pursuit
+
+- Scenario:
+If the CPU undervolt is unstable, the game will crash in the main menu on the map at 1963 MHz and 60 fps (credits to B3711).
+- Testing Procedure:
+Leave the game running on the desired frequency for 15-30 seconds while on the map screen. Test every frequency carefully to ensure stability.
+
+Kirby and the Forgotten Land
+
+- Scenario:
+This game is suitable for testing low CPU Vmin using stock clock speed (1020mhz).
+- Testing Procedure:
+Run the game docked at 60 fps to observe for crashes or instability. Let it run for hours, it will crash after a few hours.

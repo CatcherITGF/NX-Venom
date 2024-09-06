@@ -1,0 +1,53 @@
+Mariko CPU Limits:
+
+- 5A limit reached at 2397MHz (CPU UV1) or 2295MHz (< 1650 CPU speedo).
+- Use higher UV levels to avoid exceeding the PMIC limit.
+
+---------------------------------------------------------------
+
+Mariko GPU Limits:
+
+- 10A limit reached at 1228MHz (GPU UV1) with moderate speedos (1650 GPU clock).
+- Disabling GPU scheduling overloads the PMIC, potentially causing damage.
+
+---------------------------------------------------------------
+
+GPU Scheduling:
+
+- On: ~96.7%
+- Off: ~99.7%
+
+Warning: Disabling GPU Scheduling will significantly increase power draw. Use it with caution.
+
+---------------------------------------------------------------
+
+Charger IC Limit:
+
+18W limit restricts overclocking for both Erista and Mariko units (12W on Switch Lite). This is the main limiting factor, but the PMIC current limits for CPU and GPU will be reached first.
+
+---------------------------------------------------------------
+
+Monitoring Your Switch
+
+- Use status monitor overlay to indicate if you've bypassed the charger IC limit (e.g., -1W displayed while charging).
+- To get the best results, be sure your battery is 10-90% to display the real charging
+
+---------------------------------------------------------------
+
+# Checking Speedo and RAM Type
+
+1. Boot Hekate.
+2. Go to Console Info > HW & Fuses.
+3. Note your DRAM ID, CPU Speedo 0, CPU Speedo 2, and SoC Speedo.
+4. Speedos typically range from 1450 to 1750. A higher speedo means less voltage is needed for the same clock speed. A speedo of 1650 is generally considered good.
+
+---------------------------------------------------------------
+
+RAM Tiers (Higher is better)
+
+GOD-tier - NEI/NEE, WT:B
+S-tier - AA-MGCR, AA-MGCL
+A-tier - WT:F
+B-tier - AM-MGCJ, WT:E
+C-tier - AB-MGCL
+D-tier - NME

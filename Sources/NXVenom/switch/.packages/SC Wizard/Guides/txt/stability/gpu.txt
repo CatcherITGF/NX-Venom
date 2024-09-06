@@ -1,0 +1,21 @@
+Testing GPU stability using GPU voltage offsets or undervolting (UV3) can be challenging, as there are no good artificial stress tests available on the Homebrew Operating System (HOS). Therefore, we rely on games known to be more sensitive to unstable GPU voltages.
+
+---------------------------------------------------------------
+
+Signs of GPU Voltage Instability
+
+- GPU Voltage Glitches:
+Look for "disco lights," white flashes, or color distortions. These artifacts indicate that the GPU voltage is too low.
+- Crash and Hangs:
+If the GPU voltage is too low, games might crash or hang without showing any visual glitches.
+
+---------------------------------------------------------------
+
+Examples of GPU Voltage Instability
+
+Recommended Games for Testing GPU:
+
+- ANNO: Mutationem
+- Convergence: A League of Legends Story
+- SIFU
+- Pikmin 3 Deluxe
