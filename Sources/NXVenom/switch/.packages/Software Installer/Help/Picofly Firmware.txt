@@ -1,1 +1,5 @@
 Firmware related to the rp2040-zero based chip
+
+The downloaded file will always be located in the root of the SD card with the name /update.bin
+
+To install the update, use the Picofly Toolbox peyload
