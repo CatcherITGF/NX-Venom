@@ -141,7 +141,7 @@ class AdvEntry extends CustEntry {
         input.value = String(this.value);
     }
 }
-class GpuEntry extends CustEntry {
+class GpuVoltEntry extends CustEntry {
     constructor(id, name, platform = CustPlatform.Mariko, size = 4, desc = ["range: 500 ≤ x ≤ 1050"], defval = 610, minmax = [500, 1050], step = 5, zeroable = false) {
         super(id, name, platform, size, desc, defval, minmax, step, zeroable);
         this.id = id;
@@ -176,7 +176,7 @@ class GpuEntry extends CustEntry {
             desc.innerHTML = "<ul>" + this.desc.map(i => `<li>${i}</li>`).join('') + "</ul>";
             desc.setAttribute("for", this.id);
             grid.appendChild(desc);
-            document.getElementById("config-list-gpu").appendChild(grid);
+            document.getElementById("config-list-gpuvolt").appendChild(grid);
             new ErrorToolTip(this.id).addChangeListener();
         }
         input.value = String(this.value);
@@ -258,7 +258,7 @@ var CustTable = [
         "Acceptable range : 0~5"], 0, [0, 5], 1),
 ];
 var AdvTable = [
-    new AdvEntry("ramTimingTRCD", "T1 tRCD", CustPlatform.All, 4, ["<b>WARNING</b>: Unstable timings can corrupt your nand",	
+    new AdvEntry("ramTimingTRCD", "T1 tRCD", CustPlatform.All, 4, ["<b>WARNING</b>: Unstable timings can corrupt your nand",
 		"<b>0</b> : 18 (Default timing)",
         "<b>1</b> : 17",
         "<b>2</b> : 16",
@@ -339,25 +339,25 @@ var AdvTable = [
         "<b>4</b> : 4x REFI",
         "<b>5</b> : MAX REFRESH (2400: 7x REFI / 2666: 6.3x REFI / 2933: 5.7x REFI /...",], 0, [0, 5], 1),
 ];
-var GpuTable = [
-    new GpuEntry("0", "76.8"),
-    new GpuEntry("1", "153.6"),
-    new GpuEntry("2", "230.4"),
-    new GpuEntry("3", "307.2"),
-    new GpuEntry("4", "384.0"),
-    new GpuEntry("5", "460.8"),
-    new GpuEntry("6", "537.6"),
-    new GpuEntry("7", "614.4"),
-    new GpuEntry("8", "691.2"),
-    new GpuEntry("9", "768.0"),
-    new GpuEntry("10", "844.8"),
-    new GpuEntry("11", "921.6"),
-    new GpuEntry("12", "998.4"),
-    new GpuEntry("13", "1075.2"),
-    new GpuEntry("14", "1152.0"),
-    new GpuEntry("15", "1228.8"),
-    new GpuEntry("16", "1267.2"),
-	new GpuEntry("17", "1305.6"),
+var GpuVoltTable = [
+    new GpuVoltEntry("0", "76.8"),
+    new GpuVoltEntry("1", "153.6"),
+    new GpuVoltEntry("2", "230.4"),
+    new GpuVoltEntry("3", "307.2"),
+    new GpuVoltEntry("4", "384.0"),
+    new GpuVoltEntry("5", "460.8"),
+    new GpuVoltEntry("6", "537.6"),
+    new GpuVoltEntry("7", "614.4"),
+    new GpuVoltEntry("8", "691.2"),
+    new GpuVoltEntry("9", "768.0"),
+    new GpuVoltEntry("10", "844.8"),
+    new GpuVoltEntry("11", "921.6"),
+    new GpuVoltEntry("12", "998.4"),
+    new GpuVoltEntry("13", "1075.2"),
+    new GpuVoltEntry("14", "1152.0"),
+    new GpuVoltEntry("15", "1228.8"),
+    new GpuVoltEntry("16", "1267.2"),
+	new GpuVoltEntry("17", "1305.6"),
 ];
 class ErrorToolTip {
     constructor(id, msg) {
@@ -419,7 +419,7 @@ class CustStorage {
         });
         CustTable.forEach(update);
         AdvTable.forEach(update);
-        GpuTable.forEach(update);
+        GpuVoltTable.forEach(update);
         this.storage = {};
         let kv = Object.fromEntries(CustTable.map((i) => [i.id, i.value]));
         Object.keys(kv)
@@ -453,7 +453,7 @@ class CustStorage {
             }
             i.setElementValue();
         });
-        GpuTable.forEach(i => {
+        GpuVoltTable.forEach(i => {
             var _a;
             if (!i.validate()) {
                 (_a = i.getInputElement()) === null || _a === void 0 ? void 0 : _a.focus();
@@ -533,7 +533,7 @@ class Cust {
         });
         CustTable.forEach(saveValue);
         AdvTable.forEach(saveValue);
-        GpuTable.forEach(saveValue);
+        GpuVoltTable.forEach(saveValue);
         this.storage.save();
         let a = document.createElement("a");
         a.href = window.URL.createObjectURL(new Blob([this.buffer], { type: "application/octet-stream" }));
@@ -566,10 +566,10 @@ class Cust {
         advanced.innerHTML = "Advanced configuration";
         (_a = document.getElementById("config-list-advanced")) === null || _a === void 0 ? void 0 : _a.appendChild(advanced);
         let gpu = document.createElement("p");
-        gpu.innerHTML = "Gpu Volt configuration";
-        (_b = document.getElementById("config-list-gpu")) === null || _b === void 0 ? void 0 : _b.appendChild(gpu);
+        gpu.innerHTML = "Gpu Custom Table";
+        (_b = document.getElementById("config-list-gpuvolt")) === null || _b === void 0 ? void 0 : _b.appendChild(gpu);
         AdvTable.forEach(i => i.createElement());
-        GpuTable.forEach(i => i.createElement());
+        GpuVoltTable.forEach(i => i.createElement());
         let default_btn = document.getElementById("load_default");
         default_btn.removeAttribute("disabled");
         default_btn.addEventListener('click', () => {
@@ -628,7 +628,7 @@ class Cust {
         });
         CustTable.forEach(loadValue);
         AdvTable.forEach(loadValue);
-        GpuTable.forEach(loadValue);
+        GpuVoltTable.forEach(loadValue);
     }
     load(buffer) {
         try {
@@ -689,36 +689,52 @@ class ReleaseInfo {
     ;
 }
 ;
-class DownloadSection {
-    constructor() {
-        this.element = document.getElementById("download_btn_grid");
-    }
-    load() {
-        return __awaiter(this, void 0, void 0, function* () {
-            while (!this.isVisible()) {
-                yield new Promise(r => setTimeout(r, 1000));
-            }
-            const info = new ReleaseInfo();
-            yield info.load();
-            this.update("loader_kip_btn", `loader.kip <b>${info.ocVer}</b><br>${info.loaderKipAsset.updatedAt}`, info.loaderKipAsset.downloadUrl);
-            this.update("sdout_zip_btn", `SdOut.zip <b>${info.ocVer}</b><br>${info.sdOutZipAsset.updatedAt}`, info.sdOutZipAsset.downloadUrl);
-            this.update("ams_btn", `sys-clk-oc <b>${info.ocVer}</b><br>${info.sysclkOCAsset.updatedAt}`, info.sysclkOCAsset.downloadUrl);
-        });
-    }
-    isVisible() {
-        let rect = this.element.getBoundingClientRect();
-        return (rect.top > 0 &&
-            rect.left > 0 &&
-            rect.bottom - rect.height < (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right - rect.width < (window.innerWidth || document.documentElement.clientWidth));
-    }
-    update(id, name, url) {
-        let element = document.getElementById(id);
-        element.innerHTML = name;
-        element.removeAttribute("aria-busy");
-        element.setAttribute("href", url);
-    }
-}
+// class DownloadSection {
+//   constructor() {
+//       this.element = document.getElementById("download_btn_grid");
+//   }
+
+//   load() {
+//       return __awaiter(this, void 0, void 0, function* () {
+//           // Ожидаем, пока элемент не будет видимым
+//           while (!this.isVisible()) {
+//               yield new Promise(r => setTimeout(r, 1000));
+//           }
+
+//           const info = new ReleaseInfo();
+//           yield info.load();
+
+//           // Проверяем, существует ли элемент, перед его обновлением
+//           if (this.element) {
+//               this.update("loader_kip_btn", `loader.kip <b>${info.ocVer}</b><br>${info.loaderKipAsset.updatedAt}`, info.loaderKipAsset.downloadUrl);
+//               this.update("sdout_zip_btn", `SdOut.zip <b>${info.ocVer}</b><br>${info.sdOutZipAsset.updatedAt}`, info.sdOutZipAsset.downloadUrl);
+//               this.update("ams_btn", `sys-clk-oc <b>${info.ocVer}</b><br>${info.sysclkOCAsset.updatedAt}`, info.sysclkOCAsset.downloadUrl);
+//           }
+//       });
+//   }
+
+//   isVisible() {
+//       if (!this.element) {
+//           console.error("Element not found");
+//           return false;
+//       }
+
+//       let rect = this.element.getBoundingClientRect();
+//       return (rect.top > 0 &&
+//           rect.left > 0 &&
+//           rect.bottom - rect.height < (window.innerHeight || document.documentElement.clientHeight) &&
+//           rect.right - rect.width < (window.innerWidth || document.documentElement.clientWidth));
+//   }
+
+//   update(id, name, url) {
+//       let element = document.getElementById(id);
+//       if (element) {
+//           element.innerHTML = name;
+//           element.removeAttribute("aria-busy");
+//           element.setAttribute("href", url);
+//       }
+//   }
+// }
 const fileInput = document.getElementById("file");
 fileInput.addEventListener('change', (event) => {
     var cust = new Cust();
@@ -734,6 +750,6 @@ fileInput.addEventListener('change', (event) => {
         }
     };
 });
-addEventListener('DOMContentLoaded', (_evt) => __awaiter(this, void 0, void 0, function* () {
-    yield new DownloadSection().load();
-}));
+// addEventListener('DOMContentLoaded', (_evt) => __awaiter(this, void 0, void 0, function* () {
+//     yield new DownloadSection().load();
+// }));
