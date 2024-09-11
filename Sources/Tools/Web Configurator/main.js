@@ -18,15 +18,15 @@ class CustEntry {
         this.zeroable = zeroable;
         this.min = minmax[0];
         this.max = minmax[1];
-    };
+    }
+
     validate() {
         let tip = new ErrorToolTip(this.id).clear();
         if (Number.isNaN(this.value) || this.value === undefined) {
             tip.setMsg(`Invalid value: Not a number`).show();
             return false;
         }
-        if (this.zeroable && this.value == 0)
-            return true;
+        if (this.zeroable && this.value == 0) return true;
         if (this.value < this.min || this.value > this.max) {
             tip.setMsg(`Expected range: [${this.min}, ${this.max}], got ${this.value}.`).show();
             return false;
@@ -36,60 +36,73 @@ class CustEntry {
             return false;
         }
         return true;
-    };
+    }
+
     getInputElement() {
         return document.getElementById(this.id);
     }
+
     updateValueFromElement() {
         var _a;
-        this.value = Number((_a = this.getInputElement()) === null || _a === void 0 ? void 0 : _a.value);
+        this.value = Number((_a = this.getInputElement())?.value);
     }
+
     isAvailableFor(platform) {
         return platform === CustPlatform.Undefined || this.platform === platform || this.platform === CustPlatform.All;
     }
-    createElement() {
+
+    createElement(targetId) {
         let input = this.getInputElement();
         if (!input) {
             let grid = document.createElement("div");
             grid.classList.add("grid", "cust-element");
+
             input = document.createElement("input");
             input.min = String(this.zeroable ? 0 : this.min);
             input.max = String(this.max);
             input.id = this.id;
             input.type = "number";
             input.step = String(this.step);
+
             let label = document.createElement("label");
             label.setAttribute("for", this.id);
             label.innerHTML = this.name;
             label.appendChild(input);
             grid.appendChild(label);
+
             let desc = document.createElement("blockquote");
             desc.innerHTML = "<ul>" + this.desc.map(i => `<li>${i}</li>`).join('') + "</ul>";
             desc.setAttribute("for", this.id);
             grid.appendChild(desc);
-            document.getElementById("config-list-basic").appendChild(grid);
+
+            document.getElementById(targetId).appendChild(grid);
             new ErrorToolTip(this.id).addChangeListener();
         }
         input.value = String(this.value);
     }
+
     setElementValue() {
         this.getInputElement().value = String(this.value);
     }
+
     setElementDefaultValue() {
         this.getInputElement().value = String(this.defval);
     }
+
     removeElement() {
         let input = this.getInputElement();
         if (input) {
             input.parentElement.parentElement.remove();
         }
     }
+
     showElement() {
         let input = this.getInputElement();
         if (input) {
             input.parentElement.parentElement.style.removeProperty("display");
         }
     }
+
     hideElement() {
         let input = this.getInputElement();
         if (input) {
@@ -97,99 +110,79 @@ class CustEntry {
         }
     }
 }
-class AdvEntry extends CustEntry {
+class CpuEntry extends CustEntry {
+    constructor(id, name, platform, size, desc, defval, minmax, step, zeroable) {
+        super(id, name, platform, size, desc, defval, minmax, step, zeroable);
+    }
     createElement() {
-        let input = this.getInputElement();
-        if (!input) {
-            let grid = document.createElement("div");
-            grid.classList.add("grid", "cust-element");
-            input = document.createElement("input");
-            input.min = String(this.zeroable ? 0 : this.min);
-            input.max = String(this.max);
-            input.id = this.id;
-            input.type = "number";
-            input.step = String(this.step);
-            let label = document.createElement("label");
-            label.setAttribute("for", this.id);
-            label.innerHTML = this.name;
-            label.appendChild(input);
-            grid.appendChild(label);
-            let desc = document.createElement("blockquote");
-            desc.innerHTML = "<ul>" + this.desc.map(i => `<li>${i}</li>`).join('') + "</ul>";
-            desc.setAttribute("for", this.id);
-            grid.appendChild(desc);
-            document.getElementById("config-list-advanced").appendChild(grid);
-            new ErrorToolTip(this.id).addChangeListener();
-        }
-        input.value = String(this.value);
+        super.createElement("config-list-cpu");
+    }
+}
+
+class GpuEntry extends CustEntry {
+    constructor(id, name, platform, size, desc, defval, minmax, step, zeroable) {
+        super(id, name, platform, size, desc, defval, minmax, step, zeroable);
+    }
+    createElement() {
+        super.createElement("config-list-gpu");
+    }
+}
+
+class RamEntry extends CustEntry {
+    constructor(id, name, platform, size, desc, defval, minmax, step, zeroable) {
+        super(id, name, platform, size, desc, defval, minmax, step, zeroable);
+    }
+    createElement() {
+        super.createElement("config-list-ram");
     }
 }
 class GpuVoltEntry extends CustEntry {
     constructor(id, name, platform = CustPlatform.Mariko, size = 4, desc = ["range: 500 ≤ x ≤ 1050"], defval = 610, minmax = [500, 1050], step = 5, zeroable = false) {
         super(id, name, platform, size, desc, defval, minmax, step, zeroable);
-        this.id = id;
-        this.name = name;
-        this.platform = platform;
-        this.size = size;
-        this.desc = desc;
-        this.defval = defval;
-        this.step = step;
-        this.zeroable = zeroable;
-    };
+    }
+
     createElement() {
-        let input = this.getInputElement();
-        if (!input) {
-            let grid = document.createElement("div");
-            grid.classList.add("grid", "cust-element");
-            input = document.createElement("input");
-            input.min = String(this.zeroable ? 0 : this.min);
-            input.max = String(this.max);
-            input.id = this.id;
-            input.type = "number";
-            input.step = String(this.step);
-            let label = document.createElement("label");
-            label.setAttribute("for", this.id);
-            label.innerHTML = this.name;
-            label.appendChild(input);
-            grid.appendChild(label);
-            let desc = document.createElement("blockquote");
-            desc.innerHTML = "<ul>" + this.desc.map(i => `<li>${i}</li>`).join('') + "</ul>";
-            desc.setAttribute("for", this.id);
-            grid.appendChild(desc);
-            document.getElementById("config-list-gpuvolt").appendChild(grid);
-            new ErrorToolTip(this.id).addChangeListener();
-        }
-        input.value = String(this.value);
+        super.createElement("config-list-gpuvolt");
+    }
+}
+
+class AdvEntry extends CustEntry {
+    constructor(id, name, platform, size, desc, defval, minmax, step, zeroable) {
+        super(id, name, platform, size, desc, defval, minmax, step, zeroable);
+    }
+
+    createElement() {
+        super.createElement("config-list-advanced");
     }
 }
 
 var CpuTable = [
-    new CustEntry("commonCpuBoostClock", "Boost Clock in kHz", CustPlatform.All, 4, ["System default: 1785000", "This value patches Boost Mode CPU clock"], 1785000, [1020000, 3000000], 1, false),
-    new CustEntry("commonCpuUV", "CPU Undervolt", CustPlatform.All, 4, ["<b>0</b> : Default Table", "Acceptable range mariko : 0 - 8", "Acceptable range erista : 0 - 5"], 0, [0, 8], 1),
-    new CustEntry("eristaCpuMinVolt", "Erista CPU Min Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 750 ≤ x ≤ 850", "System Default: 825"], 800, [750, 850], 25),
-    new CustEntry("eristaCpuMaxVolt", "Erista CPU Max Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 1200 ≤ x ≤ 1257", "System Default: 1227, L4T OC: 1257", "Changing this value affects cpu voltage calculation"], 1257, [1200, 1257], 1),
-    new CustEntry("marikoCpuMinVolt", "Mariko CPU Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 550 < x ≤ 1120", "System Default: 620"], 620, [550, 1120], 5),
-    new CustEntry("marikoCpuHighMinVolt", "Mariko CPU Tune High Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 710 ≤ x ≤ 850", "System Default: 850"], 850, [710, 850], 5),
-    new CustEntry("marikoCpuMaxVolt", "Mariko CPU Max Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 1100 ≤ x ≤ 1160", "System default: 1120, L4T OC: 1235", "Changing this value affects cpu voltage calculation"], 1125, [1100, 1160], 5),
+    new CpuEntry("commonCpuBoostClock", "Boost Clock in kHz", CustPlatform.All, 4, ["System default: 1785000", "This value patches Boost Mode CPU clock"], 1785000, [1020000, 3000000], 1, false),
+    new CpuEntry("commonCpuUV", "CPU Undervolt", CustPlatform.All, 4, ["<b>0</b> : Default Table", "Acceptable range mariko : 0 - 8", "Acceptable range erista : 0 - 5"], 0, [0, 8], 1),
+    new CpuEntry("eristaCpuMinVolt", "Erista CPU Min Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 750 ≤ x ≤ 850", "System Default: 825"], 800, [750, 850], 25),
+    new CpuEntry("eristaCpuMaxVolt", "Erista CPU Max Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 1200 ≤ x ≤ 1257", "System Default: 1227, L4T OC: 1257", "Changing this value affects cpu voltage calculation"], 1257, [1200, 1257], 1),
+    new CpuEntry("marikoCpuMinVolt", "Mariko CPU Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 550 < x ≤ 1120", "System Default: 620"], 620, [550, 1120], 5),
+    new CpuEntry("marikoCpuHighMinVolt", "Mariko CPU Tune High Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 710 ≤ x ≤ 850", "System Default: 850"], 850, [710, 850], 5),
+    new CpuEntry("marikoCpuMaxVolt", "Mariko CPU Max Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 1100 ≤ x ≤ 1160", "System default: 1120, L4T OC: 1235", "Changing this value affects cpu voltage calculation"], 1125, [1100, 1160], 5),
 ];
 
 var GpuTable = [
-    new CustEntry("eristaGpuUV", "Erista GPU Undervolt", CustPlatform.Erista, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo", "<b>0</b> : Undervolt Level 0 (Default Table)", "<b>1</b> : Undervolt Level 1 (M static +30mV)", "<b>2</b> : Undervolt Level 2 (high UV table)", "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
-    new CustEntry("marikoGpuUV", "Mariko GPU Undervolt", CustPlatform.Mariko, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo", "<b>0</b> : Undervolt Level 0 (HiOPT)", "<b>1</b> : Undervolt Level 1 (HiOPT -15mV(2))", "<b>2</b> : Undervolt Level 2 (high UV table)", "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
-    new CustEntry("commonGpuVoltOffset", "GPU Volt Offset", CustPlatform.All, 4, ["Negative Offset value for gpu dynamic voltage calculation", "For example, value of 10 will decrease 10mV gpu volt from all frequencies", "Default gpu vmin: Erista - 810mV / Mariko - 610mV", "Acceptable range: 0 ~ 50"], 0, [0, 50], 1),
-    new CustEntry("eristaGpuMinVolt", "Erista GPU Vmin", CustPlatform.Erista, 4, ["GPU Vmin for Erista", "Default gpu vmin: 810mV", "Regulator step: 6.25mV", "With 810mV vmin, 812.mV will be lowest voltage because of 6.25mV regulator step", "Acceptable range: 0 ~ 1132"], 810, [0, 1132], 1),
-    new CustEntry("marikoGpuSpeedo", "Mariko GPU Speedo", CustPlatform.Mariko, 4, ["GPU Speedo for Mariko"], 1660, [1480, 1800], 5),
-    new CustEntry("marikoGpuMinVolt", "Mariko GPU Vmin", CustPlatform.Mariko, 4, ["GPU Vmin for Mariko", "High EMC Clocks will require gpu minimum voltage to be raised", "Default gpu vmin: 610mV", "Regulator step: 5mV", "slt and hiopt uses 590mV as minimum voltage", "Acceptable range: 0 ~ 800"], 610, [0, 800], 5),
-    new CustEntry("marikoGpuMaxVolt", "Mariko GPU Vmax", CustPlatform.Mariko, 4, ["GPU Vmax for Mariko", "System Default: 850, L4T: 800", "Not recommended to increase value in order to protect from going over gpu pmic limits", "Recommended limit: 800mV@1228Mhz with HiOPT", "Any GPU Frequency that needs higher than vmax will be automatically removed and not available", "This means max available GPU freq will be adjusted depending on your speedo", "Acceptable range: 800 ~ 850"], 800, [800, 850], 5),
+    new GpuEntry("eristaGpuUV", "Erista GPU Undervolt", CustPlatform.Erista, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo", "<b>0</b> : Undervolt Level 0 (Default Table)", "<b>1</b> : Undervolt Level 1 (M static +30mV)", "<b>2</b> : Undervolt Level 2 (high UV table)", "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
+    new GpuEntry("marikoGpuUV", "Mariko GPU Undervolt", CustPlatform.Mariko, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo", "<b>0</b> : Undervolt Level 0 (HiOPT)", "<b>1</b> : Undervolt Level 1 (HiOPT -15mV(2))", "<b>2</b> : Undervolt Level 2 (high UV table)", "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
+    new GpuEntry("commonGpuVoltOffset", "GPU Volt Offset", CustPlatform.All, 4, ["Negative Offset value for gpu dynamic voltage calculation", "For example, value of 10 will decrease 10mV gpu volt from all frequencies", "Default gpu vmin: Erista - 810mV / Mariko - 610mV", "Acceptable range: 0 ~ 50"], 0, [0, 50], 1),
+    new GpuEntry("eristaGpuMinVolt", "Erista GPU Vmin", CustPlatform.Erista, 4, ["GPU Vmin for Erista", "Default gpu vmin: 810mV", "Regulator step: 6.25mV", "With 810mV vmin, 812.mV will be lowest voltage because of 6.25mV regulator step", "Acceptable range: 0 ~ 1132"], 810, [0, 1132], 1),
+    new GpuEntry("marikoGpuSpeedo", "Mariko GPU Speedo", CustPlatform.Mariko, 4, ["GPU Speedo for Mariko"], 1660, [1480, 1800], 5),
+    new GpuEntry("marikoGpuMinVolt", "Mariko GPU Vmin", CustPlatform.Mariko, 4, ["GPU Vmin for Mariko", "High EMC Clocks will require gpu minimum voltage to be raised", "Default gpu vmin: 610mV", "Regulator step: 5mV", "slt and hiopt uses 590mV as minimum voltage", "Acceptable range: 0 ~ 800"], 610, [0, 800], 5),
+    new GpuEntry("marikoGpuMaxVolt", "Mariko GPU Vmax", CustPlatform.Mariko, 4, ["GPU Vmax for Mariko", "System Default: 850, L4T: 800", "Not recommended to increase value in order to protect from going over gpu pmic limits", "Recommended limit: 800mV@1228Mhz with HiOPT", "Any GPU Frequency that needs higher than vmax will be automatically removed and not available", "This means max available GPU freq will be adjusted depending on your speedo", "Acceptable range: 800 ~ 850"], 800, [800, 850], 5),
 ];
 
 var RamTable = [
-    new CustEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)", "<b>3</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 3], 1),
-    new CustEntry("commonEmcMemVolt", "EMC Vdd2 Voltage in uV", CustPlatform.All, 4, ["Acceptable range: 1050000 ≤ x ≤ 1212500, and it should be divided evenly by 12500.", "Erista Default: 1125000", "Mariko Default: 1100000", "Official lpddr4(x) range: 1060mV~1175mV (1100mV nominal)", "OCS need high voltage unlike l4t because of not scaling mtc table well. However it is recommended to stay within official limits", "Not enabled by default"], 0, [1050000, 1212500], 12500),
-    new CustEntry("marikoEmcVddqVolt", "EMC Vddq (Mariko Only) Voltage in uV", CustPlatform.Mariko, 4, ["Acceptable range: 550000 ≤ x ≤ 650000", "Value should be divided evenly by 5000", "Default: 600000", "Official lpddr4(x) range: 570mV~650mV (600mV nominal)", "Not enabled by default."], 0, [550000, 650000], 5000),
-    new CustEntry("eristaEmcMaxClock", "Erista RAM Max Clock in kHz", CustPlatform.Erista, 4, ["Values should be ≥ 1600000, and divided evenly by 9600.", "Recommended Clocks: 1862400, 2131200 (JEDEC)"], 1862400, [1600000, 2600000], 9600),
-    new CustEntry("marikoEmcMaxClock", "Mariko RAM Max Clock in kHz", CustPlatform.Mariko, 4, ["Values should be ≥ 1600000, and accepts any natural number.", "Actual dram clock is exactly same as this value.", "Spread Spectrum is enabled for frequencies in range of (2366000, 2500000] to mitigate EMI with wifi(2.4Ghz).", "Recommended Clocks: 1866000, 2133000, 2400000, 2533000, 2666000, ..."], 1966000, [1600000, 3200000], 1),
-    new CustEntry("commonEmcDvbShift", "EMC DVB Voltage Shift", CustPlatform.All, 4, ["EMC DVB table is EMC clock to SOC voltage mapping", "SOC voltage automatically gets raised on higher emc clock with this table", "Each shift number raises 25mV more, up to max SoC voltage. Leave at 0 and only raise if unstable", "Acceptable range : 0~5"], 0, [0, 5], 1),
+    new RamEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)", "<b>3</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 3], 1),
+    new RamEntry("commonEmcMemVolt", "EMC Vdd2 Voltage in uV", CustPlatform.All, 4, ["Acceptable range: 1050000 ≤ x ≤ 1212500, and it should be divided evenly by 12500.", "Erista Default: 1125000", "Mariko Default: 1100000", "Official lpddr4(x) range: 1060mV~1175mV (1100mV nominal)", "OCS need high voltage unlike l4t because of not scaling mtc table well. However it is recommended to stay within official limits", "Not enabled by default"], 0, [1050000, 1212500], 12500),
+    new RamEntry("marikoEmcVddqVolt", "EMC Vddq (Mariko Only) Voltage in uV", CustPlatform.Mariko, 4, ["Acceptable range: 550000 ≤ x ≤ 650000", "Value should be divided evenly by 5000", "Default: 600000", "Official lpddr4(x) range: 570mV~650mV (600mV nominal)", "Not enabled by default."], 0, [550000, 650000], 5000),
+    new RamEntry("eristaEmcMaxClock", "Erista RAM Max Clock in kHz", CustPlatform.Erista, 4, ["Values should be ≥ 1600000, and divided evenly by 9600.", "Recommended Clocks: 1862400, 2131200 (JEDEC)"], 1862400, [1600000, 2600000], 9600),
+    new RamEntry("marikoEmcMaxClock", "Mariko RAM Max Clock in kHz", CustPlatform.Mariko, 4, ["Values should be ≥ 1600000, and accepts any natural number.", "Actual dram clock is exactly same as this value.", "Spread Spectrum is enabled for frequencies in range of (2366000, 2500000] to mitigate EMI with wifi(2.4Ghz).", "Recommended Clocks: 1866000, 2133000, 2400000, 2533000, 2666000, ..."], 1966000, [1600000, 3200000], 1),
+    new RamEntry("commonEmcDvbShift", "EMC DVB Voltage Shift", CustPlatform.All, 4, ["EMC DVB table is EMC clock to SOC voltage mapping", "SOC voltage automatically gets raised on higher emc clock with this table", "Each shift number raises 25mV more, up to max SoC voltage. Leave at 0 and only raise if unstable", "Acceptable range : 0~5"], 0, [0, 5], 1),
 ];
 
 var AdvTable = [
