@@ -1,13 +1,3 @@
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-/* Config: Cust */
 const CUST_REV_ADV = 45;
 var CustPlatform;
 (function (CustPlatform) {
@@ -471,10 +461,12 @@ class CustStorage {
             return null;
         }
         let dict = JSON.parse(s);
-        let keys = CustTable.map(i => i.id);
+        let keys = CustTable.map(i => i.id)
+            .concat(AdvTable.map(i => i.id))
+            .concat(GpuVoltTable.map(i => i.id));
         let ignoredKeys = Object.keys(dict).filter(k => !keys.includes(k));
         if (ignoredKeys.length) {
-            console.log(`Ignored: ${ignoredKeys}`);
+          console.log(`Ignored: ${ignoredKeys}`);
         }
         Object.keys(dict)
             .filter(k => keys.includes(k))
@@ -645,100 +637,10 @@ class Cust {
         }
     }
 }
-/* GitHub Release fetch */
-class ReleaseAsset {
-    constructor(obj) {
-        this.downloadUrl = obj.browser_download_url;
-        this.updatedAt = obj.updated_at;
-    }
-    ;
-}
-;
-class ReleaseInfo {
-    constructor() {
-        this.ocLatestApi = "https://api.github.com/repos/hanai3Bi/Switch-OC-Suite/releases/latest";
-    }
-    load() {
-        return __awaiter(this, void 0, void 0, function* () {
-            try {
-                this.parseOcResponse(yield this.responseFromApi(this.ocLatestApi).catch());
-            }
-            catch (e) {
-                console.error(e);
-                alert(e);
-            }
-        });
-    }
-    ;
-    responseFromApi(apiUrl) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const response = yield fetch(apiUrl, { method: 'GET', headers: { Accept: 'application/json' } });
-            if (response.ok) {
-                return yield response.json();
-            }
-            throw new Error(`Failed to connect to "${apiUrl}": ${response.status}`);
-        });
-    }
-    ;
-    parseOcResponse(response) {
-        this.ocVer = response.tag_name;
-        this.loaderKipAsset = new ReleaseAsset(response.assets.filter(a => a.name.endsWith("loader.kip"))[0]);
-        this.sdOutZipAsset = new ReleaseAsset(response.assets.filter(a => a.name.endsWith("SdOut.zip"))[0]);
-        this.sysclkOCAsset = new ReleaseAsset(response.assets.filter(a => a.name.endsWith("sys-clk-oc.zip"))[0]);
-    }
-    ;
-}
-;
-// class DownloadSection {
-//   constructor() {
-//       this.element = document.getElementById("download_btn_grid");
-//   }
 
-//   load() {
-//       return __awaiter(this, void 0, void 0, function* () {
-//           // Ожидаем, пока элемент не будет видимым
-//           while (!this.isVisible()) {
-//               yield new Promise(r => setTimeout(r, 1000));
-//           }
-
-//           const info = new ReleaseInfo();
-//           yield info.load();
-
-//           // Проверяем, существует ли элемент, перед его обновлением
-//           if (this.element) {
-//               this.update("loader_kip_btn", `loader.kip <b>${info.ocVer}</b><br>${info.loaderKipAsset.updatedAt}`, info.loaderKipAsset.downloadUrl);
-//               this.update("sdout_zip_btn", `SdOut.zip <b>${info.ocVer}</b><br>${info.sdOutZipAsset.updatedAt}`, info.sdOutZipAsset.downloadUrl);
-//               this.update("ams_btn", `sys-clk-oc <b>${info.ocVer}</b><br>${info.sysclkOCAsset.updatedAt}`, info.sysclkOCAsset.downloadUrl);
-//           }
-//       });
-//   }
-
-//   isVisible() {
-//       if (!this.element) {
-//           console.error("Element not found");
-//           return false;
-//       }
-
-//       let rect = this.element.getBoundingClientRect();
-//       return (rect.top > 0 &&
-//           rect.left > 0 &&
-//           rect.bottom - rect.height < (window.innerHeight || document.documentElement.clientHeight) &&
-//           rect.right - rect.width < (window.innerWidth || document.documentElement.clientWidth));
-//   }
-
-//   update(id, name, url) {
-//       let element = document.getElementById(id);
-//       if (element) {
-//           element.innerHTML = name;
-//           element.removeAttribute("aria-busy");
-//           element.setAttribute("href", url);
-//       }
-//   }
-// }
 const fileInput = document.getElementById("file");
-fileInput.addEventListener('change', (event) => {
+fileInput.addEventListener('change', async (event) => {
     var cust = new Cust();
-    // User canceled or non files selected
     if (!event.target || !event.target.files) {
         return;
     }
@@ -750,6 +652,3 @@ fileInput.addEventListener('change', (event) => {
         }
     };
 });
-// addEventListener('DOMContentLoaded', (_evt) => __awaiter(this, void 0, void 0, function* () {
-//     yield new DownloadSection().load();
-// }));
