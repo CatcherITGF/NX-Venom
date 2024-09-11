@@ -1,5 +1,9 @@
 [
   {
+    "name": "-3 - -75 mV",
+    "hex": "FDFFFFFF"
+  },
+  {
     "name": "-2 - -50 mV",
     "hex": "FEFFFFFF"
   },
