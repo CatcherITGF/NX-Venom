@@ -4,6 +4,6 @@ Default Table: Uses the default table without modifications
 
 1581 MHz Tbreak: The High Freq UV range changes from 1683-2601 to 1581-2601 MHz (former UV7)
 
-Shift Fix 1: Prevents a table shift
+Shift Fix 1: Prevents a table shift (High Freq Vmin 800-750mV)
 
-Shift Fix 2: Prevents a table shift and slightly lowers mid-freq voltages
+Shift Fix 2: Prevents a table shift and slightly lowers mid-freq voltages (High Freq Vmin 750-710mV)
