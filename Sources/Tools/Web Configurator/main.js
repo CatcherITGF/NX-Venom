@@ -503,8 +503,6 @@ class Cust {
       CpuTable.forEach(i => i.createElement());
       GpuTable.forEach(i => i.createElement());
       RamTable.forEach(i => i.createElement());
-      AdvTable.forEach(i => i.createElement());
-      GpuVoltTable.forEach(i => i.createElement());
 
       // Advanced configuration section
       let advanced = document.createElement("p");
@@ -514,9 +512,7 @@ class Cust {
       (_a = advancedContainer) === null || _a === void 0 ? void 0 : _a.appendChild(advanced);
 
       // Create entries for Advanced Table (AdvTable)
-      AdvTable.forEach(i => {
-          i.createElement(); // This should add elements from AdvTable
-      });
+      AdvTable.forEach(i => i.createElement());
 
       // Gpu Custom Table section
       let gpuSection = document.getElementById("config-list-gpuvolt");
@@ -547,9 +543,7 @@ class Cust {
       gpuSection.parentElement.insertBefore(toggleButton, gpuSection);
 
       // Create GPU table entries
-      GpuVoltTable.forEach(i => {
-          i.createElement();
-      });
+      GpuVoltTable.forEach(i => i.createElement());
 
       let default_btn = document.getElementById("load_default");
       default_btn.removeAttribute("disabled");
