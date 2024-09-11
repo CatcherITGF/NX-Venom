@@ -172,81 +172,36 @@ class GpuVoltEntry extends CustEntry {
         input.value = String(this.value);
     }
 }
-var CustTable = [
-    new CustEntry("commonCpuBoostClock", "Boost Clock in kHz", CustPlatform.All, 4, ["System default: 1785000",
-        "This value patches Boost Mode CPU clock"], 1785000, [1020000, 3000000], 1, false),
-    new CustEntry("commonCpuUV", "CPU Undervolt", CustPlatform.All, 4, ["<b>0</b> : Default Table",
-        "Acceptable range mariko : 0 - 8",
-		"Acceptable range erista : 0 - 5",], 0, [0, 8], 1),
-    new CustEntry("eristaCpuMinVolt", "Erista CPU Min Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 750 ≤ x ≤ 850",
-        "System Default: 825"], 800, [750, 850], 25),
-    new CustEntry("eristaCpuMaxVolt", "Erista CPU Max Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 1200 ≤ x ≤ 1257",
-        "System Default: 1227, L4T OC: 1257",
-        "Changing this value affects cpu voltage calculation"], 1257, [1200, 1257], 1),
-    new CustEntry("marikoCpuMinVolt", "Mariko CPU Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 550 < x ≤ 1120",
-        "System Default: 620"], 620, [550, 1120], 5),
-    new CustEntry("marikoCpuHighMinVolt", "Mariko CPU Tune High Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 710 ≤ x ≤ 850",
-        "System Default: 850"], 850, [710, 850], 5),
-    new CustEntry("marikoCpuMaxVolt", "Mariko CPU Max Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 1100 ≤ x ≤ 1160",
-        "System default: 1120, L4T OC: 1235",
-        "Changing this value affects cpu voltage calculation"], 1125, [1100, 1160], 5),
-    new CustEntry("eristaGpuUV", "Erista GPU Undervolt", CustPlatform.Erista, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo",
-        "<b>0</b> : Undervolt Level 0 (Default Table)",
-        "<b>1</b> : Undervolt Level 1 (M static +30mV)",
-        "<b>2</b> : Undervolt Level 2 (high UV table)",
-        "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
-    new CustEntry("marikoGpuUV", "Mariko GPU Undervolt", CustPlatform.Mariko, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo",
-        "<b>0</b> : Undervolt Level 0 (HiOPT)",
-        "<b>1</b> : Undervolt Level 1 (HiOPT -15mV(2))",
-        "<b>2</b> : Undervolt Level 2 (high UV table)",
-        "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
-    new CustEntry("commonGpuVoltOffset", "GPU Volt Offset", CustPlatform.All, 4, ["Negative Offset value for gpu dynamic voltage calculation",
-        "For example, value of 10 will decrease 10mV gpu volt from all frequencies",
-        "Default gpu vmin: Erista - 810mV / Mariko - 610mV",
-        "Acceptable range: 0 ~ 50"], 0, [0, 50], 1),
-    new CustEntry("eristaGpuMinVolt", "Erista GPU Vmin", CustPlatform.Erista, 4, ["GPU Vmin for Erista",
-        "Default gpu vmin: 810mV",
-        "Regulator step: 6.25mV",
-        "With 810mV vmin, 812.mV will be lowest voltage because of 6.25mV regulator step",
-        "Acceptable range: 0 ~ 1132"], 810, [0, 1132], 1),
-    new CustEntry("marikoGpuSpeedo", "Mariko GPU Speedo", CustPlatform.Mariko, 4, ["GPU Speedo for Mariko"], 1660, [1480, 1800], 5),
-    new CustEntry("marikoGpuMinVolt", "Mariko GPU Vmin", CustPlatform.Mariko, 4, ["GPU Vmin for Mariko",
-        "High EMC Clocks will require gpu minimum voltage to be raised",
-        "Default gpu vmin: 610mV",
-        "Regulator step: 5mV",
-        "slt and hiopt uses 590mV as minimum voltage",
-        "Acceptable range: 0 ~ 800"], 610, [0, 800], 5),
-    new CustEntry("marikoGpuMaxVolt", "Mariko GPU Vmax", CustPlatform.Mariko, 4, ["GPU Vmax for Mariko",
-        "System Default: 850, L4T: 800",
-        "Not recommended to increase value in order to protect from going over gpu pmic limits",
-        "Recommended limit: 800mV@1228Mhz with HiOPT",
-        "Any GPU Frequency that needs higher than vmax will be automatically removed and not available",
-        "This means max available GPU freq will be adjusted depending on your speedo",
-        "Acceptable range: 800 ~ 850"], 800, [800, 850], 5),
-    new CustEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)",
-        "<b>3</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 3], 1),
-    new CustEntry("commonEmcMemVolt", "EMC Vdd2 Voltage in uV", CustPlatform.All, 4, ["Acceptable range: 1050000 ≤ x ≤ 1212500, and it should be divided evenly by 12500.",
-        "Erista Default: 1125000",
-        "Mariko Default: 1100000",
-        "Official lpddr4(x) range: 1060mV~1175mV (1100mV nominal)",
-        "OCS need high voltage unlike l4t because of not scaling mtc table well. However it is recommended to stay within official limits",
-        "Not enabled by default"], 0, [1050000, 1212500], 12500),
-    new CustEntry("marikoEmcVddqVolt", "EMC Vddq (Mariko Only) Voltage in uV", CustPlatform.Mariko, 4, ["Acceptable range: 550000 ≤ x ≤ 650000",
-        "Value should be divided evenly by 5000",
-        "Default: 600000",
-        "Official lpddr4(x) range: 570mV~650mV (600mV nominal)",
-        "Not enabled by default."], 0, [550000, 650000], 5000),
-    new CustEntry("eristaEmcMaxClock", "Erista RAM Max Clock in kHz", CustPlatform.Erista, 4, ["Values should be ≥ 1600000, and divided evenly by 9600.",
-        "Recommended Clocks: 1862400, 2131200 (JEDEC)"], 1862400, [1600000, 2600000], 9600),
-    new CustEntry("marikoEmcMaxClock", "Mariko RAM Max Clock in kHz", CustPlatform.Mariko, 4, ["Values should be ≥ 1600000, and accepts any natural number.",
-        "Actual dram clock is exactly same as this value.",
-        "Spread Spectrum is enabled for frequencies in range of (2366000, 2500000] to mitigate EMI with wifi(2.4Ghz).",
-        "Recommended Clocks: 1866000, 2133000, 2400000, 2533000, 2666000, ..."], 1966000, [1600000, 3200000], 1),
-    new CustEntry("commonEmcDvbShift", "EMC DVB Voltage Shift", CustPlatform.All, 4, ["EMC DVB table is EMC clock to SOC voltage mapping",
-        "SOC voltage automatically gets raised on higher emc clock with this table",
-        "Each shift number raises 25mV more, up to max SoC voltage. Leave at 0 and only raise if unstable",
-        "Acceptable range : 0~5"], 0, [0, 5], 1),
+
+var CpuTable = [
+  new CustEntry("commonCpuBoostClock", "Boost Clock in kHz", CustPlatform.All, 4, ["System default: 1785000", "This value patches Boost Mode CPU clock"], 1785000, [1020000, 3000000], 1, false),
+  new CustEntry("commonCpuUV", "CPU Undervolt", CustPlatform.All, 4, ["<b>0</b> : Default Table", "Acceptable range mariko : 0 - 8", "Acceptable range erista : 0 - 5"], 0, [0, 8], 1),
+  new CustEntry("eristaCpuMinVolt", "Erista CPU Min Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 750 ≤ x ≤ 850", "System Default: 825"], 800, [750, 850], 25),
+  new CustEntry("eristaCpuMaxVolt", "Erista CPU Max Voltage in mV", CustPlatform.Erista, 4, ["Acceptable range: 1200 ≤ x ≤ 1257", "System Default: 1227, L4T OC: 1257", "Changing this value affects cpu voltage calculation"], 1257, [1200, 1257], 1),
+  new CustEntry("marikoCpuMinVolt", "Mariko CPU Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 550 < x ≤ 1120", "System Default: 620"], 620, [550, 1120], 5),
+  new CustEntry("marikoCpuHighMinVolt", "Mariko CPU Tune High Min Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 710 ≤ x ≤ 850", "System Default: 850"], 850, [710, 850], 5),
+  new CustEntry("marikoCpuMaxVolt", "Mariko CPU Max Voltage in mV", CustPlatform.Mariko, 4, ["Acceptable range: 1100 ≤ x ≤ 1160", "System default: 1120, L4T OC: 1235", "Changing this value affects cpu voltage calculation"], 1125, [1100, 1160], 5),
 ];
+
+var GpuTable = [
+  new CustEntry("eristaGpuUV", "Erista GPU Undervolt", CustPlatform.Erista, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo", "<b>0</b> : Undervolt Level 0 (Default Table)", "<b>1</b> : Undervolt Level 1 (M static +30mV)", "<b>2</b> : Undervolt Level 2 (high UV table)", "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
+  new CustEntry("marikoGpuUV", "Mariko GPU Undervolt", CustPlatform.Mariko, 4, ["GPU voltages are dynamic and will change with temperature and gpu speedo", "<b>0</b> : Undervolt Level 0 (HiOPT)", "<b>1</b> : Undervolt Level 1 (HiOPT -15mV(2))", "<b>2</b> : Undervolt Level 2 (high UV table)", "<b>3</b> : Custom static GPU Voltage Table (Use Gpu Configuator below)"], 0, [0, 3], 1),
+  new CustEntry("commonGpuVoltOffset", "GPU Volt Offset", CustPlatform.All, 4, ["Negative Offset value for gpu dynamic voltage calculation", "For example, value of 10 will decrease 10mV gpu volt from all frequencies", "Default gpu vmin: Erista - 810mV / Mariko - 610mV", "Acceptable range: 0 ~ 50"], 0, [0, 50], 1),
+  new CustEntry("eristaGpuMinVolt", "Erista GPU Vmin", CustPlatform.Erista, 4, ["GPU Vmin for Erista", "Default gpu vmin: 810mV", "Regulator step: 6.25mV", "With 810mV vmin, 812.mV will be lowest voltage because of 6.25mV regulator step", "Acceptable range: 0 ~ 1132"], 810, [0, 1132], 1),
+  new CustEntry("marikoGpuSpeedo", "Mariko GPU Speedo", CustPlatform.Mariko, 4, ["GPU Speedo for Mariko"], 1660, [1480, 1800], 5),
+  new CustEntry("marikoGpuMinVolt", "Mariko GPU Vmin", CustPlatform.Mariko, 4, ["GPU Vmin for Mariko", "High EMC Clocks will require gpu minimum voltage to be raised", "Default gpu vmin: 610mV", "Regulator step: 5mV", "slt and hiopt uses 590mV as minimum voltage", "Acceptable range: 0 ~ 800"], 610, [0, 800], 5),
+  new CustEntry("marikoGpuMaxVolt", "Mariko GPU Vmax", CustPlatform.Mariko, 4, ["GPU Vmax for Mariko", "System Default: 850, L4T: 800", "Not recommended to increase value in order to protect from going over gpu pmic limits", "Recommended limit: 800mV@1228Mhz with HiOPT", "Any GPU Frequency that needs higher than vmax will be automatically removed and not available", "This means max available GPU freq will be adjusted depending on your speedo", "Acceptable range: 800 ~ 850"], 800, [800, 850], 5),
+];
+
+var RamTable = [
+  new CustEntry("mtcConf", "DRAM Timing", CustPlatform.All, 4, ["<b>0</b>: AUTO_ADJ: Auto adjust mtc table with LPDDR4 3733 Mbps specs, 16Gb density. Change timing with Advanced Config (Default)", "<b>3</b>: NO_ADJ: Use 1600 mtc table wihout adjusting (Timing becomes tighter if you raise dram clock)."], 0, [0, 3], 1),
+  new CustEntry("commonEmcMemVolt", "EMC Vdd2 Voltage in uV", CustPlatform.All, 4, ["Acceptable range: 1050000 ≤ x ≤ 1212500, and it should be divided evenly by 12500.", "Erista Default: 1125000", "Mariko Default: 1100000", "Official lpddr4(x) range: 1060mV~1175mV (1100mV nominal)", "OCS need high voltage unlike l4t because of not scaling mtc table well. However it is recommended to stay within official limits", "Not enabled by default"], 0, [1050000, 1212500], 12500),
+  new CustEntry("marikoEmcVddqVolt", "EMC Vddq (Mariko Only) Voltage in uV", CustPlatform.Mariko, 4, ["Acceptable range: 550000 ≤ x ≤ 650000", "Value should be divided evenly by 5000", "Default: 600000", "Official lpddr4(x) range: 570mV~650mV (600mV nominal)", "Not enabled by default."], 0, [550000, 650000], 5000),
+  new CustEntry("eristaEmcMaxClock", "Erista RAM Max Clock in kHz", CustPlatform.Erista, 4, ["Values should be ≥ 1600000, and divided evenly by 9600.", "Recommended Clocks: 1862400, 2131200 (JEDEC)"], 1862400, [1600000, 2600000], 9600),
+  new CustEntry("marikoEmcMaxClock", "Mariko RAM Max Clock in kHz", CustPlatform.Mariko, 4, ["Values should be ≥ 1600000, and accepts any natural number.", "Actual dram clock is exactly same as this value.", "Spread Spectrum is enabled for frequencies in range of (2366000, 2500000] to mitigate EMI with wifi(2.4Ghz).", "Recommended Clocks: 1866000, 2133000, 2400000, 2533000, 2666000, ..."], 1966000, [1600000, 3200000], 1),
+  new CustEntry("commonEmcDvbShift", "EMC DVB Voltage Shift", CustPlatform.All, 4, ["EMC DVB table is EMC clock to SOC voltage mapping", "SOC voltage automatically gets raised on higher emc clock with this table", "Each shift number raises 25mV more, up to max SoC voltage. Leave at 0 and only raise if unstable", "Acceptable range : 0~5"], 0, [0, 5], 1),
+];
+
 var AdvTable = [
     new AdvEntry("ramTimingTRCD", "T1 tRCD", CustPlatform.All, 4, ["<b>WARNING</b>: Unstable timings can corrupt your nand",
 		"<b>0</b> : 18 (Default timing)",
@@ -386,7 +341,7 @@ class ErrorToolTip {
     addChangeListener() {
         var _a;
         (_a = this.element) === null || _a === void 0 ? void 0 : _a.addEventListener('change', (_evt) => {
-            let obj = CustTable.filter((obj) => { return obj.id === this.id; })[0];
+          let obj = CpuTable.concat(GpuTable, RamTable).filter((obj) => { return obj.id === this.id; })[0];
             obj.value = Number(this.element.value);
             obj.validate();
         });
@@ -407,50 +362,42 @@ class CustStorage {
                 throw new Error(`Invalid ${i.name}`);
             }
         });
-        CustTable.forEach(update);
+        CpuTable.forEach(update);
+        GpuTable.forEach(update);
+        RamTable.forEach(update);
         AdvTable.forEach(update);
         GpuVoltTable.forEach(update);
         this.storage = {};
-        let kv = Object.fromEntries(CustTable.map((i) => [i.id, i.value]));
-        Object.keys(kv)
-            .forEach(k => this.storage[k] = kv[k]);
-        kv = Object.fromEntries(AdvTable.map((i) => [i.id, i.value]));
-        Object.keys(kv)
-            .forEach(k => this.storage[k] = kv[k]);
+        let kv = Object.fromEntries(CpuTable.map(i => [i.id, i.value]));
+        Object.assign(this.storage, kv);
+        kv = Object.fromEntries(GpuTable.map(i => [i.id, i.value]));
+        Object.assign(this.storage, kv);
+        kv = Object.fromEntries(RamTable.map(i => [i.id, i.value]));
+        Object.assign(this.storage, kv);
+        kv = Object.fromEntries(AdvTable.map(i => [i.id, i.value]));
+        Object.assign(this.storage, kv);
     }
     setTable() {
-        let keys = Object.keys(this.storage);
-        keys.forEach(k => CustTable.filter(i => i.id == k)[0].value = this.storage[k]);
-        keys.forEach(k => AdvTable.filter(i => i.id == k)[0].value = this.storage[k]);
-        // Set default for missing values
-        CustTable.filter(i => !keys.includes(i.id))
-            .forEach(i => i.value = i.defval);
-        AdvTable.filter(i => !keys.includes(i.id))
-            .forEach(i => i.value = i.defval);
-        CustTable.forEach(i => {
-            var _a;
-            if (!i.validate()) {
-                (_a = i.getInputElement()) === null || _a === void 0 ? void 0 : _a.focus();
-                throw new Error(`Invalid ${i.name}`);
-            }
-            i.setElementValue();
-        });
-        AdvTable.forEach(i => {
-            var _a;
-            if (!i.validate()) {
-                (_a = i.getInputElement()) === null || _a === void 0 ? void 0 : _a.focus();
-                throw new Error(`Invalid ${i.name}`);
-            }
-            i.setElementValue();
-        });
-        GpuVoltTable.forEach(i => {
-            var _a;
-            if (!i.validate()) {
-                (_a = i.getInputElement()) === null || _a === void 0 ? void 0 : _a.focus();
-                throw new Error(`Invalid ${i.name}`);
-            }
-            i.setElementValue();
-        });
+      let keys = Object.keys(this.storage);
+      keys.forEach(k => {
+        let cpuEntry = CpuTable.find(i => i.id === k);
+        if (cpuEntry) cpuEntry.value = this.storage[k];
+        let gpuEntry = GpuTable.find(i => i.id === k);
+        if (gpuEntry) gpuEntry.value = this.storage[k];
+        let ramEntry = RamTable.find(i => i.id === k);
+        if (ramEntry) ramEntry.value = this.storage[k];
+        let advEntry = AdvTable.find(i => i.id === k);
+        if (advEntry) advEntry.value = this.storage[k];
+      });
+      CpuTable.filter(i => !keys.includes(i.id)).forEach(i => i.value = i.defval);
+      GpuTable.filter(i => !keys.includes(i.id)).forEach(i => i.value = i.defval);
+      RamTable.filter(i => !keys.includes(i.id)).forEach(i => i.value = i.defval);
+      AdvTable.filter(i => !keys.includes(i.id)).forEach(i => i.value = i.defval);
+      CpuTable.forEach(i => i.setElementValue());
+      GpuTable.forEach(i => i.setElementValue());
+      RamTable.forEach(i => i.setElementValue());
+      AdvTable.forEach(i => i.setElementValue());
+      GpuVoltTable.forEach(i => i.setElementValue());
     }
     save() {
         localStorage.setItem(this.key, JSON.stringify(this.storage));
@@ -461,7 +408,9 @@ class CustStorage {
             return null;
         }
         let dict = JSON.parse(s);
-        let keys = CustTable.map(i => i.id)
+        let keys = CpuTable.map(i => i.id)
+            .concat(GpuTable.map(i => i.id))
+            .concat(RamTable.map(i => i.id))
             .concat(AdvTable.map(i => i.id))
             .concat(GpuVoltTable.map(i => i.id));
         let ignoredKeys = Object.keys(dict).filter(k => !keys.includes(k));
@@ -469,15 +418,7 @@ class CustStorage {
           console.log(`Ignored: ${ignoredKeys}`);
         }
         Object.keys(dict)
-            .filter(k => keys.includes(k))
-            .forEach(k => this.storage[k] = dict[k]);
-        keys = AdvTable.map(i => i.id);
-        ignoredKeys = Object.keys(dict).filter(k => !keys.includes(k));
-        if (ignoredKeys.length) {
-            console.log(`Ignored: ${ignoredKeys}`);
-        }
-        Object.keys(dict)
-            .filter(k => keys.includes(k))
+            .filter(k => keys.includes(k))  // Убедитесь, что обновляются только известные ключи
             .forEach(k => this.storage[k] = dict[k]);
         return this.storage;
     }
@@ -523,7 +464,9 @@ class Cust {
             }
             mapper.set(i.offset, i.value);
         });
-        CustTable.forEach(saveValue);
+        CpuTable.forEach(saveValue);
+        GpuTable.forEach(saveValue);
+        RamTable.forEach(saveValue);
         AdvTable.forEach(saveValue);
         GpuVoltTable.forEach(saveValue);
         this.storage.save();
@@ -534,7 +477,11 @@ class Cust {
         this.toggleLoadLastSavedBtn(true);
     }
     removeHTMLForm() {
-        CustTable.forEach(i => i.removeElement());
+      CpuTable.forEach(i => i.removeElement());
+      GpuTable.forEach(i => i.removeElement());
+      RamTable.forEach(i => i.removeElement());
+      AdvTable.forEach(i => i.removeElement());
+      GpuVoltTable.forEach(i => i.removeElement());
     }
     toggleLoadLastSavedBtn(enable) {
         let last_btn = document.getElementById("load_saved");
@@ -553,7 +500,11 @@ class Cust {
     }
     createHTMLForm() {
       var _a, _b;
-      CustTable.forEach(i => i.createElement());
+      CpuTable.forEach(i => i.createElement());
+      GpuTable.forEach(i => i.createElement());
+      RamTable.forEach(i => i.createElement());
+      AdvTable.forEach(i => i.createElement());
+      GpuVoltTable.forEach(i => i.createElement());
 
       // Advanced configuration section
       let advanced = document.createElement("p");
@@ -603,7 +554,9 @@ class Cust {
       let default_btn = document.getElementById("load_default");
       default_btn.removeAttribute("disabled");
       default_btn.addEventListener('click', () => {
-          CustTable.forEach(i => i.setElementDefaultValue());
+        CpuTable.forEach(i => i.setElementDefaultValue());
+        GpuTable.forEach(i => i.setElementDefaultValue());
+        RamTable.forEach(i => i.setElementDefaultValue());
       });
 
       this.toggleLoadLastSavedBtn(this.storage.load() !== null);
@@ -631,9 +584,15 @@ class Cust {
                 tab.classList.remove(...unfocusedClasses);
                 let otherTabs = custTabs.filter(j => j != tab);
                 otherTabs.forEach(k => k.classList.add(...unfocusedClasses));
-                CustTable.forEach(e => {
-                    e.isAvailableFor(platform) ? e.showElement() : e.hideElement();
-                });
+                CpuTable.forEach(e => {
+                  e.isAvailableFor(platform) ? e.showElement() : e.hideElement();
+              });
+              GpuTable.forEach(e => {
+                  e.isAvailableFor(platform) ? e.showElement() : e.hideElement();
+              });
+              RamTable.forEach(e => {
+                  e.isAvailableFor(platform) ? e.showElement() : e.hideElement();
+              });
             });
         });
     }
@@ -658,7 +617,9 @@ class Cust {
             offset += i.size;
             i.validate();
         });
-        CustTable.forEach(loadValue);
+        CpuTable.forEach(loadValue);
+        GpuTable.forEach(loadValue);
+        RamTable.forEach(loadValue);
         AdvTable.forEach(loadValue);
         GpuVoltTable.forEach(loadValue);
     }
