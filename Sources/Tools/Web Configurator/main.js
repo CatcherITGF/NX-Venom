@@ -491,39 +491,50 @@ class Cust {
     }
     createHTMLForm() {
         var _a, _b;
+
+        let cpu = document.createElement("h3");
+        cpu.innerHTML = "CPU Configuration";
+        let cpuContainer = document.getElementById("config-list-cpu");
+        (_a = cpuContainer) === null || _a === void 0 ? void 0 : _a.appendChild(cpu);
         CpuTable.forEach(i => i.createElement());
+
+        let gpu = document.createElement("h3");
+        gpu.innerHTML = "GPU Configuration";
+        let gpuContainer = document.getElementById("config-list-gpu");
+        (_a = gpuContainer) === null || _a === void 0 ? void 0 : _a.appendChild(gpu);
         GpuTable.forEach(i => i.createElement());
+
+        let ram = document.createElement("h3");
+        ram.innerHTML = "RAM Configuration";
+        let ramContainer = document.getElementById("config-list-ram");
+        (_a = ramContainer) === null || _a === void 0 ? void 0 : _a.appendChild(ram);
         RamTable.forEach(i => i.createElement());
 
         let advanced = document.createElement("p");
-        advanced.innerHTML = "Advanced configuration";
+        advanced.innerHTML = "Timings configuration";
         let advancedContainer = document.getElementById("config-list-advanced");
-
         (_a = advancedContainer) === null || _a === void 0 ? void 0 : _a.appendChild(advanced);
-
         AdvTable.forEach(i => i.createElement());
 
-        let gpuSection = document.getElementById("config-list-gpuvolt");
-
-        gpuSection.style.display = "none";
+        let gpuVoltContainer = document.getElementById("config-list-gpuvolt");
+        gpuVoltContainer.style.display = "none";
 
         let toggleButton = document.createElement("button");
-        toggleButton.innerHTML = "Show Gpu Custom Table";
+        toggleButton.innerHTML = "Show GPU Custom Table";
         toggleButton.style.cursor = 'pointer';
-
         toggleButton.type = 'button';
 
         toggleButton.addEventListener("click", () => {
-            if (gpuSection.style.display === "none") {
-                gpuSection.style.display = "block";
-                toggleButton.innerHTML = "Hide Gpu Custom Table";
+            if (gpuVoltContainer.style.display === "none") {
+                gpuVoltContainer.style.display = "block";
+                toggleButton.innerHTML = "Hide GPU Custom Table";
             } else {
-                gpuSection.style.display = "none";
-                toggleButton.innerHTML = "Show Gpu Custom Table";
+                gpuVoltContainer.style.display = "none";
+                toggleButton.innerHTML = "Show GPU Custom Table";
             }
         });
 
-        gpuSection.parentElement.insertBefore(toggleButton, gpuSection);
+        gpuVoltContainer.parentElement.insertBefore(toggleButton, gpuVoltContainer);
 
         GpuVoltTable.forEach(i => i.createElement());
 
