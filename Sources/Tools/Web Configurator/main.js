@@ -552,34 +552,74 @@ class Cust {
         }
     }
     createHTMLForm() {
-        var _a, _b;
-        CustTable.forEach(i => i.createElement());
-        let advanced = document.createElement("p");
-        advanced.innerHTML = "Advanced configuration";
-        (_a = document.getElementById("config-list-advanced")) === null || _a === void 0 ? void 0 : _a.appendChild(advanced);
-        let gpu = document.createElement("p");
-        gpu.innerHTML = "Gpu Custom Table";
-        (_b = document.getElementById("config-list-gpuvolt")) === null || _b === void 0 ? void 0 : _b.appendChild(gpu);
-        AdvTable.forEach(i => i.createElement());
-        GpuVoltTable.forEach(i => i.createElement());
-        let default_btn = document.getElementById("load_default");
-        default_btn.removeAttribute("disabled");
-        default_btn.addEventListener('click', () => {
-            CustTable.forEach(i => i.setElementDefaultValue());
-        });
-        this.toggleLoadLastSavedBtn(this.storage.load() !== null);
-        let save_btn = document.getElementById("save");
-        save_btn.removeAttribute("disabled");
-        save_btn.addEventListener('click', () => {
-            try {
-                this.save();
-            }
-            catch (e) {
-                console.error(e);
-                alert(e);
-            }
-        });
-    }
+      var _a, _b;
+      CustTable.forEach(i => i.createElement());
+
+      // Advanced configuration section
+      let advanced = document.createElement("p");
+      advanced.innerHTML = "Advanced configuration";
+      let advancedContainer = document.getElementById("config-list-advanced");
+
+      (_a = advancedContainer) === null || _a === void 0 ? void 0 : _a.appendChild(advanced);
+
+      // Create entries for Advanced Table (AdvTable)
+      AdvTable.forEach(i => {
+          i.createElement(); // This should add elements from AdvTable
+      });
+
+      // Gpu Custom Table section
+      let gpuSection = document.getElementById("config-list-gpuvolt");
+
+      // Hide the GPU section by default
+      gpuSection.style.display = "none";
+
+      // Add button for toggling Gpu Custom Table visibility
+      let toggleButton = document.createElement("button");
+      toggleButton.innerHTML = "Show Gpu Custom Table";
+      toggleButton.style.cursor = 'pointer'; // Add pointer cursor to button
+
+      // Prevent default action of button (e.g., submitting a form)
+      toggleButton.type = 'button';
+
+      // Add event listener to toggle Gpu Custom Table visibility
+      toggleButton.addEventListener("click", () => {
+          if (gpuSection.style.display === "none") {
+              gpuSection.style.display = "block";
+              toggleButton.innerHTML = "Hide Gpu Custom Table";
+          } else {
+              gpuSection.style.display = "none";
+              toggleButton.innerHTML = "Show Gpu Custom Table";
+          }
+      });
+
+      // Append toggle button before the GPU section
+      gpuSection.parentElement.insertBefore(toggleButton, gpuSection);
+
+      // Create GPU table entries
+      GpuVoltTable.forEach(i => {
+          i.createElement();
+      });
+
+      let default_btn = document.getElementById("load_default");
+      default_btn.removeAttribute("disabled");
+      default_btn.addEventListener('click', () => {
+          CustTable.forEach(i => i.setElementDefaultValue());
+      });
+
+      this.toggleLoadLastSavedBtn(this.storage.load() !== null);
+
+      let save_btn = document.getElementById("save");
+      save_btn.removeAttribute("disabled");
+      save_btn.addEventListener('click', () => {
+          try {
+              this.save();
+          }
+          catch (e) {
+              console.error(e);
+              alert(e);
+          }
+      });
+  }
     initCustTabs() {
         const custTabs = Array.from(document.querySelectorAll(`nav[role="tablist"] > button`));
         custTabs.forEach(tab => {
