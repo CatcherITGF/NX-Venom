@@ -14,7 +14,6 @@
   {
     "name": "Low Freq Vmin",
     "offset": "16",
-    "extent": " mV",
     "ref": "/switch/.packages/SC Wizard/Configure/CPU/json/eristaCpuMinVolt.json"
   },
   {
