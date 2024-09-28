@@ -118,11 +118,6 @@
     "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/marikoEmcDvbShift.json"
   },
   {
-    "name": "HP Mode",
-    "offset": "268",
-    "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/toggle.json"
-  },
-  {
     "name": "DRAM Timing",
     "offset": "64",
     "ref": "/switch/.packages/SC Wizard/Configure/RAM/json/mtcConf.json"

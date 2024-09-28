@@ -116,28 +116,26 @@
   },
   {
     "name": "1225 mV",
-    "dec": "1225000",
-    "color": "Orange"
+    "dec": "1225000"
   },
   {
     "name": "1237.5 mV",
-    "dec": "1237500",
-    "color": "Orange"
+    "dec": "1237500"
   },
   {
-    "name": "1250 mV",
+    "name": "1250 mV - Unsafe",
     "dec": "1250000",
     "color": "Orange"
   },
   {
-    "name": "1262.5 mV",
+    "name": "1262.5 mV - Unsafe",
     "dec": "1262500",
-    "color": "Red"
+    "color": "Orange"
   },
   {
-    "name": "1275 mV",
+    "name": "1275 mV - Unsafe",
     "dec": "1275000",
-    "color": "Red"
+    "color": "Orange"
   },
   {
     "name": "1287.5 mV - Dangerous",
