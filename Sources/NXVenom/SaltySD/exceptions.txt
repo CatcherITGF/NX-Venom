@@ -54,7 +54,3 @@ X0100964012528000
 ;Donkey Kong Country: Tropical Freeze
 ;Crash at second level
 X0100C1F0051B6000
-
-;The Legend of Zelda: Echoes of Wisdom
-;1.0.1 crashes when closing
-X01008CF01BAAC000
