@@ -9,7 +9,8 @@
   },
   {
     "name": "2499 MHz - Unsafe",
-    "dec": "3"
+    "dec": "3",
+    "color": "Orange"
   },
   {
     "name": "2601 MHz - Unsafe",
