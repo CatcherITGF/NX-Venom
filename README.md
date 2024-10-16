@@ -1,12 +1,14 @@
 # NX Venom
 
+Lasciate ogne speranza, voi ch’entrate
+
 ![Banner](banner.jpg)
 
-The project is being developed for informational purposes showing the capabilities of the Switch hardware and is not aimed at extracting commercial benefits.
+> [!NOTE]  
+> The project is being developed for informational purposes showing the capabilities of the Switch hardware and is not aimed at extracting commercial benefits.
 
-## Warning
-
-**ATTENTION! Overclocking the console does not lead to irreversible consequences, however it poses a risk to data due to the features of Horizon OS. Therefore, it is strongly recommended to use overclocking exclusively in emuMMC and make backups. USE AT YOUR OWN RISK!**
+> [!WARNING]  
+> ATTENTION! Overclocking the console does not lead to irreversible consequences, however it poses a risk to data due to the features of Horizon OS. Therefore, it is strongly recommended to use overclocking exclusively in emuMMC and make backups. USE AT YOUR OWN RISK! 
 
 ## Community & support
 
