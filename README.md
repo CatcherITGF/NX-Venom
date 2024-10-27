@@ -48,6 +48,11 @@ To launch HomeBrew apps open the Album or any game icon whilst holding the `R` b
 - Software Installer
 - System Tweaks  
 - TOTK UltraCam (available for installation via Software Installer)
+<!-- -->
+- [RAM patches](https://github.com/CatcherITGF/NX-Venom/raw/refs/heads/main/Sources/Tools/Uberhand%20Packages/RAM%20Patch.zip) (8GB support)
+  - MGCL
+  - MGCR
+  - SK-Hynix NEI
 
 ## Philosophy
 
