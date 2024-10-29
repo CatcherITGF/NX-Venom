@@ -1,6 +1,6 @@
 # NX Venom
 
-Lasciate ogne speranza, voi ch’entrate
+Mirror: [https://gitverse.ru/CatcherITGF/NX-Venom](https://gitverse.ru/CatcherITGF/NX-Venom)
 
 ![Banner](banner.jpg)
 
