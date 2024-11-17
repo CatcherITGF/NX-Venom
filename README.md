@@ -83,7 +83,6 @@ Included in the SC Wizard
 - [Uberhand-Overlay](https://github.com/efosamark/Uberhand-Overlay)
 - [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (fork)
 - [DBI](https://github.com/rashevskyv/dbi)
-- [Tinfoil](https://tinfoil.io)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
 - [Lockpick RCM](https://github.com/s1204IT/Lockpick_RCM)
 - [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer)
