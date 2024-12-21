@@ -1,0 +1,2 @@
+Small, fast, single threaded ftp implementation in C
+Change config file /config/ftpsrv/config.ini before using
