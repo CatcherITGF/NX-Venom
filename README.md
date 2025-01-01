@@ -77,6 +77,7 @@ Included in the SC Wizard
 - [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
 - [Hekate](https://github.com/CTCaer/hekate)
 - [Sigpatches](https://sigmapatches.coomer.party)
+- [OC-Switchcraft-EOS](https://github.com/halop/OC-Switchcraft-EOS)
 - [SaltyNX](https://github.com/masagrator/SaltyNX) (fork)
 - [FPSLocker](https://github.com/masagrator/FPSLocker) (fork)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
