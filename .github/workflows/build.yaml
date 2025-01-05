@@ -43,4 +43,4 @@ jobs:
         with:
           draft: true
           generate_release_notes: false
-          files: ovlmenu.ovl
+          files: NXVenom.zip
