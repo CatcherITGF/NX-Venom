@@ -70,7 +70,8 @@
   },
   {
     "name": "870 mV - Dangerous",
-    "dec": "870"
+    "dec": "870",
+    "color": "Red"
   },
   {
     "name": "875 mV - Dangerous",
