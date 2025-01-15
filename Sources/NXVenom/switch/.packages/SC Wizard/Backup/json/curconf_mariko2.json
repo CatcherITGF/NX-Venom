@@ -96,5 +96,25 @@
     "name": "1305 MHz",
     "offset": "192",
     "extent": " mV"
+  },
+  {
+    "name": "1344 MHz",
+    "offset": "196",
+    "extent": " mV"
+  },
+  {
+    "name": "1382 MHz",
+    "offset": "200",
+    "extent": " mV"
+  },
+  {
+    "name": "1420 MHz",
+    "offset": "204",
+    "extent": " mV"
+  },
+  {
+    "name": "1536 MHz",
+    "offset": "208",
+    "extent": " mV"
   }
 ]
