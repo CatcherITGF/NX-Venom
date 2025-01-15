@@ -5,55 +5,68 @@
   },
   {
     "name": "805 mV - Unsafe",
-    "dec": "805"
+    "dec": "805",
+    "color": "Orange"
   },
   {
     "name": "810 mV - Unsafe",
-    "dec": "810"
+    "dec": "810",
+    "color": "Orange"
   },
   {
     "name": "815 mV - Unsafe",
-    "dec": "815"
+    "dec": "815",
+    "color": "Orange"
   },
   {
     "name": "820 mV - Unsafe",
-    "dec": "820"
+    "dec": "820",
+    "color": "Orange"
   },
   {
     "name": "825 mV - Unsafe",
-    "dec": "825"
+    "dec": "825",
+    "color": "Orange"
   },
   {
     "name": "830 mV - Unsafe",
-    "dec": "830"
+    "dec": "830",
+    "color": "Orange"
   },
   {
     "name": "835 mV - Unsafe",
-    "dec": "835"
+    "dec": "835",
+    "color": "Orange"
   },
   {
     "name": "840 mV - Unsafe",
-    "dec": "840"
+    "dec": "840",
+    "color": "Orange"
   },
   {
     "name": "845 mV - Unsafe",
-    "dec": "845"
+    "dec": "845",
+    "color": "Orange"
   },
   {
     "name": "850 mV - Unsafe",
-    "dec": "850"
+    "dec": "850",
+    "color": "Orange"
   },
   {
     "name": "855 mV - Dangerous",
-    "dec": "855"
+    "dec": "855",
+    "color": "Red"
   },
   {
     "name": "860 mV - Dangerous",
-    "dec": "860"
+    "dec": "860",
+    "color": "Red"
   },
   {
     "name": "865 mV - Dangerous",
-    "dec": "865"
+    "dec": "865",
+    "color": "Red"
   },
   {
     "name": "870 mV - Dangerous",
@@ -61,74 +74,92 @@
   },
   {
     "name": "875 mV - Dangerous",
-    "dec": "875"
+    "dec": "875",
+    "color": "Red"
   },
   {
     "name": "880 mV - Dangerous",
-    "dec": "880"
+    "dec": "880",
+    "color": "Red"
   },
   {
     "name": "885 mV - Dangerous",
-    "dec": "885"
+    "dec": "885",
+    "color": "Red"
   },
   {
     "name": "890 mV - Dangerous",
-    "dec": "890"
+    "dec": "890",
+    "color": "Red"
   },
   {
     "name": "895 mV - Dangerous",
-    "dec": "895"
+    "dec": "895",
+    "color": "Red"
   },
   {
     "name": "900 mV - Dangerous",
-    "dec": "900"
+    "dec": "900",
+    "color": "Red"
   },
   {
     "name": "905 mV - Dangerous",
-    "dec": "905"
+    "dec": "905",
+    "color": "Red"
   },
   {
     "name": "910 mV - Dangerous",
-    "dec": "910"
+    "dec": "910",
+    "color": "Red"
   },
   {
     "name": "915 mV - Dangerous",
-    "dec": "915"
+    "dec": "915",
+    "color": "Red"
   },
   {
     "name": "920 mV - Dangerous",
-    "dec": "920"
+    "dec": "920",
+    "color": "Red"
   },
   {
     "name": "925 mV - Dangerous",
-    "dec": "925"
+    "dec": "925",
+    "color": "Red"
   },
   {
     "name": "930 mV - Dangerous",
-    "dec": "930"
+    "dec": "930",
+    "color": "Red"
   },
   {
     "name": "935 mV - Dangerous",
-    "dec": "935"
+    "dec": "935",
+    "color": "Red"
   },
   {
     "name": "940 mV - Dangerous",
-    "dec": "940"
+    "dec": "940",
+    "color": "Red"
   },
   {
     "name": "945 mV - Dangerous",
-    "dec": "945"
+    "dec": "945",
+    "color": "Red"
   },
   {
     "name": "950 mV - Dangerous",
-    "dec": "950"
+    "dec": "950",
+    "color": "Red"
   },
   {
     "name": "955 mV - Dangerous",
-    "dec": "955"
+    "dec": "955",
+    "color": "Red"
   },
   {
     "name": "960 mV - Dangerous",
-    "dec": "960"
+    "dec": "960",
+    "color": "Red"
   }
 ]
