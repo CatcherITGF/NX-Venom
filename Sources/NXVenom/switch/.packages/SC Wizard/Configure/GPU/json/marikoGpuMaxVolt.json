@@ -4,43 +4,131 @@
     "dec": "800"
   },
   {
-    "name": "805 mV",
+    "name": "805 mV - Unsafe",
     "dec": "805"
   },
   {
-    "name": "810 mV",
+    "name": "810 mV - Unsafe",
     "dec": "810"
   },
   {
-    "name": "815 mV",
+    "name": "815 mV - Unsafe",
     "dec": "815"
   },
   {
-    "name": "820 mV",
+    "name": "820 mV - Unsafe",
     "dec": "820"
   },
   {
-    "name": "825 mV",
+    "name": "825 mV - Unsafe",
     "dec": "825"
   },
   {
-    "name": "830 mV",
+    "name": "830 mV - Unsafe",
     "dec": "830"
   },
   {
-    "name": "835 mV",
+    "name": "835 mV - Unsafe",
     "dec": "835"
   },
   {
-    "name": "840 mV",
+    "name": "840 mV - Unsafe",
     "dec": "840"
   },
   {
-    "name": "845 mV",
+    "name": "845 mV - Unsafe",
     "dec": "845"
   },
   {
-    "name": "850 mV",
+    "name": "850 mV - Unsafe",
     "dec": "850"
+  },
+  {
+    "name": "855 mV - Dangerous",
+    "dec": "855"
+  },
+  {
+    "name": "860 mV - Dangerous",
+    "dec": "860"
+  },
+  {
+    "name": "865 mV - Dangerous",
+    "dec": "865"
+  },
+  {
+    "name": "870 mV - Dangerous",
+    "dec": "870"
+  },
+  {
+    "name": "875 mV - Dangerous",
+    "dec": "875"
+  },
+  {
+    "name": "880 mV - Dangerous",
+    "dec": "880"
+  },
+  {
+    "name": "885 mV - Dangerous",
+    "dec": "885"
+  },
+  {
+    "name": "890 mV - Dangerous",
+    "dec": "890"
+  },
+  {
+    "name": "895 mV - Dangerous",
+    "dec": "895"
+  },
+  {
+    "name": "900 mV - Dangerous",
+    "dec": "900"
+  },
+  {
+    "name": "905 mV - Dangerous",
+    "dec": "905"
+  },
+  {
+    "name": "910 mV - Dangerous",
+    "dec": "910"
+  },
+  {
+    "name": "915 mV - Dangerous",
+    "dec": "915"
+  },
+  {
+    "name": "920 mV - Dangerous",
+    "dec": "920"
+  },
+  {
+    "name": "925 mV - Dangerous",
+    "dec": "925"
+  },
+  {
+    "name": "930 mV - Dangerous",
+    "dec": "930"
+  },
+  {
+    "name": "935 mV - Dangerous",
+    "dec": "935"
+  },
+  {
+    "name": "940 mV - Dangerous",
+    "dec": "940"
+  },
+  {
+    "name": "945 mV - Dangerous",
+    "dec": "945"
+  },
+  {
+    "name": "950 mV - Dangerous",
+    "dec": "950"
+  },
+  {
+    "name": "955 mV - Dangerous",
+    "dec": "955"
+  },
+  {
+    "name": "960 mV - Dangerous",
+    "dec": "960"
   }
 ]
