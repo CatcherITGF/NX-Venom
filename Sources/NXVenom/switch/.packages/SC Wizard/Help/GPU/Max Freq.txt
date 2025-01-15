@@ -2,4 +2,5 @@ High freqs may not work if Volt Limit not enough for your console
 
 This can be solved by raising the Volt Limit, but this is not recommended and can be unsafe
 
-1305 MHz only available with GPU UV2 & 3
+1305 MHz available with GPU UV2 & 3
+1344-1536 MHz available only with UV3
