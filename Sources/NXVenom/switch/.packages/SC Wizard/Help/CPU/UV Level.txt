@@ -3,4 +3,6 @@ Low Freq UV: 0-1581 MHz (UV7: 0-1428 MHz)
 Mariko
 ---
 
-1963 MHz default freq when no UV is selected
+1963 MHz default mx freq when no UV is selected
+
+If you console doesn't boot after rising UV level, use Hekate -> INI -> No Kip and correct the values
