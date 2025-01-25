@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Disable - No bootlogo",
+    "value": "0"
+  },
+  {
+    "name": "1 Sec",
+    "value": "1"
+  },
+  {
+    "name": "2 Sec",
+    "value": "2"
+  },
+  {
+    "name": "3 Sec - Default",
+    "value": "3"
+  },
+  {
+    "name": "4 Sec",
+    "value": "4"
+  },
+  {
+    "name": "5 Sec",
+    "value": "5"
+  }
+]
