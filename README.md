@@ -19,7 +19,7 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 
 1. Make backup and delete everything except `Nintendo` and `emuMMC` folders on the SD card.
 2. Unpack the [NX Venom](https://github.com/CatcherITGF/NX-Venom/raw/main/NXVenom.zip) to the root of the SD card. Use a card reader, or `Hekate` → `Tools` → `USB Tools`.
-3. Use the `All-in-One Switch Updater` homebrew application for updates. The answer to "Do you want to overwrite existing .ini config" is `YES`.
+3. Use the `All-in-One Switch Updater` homebrew application for updates in non-applet mode (launch any game with the R trigger button pushed down). The answer to "Do you want to overwrite existing .ini config" is `YES`.
 4. Installation of additional software, as well as patches for games, is done through the `Uberhand` menu (click `right`) → `Software Installer`.
 
 ## How to use
