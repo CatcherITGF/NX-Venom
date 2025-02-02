@@ -67,6 +67,10 @@
     "ref": "/switch/.packages/SC Wizard/Configure/GPU/json/commonGpuVoltOffset.json"
   },
   {
+    "name": "Speedo",
+    "offset": "52"
+  },
+  {
     "name": "Vmin",
     "offset": "56",
     "ref": "/switch/.packages/SC Wizard/Configure/GPU/json/marikoGpuVmin.json"
