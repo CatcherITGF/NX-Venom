@@ -1,5 +1,5 @@
 [status-monitor]
-key_combo=ZL+ZR+DDOWN
+ultra=Ultra
 battery_avg_iir_filter=false
 battery_time_left_refreshrate=60
 average_gpu_load=true

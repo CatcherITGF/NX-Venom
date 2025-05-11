@@ -113,8 +113,18 @@
     "extent": " mV"
   },
   {
-    "name": "1536 MHz",
+    "name": "1459 MHz",
     "offset": "208",
+    "extent": " mV"
+  },
+  {
+    "name": "1497 MHz",
+    "offset": "212",
+    "extent": " mV"
+  },
+  {
+    "name": "1536 MHz",
+    "offset": "216",
     "extent": " mV"
   }
 ]
