@@ -71,5 +71,15 @@
     "name": "998 MHz",
     "offset": "172",
     "extent": " mV"
+  },
+  {
+    "name": "1075 MHz",
+    "offset": "176",
+    "extent": " mV"
+  },
+  {
+    "name": "1152 MHz",
+    "offset": "180",
+    "extent": " mV"
   }
 ]
