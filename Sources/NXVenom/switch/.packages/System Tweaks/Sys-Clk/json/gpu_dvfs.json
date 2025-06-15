@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Disable",
+    "dec": "0"
+  },
+  {
+    "name": "Official",
+    "dec": "1"
+  },
+  {
+    "name": "Hijack",
+    "dec": "2"
+  }
+]
