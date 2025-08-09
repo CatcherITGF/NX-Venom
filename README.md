@@ -82,7 +82,7 @@ Included in the SC Wizard
 - [FPSLocker](https://github.com/masagrator/FPSLocker)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
 - [Uberhand-Overlay](https://github.com/efosamark/Uberhand-Overlay)
-- [Status Monitor](https://github.com/hanai3Bi/Status-Monitor-Overlay) (fork)
+- [Status Monitor](https://github.com/ppkantorski/Status-Monitor-Overlay) (fork)
 - [DBI](https://github.com/rashevskyv/dbi)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
 - [Lockpick RCM](https://github.com/s1204IT/Lockpick_RCM)
