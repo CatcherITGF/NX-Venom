@@ -1,5 +1,13 @@
 [
   {
+    "name": "Auto",
+    "dec": "0"
+  },
+  {
+    "name": "700 mV",
+    "dec": "700"
+  },
+  {
     "name": "700 mV",
     "dec": "700"
   },
@@ -204,39 +212,39 @@
     "dec": "950"
   },
   {
-    "name": "955 mV",
+    "name": "955 mV - Unsafe",
     "dec": "955"
   },
   {
-    "name": "960 mV",
+    "name": "960 mV - Unsafe",
     "dec": "960"
   },
   {
-    "name": "965 mV",
+    "name": "965 mV - Unsafe",
     "dec": "965"
   },
   {
-    "name": "970 mV",
+    "name": "970 mV - Unsafe",
     "dec": "970"
   },
   {
-    "name": "975 mV",
+    "name": "975 mV - Unsafe",
     "dec": "975"
   },
   {
-    "name": "980 mV",
+    "name": "980 mV - Unsafe",
     "dec": "980"
   },
   {
-    "name": "985 mV",
+    "name": "985 mV - Unsafe",
     "dec": "985"
   },
   {
-    "name": "990 mV",
+    "name": "990 mV - Unsafe",
     "dec": "990"
   },
   {
-    "name": "995 mV",
+    "name": "995 mV - Unsafe",
     "dec": "995"
   }
 ]
