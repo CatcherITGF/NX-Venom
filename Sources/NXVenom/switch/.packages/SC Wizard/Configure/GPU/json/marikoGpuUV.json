@@ -4,15 +4,11 @@
     "dec": "0"
   },
   {
-    "name": "1 - HiOPT -20mV",
+    "name": "1 - HiOPT (-15mV)",
     "dec": "1"
   },
   {
     "name": "2 - High",
     "dec": "2"
-  },
-  {
-    "name": "3 - Custom Table",
-    "dec": "3"
   }
 ]
