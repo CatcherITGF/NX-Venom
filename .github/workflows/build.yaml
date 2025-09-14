@@ -21,7 +21,7 @@ jobs:
       #   uses: lhotari/action-upterm@v1
       - name: "Install FPSLocker patches"
         working-directory: ./Sources/NXVenom
-        run: curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v3.1.zip > patches.zip && unzip patches.zip && rm -rf SaltySD/plugins/FPSLocker/patches && cp -r FPSLocker-Warehouse-3.1/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-3.1 && rm -rf patches.zip
+        run: curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v4.zip > patches.zip && unzip patches.zip && rm -rf SaltySD/plugins/FPSLocker/patches && cp -r FPSLocker-Warehouse-4/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-4 && rm -rf patches.zip
       - name: "Compile NXVenom"
         working-directory: ./Sources/NXVenom
         run: rm -rf ../../NXVenom.zip && zip -qqrX ../../NXVenom.zip ./
