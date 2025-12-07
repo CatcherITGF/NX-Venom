@@ -1,1 +1,0 @@
-Configs that allow going above 30 FPS, tweak dynamic resolution frame timing for better performance, etc

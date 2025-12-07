@@ -1,1 +1,0 @@
-A Tesla overlay to adjust the master volume of the Nintendo Switch. This will be applied to every audio sink.

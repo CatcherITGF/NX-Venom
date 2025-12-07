@@ -1,1 +1,0 @@
-Virtual amiibo (amiibo emulation) system for Nintendo Switch

@@ -1,2 +1,0 @@
-
-Homebrew application for the Nintendo Switch which displays play activity with more accuracy
