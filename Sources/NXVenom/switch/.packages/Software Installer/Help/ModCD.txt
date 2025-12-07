@@ -1,7 +1,0 @@
-ModCD is a homebrew application that provides the user with the following features (directly from the Switch):
-
-Downloading: A version-check mechanism for installed games allows downloading only mods compatible with the game.
-Installation/Removal: MCDS (ModCD Script/Scenario) allows setting up installation and removal rules using the available set of instructions.
-Information View: Display information about the mods.
-Screenshot View: View screenshots of the mods.
-Before-and-After Widget: A widget for comparing screenshots before and after mod installation, allowing users to clearly see the differences.

@@ -1,1 +1,0 @@
-A Tesla plugin for Nintendo Switch to sync time with NTP servers

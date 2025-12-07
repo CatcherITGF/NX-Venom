@@ -1,1 +1,0 @@
- Reboot to Hekate configs from Tesla menu
