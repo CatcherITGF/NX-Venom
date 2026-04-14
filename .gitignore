@@ -42,3 +42,4 @@ Sources/Tools/Uberhand Packages/RAM Patch S
 
 # AI agents local workspace (not committed)
 .agents/
+AGENTS.md
