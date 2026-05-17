@@ -1,0 +1,12 @@
+Light
+Dark
+Preset 1
+Preset 2
+Preset 3
+Preset 4
+Preset 5
+Preset 6
+Preset 7
+Preset 8
+Preset 9
+Preset 10

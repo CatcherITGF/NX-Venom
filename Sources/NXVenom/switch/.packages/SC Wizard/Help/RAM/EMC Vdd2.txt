@@ -1,9 +1,0 @@
-Vdd2 is the supply voltage for the input buffers and core logic of a memory chip
-
-Higher values might improve stabilty on higher memory freqs
-
-Erista Default: 1125mV
-Mariko Default: 1100mV
-Official lpddr4(x) range: 1060mV~1175mV (1100mV nominal)
-
-OCS need high voltage unlike l4t because of not scaling mtc table well, however it is recommended to stay within official limits

@@ -1,6 +1,0 @@
-High frequencies are not recommended for use with high maximum voltage
-
-Mariko
----
-
-1963 MHz always max freq when no UV is selected

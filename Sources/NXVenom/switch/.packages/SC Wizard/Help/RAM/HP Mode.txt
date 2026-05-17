@@ -1,1 +1,0 @@
-Reduces timings latency but drains more power and rise temperature

@@ -1,3 +1,0 @@
-Threads switcher for MemToolkitNX
-
-Don't forget switch to the default after use 4 threads setting

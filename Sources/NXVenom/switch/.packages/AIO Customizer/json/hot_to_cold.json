@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Black",
+        "hex": "000000",
+        "hex#": "#000000"
+    },
+    {
+        "name": "Dark Red",
+        "hex": "8B0000",
+        "hex#": "#8B0000"
+    },
+    {
+        "name": "Red",
+        "hex": "FF0000",
+        "hex#": "#FF0000"
+    },
+    {
+        "name": "Light Red",
+        "hex": "FF7F7F",
+        "hex#": "#FF7F7F"
+    },
+    {
+        "name": "Dark Pink",
+        "hex": "C71585",
+        "hex#": "#C71585"
+    },
+    {
+        "name": "Pink",
+        "hex": "FFC0CB",
+        "hex#": "#FFC0CB"
+    },
+    {
+        "name": "Light Pink",
+        "hex": "FFB6C1",
+        "hex#": "#FFB6C1"
+    },
+    {
+        "name": "Dark Purple",
+        "hex": "4B0082",
+        "hex#": "#4B0082"
+    },
+    {
+        "name": "Purple",
+        "hex": "800080",
+        "hex#": "#800080"
+    },
+    {
+        "name": "Light Purple",
+        "hex": "D8BFD8",
+        "hex#": "#D8BFD8"
+    },
+    {
+        "name": "Dark Orange",
+        "hex": "FF8C00",
+        "hex#": "#FF8C00"
+    },
+    {
+        "name": "Orange",
+        "hex": "FFA500",
+        "hex#": "#FFA500"
+    },
+    {
+        "name": "Light Orange",
+        "hex": "FFD580",
+        "hex#": "#FFD580"
+    },
+    {
+        "name": "Dark Yellow",
+        "hex": "CCCC00",
+        "hex#": "#CCCC00"
+    },
+    {
+        "name": "Yellow",
+        "hex": "FFFF00",
+        "hex#": "#FFFF00"
+    },
+    {
+        "name": "Light Yellow",
+        "hex": "FFFFE0",
+        "hex#": "#FFFFE0"
+    },
+    {
+        "name": "Light Brown",
+        "hex": "CD853F",
+        "hex#": "#CD853F"
+    },
+    {
+        "name": "Brown",
+        "hex": "654321",
+        "hex#": "#654321"
+    },
+    {
+        "name": "Gray",
+        "hex": "808080",
+        "hex#": "#808080"
+    },
+    {
+        "name": "Light Gray",
+        "hex": "D3D3D3",
+        "hex#": "#D3D3D3"
+    },
+    {
+        "name": "Dark Green",
+        "hex": "006400",
+        "hex#": "#006400"
+    },
+    {
+        "name": "Green",
+        "hex": "008000",
+        "hex#": "#008000"
+    },
+    {
+        "name": "Light Green",
+        "hex": "90EE90",
+        "hex#": "#90EE90"
+    },
+    {
+        "name": "Dark Blue",
+        "hex": "00008B",
+        "hex#": "#00008B"
+    },
+    {
+        "name": "Blue",
+        "hex": "0000FF",
+        "hex#": "#0000FF"
+    },
+    {
+        "name": "Light Blue",
+        "hex": "ADD8E6",
+        "hex#": "#ADD8E6"
+    },
+    {
+        "name": "White",
+        "hex": "FFFFFF",
+        "hex#": "#FFFFFF"
+    }
+]

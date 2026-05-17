@@ -1,0 +1,34 @@
+[
+    {
+        "name": "DVR Patches",
+        "path1": "/atmosphere/exefs_patches/am/"
+    },
+    {
+        "name": "Fizeau",
+        "path1": "/atmosphere/contents/0100000000000F12/",
+        "path2": "/config/Fizeau/",
+        "path3": "/switch/.overlays/Fizeau.ovl",
+        "path4": "/switch/Fizeau/"
+    },
+    {
+        "name": "MasterVolume",
+        "path1": "/atmosphere/exefs_patches/audio_mastervolume/",
+        "path2": "/switch/.overlays/MasterVolume.ovl"
+    },
+    {
+        "name": "NX-FanControl",
+        "path1": "/atmosphere/contents/00FF0000B378D640/",
+        "path2": "/config/NX-FanControl/"
+    },
+    {
+        "name": "sys-ftpd",
+        "path1": "/atmosphere/contents/420000000000000E/",
+        "path2": "/config/sys-ftpd/"
+    },
+    {
+        "name": "sys-tune",
+        "path1": "/atmosphere/contents/4200000000000000/",
+        "path2": "/config/sys-tune/",
+        "path3": "/switch/.overlays/sys-tune-overlay.ovl"
+    }
+]
