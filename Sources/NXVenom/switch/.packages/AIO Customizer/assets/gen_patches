@@ -1,0 +1,7 @@
+python gen_patches.py 'Bowser' 'Bowser.png'
+python gen_patches.py 'Electric Bowser' 'Electric Bowser.png'
+python gen_patches.py 'Galactic Bowser' 'Galactic Bowser.png'
+python gen_patches.py 'Mario & Luigi' 'Mario & Luigi.png'
+python gen_patches.py 'Mario & Yoshi' 'Mario & Yoshi.png'
+python gen_patches.py 'Mario Galaxy' 'Mario Galaxy.png'
+python gen_patches.py 'Peach' 'Peach.png'

@@ -1,3 +1,0 @@
-Changing this value affects cpu voltage calculation
-
-Reduces voltages between 1683-2193 MHz
