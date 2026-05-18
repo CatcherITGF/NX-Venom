@@ -23,12 +23,10 @@ Discord: [NSwitch 60FPS Cheats & Mods](https://discord.com/invite/UqN6FcepTQ) (c
 
 ## How to use
 
-1. Opening the `Uberhand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
-2. Use the `sys-clk-oc` overlay to manage overclocking clocks.
-3. Use the `SC Wizard` (go to the `Uberhand` menu, press the `right` button) to change the parameters of the loading kip (only for advanced users).
-4. There is a built-in help inside each parameter, to access it press `Y`.
-5. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
-6. Recommended overclocking parameters for handheld mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
+1. Opening the `Ultrahand` menu (as well as exiting the `Status Monitor`) by a combination `ZR + ZL + Down`.
+2. Use the `Horizon OC` overlay to manage overclocking settings.
+3. The lower the acceleration parameters, the safer and the fewer side effects. Use wisely!
+4. Recommended overclocking parameters for handheld mode and battery life: CPU `1020 - 1428`, GPU `768 - 921`, Mem Max.
 
 ## HomeBrew Menu
 
@@ -41,28 +39,15 @@ To launch HomeBrew apps open the Album or any game icon whilst holding the `R` b
 - Nintendo Switch Lite (Mariko)
 - Nintendo Switch OLED (Mariko)
 
-## Uberhand Packages
-
-- SC Wizard (only for advanced users)
-- System Tweaks  
-<!-- -->
-- [RAM patches](https://github.com/CatcherITGF/NX-Venom/raw/refs/heads/main/Sources/Tools/Uberhand%20Packages/RAM%20Patch.zip) (8GB support)
-  - MGCL
-  - MGCR
-  - SK-Hynix NEI
-
 ## Philosophy
 
 The rule by which you need to be guided using console overclocking is the absence of side effects. The console should work without atmosphere errors, game crashes, shutdown due to overheating. Having achieved this result, you get a stable console, high performance in games and balanced power consumption.
 
 ## Guides
 
-Included in the SC Wizard
-
-- [Mariko OC Guide](https://github.com/dominatorul/Guides/blob/main/mariko.md)  
-- [Erista OC Guide](https://github.com/dominatorul/Guides/blob/main/erista.md)  
-- [How to Test Stability](https://github.com/dominatorul/Guides/blob/main/stability.md)  
-- [RAM Overclocking Stats](https://docs.google.com/spreadsheets/d/154TU8NRI3G8wY0ndf8HYJG20wsajW_CeSvkJLHw7o1g/edit?gid=0#gid=0)
+- [Mariko OC Guide](https://rentry.co/mariko/)  
+- [Erista OC Guide](https://rentry.co/erista/)  
+- [How to Test Stability](https://rentry.co/howtoteststability/)  
 
 ## FAQ
 
@@ -73,21 +58,20 @@ Included in the SC Wizard
 
 - [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
 - [Hekate](https://github.com/CTCaer/hekate)
-- [Sigpatches](https://sigmapatches.coomer.party)
-- [OC-Switchcraft-EOS](https://github.com/halop/OC-Switchcraft-EOS)
+- [Sigpatches](https://gbatemp.net/threads/sigpatches-for-atmosphere-hekate-fss0-fusee-package3.571543/)
+- [Horizon-OC](https://github.com/Horizon-OC/Horizon-OC)
 - [SaltyNX](https://github.com/masagrator/SaltyNX)
 - [FPSLocker](https://github.com/masagrator/FPSLocker)
 - [ReverseNX-RT](https://github.com/masagrator/ReverseNX-RT)
-- [Uberhand-Overlay](https://github.com/efosamark/Uberhand-Overlay)
-- [Status Monitor](https://github.com/ppkantorski/Status-Monitor-Overlay) (fork)
+- [Uberhand-Overlay](https://github.com/ppkantorski/Ultrahand-Overlay)
+- [Status Monitor](https://github.com/masagrator/Status-Monitor-Overlay)
 - [DBI](https://github.com/rashevskyv/dbi)
 - [AIO Switch Updater](https://github.com/HamletDuFromage/aio-switch-updater)
 - [Lockpick RCM](https://github.com/s1204IT/Lockpick_RCM)
 - [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer)
-- [Picofly Toolbox](https://github.com/Ansem-SoD/Picofly)
 
 ## Credits
 
-Special thanks to meha, b0rd2dEAth, Cooler3D, redraz, b3711, lineon, Ruslan, MasaGratoR, CtC, Efosamark, i3sey, Irene, khmm12, ChanseyIsTheBest & discord communities `NSwitch 60FPS Cheats & Mods`, `RetroNX` for implementing individual components and help with this bundle
+Special thanks to meha, ppkantorski (b0rd2dEAth), Cooler3D, redraz, b3711, lineon, MasaGratoR, CtC, Efosamark, i3sey, Irene, khmm12, ChanseyIsTheBest, Agjeococh, souldbminerr, Lightos1 & discord communities `NSwitch 60FPS Cheats & Mods`, `RetroNX` for implementing individual components and help with this bundle
 
 Made with ❤️ by NX community, maintained by [Catcher in the grain field](https://github.com/CatcherITGF)
