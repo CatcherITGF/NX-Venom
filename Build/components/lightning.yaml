@@ -1,0 +1,18 @@
+name: "lightning"
+display_name: "Lightning"
+enabled: true
+category: "Packages"
+source:
+  type: "github-branch-archive"
+  repo: "mollyvita/Lightning"
+  branch: "main"
+install:
+  mappings:
+    - asset: "Lightning-main-*.zip"
+      from: "package.ini"
+      to: "Sources/NXVenom/switch/.packages/Lightning/package.ini"
+      mode: "overwrite"
+    - asset: "Lightning-main-*.zip"
+      from: "data/amperage.json"
+      to: "Sources/NXVenom/switch/.packages/Lightning/data/amperage.json"
+      mode: "overwrite"

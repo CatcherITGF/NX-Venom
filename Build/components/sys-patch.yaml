@@ -1,0 +1,21 @@
+name: "sys-patch"
+display_name: "sys-patch"
+enabled: true
+category: "Apps / Tools"
+source:
+  type: "github-release"
+  repo: "impeeza/sys-patch"
+  release: "latest"
+assets:
+  - pattern: "sys-patch-*.zip"
+    type: "zip"
+install:
+  mappings:
+    - asset: "sys-patch-*.zip"
+      from: "atmosphere/contents/420000000000000B/"
+      to: "Sources/NXVenom/atmosphere/contents/420000000000000B/"
+      mode: "delete-before-copy"
+    - asset: "sys-patch-*.zip"
+      from: "switch/.overlays/sys-patch-overlay.ovl"
+      to: "Sources/NXVenom/switch/.overlays/sys-patch-overlay.ovl"
+      mode: "overwrite"

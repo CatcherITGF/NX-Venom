@@ -1,0 +1,23 @@
+name: "dbi"
+display_name: "DBI"
+enabled: true
+category: "Apps / Tools"
+source:
+  type: "github-release"
+  repo: "rashevskyv/dbi"
+  release: "latest"
+assets:
+  - pattern: "DBI.nro"
+    type: "file"
+  - pattern: "dbi.config"
+    type: "file"
+install:
+  mappings:
+    - asset: "DBI.nro"
+      from: "DBI.nro"
+      to: "Sources/NXVenom/switch/DBI/DBI.nro"
+      mode: "overwrite"
+    - asset: "dbi.config"
+      from: "dbi.config"
+      to: "Sources/NXVenom/switch/DBI/dbi.config"
+      mode: "overwrite"

@@ -1,0 +1,14 @@
+name: "alchemist"
+display_name: "Alchemist"
+enabled: true
+category: "Packages"
+source:
+  type: "github-branch-archive"
+  repo: "ppkantorski/Alchemist"
+  branch: "main"
+install:
+  mappings:
+    - asset: "Alchemist-main-*.zip"
+      from: "Alchemist/"
+      to: "Sources/NXVenom/switch/.packages/Alchemist/"
+      mode: "overwrite"

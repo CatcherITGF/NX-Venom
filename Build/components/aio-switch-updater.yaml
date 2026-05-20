@@ -1,0 +1,21 @@
+name: "aio-switch-updater"
+display_name: "AIO Switch Updater"
+enabled: true
+category: "Apps / Tools"
+source:
+  type: "github-release"
+  repo: "HamletDuFromage/aio-switch-updater"
+  release: "latest"
+assets:
+  - pattern: "aio-switch-updater.zip"
+    type: "zip"
+install:
+  mappings:
+    - asset: "aio-switch-updater.zip"
+      from: "switch/aio-switch-updater/aio-switch-updater.nro"
+      to: "Sources/NXVenom/switch/aio-switch-updater/aio-switch-updater.nro"
+      mode: "overwrite"
+    - asset: "aio-switch-updater.zip"
+      from: "switch/aio-switch-updater/aio-switch-updater.nro"
+      to: "Sources/AIO/switch/aio-switch-updater/aio-switch-updater.nro"
+      mode: "overwrite"

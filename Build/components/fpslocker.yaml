@@ -1,0 +1,17 @@
+name: "fpslocker"
+display_name: "FPSLocker"
+enabled: true
+category: "Overlays"
+source:
+  type: "github-release"
+  repo: "masagrator/FPSLocker"
+  release: "latest"
+assets:
+  - pattern: "FPSLocker.ovl"
+    type: "file"
+install:
+  mappings:
+    - asset: "FPSLocker.ovl"
+      from: "FPSLocker.ovl"
+      to: "Sources/NXVenom/switch/.overlays/FPSLocker.ovl"
+      mode: "overwrite"

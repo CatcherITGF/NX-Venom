@@ -1,0 +1,17 @@
+name: "reversenx-rt"
+display_name: "ReverseNX-RT"
+enabled: true
+category: "Overlays"
+source:
+  type: "github-release"
+  repo: "masagrator/ReverseNX-RT"
+  release: "latest"
+assets:
+  - pattern: "ReverseNX-RT-ovl.ovl"
+    type: "file"
+install:
+  mappings:
+    - asset: "ReverseNX-RT-ovl.ovl"
+      from: "ReverseNX-RT-ovl.ovl"
+      to: "Sources/NXVenom/switch/.overlays/ReverseNX-RT-ovl.ovl"
+      mode: "overwrite"

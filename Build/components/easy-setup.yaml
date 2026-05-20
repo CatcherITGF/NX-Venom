@@ -1,0 +1,16 @@
+name: "easy-setup"
+display_name: "Easy Setup"
+enabled: true
+category: "Packages"
+source:
+  type: "github-branch-archive"
+  repo: "dominatorul/Easy-setup"
+  branch: "main"
+install:
+  mappings:
+    - asset: "Easy-setup-main-*.zip"
+      from: "."
+      to: "Sources/NXVenom/switch/.packages/Easy Setup/"
+      mode: "overwrite"
+      exclude:
+        - "README.md"
