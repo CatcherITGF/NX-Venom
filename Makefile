@@ -5,7 +5,7 @@ VERBOSE_ARG = $(if $(verbose),--verbose,)
 FULL_ARG = $(if $(full),--full,)
 .DEFAULT_GOAL := help
 
-.PHONY: help check-updates update update-dry-run update-one adopt-latest list-components validate build build-nxvenom build-aio release install-fpslocker-patches clean-update-work clean-update-cache clean-zips clean
+.PHONY: help check-updates update update-dry-run update-one adopt-latest list-components validate build build-nxvenom build-aio release release-draft-upload install-fpslocker-patches clean-update-work clean-update-cache clean-zips clean
 
 help:
 	@printf "\nNX-Venom automation\n\n"
@@ -20,6 +20,8 @@ help:
 	@printf "  make adopt-latest [name=component]    Mark latest as accepted\n"
 	@printf "  make validate                         Validate bundle structure\n"
 	@printf "  make build                            Build NXVenom.zip and AIO.zip\n"
+	@printf "  make release-draft-upload tag=vX.Y.Z  Upload NXVenom.zip to draft release\n"
+	@printf "  make release-draft-upload tag=vX.Y.Z title='...' notes='...'\n"
 	@printf "  make list-components                  Show configured components\n"
 	@printf "\nGitHub rate limits:\n"
 	@printf "  export GITHUB_TOKEN=... or run gh auth login before bulk checks\n"
@@ -54,7 +56,7 @@ validate:
 
 build: build-nxvenom build-aio
 
-build-nxvenom:
+build-nxvenom: install-fpslocker-patches
 	@rm -rf NXVenom.zip
 	@cd Sources/NXVenom && zip -qqrX ../../NXVenom.zip ./
 
@@ -62,7 +64,12 @@ build-aio:
 	@rm -rf AIO.zip
 	@cd Sources/AIO && zip -qqrX ../../AIO.zip ./
 
-release: validate install-fpslocker-patches build
+release: validate build
+
+release-draft-upload: build-nxvenom
+	@test -n "$(tag)" || (echo "Usage: make release-draft-upload tag=vX.Y.Z [title='...'] [notes='...']" && exit 1)
+	@gh release view "$(tag)" >/dev/null 2>&1 || gh release create "$(tag)" --draft $(if $(title),--title "$(title)",) $(if $(notes),--notes "$(notes)",)
+	@gh release upload "$(tag)" NXVenom.zip --clobber
 
 install-fpslocker-patches:
 	@cd Sources/NXVenom && curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v4.zip > patches.zip && unzip -q patches.zip && rm -rf SaltySD/plugins/FPSLocker/patches && cp -r FPSLocker-Warehouse-4/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-4 patches.zip
