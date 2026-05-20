@@ -1050,10 +1050,15 @@ def command_list(args) -> int:
 
 
 def command_check(args) -> int:
-  manifests = selected_components(load_manifests(), args.component)
+  manifests = sort_components_for_display(selected_components(load_manifests(), args.component))
   state = load_state()
   updates = 0
-  for component in manifests:
+  total = len(manifests)
+  rows = []
+  show_progress = total > 1
+  for index, component in enumerate(manifests):
+    if show_progress:
+      progress_message(f"Checking updates [{index + 1}/{total}] {component_label(component)}")
     target = resolve_component(component)
     current = state["components"].get(component["name"])
     current_version = version_label(current)
@@ -1061,7 +1066,11 @@ def command_check(args) -> int:
     status = "update" if is_outdated(current, target) else "ok"
     if status == "update":
       updates += 1
-    print(f"{component['name']}: {current_version} -> {target_version} [{status}]")
+    rows.append(f"{component['name']}: {current_version} -> {target_version} [{status}]")
+  if show_progress:
+    progress_clear()
+  for row in rows:
+    print(row)
   if updates:
     print(f"updates available: {updates}")
   else:
@@ -1070,12 +1079,21 @@ def command_check(args) -> int:
 
 
 def command_adopt(args) -> int:
-  manifests = selected_components(load_manifests(), args.component)
+  manifests = sort_components_for_display(selected_components(load_manifests(), args.component))
   state = load_state()
-  for component in manifests:
+  total = len(manifests)
+  rows = []
+  show_progress = total > 1
+  for index, component in enumerate(manifests):
+    if show_progress:
+      progress_message(f"Adopting latest [{index + 1}/{total}] {component_label(component)}")
     target = resolve_component(component)
     state["components"][component["name"]] = state_record(target)
-    print(f"{component['name']}: adopted {version_label(target)}")
+    rows.append(f"{component['name']}: adopted {version_label(target)}")
+  if show_progress:
+    progress_clear()
+  for row in rows:
+    print(row)
   save_state(state)
   return 0
 
@@ -1156,6 +1174,26 @@ def print_update_summary(groups, reports_by_name) -> None:
       print(f"  {component_label(component):<{name_width}}  {version:<{version_width}}  {summary_result(report)}")
 
 
+def progress_message(message: str) -> None:
+  if sys.stderr.isatty():
+    print(f"\r{message}\033[K", end="", file=sys.stderr, flush=True)
+  else:
+    print(message, file=sys.stderr, flush=True)
+
+
+def progress_clear() -> None:
+  if sys.stderr.isatty():
+    print("\r\033[K", end="", file=sys.stderr, flush=True)
+
+
+def update_progress_label(args) -> str:
+  if args.dry_run and args.full:
+    return "Preparing full dry-run"
+  if args.dry_run:
+    return "Preparing dry-run summary"
+  return "Updating"
+
+
 def command_update(args) -> int:
   manifests = sort_components_for_display(selected_components(load_manifests(), args.component))
   groups = grouped_components(manifests)
@@ -1163,10 +1201,16 @@ def command_update(args) -> int:
   changed = False
   total = len(manifests)
   reports = []
-  for component in manifests:
+  show_progress = total > 1
+  progress_label = update_progress_label(args)
+  for index, component in enumerate(manifests):
+    if show_progress:
+      progress_message(f"{progress_label} [{index + 1}/{total}] {component_label(component)}")
     target = resolve_component(component)
     current = state["components"].get(component["name"])
     reports.append(evaluate_update(component, target, current, args))
+  if show_progress:
+    progress_clear()
 
   if args.dry_run and not args.full and total > 1:
     reports_by_name = {report["component"]["name"]: report for report in reports}
