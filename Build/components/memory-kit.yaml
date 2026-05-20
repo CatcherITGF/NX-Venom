@@ -1,0 +1,14 @@
+name: "memory-kit"
+display_name: "Memory Kit"
+enabled: true
+category: "Packages"
+source:
+  type: "github-branch-archive"
+  repo: "ppkantorski/Memory-Kit"
+  branch: "main"
+install:
+  mappings:
+    - asset: "Memory-Kit-main-*.zip"
+      from: "Memory Kit/"
+      to: "Sources/NXVenom/switch/.packages/Memory Kit/"
+      mode: "overwrite"

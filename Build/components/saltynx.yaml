@@ -1,0 +1,25 @@
+name: "saltynx"
+display_name: "SaltyNX"
+enabled: true
+category: "Apps / Tools"
+source:
+  type: "github-release"
+  repo: "masagrator/SaltyNX"
+  release: "latest"
+assets:
+  - pattern: "SaltyNX.zip"
+    type: "zip"
+install:
+  mappings:
+    - asset: "SaltyNX.zip"
+      from: "SaltySD/"
+      to: "Sources/NXVenom/SaltySD/"
+      mode: "overwrite"
+    - asset: "SaltyNX.zip"
+      from: "atmosphere/contents/0000000000534C56/"
+      to: "Sources/NXVenom/atmosphere/contents/0000000000534C56/"
+      mode: "delete-before-copy"
+    - asset: "SaltyNX.zip"
+      from: "atmosphere/exefs_patches/SaltyNX_Fixes/"
+      to: "Sources/NXVenom/atmosphere/exefs_patches/SaltyNX_Fixes/"
+      mode: "delete-before-copy"

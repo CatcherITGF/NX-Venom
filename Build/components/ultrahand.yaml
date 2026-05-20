@@ -1,0 +1,23 @@
+name: "ultrahand"
+display_name: "Ultrahand"
+enabled: true
+category: "Overlays"
+source:
+  type: "github-release"
+  repo: "ppkantorski/Ultrahand-Overlay"
+  release: "latest"
+assets:
+  - pattern: "ovlmenu.ovl"
+    type: "file"
+  - pattern: "sdout.zip"
+    type: "zip"
+install:
+  mappings:
+    - asset: "ovlmenu.ovl"
+      from: "ovlmenu.ovl"
+      to: "Sources/NXVenom/switch/.overlays/ovlmenu.ovl"
+      mode: "overwrite"
+    - asset: "sdout.zip"
+      from: "."
+      to: "Sources/NXVenom/"
+      mode: "overwrite"

@@ -44,4 +44,8 @@ Sources/Tools/Uberhand Packages/RAM Patch S
 .agents/
 AGENTS.md
 
+Build/cache/
+Build/work/
+__pycache__/
+
 *.swp

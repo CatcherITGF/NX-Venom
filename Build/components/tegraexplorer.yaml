@@ -1,0 +1,17 @@
+name: "tegraexplorer"
+display_name: "TegraExplorer"
+enabled: true
+category: "Apps / Tools"
+source:
+  type: "github-release"
+  repo: "suchmememanyskill/TegraExplorer"
+  release: "latest"
+assets:
+  - pattern: "TegraExplorer.bin"
+    type: "file"
+install:
+  mappings:
+    - asset: "TegraExplorer.bin"
+      from: "TegraExplorer.bin"
+      to: "Sources/NXVenom/bootloader/payloads/TegraExplorer.bin"
+      mode: "overwrite"
