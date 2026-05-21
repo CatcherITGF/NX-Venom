@@ -24,6 +24,7 @@ help:
 	@printf "  \033[2m%-64s  %s\033[0m\n" "----------------------------------------------------------------" "-------------------------------"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build" "Build NXVenom.zip and AIO.zip"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release" "Validate and build release zips"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make install-fpslocker-patches" "Refresh FPSLocker patches"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-draft-upload tag=vX.Y.Z" "Upload NXVenom.zip to draft"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n\n" "make release-draft-upload tag=vX.Y.Z [title=...] [notes=...]" "Upload with metadata"
 	@printf "\033[1;33mUtilities\033[0m\n"
@@ -66,6 +67,7 @@ build: build-nxvenom build-aio
 build-nxvenom: install-fpslocker-patches
 	@rm -rf NXVenom.zip
 	@cd Sources/NXVenom && zip -qqrX ../../NXVenom.zip ./
+	@rm -rf Sources/NXVenom/SaltySD/plugins
 
 build-aio:
 	@rm -rf AIO.zip
@@ -79,7 +81,8 @@ release-draft-upload: build-nxvenom
 	@gh release upload "$(tag)" NXVenom.zip --clobber
 
 install-fpslocker-patches:
-	@cd Sources/NXVenom && curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v4.zip > patches.zip && unzip -q patches.zip && rm -rf SaltySD/plugins/FPSLocker/patches && cp -r FPSLocker-Warehouse-4/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-4 patches.zip
+	@rm -rf Sources/NXVenom/SaltySD/plugins
+	@cd Sources/NXVenom && curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v4.zip > patches.zip && unzip -q patches.zip && cp -r FPSLocker-Warehouse-4/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-4 patches.zip
 
 clean-update-work:
 	@$(VENOM_UPDATE) clean --work
