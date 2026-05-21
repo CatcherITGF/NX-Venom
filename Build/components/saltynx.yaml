@@ -1,5 +1,7 @@
 name: "saltynx"
 display_name: "SaltyNX"
+aliases:
+  - "salty"
 enabled: true
 category: "Apps / Tools"
 source:

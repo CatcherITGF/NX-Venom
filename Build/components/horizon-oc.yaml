@@ -1,5 +1,7 @@
 name: "horizon-oc"
 display_name: "Horizon OC"
+aliases:
+  - "hoc"
 enabled: true
 category: "Overclocking"
 source:
