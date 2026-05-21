@@ -23,6 +23,8 @@ help:
 	@printf "  \033[2m%-64s  %s\033[0m\n" "Command" "Description"
 	@printf "  \033[2m%-64s  %s\033[0m\n" "----------------------------------------------------------------" "-------------------------------"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build" "Build NXVenom.zip and AIO.zip"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build-nxvenom" "Build NXVenom.zip"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build-aio" "Build AIO.zip"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release" "Validate and build release zips"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make install-fpslocker-patches" "Refresh FPSLocker patches"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-draft-upload tag=vX.Y.Z" "Upload NXVenom.zip to draft"
@@ -34,7 +36,9 @@ help:
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make adopt-latest [name=component]" "Mark latest as accepted"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make validate" "Validate bundle structure"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make clean-update-work" "Remove temporary unpacked files"
-	@printf "  \033[1;32m%-64s\033[0m  %s\n\n" "make clean-update-cache" "Remove downloaded cache"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make clean-update-cache" "Remove downloaded cache"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make clean-zips" "Remove built zip files"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n\n" "make clean" "Remove work files and built zips"
 	@printf "\033[1;33mGitHub rate limits\033[0m\n"
 	@printf "  export GITHUB_TOKEN=... or run gh auth login before bulk checks\n\n"
 
@@ -75,8 +79,9 @@ build-aio:
 
 release: validate build
 
-release-draft-upload: build-nxvenom
+release-draft-upload:
 	@test -n "$(tag)" || (echo "Usage: make release-draft-upload tag=vX.Y.Z [title='...'] [notes='...']" && exit 1)
+	@test -f NXVenom.zip || (echo "NXVenom.zip not found. Run make build-nxvenom or make release first." && exit 1)
 	@gh release view "$(tag)" >/dev/null 2>&1 || gh release create "$(tag)" --draft $(if $(title),--title "$(title)",) $(if $(notes),--notes "$(notes)",)
 	@gh release upload "$(tag)" NXVenom.zip --clobber
 
