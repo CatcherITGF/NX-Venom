@@ -23,6 +23,7 @@ help:
 	@printf "  \033[2m%-64s  %s\033[0m\n" "Command" "Description"
 	@printf "  \033[2m%-64s  %s\033[0m\n" "----------------------------------------------------------------" "-------------------------------"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build" "Build NXVenom.zip and AIO.zip"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release" "Validate and build release zips"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-draft-upload tag=vX.Y.Z" "Upload NXVenom.zip to draft"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n\n" "make release-draft-upload tag=vX.Y.Z [title=...] [notes=...]" "Upload with metadata"
 	@printf "\033[1;33mUtilities\033[0m\n"
