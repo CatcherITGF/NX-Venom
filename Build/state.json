@@ -1,5 +1,110 @@
 {
   "components": {
+    "aio-switch-updater": {
+      "assets": [
+        {
+          "name": "aio-switch-updater.zip",
+          "size": 3538231,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/HamletDuFromage/aio-switch-updater/releases/tag/2.23.3",
+      "repo": "HamletDuFromage/aio-switch-updater",
+      "revision": "2025-11-18T00:32:30Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:54:57+00:00",
+      "version": "2.23.3"
+    },
+    "alchemist": {
+      "assets": [
+        {
+          "name": "Alchemist-main-8dcb7031eb8f.zip",
+          "size": null,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/ppkantorski/Alchemist/tree/main",
+      "repo": "ppkantorski/Alchemist",
+      "revision": "8dcb7031eb8f41aed0c545720039b5b15e5ed241",
+      "source_type": "github-branch-archive",
+      "updated_at": "2026-05-21T11:58:06+00:00",
+      "version": "main"
+    },
+    "atmosphere": {
+      "assets": [
+        {
+          "name": "atmosphere-1.11.1-master-d04c20a04+hbl-2.4.5+hbmenu-3.6.1.zip",
+          "size": 4568560,
+          "type": "zip"
+        },
+        {
+          "name": "fusee.bin",
+          "size": 110272,
+          "type": "file"
+        }
+      ],
+      "html_url": "https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.11.1",
+      "repo": "Atmosphere-NX/Atmosphere",
+      "revision": "2026-04-07T17:06:47Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:50:48+00:00",
+      "version": "1.11.1"
+    },
+    "easy-setup": {
+      "assets": [
+        {
+          "name": "Easy-setup-main-6f856997e133.zip",
+          "size": null,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/dominatorul/Easy-setup/tree/main",
+      "repo": "dominatorul/Easy-setup",
+      "revision": "6f856997e133bd10d8b660f1827cf77c60b19967",
+      "source_type": "github-branch-archive",
+      "updated_at": "2026-05-21T11:57:46+00:00",
+      "version": "main"
+    },
+    "fpslocker": {
+      "assets": [
+        {
+          "name": "FPSLocker.ovl",
+          "size": 1380408,
+          "type": "file"
+        }
+      ],
+      "html_url": "https://github.com/masagrator/FPSLocker/releases/tag/3.3.2",
+      "repo": "masagrator/FPSLocker",
+      "revision": "2026-04-13T13:36:19Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:52:09+00:00",
+      "version": "3.3.2"
+    },
+    "hekate": {
+      "assets": [
+        {
+          "name": "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip",
+          "size": 893696,
+          "type": "zip"
+        },
+        {
+          "name": "hekate_ctcaer_6.5.2.bin",
+          "size": 110004,
+          "type": "file"
+        },
+        {
+          "name": "hekate_ctcaer_6.5.2__ram8GB.bin",
+          "size": 110004,
+          "type": "file"
+        }
+      ],
+      "html_url": "https://github.com/CTCaer/hekate/releases/tag/v6.5.2",
+      "repo": "CTCaer/hekate",
+      "revision": "2026-04-07T17:18:01Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:51:07+00:00",
+      "version": "v6.5.2"
+    },
     "horizon-oc": {
       "assets": [
         {
@@ -14,6 +119,116 @@
       "source_type": "github-release",
       "updated_at": "2026-05-21T11:46:19+00:00",
       "version": "2.3.1"
+    },
+    "lightning": {
+      "assets": [
+        {
+          "name": "Lightning-main-50ac44bd97b4.zip",
+          "size": null,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/mollyvita/Lightning/tree/main",
+      "repo": "mollyvita/Lightning",
+      "revision": "50ac44bd97b4353d844ade7083d4bf5f081bcdd2",
+      "source_type": "github-branch-archive",
+      "updated_at": "2026-05-21T11:57:55+00:00",
+      "version": "main"
+    },
+    "memory-kit": {
+      "assets": [
+        {
+          "name": "Memory-Kit-main-de842ccf9522.zip",
+          "size": null,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/ppkantorski/Memory-Kit/tree/main",
+      "repo": "ppkantorski/Memory-Kit",
+      "revision": "de842ccf9522de701c3a92245f7523119bfce3ad",
+      "source_type": "github-branch-archive",
+      "updated_at": "2026-05-21T11:57:21+00:00",
+      "version": "main"
+    },
+    "reversenx-rt": {
+      "assets": [
+        {
+          "name": "ReverseNX-RT-ovl.ovl",
+          "size": 315448,
+          "type": "file"
+        }
+      ],
+      "html_url": "https://github.com/masagrator/ReverseNX-RT/releases/tag/2.2.1",
+      "repo": "masagrator/ReverseNX-RT",
+      "revision": "2025-11-15T21:21:42Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:52:27+00:00",
+      "version": "2.2.1"
+    },
+    "saltynx": {
+      "assets": [
+        {
+          "name": "SaltyNX.zip",
+          "size": 212739,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/masagrator/SaltyNX/releases/tag/1.8.1",
+      "repo": "masagrator/SaltyNX",
+      "revision": "2026-05-11T23:28:03Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:55:57+00:00",
+      "version": "1.8.1"
+    },
+    "sys-patch": {
+      "assets": [
+        {
+          "name": "sys-patch-v1.6.2.0.zip",
+          "size": 177382,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/impeeza/sys-patch/releases/tag/v1.6.2.0",
+      "repo": "impeeza/sys-patch",
+      "revision": "2026-05-10T16:43:28Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:49:54+00:00",
+      "version": "v1.6.2.0"
+    },
+    "tegraexplorer": {
+      "assets": [
+        {
+          "name": "TegraExplorer.bin",
+          "size": 124954,
+          "type": "file"
+        }
+      ],
+      "html_url": "https://github.com/suchmememanyskill/TegraExplorer/releases/tag/4.2.0",
+      "repo": "suchmememanyskill/TegraExplorer",
+      "revision": "2024-08-11T12:25:17Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:57:03+00:00",
+      "version": "4.2.0"
+    },
+    "ultrahand": {
+      "assets": [
+        {
+          "name": "ovlmenu.ovl",
+          "size": 1187900,
+          "type": "file"
+        },
+        {
+          "name": "sdout.zip",
+          "size": 1000498,
+          "type": "zip"
+        }
+      ],
+      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.1",
+      "repo": "ppkantorski/Ultrahand-Overlay",
+      "revision": "2026-04-20T14:59:22Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T11:52:43+00:00",
+      "version": "v2.4.1"
     }
   },
   "version": 1
