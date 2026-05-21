@@ -1,7 +1,7 @@
 name: "atmosphere"
 display_name: "Atmosphere"
 aliases:
-  - "hos"
+  - "ams"
 enabled: true
 category: "Core"
 source:
