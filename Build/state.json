@@ -138,17 +138,17 @@
     "memory-kit": {
       "assets": [
         {
-          "name": "Memory-Kit-main-de842ccf9522.zip",
-          "size": null,
+          "name": "Memory.Kit.zip",
+          "size": 1566609,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/Memory-Kit/tree/main",
+      "html_url": "https://github.com/ppkantorski/Memory-Kit/releases/tag/v1.0.2",
       "repo": "ppkantorski/Memory-Kit",
-      "revision": "de842ccf9522de701c3a92245f7523119bfce3ad",
-      "source_type": "github-branch-archive",
-      "updated_at": "2026-05-21T11:57:21+00:00",
-      "version": "main"
+      "revision": "2026-05-20T19:35:11Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-21T12:29:07+00:00",
+      "version": "v1.0.2"
     },
     "reversenx-rt": {
       "assets": [
