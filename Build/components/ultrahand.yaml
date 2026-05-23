@@ -1,5 +1,6 @@
 name: "ultrahand"
 display_name: "Ultrahand"
+release_name: "Ultrahand Overlay"
 enabled: true
 category: "Overlays"
 source:

@@ -997,6 +997,10 @@ def component_label(component) -> str:
   return component.get("display_name") or component["name"]
 
 
+def component_release_label(component) -> str:
+  return component.get("release_name") or component_label(component)
+
+
 def component_category(component) -> str:
   return component.get("category") or "Other"
 
@@ -1313,6 +1317,105 @@ def command_clean(args) -> int:
   return 0
 
 
+def git_capture(arguments) -> str:
+  try:
+    return subprocess.check_output(["git", *arguments], cwd=ROOT_DIR, text=True, stderr=subprocess.DEVNULL).strip()
+  except (FileNotFoundError, subprocess.CalledProcessError):
+    return ""
+
+
+def infer_release_notes_base(tag: str | None) -> str:
+  arguments = ["describe", "--tags", "--abbrev=0"]
+  if tag:
+    arguments.extend(["--exclude", tag])
+  arguments.append("HEAD")
+  ref = git_capture(arguments)
+  if ref:
+    return ref
+  for item in git_capture(["tag", "--sort=-creatordate"]).splitlines():
+    if item and item != tag:
+      return item
+  return ""
+
+
+def load_state_from_git(ref: str):
+  if not ref:
+    return {"components": {}}
+  text = git_capture(["show", f"{ref}:Build/state.json"])
+  if not text:
+    return {"components": {}}
+  try:
+    return json.loads(text)
+  except json.JSONDecodeError:
+    return {"components": {}}
+
+
+def comparable_assets(record) -> list:
+  return [(asset.get("name"), asset.get("size"), asset.get("type")) for asset in record.get("assets") or []]
+
+
+def release_record_changed(previous, current) -> bool:
+  if not previous:
+    return True
+  for key in ("source_type", "version", "revision", "html_url"):
+    if previous.get(key) != current.get(key):
+      return True
+  return comparable_assets(previous) != comparable_assets(current)
+
+
+def release_notes_line(action: str, component, record) -> str:
+  label = component_release_label(component)
+  version = version_label(record)
+  text = f"{label} {version}"
+  url = record.get("html_url")
+  if url:
+    text = f"[{text}]({url})"
+  return f"- {action} {text}"
+
+
+def command_release_notes(args) -> int:
+  manifests = load_manifests()
+  components_by_name = {component["name"]: component for component in manifests}
+  base_ref = args.from_ref or infer_release_notes_base(args.tag)
+  previous_state = load_state_from_git(base_ref)
+  current_state = load_state()
+  previous_components = previous_state.get("components") or {}
+  current_components = current_state.get("components") or {}
+  lines = []
+  order = 0
+
+  for component in sort_components_for_display(manifests):
+    name = component["name"]
+    current = current_components.get(name)
+    if not current:
+      continue
+    previous = previous_components.get(name)
+    if not release_record_changed(previous, current):
+      continue
+    action = "Added" if not previous else "Updated"
+    priority = 0 if action == "Updated" else 1
+    lines.append((priority, order, release_notes_line(action, component, current)))
+    order += 1
+
+  manifest_names = set(components_by_name)
+  for name in sorted(set(current_components) - manifest_names):
+    current = current_components[name]
+    previous = previous_components.get(name)
+    if not release_record_changed(previous, current):
+      continue
+    component = {"name": name, "display_name": name}
+    action = "Added" if not previous else "Updated"
+    priority = 0 if action == "Updated" else 1
+    lines.append((priority, order, release_notes_line(action, component, current)))
+    order += 1
+
+  if not lines:
+    print("- Maintenance update")
+    return 0
+  print("\n".join(line for _, _, line in sorted(lines)))
+  return 0
+
+
 def build_parser():
   parser = argparse.ArgumentParser(prog="venom_update.py")
   subparsers = parser.add_subparsers(dest="command", required=True)
@@ -1344,6 +1447,11 @@ def build_parser():
   clean_parser.add_argument("--work", action="store_true")
   clean_parser.add_argument("--cache", action="store_true")
   clean_parser.set_defaults(func=command_clean)
+
+  release_notes_parser = subparsers.add_parser("release-notes")
+  release_notes_parser.add_argument("--tag")
+  release_notes_parser.add_argument("--from", dest="from_ref")
+  release_notes_parser.set_defaults(func=command_release_notes)
 
   return parser
 

@@ -5,7 +5,7 @@ VERBOSE_ARG = $(if $(verbose),--verbose,)
 FULL_ARG = $(if $(full),--full,)
 .DEFAULT_GOAL := help
 
-.PHONY: help check-updates update update-all update-dry-run adopt-latest list-components validate build build-nxvenom build-aio release release-draft-upload install-fpslocker-patches clean-update-work clean-update-cache clean-zips clean
+.PHONY: help check-updates update update-all update-dry-run adopt-latest list-components validate build build-nxvenom build-aio release release-notes release-draft-upload install-fpslocker-patches clean-update-work clean-update-cache clean-zips clean
 
 help:
 	@printf "\n\033[1;36mNX-Venom automation\033[0m\n\n"
@@ -26,8 +26,9 @@ help:
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build-nxvenom" "Build NXVenom.zip"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build-aio" "Build AIO.zip"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release" "Validate and build release zips"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-notes [tag=vX.Y.Z]" "Generate release notes"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make install-fpslocker-patches" "Refresh FPSLocker patches"
-	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-draft-upload tag=vX.Y.Z" "Upload NXVenom.zip to draft"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-draft-upload tag=vX.Y.Z" "Upload existing NXVenom.zip to draft"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n\n" "make release-draft-upload tag=vX.Y.Z [title=...] [notes=...]" "Upload with metadata"
 	@printf "\033[1;33mUtilities\033[0m\n"
 	@printf "  \033[2m%-64s  %s\033[0m\n" "Command" "Description"
@@ -79,10 +80,28 @@ build-aio:
 
 release: validate build
 
+release-notes:
+	@$(VENOM_UPDATE) release-notes $(if $(tag),--tag "$(tag)",) $(if $(from),--from "$(from)",)
+
 release-draft-upload:
 	@test -n "$(tag)" || (echo "Usage: make release-draft-upload tag=vX.Y.Z [title='...'] [notes='...']" && exit 1)
 	@test -f NXVenom.zip || (echo "NXVenom.zip not found. Run make build-nxvenom or make release first." && exit 1)
-	@gh release view "$(tag)" >/dev/null 2>&1 || gh release create "$(tag)" --draft $(if $(title),--title "$(title)",) $(if $(notes),--notes "$(notes)",)
+	@notes_file="$$(mktemp)"; \
+	trap 'rm -f "$$notes_file"' EXIT; \
+	if [ -n "$(notes)" ]; then \
+		printf '%s\n' "$(notes)" > "$$notes_file"; \
+	else \
+		$(VENOM_UPDATE) release-notes --tag "$(tag)" > "$$notes_file"; \
+	fi; \
+	if gh release view "$(tag)" >/dev/null 2>&1; then \
+		if [ -n "$(notes)" ]; then \
+			gh release edit "$(tag)" $(if $(title),--title "$(title)",) --notes-file "$$notes_file"; \
+		elif [ -n "$(title)" ]; then \
+			gh release edit "$(tag)" --title "$(title)"; \
+		fi; \
+	else \
+		gh release create "$(tag)" --draft --title "$(if $(title),$(title),$(tag))" --notes-file "$$notes_file"; \
+	fi
 	@gh release upload "$(tag)" NXVenom.zip --clobber
 
 install-fpslocker-patches:
