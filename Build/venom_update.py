@@ -64,6 +64,7 @@ REQUIRED_PATHS = [
   "Sources/NXVenom/payload.bin",
   "Sources/NXVenom/switch/.overlays/ovlmenu.ovl",
   "Sources/NXVenom/switch/.overlays/FPSLocker.ovl",
+  "Sources/NXVenom/switch/.overlays/ovlSysmodules.ovl",
   "Sources/NXVenom/switch/.overlays/sys-patch-overlay.ovl",
   "Sources/NXVenom/atmosphere/contents/420000000000000B/exefs.nsp",
   "Sources/NXVenom/switch/.packages/RAM Patch/Default/payload.bin",

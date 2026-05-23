@@ -1,0 +1,19 @@
+name: "ovl-sysmodules"
+display_name: "Sysmodules"
+aliases:
+  - "sysmodules"
+enabled: true
+category: "Overlays"
+source:
+  type: "github-release"
+  repo: "ppkantorski/ovl-sysmodules"
+  release: "latest"
+assets:
+  - pattern: "ovlSysmodules.ovl"
+    type: "file"
+install:
+  mappings:
+    - asset: "ovlSysmodules.ovl"
+      from: "ovlSysmodules.ovl"
+      to: "Sources/NXVenom/switch/.overlays/ovlSysmodules.ovl"
+      mode: "overwrite"

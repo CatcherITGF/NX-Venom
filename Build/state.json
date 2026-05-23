@@ -150,6 +150,21 @@
       "updated_at": "2026-05-21T12:29:07+00:00",
       "version": "v1.0.2"
     },
+    "ovl-sysmodules": {
+      "assets": [
+        {
+          "name": "ovlSysmodules.ovl",
+          "size": 626748,
+          "type": "file"
+        }
+      ],
+      "html_url": "https://github.com/ppkantorski/ovl-sysmodules/releases/tag/v1.5.1",
+      "repo": "ppkantorski/ovl-sysmodules",
+      "revision": "2026-05-23T06:50:33Z",
+      "source_type": "github-release",
+      "updated_at": "2026-05-23T09:13:19+00:00",
+      "version": "v1.5.1"
+    },
     "reversenx-rt": {
       "assets": [
         {
