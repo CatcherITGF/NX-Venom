@@ -28,7 +28,10 @@ USER_AGENT = "NX-Venom updater"
 API_CACHE_TTL_SECONDS = int(os.environ.get("NX_VENOM_API_CACHE_TTL", "900"))
 USE_COLOR = os.environ.get("NO_COLOR") is None and os.environ.get("TERM") != "dumb"
 ANSI_RESET = "\033[0m"
+ANSI_BOLD = "\033[1m"
 ANSI_BOLD_YELLOW = "\033[1;33m"
+ANSI_GREEN = "\033[1;32m"
+ANSI_RED = "\033[1;31m"
 ANSI_DIM = "\033[2m"
 CARD_SEPARATOR = "────────────────────────────────────────────────────────────"
 CATEGORY_ORDER = ["Core", "Overclocking", "Overlays", "Apps / Tools", "Packages"]
@@ -1049,6 +1052,39 @@ def command_list(args) -> int:
   return 0
 
 
+def print_check_table(rows, updates: int) -> None:
+  name_width = max([len(row["label"]) for row in rows] + [9])
+  current_width = max([len(row["current"]) for row in rows] + [7])
+  latest_width = max([len(row["latest"]) for row in rows] + [6])
+  header = f"  {'Component':<{name_width}}  {'Current':<{current_width}}  {'Latest':<{latest_width}}  Status"
+  separator = f"  {'-' * name_width}  {'-' * current_width}  {'-' * latest_width}  {'-' * 8}"
+
+  print(colorize("NX-Venom update check", ANSI_BOLD))
+  print()
+  current_category = None
+  for index, row in enumerate(rows):
+    if row["category"] != current_category:
+      if index:
+        print()
+      current_category = row["category"]
+      print(colorize(current_category, ANSI_BOLD_YELLOW))
+      print(colorize(header, ANSI_DIM))
+      print(colorize(separator, ANSI_DIM))
+    status_label = "UPDATE" if row["status"] == "update" else "OK"
+    status_color = ANSI_RED if row["status"] == "update" else ANSI_GREEN
+    print(
+      f"  {row['label']:<{name_width}}  "
+      f"{row['current']:<{current_width}}  "
+      f"{row['latest']:<{latest_width}}  "
+      f"{colorize(status_label, status_color)}"
+    )
+
+  print()
+  print(colorize("Summary", ANSI_BOLD_YELLOW))
+  print(f"  checked: {len(rows)}")
+  print(f"  updates: {colorize(str(updates), ANSI_RED if updates else ANSI_GREEN)}")
+
+
 def command_check(args) -> int:
   manifests = sort_components_for_display(selected_components(load_manifests(), args.component))
   state = load_state()
@@ -1066,15 +1102,16 @@ def command_check(args) -> int:
     status = "update" if is_outdated(current, target) else "ok"
     if status == "update":
       updates += 1
-    rows.append(f"{component['name']}: {current_version} -> {target_version} [{status}]")
+    rows.append({
+      "category": component_category(component),
+      "label": component_label(component),
+      "current": current_version,
+      "latest": target_version,
+      "status": status
+    })
   if show_progress:
     progress_clear()
-  for row in rows:
-    print(row)
-  if updates:
-    print(f"updates available: {updates}")
-  else:
-    print("all components are up to date")
+  print_check_table(rows, updates)
   return 2 if updates and args.fail_on_updates else 0
 
 

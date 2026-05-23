@@ -214,21 +214,21 @@
       "assets": [
         {
           "name": "ovlmenu.ovl",
-          "size": 1187900,
+          "size": 1191996,
           "type": "file"
         },
         {
           "name": "sdout.zip",
-          "size": 1000498,
+          "size": 1007284,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.1",
+      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.2",
       "repo": "ppkantorski/Ultrahand-Overlay",
-      "revision": "2026-04-20T14:59:22Z",
+      "revision": "2026-05-23T06:32:34Z",
       "source_type": "github-release",
-      "updated_at": "2026-05-21T11:52:43+00:00",
-      "version": "v2.4.1"
+      "updated_at": "2026-05-23T09:08:17+00:00",
+      "version": "v2.4.2"
     }
   },
   "version": 1
