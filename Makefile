@@ -3,6 +3,10 @@ VENOM_UPDATE := $(PYTHON) Build/venom_update.py
 COMPONENT_ARG = $(if $(name),--component "$(name)",)
 VERBOSE_ARG = $(if $(verbose),--verbose,)
 FULL_ARG = $(if $(full),--full,)
+BUILD_TIMESTAMP ?= 202001010000
+NXVENOM_STAGE := Build/work/package-nxvenom
+AIO_STAGE := Build/work/package-aio
+FPSLOCKER_WAREHOUSE_URL := https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v4.zip
 .DEFAULT_GOAL := help
 
 .PHONY: help check-updates update update-all update-dry-run adopt-latest list-components validate build build-nxvenom build-aio release release-notes release-draft-upload install-fpslocker-patches clean-update-work clean-update-cache clean-zips clean
@@ -22,12 +26,8 @@ help:
 	@printf "\033[1;33mBuild / Release\033[0m\n"
 	@printf "  \033[2m%-64s  %s\033[0m\n" "Command" "Description"
 	@printf "  \033[2m%-64s  %s\033[0m\n" "----------------------------------------------------------------" "-------------------------------"
-	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build" "Build NXVenom.zip and AIO.zip"
-	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build-nxvenom" "Build NXVenom.zip"
-	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build-aio" "Build AIO.zip"
-	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release" "Validate and build release zips"
+	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make build" "Validate and build NXVenom.zip and AIO.zip"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-notes [tag=vX.Y.Z]" "Generate release notes"
-	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make install-fpslocker-patches" "Refresh FPSLocker patches"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n" "make release-draft-upload tag=vX.Y.Z" "Upload existing NXVenom.zip to draft"
 	@printf "  \033[1;32m%-64s\033[0m  %s\n\n" "make release-draft-upload tag=vX.Y.Z [title=...] [notes=...]" "Upload with metadata"
 	@printf "\033[1;33mUtilities\033[0m\n"
@@ -67,25 +67,38 @@ list-components:
 validate:
 	@$(VENOM_UPDATE) validate
 
-build: build-nxvenom build-aio
+build: validate build-nxvenom build-aio
 
-build-nxvenom: install-fpslocker-patches
-	@rm -rf NXVenom.zip
-	@cd Sources/NXVenom && zip -qqrX ../../NXVenom.zip ./
-	@rm -rf Sources/NXVenom/SaltySD/plugins
+build-nxvenom:
+	@set -e; \
+	stage="$(CURDIR)/$(NXVENOM_STAGE)"; \
+	trap 'rm -rf "$$stage"' EXIT; \
+	rm -rf "$$stage" "$(CURDIR)/NXVenom.zip"; \
+	mkdir -p "$$stage"; \
+	COPYFILE_DISABLE=1 cp -R "$(CURDIR)/Sources/NXVenom/." "$$stage/"; \
+	rm -rf "$$stage/SaltySD/plugins"; \
+	(cd "$$stage" && curl -fsSL "$(FPSLOCKER_WAREHOUSE_URL)" -o patches.zip && unzip -q patches.zip && cp -r FPSLocker-Warehouse-4/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-4 patches.zip); \
+	find "$$stage" -exec touch -t "$(BUILD_TIMESTAMP)" {} +; \
+	(cd "$$stage" && find . -print | sed 's#^\./##' | grep -v '^$$' | LC_ALL=C sort | zip -qqX "$(CURDIR)/NXVenom.zip" -@)
 
 build-aio:
-	@rm -rf AIO.zip
-	@cd Sources/AIO && zip -qqrX ../../AIO.zip ./
+	@set -e; \
+	stage="$(CURDIR)/$(AIO_STAGE)"; \
+	trap 'rm -rf "$$stage"' EXIT; \
+	rm -rf "$$stage" "$(CURDIR)/AIO.zip"; \
+	mkdir -p "$$stage"; \
+	COPYFILE_DISABLE=1 cp -R "$(CURDIR)/Sources/AIO/." "$$stage/"; \
+	find "$$stage" -exec touch -t "$(BUILD_TIMESTAMP)" {} +; \
+	(cd "$$stage" && find . -print | sed 's#^\./##' | grep -v '^$$' | LC_ALL=C sort | zip -qqX "$(CURDIR)/AIO.zip" -@)
 
-release: validate build
+release: build
 
 release-notes:
 	@$(VENOM_UPDATE) release-notes $(if $(tag),--tag "$(tag)",) $(if $(from),--from "$(from)",)
 
 release-draft-upload:
 	@test -n "$(tag)" || (echo "Usage: make release-draft-upload tag=vX.Y.Z [title='...'] [notes='...']" && exit 1)
-	@test -f NXVenom.zip || (echo "NXVenom.zip not found. Run make build-nxvenom or make release first." && exit 1)
+	@test -f NXVenom.zip || (echo "NXVenom.zip not found. Run make build first." && exit 1)
 	@notes_file="$$(mktemp)"; \
 	trap 'rm -f "$$notes_file"' EXIT; \
 	if [ -n "$(notes)" ]; then \
@@ -106,7 +119,7 @@ release-draft-upload:
 
 install-fpslocker-patches:
 	@rm -rf Sources/NXVenom/SaltySD/plugins
-	@cd Sources/NXVenom && curl -L https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v4.zip > patches.zip && unzip -q patches.zip && cp -r FPSLocker-Warehouse-4/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-4 patches.zip
+	@cd Sources/NXVenom && curl -fsSL "$(FPSLOCKER_WAREHOUSE_URL)" -o patches.zip && unzip -q patches.zip && cp -r FPSLocker-Warehouse-4/SaltySD/plugins SaltySD/ && rm -rf FPSLocker-Warehouse-4 patches.zip
 
 clean-update-work:
 	@$(VENOM_UPDATE) clean --work
