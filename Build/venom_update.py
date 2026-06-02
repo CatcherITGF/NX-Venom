@@ -723,8 +723,8 @@ def same_file(source: Path, destination: Path) -> bool:
   return file_hash(source) == file_hash(destination)
 
 
-def copy_one_file(source: Path, destination: Path, mode: str, dry_run: bool, actions) -> None:
-  if is_protected_destination(destination):
+def copy_one_file(source: Path, destination: Path, mode: str, dry_run: bool, actions, allow_protected: bool = False) -> None:
+  if not allow_protected and is_protected_destination(destination):
     actions.append(("protected", relative_to_root(destination)))
     return
   if mode == "skip-if-exists" and destination.exists():
@@ -754,7 +754,7 @@ def remove_destination(destination: Path, dry_run: bool, actions) -> None:
     destination.unlink()
 
 
-def copy_directory(source: Path, destination: Path, mode: str, excludes, dry_run: bool, actions) -> None:
+def copy_directory(source: Path, destination: Path, mode: str, excludes, dry_run: bool, actions, allow_protected: bool = False) -> None:
   if mode == "delete-before-copy":
     remove_destination(destination, dry_run, actions)
   if not dry_run:
@@ -770,7 +770,7 @@ def copy_directory(source: Path, destination: Path, mode: str, excludes, dry_run
         if not dry_run:
           target.mkdir(parents=True, exist_ok=True)
     elif item.is_file():
-      copy_one_file(item, target, mode, dry_run, actions)
+      copy_one_file(item, target, mode, dry_run, actions, allow_protected)
 
 
 def source_candidates(mapping, roots):
@@ -802,6 +802,7 @@ def apply_mapping(mapping, roots, dry_run: bool, actions) -> None:
   if mode not in ("overwrite", "skip-if-exists", "delete-before-copy"):
     fail(f"Unsupported install mode: {mode}")
   excludes = mapping.get("exclude") or []
+  allow_protected = bool(mapping.get("allow_protected"))
   candidates = source_candidates(mapping, roots)
   if not candidates:
     fail(f"Mapping source not found: {mapping.get('from')}")
@@ -810,12 +811,12 @@ def apply_mapping(mapping, roots, dry_run: bool, actions) -> None:
   for source in candidates:
     if source.is_dir():
       destination = destination_base
-      copy_directory(source, destination, mode, excludes, dry_run, actions)
+      copy_directory(source, destination, mode, excludes, dry_run, actions, allow_protected)
     elif source.is_file():
       destination = destination_base / source.name if to_is_dir else destination_base
       if mode == "delete-before-copy":
         remove_destination(destination, dry_run, actions)
-      copy_one_file(source, destination, mode, dry_run, actions)
+      copy_one_file(source, destination, mode, dry_run, actions, allow_protected)
 
 
 def apply_install(component, roots, dry_run: bool):

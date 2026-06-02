@@ -20,3 +20,8 @@ install:
       exclude:
         - "README.md"
         - "atmosphere/kips/**"
+    - asset: "dist.zip"
+      from: "atmosphere/kips/hoc.kip"
+      to: "Sources/NXVenom/atmosphere/kips/hoc.kip"
+      mode: "overwrite"
+      allow_protected: true
