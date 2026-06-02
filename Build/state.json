@@ -135,6 +135,21 @@
       "updated_at": "2026-05-21T11:57:55+00:00",
       "version": "main"
     },
+    "lockpick-rcm": {
+      "assets": [
+        {
+          "name": "Lockpick_RCM.bin",
+          "size": 108062,
+          "type": "file"
+        }
+      ],
+      "html_url": "https://github.com/THZoria/Lockpick_RCMaster/releases/tag/1.9.20",
+      "repo": "THZoria/Lockpick_RCMaster",
+      "revision": "2026-04-23T19:07:27Z",
+      "source_type": "github-release",
+      "updated_at": "2026-06-02T07:03:14+00:00",
+      "version": "1.9.20"
+    },
     "memory-kit": {
       "assets": [
         {
@@ -234,16 +249,16 @@
         },
         {
           "name": "sdout.zip",
-          "size": 1009175,
+          "size": 1009173,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.3",
+      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.4",
       "repo": "ppkantorski/Ultrahand-Overlay",
-      "revision": "2026-05-26T01:27:14Z",
+      "revision": "2026-05-27T19:16:38Z",
       "source_type": "github-release",
-      "updated_at": "2026-05-26T12:52:10+00:00",
-      "version": "v2.4.3"
+      "updated_at": "2026-06-02T07:00:05+00:00",
+      "version": "v2.4.4"
     }
   },
   "version": 1

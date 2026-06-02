@@ -60,6 +60,7 @@ REQUIRED_PATHS = [
   "Sources/NXVenom/bootloader/hekate_ipl.ini",
   "Sources/NXVenom/bootloader/update.bin",
   "Sources/NXVenom/bootloader/payloads/fusee.bin",
+  "Sources/NXVenom/bootloader/payloads/Lockpick_RCM.bin",
   "Sources/NXVenom/hbmenu.nro",
   "Sources/NXVenom/payload.bin",
   "Sources/NXVenom/switch/.overlays/ovlmenu.ovl",

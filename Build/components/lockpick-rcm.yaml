@@ -1,0 +1,19 @@
+name: "lockpick-rcm"
+display_name: "Lockpick RCM"
+aliases:
+  - "lockpick"
+enabled: true
+category: "Apps / Tools"
+source:
+  type: "github-release"
+  repo: "THZoria/Lockpick_RCMaster"
+  release: "latest"
+assets:
+  - pattern: "Lockpick_RCM.bin"
+    type: "file"
+install:
+  mappings:
+    - asset: "Lockpick_RCM.bin"
+      from: "Lockpick_RCM.bin"
+      to: "Sources/NXVenom/bootloader/payloads/Lockpick_RCM.bin"
+      mode: "overwrite"
