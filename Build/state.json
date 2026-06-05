@@ -109,16 +109,16 @@
       "assets": [
         {
           "name": "dist.zip",
-          "size": 1552637,
+          "size": 1582493,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.3.1",
+      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.4.0",
       "repo": "Horizon-OC/Horizon-OC",
-      "revision": "2026-05-20T20:26:33Z",
+      "revision": "2026-06-05T00:16:34Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-01T21:44:20+00:00",
-      "version": "2.3.1"
+      "updated_at": "2026-06-05T18:47:47+00:00",
+      "version": "2.4.0"
     },
     "lightning": {
       "assets": [
