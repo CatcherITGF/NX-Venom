@@ -1,8 +1,8 @@
 {
   "ams": {
-    "[PACK] NX Venom": "https://github.com/CatcherITGF/NX-Venom/raw/hoc/NXVenom.zip"
+    "[PACK] NX Venom": "https://github.com/CatcherITGF/NX-Venom/raw/main/NXVenom.zip"
   },
   "misc": {
-    "Refresh": "https://github.com/CatcherITGF/NS-Overclocking/raw/main/AIO.zip"
+    "Refresh": "https://github.com/CatcherITGF/NX-Venom/raw/main/AIO.zip"
   }
 }
