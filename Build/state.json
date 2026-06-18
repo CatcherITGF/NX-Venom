@@ -33,36 +33,36 @@
     "atmosphere": {
       "assets": [
         {
-          "name": "atmosphere-1.11.1-master-d04c20a04+hbl-2.4.5+hbmenu-3.6.1.zip",
-          "size": 4568560,
+          "name": "atmosphere-1.11.2-master-5388824be+hbl-2.4.5+hbmenu-3.6.1.zip",
+          "size": 4726364,
           "type": "zip"
         },
         {
           "name": "fusee.bin",
-          "size": 110272,
+          "size": 111840,
           "type": "file"
         }
       ],
-      "html_url": "https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.11.1",
+      "html_url": "https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.11.2",
       "repo": "Atmosphere-NX/Atmosphere",
-      "revision": "2026-04-07T17:06:47Z",
+      "revision": "2026-06-16T22:01:02Z",
       "source_type": "github-release",
-      "updated_at": "2026-05-21T11:50:48+00:00",
-      "version": "1.11.1"
+      "updated_at": "2026-06-18T15:09:20+00:00",
+      "version": "1.11.2"
     },
     "easy-setup": {
       "assets": [
         {
-          "name": "Easy-setup-main-6f856997e133.zip",
+          "name": "Easy-setup-main-ddb1cc8d1dff.zip",
           "size": null,
           "type": "zip"
         }
       ],
       "html_url": "https://github.com/dominatorul/Easy-setup/tree/main",
       "repo": "dominatorul/Easy-setup",
-      "revision": "6f856997e133bd10d8b660f1827cf77c60b19967",
+      "revision": "ddb1cc8d1dff4f9955a0414ed455b14b00a7946c",
       "source_type": "github-branch-archive",
-      "updated_at": "2026-05-21T11:57:46+00:00",
+      "updated_at": "2026-06-18T15:09:50+00:00",
       "version": "main"
     },
     "fpslocker": {
@@ -83,42 +83,42 @@
     "hekate": {
       "assets": [
         {
-          "name": "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip",
-          "size": 893696,
+          "name": "hekate_ctcaer_6.5.3_Nyx_1.9.3.zip",
+          "size": 895670,
           "type": "zip"
         },
         {
-          "name": "hekate_ctcaer_6.5.2.bin",
-          "size": 110004,
+          "name": "hekate_ctcaer_6.5.3.bin",
+          "size": 110028,
           "type": "file"
         },
         {
-          "name": "hekate_ctcaer_6.5.2__ram8GB.bin",
-          "size": 110004,
+          "name": "hekate_ctcaer_6.5.3__ram8GB.bin",
+          "size": 110028,
           "type": "file"
         }
       ],
-      "html_url": "https://github.com/CTCaer/hekate/releases/tag/v6.5.2",
+      "html_url": "https://github.com/CTCaer/hekate/releases/tag/v6.5.3",
       "repo": "CTCaer/hekate",
-      "revision": "2026-04-07T17:18:01Z",
+      "revision": "2026-06-16T22:14:44Z",
       "source_type": "github-release",
-      "updated_at": "2026-05-21T11:51:07+00:00",
-      "version": "v6.5.2"
+      "updated_at": "2026-06-18T15:09:02+00:00",
+      "version": "v6.5.3"
     },
     "horizon-oc": {
       "assets": [
         {
-          "name": "dist.zip",
-          "size": 1582187,
+          "name": "dist_ext.zip",
+          "size": 8960536,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.4.1",
+      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.4.2",
       "repo": "Horizon-OC/Horizon-OC",
-      "revision": "2026-06-06T10:54:17Z",
+      "revision": "2026-06-18T14:08:20Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-06T12:40:30+00:00",
-      "version": "2.4.1"
+      "updated_at": "2026-06-18T15:09:21+00:00",
+      "version": "2.4.2"
     },
     "lightning": {
       "assets": [
@@ -169,16 +169,16 @@
       "assets": [
         {
           "name": "ovlSysmodules.ovl",
-          "size": 626748,
+          "size": 634940,
           "type": "file"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/ovl-sysmodules/releases/tag/v1.5.1",
+      "html_url": "https://github.com/ppkantorski/ovl-sysmodules/releases/tag/v1.5.2",
       "repo": "ppkantorski/ovl-sysmodules",
-      "revision": "2026-05-23T06:50:33Z",
+      "revision": "2026-06-11T12:35:33Z",
       "source_type": "github-release",
-      "updated_at": "2026-05-23T09:13:19+00:00",
-      "version": "v1.5.1"
+      "updated_at": "2026-06-18T15:09:29+00:00",
+      "version": "v1.5.2"
     },
     "reversenx-rt": {
       "assets": [
@@ -213,17 +213,17 @@
     "sys-patch": {
       "assets": [
         {
-          "name": "sys-patch-v1.6.2.0.zip",
-          "size": 177382,
+          "name": "sys-patch-v1.6.2.3.zip",
+          "size": 177409,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/impeeza/sys-patch/releases/tag/v1.6.2.0",
+      "html_url": "https://github.com/impeeza/sys-patch/releases/tag/v1.6.2.3",
       "repo": "impeeza/sys-patch",
-      "revision": "2026-05-10T16:43:28Z",
+      "revision": "2026-06-17T08:03:39Z",
       "source_type": "github-release",
-      "updated_at": "2026-05-21T11:49:54+00:00",
-      "version": "v1.6.2.0"
+      "updated_at": "2026-06-18T15:09:48+00:00",
+      "version": "v1.6.2.3"
     },
     "tegraexplorer": {
       "assets": [
@@ -244,21 +244,21 @@
       "assets": [
         {
           "name": "ovlmenu.ovl",
-          "size": 1200188,
+          "size": 1216572,
           "type": "file"
         },
         {
           "name": "sdout.zip",
-          "size": 1009173,
+          "size": 1020712,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.4",
+      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.5",
       "repo": "ppkantorski/Ultrahand-Overlay",
-      "revision": "2026-05-27T19:16:38Z",
+      "revision": "2026-06-11T15:00:00Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-02T07:00:05+00:00",
-      "version": "v2.4.4"
+      "updated_at": "2026-06-18T15:09:34+00:00",
+      "version": "v2.4.5"
     }
   },
   "version": 1

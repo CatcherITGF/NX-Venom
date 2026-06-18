@@ -75,7 +75,7 @@ REQUIRED_PATHS = [
   "Sources/NXVenom/switch/.packages/Easy Setup/Package.ini",
   "Sources/NXVenom/switch/.packages/Lightning/package.ini",
   "Sources/NXVenom/switch/.packages/Memory Kit/package.ini",
-  "Sources/NXVenom/switch/.packages/RAM Patch/8GB/hekate_ctcaer_6.5.2__ram8GB.bin",
+  "Sources/NXVenom/switch/.packages/RAM Patch/8GB/payload.bin",
   "Sources/NXVenom/switch/DBI/DBI.nro",
   "Sources/NXVenom/switch/aio-switch-updater/aio-switch-updater.nro",
   "Sources/AIO/config/aio-switch-updater/custom_packs.json",

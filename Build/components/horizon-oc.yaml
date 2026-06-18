@@ -9,18 +9,18 @@ source:
   repo: "Horizon-OC/Horizon-OC"
   release: "latest"
 assets:
-  - pattern: "dist.zip"
+  - pattern: "dist_ext.zip"
     type: "zip"
 install:
   mappings:
-    - asset: "dist.zip"
+    - asset: "dist_ext.zip"
       from: "."
       to: "Sources/NXVenom/"
       mode: "overwrite"
       exclude:
         - "README.md"
         - "atmosphere/kips/**"
-    - asset: "dist.zip"
+    - asset: "dist_ext.zip"
       from: "atmosphere/kips/hoc.kip"
       to: "Sources/NXVenom/atmosphere/kips/hoc.kip"
       mode: "overwrite"

@@ -41,5 +41,5 @@ install:
       mode: "overwrite"
     - asset: "hekate_ctcaer_*__ram8GB.bin"
       from: "hekate_ctcaer_*__ram8GB.bin"
-      to: "Sources/NXVenom/switch/.packages/RAM Patch/8GB/hekate_ctcaer_6.5.2__ram8GB.bin"
+      to: "Sources/NXVenom/switch/.packages/RAM Patch/8GB/payload.bin"
       mode: "overwrite"
