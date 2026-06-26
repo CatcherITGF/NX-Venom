@@ -169,16 +169,16 @@
       "assets": [
         {
           "name": "ovlSysmodules.ovl",
-          "size": 634940,
+          "size": 639036,
           "type": "file"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/ovl-sysmodules/releases/tag/v1.5.2",
+      "html_url": "https://github.com/ppkantorski/ovl-sysmodules/releases/tag/v1.5.3",
       "repo": "ppkantorski/ovl-sysmodules",
-      "revision": "2026-06-11T12:35:33Z",
+      "revision": "2026-06-25T08:57:45Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-18T15:09:29+00:00",
-      "version": "v1.5.2"
+      "updated_at": "2026-06-26T16:12:13+00:00",
+      "version": "v1.5.3"
     },
     "reversenx-rt": {
       "assets": [
@@ -244,21 +244,21 @@
       "assets": [
         {
           "name": "ovlmenu.ovl",
-          "size": 1216572,
+          "size": 1228860,
           "type": "file"
         },
         {
           "name": "sdout.zip",
-          "size": 1020712,
+          "size": 1029657,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.4.5",
+      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.5.1",
       "repo": "ppkantorski/Ultrahand-Overlay",
-      "revision": "2026-06-11T15:00:00Z",
+      "revision": "2026-06-24T06:14:56Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-18T15:09:34+00:00",
-      "version": "v2.4.5"
+      "updated_at": "2026-06-26T16:12:22+00:00",
+      "version": "v2.5.1"
     }
   },
   "version": 1
