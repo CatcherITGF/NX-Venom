@@ -667,6 +667,103 @@ def prepare_workdir(component_name: str, target, downloaded_assets):
   return roots
 
 
+def transform_candidates(transform, roots):
+  source = transform.get("path") or transform.get("from")
+  if not source:
+    fail("Install transform without path/from")
+  return source_candidates({"from": source, "asset": transform.get("asset")}, roots)
+
+
+def transform_integer(value, label: str) -> int:
+  try:
+    return int(value, 0) if isinstance(value, str) else int(value)
+  except (TypeError, ValueError):
+    fail(f"Invalid {label}: {value}")
+
+
+def apply_replace_text_transform(transform, roots) -> None:
+  replacements = transform.get("replacements") or []
+  if not replacements:
+    fail("replace-text transform without replacements")
+  candidates = transform_candidates(transform, roots)
+  if not candidates:
+    fail(f"Transform source not found: {transform.get('path')}")
+  for path in candidates:
+    if not path.is_file():
+      fail(f"replace-text transform source is not a file: {path}")
+    if root_for_source(path, roots) is None:
+      fail(f"Transform source escapes asset root: {path}")
+    with path.open("r", encoding="utf-8", newline="") as input_file:
+      text = input_file.read()
+    newline = "\r\n" if "\r\n" in text else "\n"
+    for replacement in replacements:
+      old = replacement.get("old")
+      new = replacement.get("new")
+      if not isinstance(old, str) or not isinstance(new, str):
+        fail("replace-text replacement requires string old/new values")
+      old = old.replace("\r\n", "\n").replace("\n", newline)
+      new = new.replace("\r\n", "\n").replace("\n", newline)
+      expected_count = transform_integer(replacement.get("count", 1), "replacement count")
+      actual_count = text.count(old)
+      if actual_count == expected_count:
+        text = text.replace(old, new, expected_count)
+      elif actual_count == 0 and text.count(new) >= expected_count:
+        continue
+      else:
+        fail(f"Unexpected replacement count in {path}: got {actual_count}, expected {expected_count}")
+    if transform.get("final_newline") is False:
+      text = text.rstrip("\r\n")
+    elif transform.get("final_newline") is True:
+      text = text.rstrip("\r\n") + "\n"
+    if path.suffix.lower() == ".json":
+      try:
+        json.loads(text)
+      except json.JSONDecodeError as error:
+        fail(f"Invalid transformed JSON {path}: {error}")
+    with path.open("w", encoding="utf-8", newline="") as output_file:
+      output_file.write(text)
+
+
+def apply_patch_byte_copy_transform(transform, roots) -> None:
+  candidates = transform_candidates(transform, roots)
+  if len(candidates) != 1 or not candidates[0].is_file():
+    fail(f"patch-byte-copy transform requires one source file: {transform.get('from')}")
+  source = candidates[0]
+  root = root_for_source(source, roots)
+  destination_text = transform.get("to")
+  if root is None or not destination_text:
+    fail("patch-byte-copy transform requires a destination inside its asset")
+  destination = (root / destination_text).resolve()
+  resolved_root = root.resolve()
+  if resolved_root != destination and resolved_root not in destination.parents:
+    fail(f"Transform destination escapes asset root: {destination_text}")
+  offset = transform_integer(transform.get("offset"), "patch offset")
+  expected = transform_integer(transform.get("expected"), "expected byte")
+  value = transform_integer(transform.get("value"), "replacement byte")
+  if offset < 0 or not 0 <= expected <= 255 or not 0 <= value <= 255:
+    fail("patch-byte-copy transform has an invalid offset or byte value")
+  data = bytearray(source.read_bytes())
+  if offset >= len(data):
+    fail(f"Patch offset {offset} is outside {source}")
+  if data[offset] != expected:
+    fail(f"Unexpected byte at offset {offset} in {source}: got {data[offset]}, expected {expected}")
+  data[offset] = value
+  destination.parent.mkdir(parents=True, exist_ok=True)
+  destination.write_bytes(data)
+
+
+def apply_install_transforms(component, roots) -> None:
+  install = component.get("install") or {}
+  for transform in install.get("transforms") or []:
+    transform_type = transform.get("type")
+    if transform_type == "replace-text":
+      apply_replace_text_transform(transform, roots)
+    elif transform_type == "patch-byte-copy":
+      apply_patch_byte_copy_transform(transform, roots)
+    else:
+      fail(f"Unsupported install transform: {transform_type}")
+
+
 def resolve_repo_path(value: str) -> Path:
   path = (ROOT_DIR / value).resolve()
   root = ROOT_DIR.resolve()
@@ -724,17 +821,17 @@ def same_file(source: Path, destination: Path) -> bool:
   return file_hash(source) == file_hash(destination)
 
 
-def copy_one_file(source: Path, destination: Path, mode: str, dry_run: bool, actions, allow_protected: bool = False) -> None:
+def copy_one_file(source: Path, destination: Path, mode: str, dry_run: bool, actions, allow_protected: bool = False, assume_missing: bool = False) -> None:
   if not allow_protected and is_protected_destination(destination):
     actions.append(("protected", relative_to_root(destination)))
     return
   if mode == "skip-if-exists" and destination.exists():
     actions.append(("skip", relative_to_root(destination)))
     return
-  if same_file(source, destination):
+  if not assume_missing and same_file(source, destination):
     actions.append(("unchanged", relative_to_root(destination)))
     return
-  kind = "update" if destination.exists() else "copy"
+  kind = "copy" if assume_missing or not destination.exists() else "update"
   actions.append((kind, relative_to_root(destination)))
   if not dry_run:
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -756,6 +853,7 @@ def remove_destination(destination: Path, dry_run: bool, actions) -> None:
 
 
 def copy_directory(source: Path, destination: Path, mode: str, excludes, dry_run: bool, actions, allow_protected: bool = False) -> None:
+  assume_missing = dry_run and mode == "delete-before-copy" and destination.exists()
   if mode == "delete-before-copy":
     remove_destination(destination, dry_run, actions)
   if not dry_run:
@@ -766,12 +864,12 @@ def copy_directory(source: Path, destination: Path, mode: str, excludes, dry_run
       continue
     target = destination / rel
     if item.is_dir():
-      if not target.exists():
+      if assume_missing or not target.exists():
         actions.append(("mkdir", relative_to_root(target)))
         if not dry_run:
           target.mkdir(parents=True, exist_ok=True)
     elif item.is_file():
-      copy_one_file(item, target, mode, dry_run, actions, allow_protected)
+      copy_one_file(item, target, mode, dry_run, actions, allow_protected, assume_missing)
 
 
 def source_candidates(mapping, roots):
@@ -1163,6 +1261,7 @@ def evaluate_update(component, target, current, args):
     report["downloads"].append({"asset": asset, "path": path, "status": status})
     downloaded.append((asset, path))
   roots = prepare_workdir(component["name"], target, downloaded)
+  apply_install_transforms(component, roots)
   report["content_entries"] = collect_install_content(component, roots)
   report["actions"] = apply_install(component, roots, args.dry_run)
   report["record"] = state_record(target)

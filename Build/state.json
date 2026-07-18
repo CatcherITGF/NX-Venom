@@ -53,16 +53,16 @@
     "easy-setup": {
       "assets": [
         {
-          "name": "Easy-setup-main-ddb1cc8d1dff.zip",
+          "name": "Easy-setup-main-3a7c1f8b5007.zip",
           "size": null,
           "type": "zip"
         }
       ],
       "html_url": "https://github.com/dominatorul/Easy-setup/tree/main",
       "repo": "dominatorul/Easy-setup",
-      "revision": "ddb1cc8d1dff4f9955a0414ed455b14b00a7946c",
+      "revision": "3a7c1f8b5007966eb7ae5646c2fd8dfff91107bf",
       "source_type": "github-branch-archive",
-      "updated_at": "2026-06-18T15:09:50+00:00",
+      "updated_at": "2026-07-18T17:39:42+00:00",
       "version": "main"
     },
     "fpslocker": {
@@ -86,39 +86,29 @@
           "name": "hekate_ctcaer_6.5.3_Nyx_1.9.3.zip",
           "size": 895670,
           "type": "zip"
-        },
-        {
-          "name": "hekate_ctcaer_6.5.3.bin",
-          "size": 110028,
-          "type": "file"
-        },
-        {
-          "name": "hekate_ctcaer_6.5.3__ram8GB.bin",
-          "size": 110028,
-          "type": "file"
         }
       ],
       "html_url": "https://github.com/CTCaer/hekate/releases/tag/v6.5.3",
       "repo": "CTCaer/hekate",
-      "revision": "2026-06-16T22:14:44Z",
+      "revision": "2026-06-30T22:38:31Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-18T15:09:02+00:00",
+      "updated_at": "2026-07-18T18:38:00+00:00",
       "version": "v6.5.3"
     },
     "horizon-oc": {
       "assets": [
         {
           "name": "dist_ext.zip",
-          "size": 8960536,
+          "size": 8961775,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.4.2",
+      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.5.0",
       "repo": "Horizon-OC/Horizon-OC",
-      "revision": "2026-06-18T14:08:20Z",
+      "revision": "2026-07-17T23:28:49Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-18T15:09:21+00:00",
-      "version": "2.4.2"
+      "updated_at": "2026-07-18T18:38:01+00:00",
+      "version": "2.5.0"
     },
     "lightning": {
       "assets": [
@@ -244,21 +234,21 @@
       "assets": [
         {
           "name": "ovlmenu.ovl",
-          "size": 1228860,
+          "size": 1065020,
           "type": "file"
         },
         {
           "name": "sdout.zip",
-          "size": 1029657,
+          "size": 939343,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.5.1",
+      "html_url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/tag/v2.5.3",
       "repo": "ppkantorski/Ultrahand-Overlay",
-      "revision": "2026-06-24T06:14:56Z",
+      "revision": "2026-07-18T09:55:46Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-26T16:12:22+00:00",
-      "version": "v2.5.1"
+      "updated_at": "2026-07-18T17:38:41+00:00",
+      "version": "v2.5.3"
     }
   },
   "version": 1
