@@ -13,9 +13,7 @@
     "Enabled (Default)": "启用 (默认)",
     "Enable": "启用",
     "Fatal error": "严重错误",
-    "Could not connect to hoc-clk sysmodule.\\n\\n": "无法连接hoc-clk系统模块。\\n\\n",
-    "Please make sure everything is\\n\\n": "请确保所有内容均已\\n\\n",
-    "correctly installed and enabled.": "正确安装且启用。",
+    "hoc-clk is not running.\n\n\nPlease make sure it is correctly\n\ninstalled and enabled.": "刚安装需要重启生效。\n\n\n请进入后台管理确认后台程序正在运行。",
 
     "Edit App Profile": "编辑应用配置",
     "Edit Global Profile": "编辑全局配置",
@@ -27,9 +25,7 @@
     "Updates": "更新菜单",
     "Credits": "致谢",
 
-    "Application changed\\n\\n": "应用出现变更\\n\\n",
-    "The running application changed\\n\\n": "当前应用在编辑过程中\\n\\n",
-    "while editing was going on.": "出现了变更。",
+    "Could not connect to hoc-clk.\n\n\nPlease make sure it is correctly\n\ninstalled and enabled.": "应用已变更\n\n\n无法连接到 hoc-clk。\n\n首次安装请重启。",
 
     "Sleep Mode": "睡眠模式",
     "Stock": "原厂默认",
@@ -148,6 +144,7 @@
     "3466MHz (Needs ridiculous Speedo/PLL)": "3466MHz (需要极限体质)",
     "3500MHz (Needs ridiculous Speedo/PLL)": "3500MHz (需要极限体质)",
     "JEDEC.": "JEDEC",
+    "RAM-Timing tBreak": "内存时序切换阈值",
 
     "CPU Boost Clock": "CPU加速频率",
     "Auto CPU RAM OC": "高内存频率自动提频CPU",
@@ -183,10 +180,10 @@
     "Official Service": "官方服务",
     "96.6% limit": "使用率最高96.6%",
     "99.7% limit": "使用率最高99.7%",
-    " Setting GPU Clocks past": "警告:在没有适当降压",
-    "1228MHz without a proper undervolt": "的情况下将GPU频率超到",
-    "can cause degradation or damage": "1228MHz以上可能会",
-    "to your console!": "更伤主机，乃至造成损失！",
+    " Setting GPU Clocks past": "警告:未进行合理降压的前提下，",
+    "1305MHz without a proper undervolt": "将GPU频率拉到1228MHz以上（1305MHz），",
+    "can cause degradation or damage": "会加速硬件老化损耗，",
+    "to your console!": "甚至对主机造成永久性硬件损坏！",
     "1075MHz without UV, 1152MHz on SLT": "无降压1075MHz，SLT下1152MHz",
     "or 1228MHz on HiOPT can cause ": "或HiOPT下1228MHz可能会伤主机，",
     "permanent damage to your Switch!": "乃至造成无法挽回的损失！",
@@ -230,7 +227,7 @@
     "Wafer Position:": "晶圆位置:",
     "IDDQ:": "IDDQ:",
     "Module: ": "模块: ",
-	
+
 	"App ID": "应用ID",
 	"Profile": "当前配置",
 	"Docked": "底座模式",
@@ -248,7 +245,7 @@
     "Avg": "平均",
 	"OLED": "屏幕",
 	"LCD": "屏幕",
-	
+
 	"Releases": "发行版本",
 	"Horizon OC + Extensions": "Horizon OC+附加包",
 	"Status": "状态",
@@ -269,5 +266,19 @@
     "X: %u Y: %u": "X: %u Y: %u",
     "%u.%u%u mV": "%u.%u%u mV",
     "Compiling with minimal features": "以最小功能编译",
-    "THE BEER-WARE LICENSE": "啤酒软件许可协议"
+    "THE BEER-WARE LICENSE": "啤酒软件许可协议",
+    "Horizon OC\nKip opening failed": "Horizon OC\n无法打开 KIP",
+    "Horizon OC\nKip read failed": "Horizon OC\n读取 KIP 失败",
+    "Horizon OC\nOutdated kip detected!\nPlease update Horizon OC": "Horizon OC\n检测到过时的 KIP！\n请更新 Horizon OC",
+    "Horizon OC\nOutdated sysmodule detected!\nPlease update Horizon OC": "Horizon OC\n检测到过时的系统模块！\n请更新 Horizon OC",
+    "Horizon OC\nKip write failed": "Horizon OC\n写入 KIP 失败",
+    "Horizon OC\nKip config set failed": "Horizon OC\n设置 KIP 配置失败",
+    "Kip is not loaded!": "KIP 未加载！",
+    "Horizon OC\nKIP has been updated\nPlease reboot your console": "Horizon OC\nKIP 已更新\n请重启主机",
+    "Horizon OC has been installed": "Horizon OC 已安装",
+    "Horizon OC\nConfig Buffer Mismatch": "Horizon OC\n配置缓冲区不匹配",
+    "Horizon OC\nDeactivated frequency.\nReboot to apply.": "Horizon OC\n已停用频率。\n重启以应用。",
+    "Horizon OC\nSecmon read failed!\n This may be a hardware issue!": "Horizon OC\n读取 Secmon 失败！\n 这可能是硬件问题！",
+    "Horizon OC\nFailed to write I2C\nwhile setting vddq": "Horizon OC\n设置 VDDQ 时\nI2C 写入失败",
+    "Horizon OC\nKip version mismatch\nPlease reinstall Horizon OC": "Horizon OC\nKIP 版本不匹配\n请重新安装 Horizon OC"
 }

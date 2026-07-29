@@ -683,8 +683,11 @@ def transform_integer(value, label: str) -> int:
 
 def apply_replace_text_transform(transform, roots) -> None:
   replacements = transform.get("replacements") or []
-  if not replacements:
-    fail("replace-text transform without replacements")
+  normalize_newlines = transform.get("normalize_newlines")
+  if normalize_newlines not in (None, "lf"):
+    fail(f"Unsupported newline normalization: {normalize_newlines}")
+  if not replacements and normalize_newlines is None and "final_newline" not in transform:
+    fail("replace-text transform without replacements or text normalization")
   candidates = transform_candidates(transform, roots)
   if not candidates:
     fail(f"Transform source not found: {transform.get('path')}")
@@ -711,6 +714,10 @@ def apply_replace_text_transform(transform, roots) -> None:
         continue
       else:
         fail(f"Unexpected replacement count in {path}: got {actual_count}, expected {expected_count}")
+    if normalize_newlines == "lf":
+      text = text.replace("\r\n", "\n").replace("\r", "\n")
+    if transform.get("trim_trailing_whitespace"):
+      text = "\n".join(line.rstrip(" \t") for line in text.split("\n"))
     if transform.get("final_newline") is False:
       text = text.rstrip("\r\n")
     elif transform.get("final_newline") is True:

@@ -99,16 +99,16 @@
       "assets": [
         {
           "name": "dist_ext.zip",
-          "size": 8961775,
+          "size": 9090132,
           "type": "zip"
         }
       ],
-      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.5.0",
+      "html_url": "https://github.com/Horizon-OC/Horizon-OC/releases/tag/2.5.1",
       "repo": "Horizon-OC/Horizon-OC",
-      "revision": "2026-07-17T23:28:49Z",
+      "revision": "2026-07-26T12:09:53Z",
       "source_type": "github-release",
-      "updated_at": "2026-07-18T18:38:01+00:00",
-      "version": "2.5.0"
+      "updated_at": "2026-07-28T11:42:51+00:00",
+      "version": "2.5.1"
     },
     "lightning": {
       "assets": [
@@ -129,16 +129,16 @@
       "assets": [
         {
           "name": "Lockpick_RCM.bin",
-          "size": 108062,
+          "size": 113750,
           "type": "file"
         }
       ],
-      "html_url": "https://github.com/THZoria/Lockpick_RCMaster/releases/tag/1.9.20",
+      "html_url": "https://github.com/THZoria/Lockpick_RCMaster/releases/tag/2.0.0",
       "repo": "THZoria/Lockpick_RCMaster",
-      "revision": "2026-04-23T19:07:27Z",
+      "revision": "2026-07-20T20:57:20Z",
       "source_type": "github-release",
-      "updated_at": "2026-06-02T07:03:14+00:00",
-      "version": "1.9.20"
+      "updated_at": "2026-07-28T11:38:47+00:00",
+      "version": "2.0.0"
     },
     "memory-kit": {
       "assets": [

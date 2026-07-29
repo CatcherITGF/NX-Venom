@@ -100,7 +100,7 @@
     "to your display panel! ": "повреждений экрана!",
     "Display Voltage": "Вольтаж экрана",
 
-    
+
     "Uncapped Clocks": "Максимальные частоты",
     "Thermal Throttle": "Троттлинг",
     "Thermal Throttle Limit": "Предел троттлинга",
@@ -232,5 +232,19 @@
     "%u.%u%u mV": "%u.%u%u мВ",
     "Compiling with minimal features": "Собрано с урезанием функций",
     "THE BEER-WARE LICENSE": "BEER-WARE LICENSE",
-    "Auto": "Авто"
+    "Auto": "Авто",
+    "Horizon OC\nKip opening failed": "Horizon OC\nНе удалось открыть KIP",
+    "Horizon OC\nKip read failed": "Horizon OC\nНе удалось прочитать KIP",
+    "Horizon OC\nOutdated kip detected!\nPlease update Horizon OC": "Horizon OC\nОбнаружен устаревший KIP!\nОбновите Horizon OC",
+    "Horizon OC\nOutdated sysmodule detected!\nPlease update Horizon OC": "Horizon OC\nОбнаружен устаревший sysmodule!\nОбновите Horizon OC",
+    "Horizon OC\nKip write failed": "Horizon OC\nОшибка записи KIP",
+    "Horizon OC\nKip config set failed": "Horizon OC\nОшибка настройки KIP",
+    "Kip is not loaded!": "KIP не загружен!",
+    "Horizon OC\nKIP has been updated\nPlease reboot your console": "Horizon OC\nKIP обновлён\nПерезагрузите консоль",
+    "Horizon OC has been installed": "Horizon OC установлен",
+    "Horizon OC\nConfig Buffer Mismatch": "Horizon OC\nНесоответствие буфера конфигурации",
+    "Horizon OC\nDeactivated frequency.\nReboot to apply.": "Horizon OC\nЧастота отключена.\nПерезагрузите для применения.",
+    "Horizon OC\nSecmon read failed!\n This may be a hardware issue!": "Horizon OC\nОшибка чтения Secmon!\n Возможно, проблема с оборудованием!",
+    "Horizon OC\nFailed to write I2C\nwhile setting vddq": "Horizon OC\nОшибка записи I2C\nпри установке VDDQ",
+    "Horizon OC\nKip version mismatch\nPlease reinstall Horizon OC": "Horizon OC\nНесовпадение версии KIP\nПереустановите Horizon OC"
 }

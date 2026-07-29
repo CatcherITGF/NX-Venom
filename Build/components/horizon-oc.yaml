@@ -15,12 +15,6 @@ install:
   transforms:
     - type: "replace-text"
       asset: "dist_ext.zip"
-      path: "config/horizon-oc/lang/template.json"
-      replacements:
-        - old: "\"Compiling with minimal features\": \"\",\n}"
-          new: "\"Compiling with minimal features\": \"\"\n}"
-    - type: "replace-text"
-      asset: "dist_ext.zip"
       path: "config/horizon-oc/lang/zh-cn.json"
       replacements:
         - old: "\"Latency Max\": \"延迟最高频率\"\n"
@@ -29,6 +23,22 @@ install:
           new: "\"Same\": \"相同\",\n"
         - old: "\"LCD\": \"屏幕\"\n"
           new: "\"LCD\": \"屏幕\",\n"
+    - type: "replace-text"
+      asset: "dist_ext.zip"
+      path: "config/horizon-oc/lang/zh-tw.json"
+      replacements:
+        - old: "\"Latency Max\": \"延遲最高頻率\"\n"
+          new: "\"Latency Max\": \"延遲最高頻率\",\n"
+        - old: "\"Same\": \"相同\"\n"
+          new: "\"Same\": \"相同\",\n"
+        - old: "\"LCD\": \"螢幕\"\n"
+          new: "\"LCD\": \"螢幕\",\n"
+    - type: "replace-text"
+      asset: "dist_ext.zip"
+      path: "config/horizon-oc/lang/*.json"
+      normalize_newlines: "lf"
+      trim_trailing_whitespace: true
+      final_newline: false
     - type: "patch-byte-copy"
       asset: "dist_ext.zip"
       from: "payload.bin"
