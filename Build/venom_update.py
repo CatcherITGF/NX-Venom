@@ -710,7 +710,7 @@ def apply_replace_text_transform(transform, roots) -> None:
       actual_count = text.count(old)
       if actual_count == expected_count:
         text = text.replace(old, new, expected_count)
-      elif actual_count == 0 and text.count(new) >= expected_count:
+      elif actual_count == 0 and new and text.count(new) >= expected_count:
         continue
       else:
         fail(f"Unexpected replacement count in {path}: got {actual_count}, expected {expected_count}")

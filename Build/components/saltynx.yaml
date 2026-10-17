@@ -16,7 +16,7 @@ install:
     - asset: "SaltyNX.zip"
       from: "SaltySD/"
       to: "Sources/NXVenom/SaltySD/"
-      mode: "overwrite"
+      mode: "delete-before-copy"
     - asset: "SaltyNX.zip"
       from: "atmosphere/contents/0000000000534C56/"
       to: "Sources/NXVenom/atmosphere/contents/0000000000534C56/"
